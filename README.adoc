@@ -1,0 +1,29 @@
+= IETF IANA registries mirror for the BibXML service
+
+WARNING: The data in this repository is managed by the iana-registries-sync
+workflow automatically -- please do not manually change data in this
+repository.
+
+This work is created under the IETF/Ribose BibXML services SOW.
+
+== Purpose
+
+This repository is a mirror to the IANA rsync endpoint for its registries data,
+located at `rsync.iana.org::assignments` (publicly accessible).
+
+This repository is to be used by other repositories in the pipeline in creating
+BibXML and other bibliographic formats for this data.
+
+== WARNING
+
+If you make any changes to this repository outside of the protected paths, your
+changes will be *wiped out* on the next auto-update.
+
+The protected paths (i.e. where your changes will persist) are:
+
+* `.git*`
+* `README.*`
+
+== Licence
+
+Openly licensed.
