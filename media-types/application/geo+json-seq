@@ -1,0 +1,39 @@
+Type name:  application
+
+Subtype name:  geo+json-seq
+
+Required parameters:  n/a
+
+Optional parameters:  n/a
+
+Encoding considerations:  binary
+
+Security considerations:  See Section 3 of RFC 8142
+
+Interoperability considerations:  See Section 4 of RFC 8142
+
+Published specification:  RFC 8142
+
+Applications that use this media type:  Geographic information
+   systems (GIS)
+
+Additional information:
+
+   Deprecated alias names for this type:  n/a
+
+   Magic number(s):  n/a
+
+   File extension(s):  n/a
+
+   Macintosh file type code(s):  n/a
+
+Person to contact for further information:  Sean Gillies
+   (sean.gillies&gmail.com)
+
+Intended usage:  COMMON
+
+Restrictions on usage:  none
+
+Author:  Sean Gillies (sean.gillies&gmail.com)
+
+Change controller:  IETF

@@ -1,0 +1,17 @@
+                                                  Bootstrap Service Registry for IPv4 Address Space
+
+   Created
+           2015-03-23
+
+   Reference
+           [RFC7484]
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+Files
+
+     * http://data.iana.org/rdap/ipv4.json

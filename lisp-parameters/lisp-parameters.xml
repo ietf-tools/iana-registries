@@ -1,0 +1,586 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="lisp-parameters.xsl"?>
+<?xml-model href="lisp-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="lisp-parameters">
+  <title>Locator/ID Separation Protocol (LISP) Parameters</title>
+  <created>2012-04-25</created>
+  <updated>2021-03-25</updated>
+  
+  <registry id="lisp-act-value">
+    <title>LISP ACT values</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>IETF Review or IESG Approval</registration_rule>
+    <record>
+      <value>0</value>
+      <action>No-Action</action>
+      <description>The map-cache is kept alive and no packet encapsulation occurs.</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record>
+      <value>1</value>
+      <action>Natively-Forward</action>
+      <description>The packet is not encapsulated or dropped but natively forwarded.</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record>
+      <value>2</value>
+      <action>Send-Map-Request</action>
+      <description>The packet invokes sending a Map-Request.</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record updated="2021-02-24">
+      <value>3</value>
+      <action>Drop/No-Reason</action>
+      <description>A packet that matches this map-cache entry is dropped. An ICMP Unreachable message SHOULD be sent.</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-24">
+      <value>4</value>
+      <action>Drop/Policy-Denied</action>
+      <description>A packet matching this Map-Cache entry is dropped because the target EWID is policy-denied by the xTR of the mapping system.</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-24">
+      <value>5</value>
+      <action>Drop/Authentication-Failure</action>
+      <description>Packet matching the Map-Cache entry is dropped because the Map-Request for the target EID fails an authentication check by the xTR or the mapping system.</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record>
+      <value>6-7</value>
+      <action>Unassigned</action>
+      <description/>
+    </record>
+  </registry>
+  
+  <registry id="lisp-address-type-codes-registry">
+    <title>LISP Address Type Codes (CLOSED)</title>
+    <xref type="rfc" data="rfc6830"/><xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <note>Registry closed per <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>.
+    </note>
+    </registry>
+
+  <registry id="lisp-algorithm-id-numbers">
+    <title>LISP Algorithm ID Numbers</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>First Come First Served</registration_rule>
+    <record updated="2021-02-24">
+      <name>None</name>
+      <value>0</value>
+      <mac>None</mac>
+      <kdf>None</kdf>
+    </record>
+    <record updated="2021-02-24">
+      <name>HMAC-SHA-1-96-None</name>
+      <value>1</value>
+      <mac><xref type="rfc" data="rfc2404"/></mac>
+      <kdf>None</kdf>
+    </record>
+    <record updated="2021-02-24">
+      <name>HMAC-SHA-256-128-None</name>
+      <value>2</value>
+      <mac><xref type="rfc" data="rfc4868"/></mac>
+      <kdf>None</kdf>
+    </record>
+    <record updated="2021-02-24">
+      <name>HMAC-SHA256-128+HKDF-SHA256</name>
+      <value>3</value>
+      <mac><xref type="rfc" data="rfc4868"/></mac>
+      <kdf><xref type="rfc" data="rfc4868"/></kdf>
+    </record>
+    <record>
+     <name>Unassigned</name>
+     <value>4-255</value>
+      <mac/>
+      <kdf/>
+    </record>
+  </registry>
+  
+  <registry id="lisp-crypto-cipher-suite">
+    <title>LISP Crypto Cipher Suite</title>
+    <xref type="rfc" data="rfc8061"/>
+    <registration_rule>First Come First Served</registration_rule>
+    <record>
+      <value>0</value>
+      <action>Reserved</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>1</value>
+      <action>LISP_2048MODP_AES128_CBC_SHA256</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>2</value>
+      <action>LISP_EC25519_AES128_CBC_SHA256</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>3</value>
+      <action>LISP_2048MODP_AES128_GCM</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>4</value>
+      <action>LISP_3072MODP_AES128_GCM</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>5</value>
+      <action>LISP_256_EC25519_AES128_GCM</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>6</value>
+      <action>LISP_256_EC25519_CHACHA20_POLY1305</action>
+      <suite/>
+      <xref type="rfc" data="rfc8061">RFC8061, Section 6</xref>
+    </record>
+    <record>
+      <value>7-255</value>
+      <action>Unassigned</action>
+      <suite/>
+    </record>
+  </registry>
+  
+  <registry id="lisp-lcaf-type">
+    <title>LISP LCAF Type</title>
+    <xref type="rfc" data="rfc8060"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Luigi Iannone, Albert Cabellos</expert>
+    <record date="2016-12-02">
+      <value>0</value>
+      <description>Null Body</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>1</value>
+      <description>AFI List</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>2</value>
+      <description>Instance ID</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>3</value>
+      <description>AS Number</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record>
+      <value>4</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-12-02">
+      <value>5</value>
+      <description>Geo-Coordinates</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record>
+      <value>6</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-12-02">
+      <value>7</value>
+      <description>NAT-Traversal</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record>
+      <value>8</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-12-02">
+      <value>9</value>
+      <description>Multicast Info</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>10</value>
+      <description>Explicit Locator Path</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>11</value>
+      <description>Security Key</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>12</value>
+      <description>Source/Dest Key</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record date="2016-12-02">
+      <value>13</value>
+      <description>Replication List Entry</description>
+      <xref type="rfc" data="rfc8060">RFC8060, Section 3</xref>
+    </record>
+    <record>
+      <value>14-255</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+  
+  <registry id="lisp-packet-types">
+    <title>LISP Packet Types</title>
+    <xref type="draft" data="RFC-ietf-lisp-rfc8113bis-03"/><xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record date="2017-02-13">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2017-02-13">
+      <value>1</value>
+      <description>LISP Map-Request</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2017-02-13">
+      <value>2</value>
+      <description>LISP Map-Reply</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2017-02-13">
+      <value>3</value>
+      <description>LISP Map-Register</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2017-02-13">
+      <value>4</value>
+      <description>LISP Map-Notify</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-24">
+      <value>5</value>
+      <description>LISP Map-Notify-Ack</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2017-04-19">
+      <value>6</value>
+      <description>LISP DDT Map-Referral (TEMPORARY - registered 2017-04-19, extension registered 2021-03-25, expires 2022-04-19)</description>
+      <xref type="rfc" data="rfc8111"/>
+    </record>
+    <record>
+      <value>7</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-02-13">
+      <value>8</value>
+      <description>LISP Encapsulated Control Message</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record>
+      <value>9-14</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-02-13">
+      <value>15</value>
+      <description>LISP Shared Extension Message</description>
+      <xref type="draft" data="RFC-ietf-lisp-rfc8113bis-03"/>
+    </record>
+  </registry>
+  
+  <registry id="lisp-shared-extension-message-type-sub-types">
+    <title>LISP Shared Extension Message Type Sub-types</title>
+    <xref type="draft" data="RFC-ietf-lisp-rfc8113bis-03"/>
+    <range>
+      <value>0-1023</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>1024-4095</value>
+      <registration_rule>First Come First Served</registration_rule>
+    </range>
+    <record>
+      <value>0-1023</value>
+      <description>Unassigned</description>
+      <controller/>
+      
+    </record>
+    <record date="2017-05-01">
+      <value>1024</value>
+      <description>Map-Subscribe/Map-Subscribe-Ack</description>
+      <xref type="draft" data="draft-boucadair-lisp-subscribe"/>
+      <controller><xref type="person" data="Mohamed_Boucadair"/></controller>
+    </record>
+    <record date="2017-05-01">
+      <value>1025</value>
+      <description>Map-Bulk-Request/Map-Bulk-Reply</description>
+      <xref type="draft" data="draft-boucadair-lisp-bulk"/>
+      <controller><xref type="person" data="Mohamed_Boucadair"/></controller>
+    </record>
+    <record date="2017-05-01">
+      <value>1026</value>
+      <description>Map-Solicit-Request/Map-Solicit-Reply</description>
+      <xref type="draft" data="draft-boucadair-lisp-itr-failure"/>
+      <controller><xref type="person" data="Mohamed_Boucadair"/></controller>
+    </record>
+    <record>
+      <value>1027-4095</value>
+      <description>Unassigned</description>
+      <controller/>
+      
+    </record>
+  </registry>
+  
+  <registry id="lisp-gpe-next-protocol">
+    <title>LISP-GPE Next Protocol</title>
+    <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    <registration_rule>Specification Required</registration_rule>
+	<expert>Unassigned</expert>
+    <record date="2020-08-14">
+      <value>0x0</value>
+      <description>Reserved</description>
+      <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+    <record date="2020-08-14">
+      <value>0x1</value>
+      <description>IPv4</description>
+      <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+    <record date="2020-08-14">
+      <value>0x2</value>
+      <description>IPv6</description>
+      <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+    <record date="2020-08-14">
+      <value>0x3</value>
+      <description>Ethernet</description>
+      <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+    <record date="2020-08-14">
+      <value>0x4</value>
+      <description>NSH</description>
+      <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+    <record>
+      <value>0x05-0x7D</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2020-08-14">
+      <value>0x7E-0x7F</value>
+      <description>Experimentation and testing</description>
+	  <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+    <record>
+      <value>0x80-0xFD</value>
+      <description>Unassigned (shim headers)</description>
+    </record>
+    <record date="2020-08-19">
+      <value>0xFE-0xFF</value>
+      <description>Experimentation and testing (shim headers)</description>
+	  <xref type="draft" data="RFC-ietf-lisp-gpe-19"/>
+    </record>
+  </registry>
+  
+    <registry id="lisp-parameters-lisp-control-plane-header-bits-map-request">
+    <title>LISP Control Plane Header Bits: Map-Request</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2021-02-25">
+      <spec-name>A</spec-name>
+      <iana-name>map-request-A</iana-name>
+      <bit>4</bit>
+      <description>Authoritative Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>M</spec-name>
+      <iana-name>map-request-M</iana-name>
+      <bit>5</bit>
+      <description>Map Data Present Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>P</spec-name>
+      <iana-name>map-request-P</iana-name>
+      <bit>6</bit>
+      <description>RLOC-Probe Request Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>S</spec-name>
+      <iana-name>map-request-S</iana-name>
+      <bit>7</bit>
+      <description>Solicit Map-Request (SMR) Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>p</spec-name>
+      <iana-name>map-request-p</iana-name>
+      <bit>8</bit>
+      <description>Proxy-ITR Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>s</spec-name>
+      <iana-name>map-request-s</iana-name>
+      <bit>9</bit>
+      <description>Solicit Map-Request Invoked Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>L</spec-name>
+      <iana-name>map-request-L</iana-name>
+      <bit>17</bit>
+      <description>Local xTR</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>D</spec-name>
+      <iana-name>map-request-D</iana-name>
+      <bit>18</bit>
+      <description>Don't Map-Reply Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+  </registry>
+  
+    <registry id="lisp-parameters-lisp-control-plane-header-bits-map-reply">
+    <title>LISP Control Plane Header Bits: Map-Reply</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2021-02-25">
+      <spec-name>P</spec-name>
+      <iana-name>map-reply-P</iana-name>
+      <bit>4</bit>
+      <description>RLOC-Probe Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>E</spec-name>
+      <iana-name>map-reply-E</iana-name>
+      <bit>5</bit>
+      <description>Echo Nonce Capable Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>S</spec-name>
+      <iana-name>map-reply-S</iana-name>
+      <bit>6</bit>
+      <description>Security Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+  </registry>
+
+    <registry id="lisp-parameters-lisp-control-plane-header-bits-map-register">
+    <title>LISP Control Plane Header Bits: Map-Register</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2021-02-25">
+      <spec-name>P</spec-name>
+      <iana-name>map-register-P</iana-name>
+      <bit>4</bit>
+      <description>Proxy Map-Reply Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>S</spec-name>
+      <iana-name>map-register-S</iana-name>
+      <bit>5</bit>
+      <description>LISP-SEC Capable Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>I</spec-name>
+      <iana-name>map-register-I</iana-name>
+      <bit>6</bit>
+      <description>xTR-ID present flag</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+  </registry>
+
+    <registry id="lisp-parameters-lisp-control-plane-header-bits-encapsulated-control-message">
+    <title>LISP Control Plane Header Bits: Encapsulated Control Message (ECM)</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2021-02-25">
+      <spec-name>S</spec-name>
+      <iana-name>ecm-S</iana-name>
+      <bit>4</bit>
+      <description>Security Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>D</spec-name>
+      <iana-name>ecm-D</iana-name>
+      <bit>5</bit>
+      <description>LISP-DDT Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>E</spec-name>
+      <iana-name>ecm-E</iana-name>
+      <bit>6</bit>
+      <description>Forward to ETR Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>M</spec-name>
+      <iana-name>ecm-M</iana-name>
+      <bit>7</bit>
+      <description>Destined to Map-Server Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+  </registry>
+
+    <registry id="lisp-parameters-lisp-control-plane-header-bits-eid-record">
+    <title>LISP Control Plane Header Bits: EID-Record</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2021-02-25">
+      <spec-name>A</spec-name>
+      <iana-name>eid-record-A</iana-name>
+      <bit>19</bit>
+      <description>Authoritative Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+  </registry>
+  
+    <registry id="lisp-parameters-lisp-control-plane-header-bits-rloc-record">
+    <title>LISP Control Plane Header Bits: RLOC-Record</title>
+    <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2021-02-25">
+      <spec-name>L</spec-name>
+      <iana-name>rloc-record-L</iana-name>
+      <bit>13</bit>
+      <description>Local RLOC Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>p</spec-name>
+      <iana-name>rloc-record-p</iana-name>
+      <bit>19</bit>
+      <description>RLOC-Probe Reply Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+    <record date="2021-02-25">
+      <spec-name>R</spec-name>
+      <iana-name>rloc-record-R</iana-name>
+      <bit>19</bit>
+      <description>RLOC Reachable Bit</description>
+      <xref type="draft" data="RFC-draft-ietf-lisp-rfc6833bis"/>
+    </record>
+  </registry>
+  
+  <people>
+    <person id="Mohamed_Boucadair">
+      <name>Mohamed_Boucadair</name>
+      <uri>mailto:mohamed.boucadair&amp;orange.com</uri>
+      <updated>2017-05-01</updated>
+    </person> 
+  </people>
+  
+</registry>

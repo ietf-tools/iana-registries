@@ -1,0 +1,64 @@
+                                          Bootstrapping Remote Secure Key Infrastructures (BRSKI) Parameters
+
+   Created
+           2020-04-29
+
+   Last Updated
+           2021-06-04
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * Pledge BRSKI Status Telemetry Attributes
+     * BRSKI Well-Known URIs
+
+Pledge BRSKI Status Telemetry Attributes
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Michael Richardson
+
+   Reference
+           [RFC8995]
+
+   Available Formats
+           [IMG]
+           CSV
+
+     Attribute    Reference
+   version        [RFC8995]
+   Status         [RFC8995]
+   Reason         [RFC8995]
+   reason-context [RFC8995]
+
+BRSKI Well-Known URIs
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Michael Richardson, Toerless Eckert
+
+   Reference
+           [RFC8995]
+
+   Available Formats
+           [IMG]
+           CSV
+
+         URI                         Description                   Reference
+   requestvoucher  pledge to registrar, and from registrar to MASA [RFC8995]
+   voucher_status  pledge to registrar                             [RFC8995]
+   requestauditlog registrar to MASA                               [RFC8995]
+   enrollstatus    pledge to registrar                             [RFC8995]

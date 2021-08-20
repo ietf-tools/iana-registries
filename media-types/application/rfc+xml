@@ -1,0 +1,56 @@
+Type name:  application
+
+Subtype name:  rfc+xml
+
+Required parameters:  There are no required parameters.
+
+Optional parameters:  "charset": This parameter has identical
+   semantics to the charset parameter of the "application/xml" Media
+   Type specified in Section 9.1 of [RFC7303].
+
+Encoding considerations:  Identical to those of "application/xml" as
+   described in Section 9.1 of [RFC7303].
+
+Security considerations:  As defined in Section 7 of [RFC7991].  
+   In addition, as this Media Type uses the "+xml" convention, it 
+   inherits the security considerations described in Section 10 of 
+   [RFC7303].
+
+Interoperability considerations:  Different implementations of this
+   format have had interoperability issues.  It is not expected that
+   publication of this application will cause those implementations
+   to be fixed.
+
+Published specification:  RFC7991.
+
+Applications that use this Media Type:  Applications that transform
+   xml2rfc to output representations such as plain text or HTML, plus
+   additional analysis tools.
+
+Fragment identifier considerations:  The "anchor" attribute is used
+   for assigning document-wide unique identifiers that can be used as
+   shorthand pointers, as described in "XPointer Framework", W3C 
+   Recommendation REC-xptr-framework-20030325, March 2003, 
+   <http://www.w3.org/TR/2003/REC-xptr-framework-20030325/>.
+
+Additional information:
+
+   Deprecated alias names for this type:  None.
+
+   Magic number(s):  As specified for "application/xml" in [RFC7303].
+
+   File extension(s):  .xml or .rfcxml when disambiguation from other
+      XML files is needed
+
+   Macintosh file type code(s):  TEXT
+
+Person & email address to contact for further information:  See the
+   Author's Address section of RFC 7749.
+
+Intended usage:  COMMON
+
+Restrictions on usage:  None
+
+Author:  See the Author's Address section of RFC 7749.
+
+Change controller:  RFC Series Editor (rse&rfc-editor.org)

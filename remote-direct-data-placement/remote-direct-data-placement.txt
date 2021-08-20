@@ -1,0 +1,39 @@
+                                                             Remote Direct Data Placement
+
+   Created
+           2020-03-02
+
+   Last Updated
+           2020-08-14
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * RDMA-CM Private Data Identifiers
+
+RDMA-CM Private Data Identifiers
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Chuck Lever
+
+   Reference
+           [RFC8797]
+
+   Available Formats
+           [IMG]
+           CSV
+
+     Format Identifier   Length               Description               Reference
+   0x00000000-0xf6ab0e17        Unassigned
+   0xf6ab0e18            8      RPC-over-RDMA version 1 CM Private Data [RFC8797]
+   0xf6ab0e19-0xffffffff        Unassigned

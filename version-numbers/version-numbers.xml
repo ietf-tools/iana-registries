@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="version-numbers.xsl"?>
+<?xml-model href="version-numbers.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="version-numbers">
+  <title>IP Version Numbers</title>
+  <category>IP Version Numbers</category>
+  <updated>2021-01-28</updated>
+  <note>In the Internet Protocol (IP) <xref type="rfc" data="rfc791"/><xref type="rfc" data="rfc8200"/> there is a field to identify
+the version of the internetwork general protocol.  This field is 4
+bits in size.
+  </note>
+  <registry id="version-numbers-1">
+    <title>IP Version Numbers</title>
+    <xref type="rfc" data="rfc2780"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record>
+      <value>0-1</value>
+      <version>Reserved</version>
+      <xref type="person" data="Jon_Postel"/>
+      <xref type="rfc" data="rfc4928"/>
+    </record>
+    <record>
+      <value>2-3</value>
+      <version>Unassigned</version>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record>
+      <value>4</value>
+      <keyword>IP</keyword>
+      <version>Internet Protocol</version>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record>
+      <value>5</value>
+      <keyword/>
+      <version>Reserved (Historic)</version>
+      <xref type="rfc" data="rfc1819"/>
+      <xref type="uri" data="https://datatracker.ietf.org/doc/status-change-ip-versions-5-8-9-to-historic">SC589H</xref>
+    </record>
+    <record>
+      <value>6</value>
+      <keyword>IPv6</keyword>
+      <version>Internet Protocol version 6</version>
+      <xref type="rfc" data="rfc8200"/>
+    </record>
+    <record updated="2021-01-28">
+      <value>7</value>
+      <keyword/>
+      <version>Reserved (Historic)</version>
+      <xref type="rfc" data="rfc1475"/>
+      <xref type="rfc" data="rfc6814"/>
+    </record>
+    <record>
+      <value>8</value>
+      <keyword/>
+      <version>Reserved (Historic)</version>
+      <xref type="rfc" data="rfc1621"/>
+      <xref type="uri" data="https://datatracker.ietf.org/doc/status-change-ip-versions-5-8-9-to-historic">SC589H</xref>
+    </record>
+    <record>
+      <value>9</value>
+      <keyword/>
+      <version>Reserved (Historic)</version>
+      <xref type="rfc" data="rfc1347"/>
+      <xref type="uri" data="https://datatracker.ietf.org/doc/status-change-ip-versions-5-8-9-to-historic">SC589H</xref>
+    </record>
+    <record>
+      <value>10-14</value>
+      <version>Unassigned</version>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record>
+      <value>15</value>
+      <version>Reserved</version>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+  </registry>
+  <people>
+    <person id="Jon_Postel">
+      <name>Jon Postel</name>
+      <uri>mailto:postel&amp;isi.edu</uri>
+    </person>
+  </people>
+</registry>

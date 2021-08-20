@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="pres-srv-labels.xsl"?>
+<?xml-model href="pres-srv-labels.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="pres-srv-labels">
+  <title>Presence SRV Protocol Label Registry</title>
+  <created>2003-11-26</created>
+  <updated>2009-04-06</updated>
+  <registry id="pres-srv-labels-1">
+    <title>Presence SRV Protocol Labels</title>
+    <xref type="rfc" data="rfc3861"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record>
+      <name>_sip</name>
+      <xref type="rfc" data="rfc5509"/>
+    </record>
+    <record>
+      <name>_xmpp</name>
+      <xref type="rfc" data="rfc3921"/>
+    </record>
+  </registry>
+  <people/>
+</registry>

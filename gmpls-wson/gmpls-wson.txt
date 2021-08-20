@@ -1,0 +1,38 @@
+                                                          GMPLS Routing Parameters for WSON
+
+   Created
+           2015-03-18
+
+   Last Updated
+           2015-06-30
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * Types for Subfields of WSON Resource Block Information Registry
+
+Types for Subfields of WSON Resource Block Information Registry
+
+   Registration Procedure(s)
+
+ Standards Action
+
+   Reference
+           [RFC7581]
+
+   Available Formats
+           [IMG]
+           CSV
+
+    Value   Length           Description          Reference
+      0             Reserved                      [RFC7581]
+      1    variable Optical Interface Class List  [RFC7581]
+      2    variable Acceptable Client Signal List [RFC7581]
+      3    variable Input Bit Rate List           [RFC7581]
+      4    variable Processing Capability List    [RFC7581]
+   5-65535          Unassigned

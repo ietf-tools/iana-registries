@@ -1,0 +1,534 @@
+<?xml version='1.0'?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+  ns="http://www.iana.org/assignments">
+
+  <include href="../_support/iana-registry.rng"/>
+
+  <start>
+    <element name="registry">
+      <ref name="registryMeta"/>
+      
+      <!-- media -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- proto -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- SDP bwtype -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- nettype -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <element name="usable"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- addrtype -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- enckey -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- att-field -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <element name="usage"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+
+      <!-- content SDP Parameters -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="type"><text/></element>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- Semantics for the "group" SDP Attribute -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="description"><text/></element>
+            <element name="name"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- "rtcp-fb" Attribute Values -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- "ack" and "nack" Attribute Values -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="usage"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- "depend" SDP Attribute Values -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+   <!-- "cs-correlation" Attribute Values -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- Semantics for the "ssrc-group" SDP Attribute -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- SDP/RTSP key management protocol identifiers -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- Codec Control Messages -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="usage"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- QoS Mechanism Tokens -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- SDP Capability Negotiation Option Tags -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- SDP Capability Negotiation Configuration Parameter Registry -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="name"><text/></element>
+            <element name="description"><text/></element>
+            <element name="potential"><ref name = "text_with_references"/></element>
+            <element name="actual"><ref name = "text_with_references"/></element>
+            <element name="latent"><ref name = "text_with_references"/></element>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- Timestamp Reference Clock Source Parameters Registry -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>      
+
+      <!-- Media Clock Source Parameters Registry -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="description"><text/></element>
+            <element name="mux"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- Multiplexing Categories -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- Multiplexing Categories -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <ref name="references"/>
+            <element name="controller"><ref name="richText"/></element>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- RID Attribute Parameters -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+	  
+      <!-- Candidate Attribute Extensions -->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+			<element name="description"><text/></element>
+            <ref name="references"/>
+            <element name="controller"><ref name="richText"/></element>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+
+      <ref name="people"/>
+    </element>
+  </start>
+</grammar>

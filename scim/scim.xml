@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="scim.xsl"?>
+<?xml-model href="scim.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="scim">
+  <title>System for Cross-domain Identity Management (SCIM) Schema URIs</title>
+  <created>2015-06-22</created>
+  <updated>2015-10-01</updated>
+  
+  <registry id="data-resources">
+    <title>SCIM Schema URIs for Data Resources</title>
+    <xref type="rfc" data="rfc7643"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Phil Hunt, Kelly Grizzle, Morteza Ansari</expert>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:schemas:core:2.0:User</value>
+      <description>User Resource</description>
+      <xref type="rfc" data="rfc7643">RFC7643, Section 4.1</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:schemas:extension:enterprise:2.0:User</value>
+      <description>Enterprise User Extension</description>
+      <xref type="rfc" data="rfc7643">RFC7643, Section 4.3</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:schemas:core:2.0:Group</value>
+      <description>Group Resource</description>
+      <xref type="rfc" data="rfc7643">RFC7643, Section 4.2</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:api:messages:2.0:ListResponse</value>
+      <description>List/Query Response</description>
+      <xref type="rfc" data="rfc7644">RFC7644, Section 3.4.2</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:api:messages:2.0:SearchRequest</value>
+      <description>POST Query Request</description>
+      <xref type="rfc" data="rfc7644">RFC7644, Section 3.4.3</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:api:messages:2.0:PatchOp</value>
+      <description>PATCH Operation</description>
+      <xref type="rfc" data="rfc7644">RFC7644, Section 3.5.2</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:api:messages:2.0:BulkRequest</value>
+      <description>Bulk Operations Request</description>
+      <xref type="rfc" data="rfc7644">RFC7644, Section 3.7</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:api:messages:2.0:BulkResponse</value>
+      <description>Bulk Operations Response</description>
+      <xref type="rfc" data="rfc7644">RFC7644, Section 3.7</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:api:messages:2.0:Error</value>
+      <description>Error Response</description>
+      <xref type="rfc" data="rfc7644">RFC7644, Section 3.12</xref>
+    </record>
+  </registry>
+  
+  <registry id="server-related">
+    <title>SCIM Server-Related Schema URIs</title>
+    <xref type="rfc" data="rfc7643"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Phil Hunt, Kelly Grizzle, Morteza Ansari</expert>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:schemas:core:2.0:ServiceProviderConfig</value>
+      <description>Service Provider Configuration Schema</description>
+      <xref type="rfc" data="rfc7643">RFC7643, Section 5</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:schemas:core:2.0:ResourceType</value>
+      <description>Resource Type Configuration</description>
+      <xref type="rfc" data="rfc7643">RFC7643, Section 6</xref>
+    </record>
+    <record date="2015-06-22">
+      <value>urn:ietf:params:scim:schemas:core:2.0:Schema</value>
+      <description>Schema Definitions Schema</description>
+      <xref type="rfc" data="rfc7643">RFC7643, Section 7</xref>
+    </record>
+  </registry>
+  
+  <people/>
+</registry>

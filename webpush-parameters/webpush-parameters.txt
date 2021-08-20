@@ -1,0 +1,60 @@
+                                                                 Web Push Parameters
+
+   Created
+           2016-11-02
+
+   Last Updated
+           2017-12-26
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * Web Push Identifiers
+     * VAPID Authentication Scheme Parameters
+
+Web Push Identifiers
+
+   Registration Procedure(s)
+
+ IETF Review
+
+   Reference
+           [RFC8030]
+
+   Available Formats
+           [IMG]
+           CSV
+
+               URN                                         Description                                      Contact           Index Value Reference
+   urn:ietf:params:push         This link relation type is used to identify a resource for sending The WEBPUSH WG of the IETF N/A         [RFC8030]
+                                push messages.                                                     (webpush@ietf.org)
+   urn:ietf:params:push:set     This link relation type is used to identify a collection of push   The WEBPUSH WG of the IETF N/A         [RFC8030]
+                                message subscriptions.                                             (webpush@ietf.org)
+   urn:ietf:params:push:receipt This link relation type is used to identify a resource for         The WEBPUSH WG of the IETF N/A         [RFC8030]
+                                receiving delivery confirmations for push messages.                (webpush@ietf.org)
+
+VAPID Authentication Scheme Parameters
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Martin Thomson
+
+   Reference
+           [RFC8292]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Parameter Name         Purpose          Header Field(s)        Reference
+   t              JWT authentication token Authorization   [RFC 8292, Section 3.1]
+   k              signing key              Authorization   [RFC 8292, Section 3.2]

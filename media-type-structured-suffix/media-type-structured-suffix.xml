@@ -1,0 +1,795 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="media-type-structured-suffix.xsl"?>
+<?xml-model href="media-type-structured-suffix.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="media-type-structured-suffix">
+  <title>Structured Syntax Suffixes</title>
+  <category>Multipurpose Internet Mail Extensions (MIME) and Media Types</category>
+  <created>2012-07-20</created>
+  <updated>2021-02-12</updated>
+
+  <registry id="structured-syntax-suffix">
+    <title>Structured Syntax Suffixes</title>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Ned Freed</expert>
+    <xref type="rfc" data="rfc6838"/>
+    
+    <record date="2012-11-15">
+      <name>Extensible Markup Language (XML)</name>
+      <suffix>+xml</suffix>
+      <xref type="rfc" data="rfc7303"/>
+      <encoding>Same as <xref type="rfc" data="rfc7303"/>, Section 9.1.</encoding>
+      <interop>Same as <xref type="rfc" data="rfc7303"/>, Section 9.1. 
+      See above, and also Section 3, for guidelines on the use of the 'charset' parameter.</interop>
+      <fragment>
+      <paragraph>
+      Registrations which use this
+      '+xml' convention MUST also make reference to <xref type="rfc" data="rfc7303"/>,
+      specifically Section 5, in specifying fragment identifier syntax
+      and semantics, and they MAY restrict the syntax to a specified
+      subset of schemes, except that they MUST NOT disallow barenames or
+      'element' scheme pointers.  They MAY further require support for
+      other registered schemes.  They also MAY add additional syntax
+      (which MUST NOT overlap with <xref type="uri" data="http://www.w3.org/TR/2003/REC-xptr-framework-20030325/">XPointerFramework</xref> syntax) together
+      with associated semantics, and MAY add additional semantics for
+      barename XPointers which, as provided for in Section 5, will only
+      apply when <xref type="rfc" data="rfc7303"/> does not define an interpretation.
+      </paragraph>
+      <paragraph>
+      In practice these constraints imply that for a fragment
+      identifier addressed to an instance of a specific "xxx/yyy+xml"
+      type, there are three cases:
+      </paragraph>
+      <paragraph>
+      For fragment identifiers matching the syntax defined in
+      <xref type="uri" data="http://www.w3.org/TR/2003/REC-xptr-framework-20030325/">XPointerFramework</xref>, where the fragment identifier resolves
+      per the rules specified there, then process as specified
+      there;
+      </paragraph>
+      <paragraph>
+      For fragment identifiers matching the syntax defined in
+      <xref type="uri" data="http://www.w3.org/TR/2003/REC-xptr-framework-20030325/">XPointerFramework</xref>, where the fragment identifier does
+      _not_ resolve per the rules specified there, then process as
+      specified in "xxx/yyy+xml";
+      </paragraph>
+      <paragraph>
+      For fragment identifiers _not_ matching the syntax defined
+      in <xref type="uri" data="http://www.w3.org/TR/2003/REC-xptr-framework-20030325/">XPointerFramework</xref>, then process as specified in "xxx/
+      yyy+xml".  A fragment identifier of the form
+      "xywh=160,120,320,240", as defined in <xref type="uri" data="http://www.w3.org/TR/2012/REC-media-frags-20120925/">MediaFrags</xref>, which
+      might be used in a URI for an XML-encoded image, would fall
+      in this category.
+      </paragraph>
+      </fragment>
+      <security>See Section 10, <xref type="rfc" data="rfc7303"/>.</security>
+      <contact>See Authors' Addresses section, <xref type="rfc" data="rfc7303"/>.</contact>
+      <controller>The XML specification is a work product of the World Wide Web 
+      Consortium's XML Core Working Group. The W3C has change control over 
+      <xref type="rfc" data="rfc7303"/>.</controller>
+      <mod-dates>2014-04-17</mod-dates>
+    </record>
+    
+    <record date="2012-11-27">
+      <name>JavaScript Object Notation (JSON)</name>
+      <suffix>+json</suffix>
+      <xref type="rfc" data="rfc8259"/>
+      <xref type="rfc" data="rfc6839"/>
+      <encoding>JSON is encoded using UTF-8, and is binary data. See 
+        <xref type="rfc" data="rfc8259"/> section 8.1 for additional 
+        encoding considerations.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+        The syntax and semantics of fragment
+        identifiers specified for +json SHOULD be as
+        specified for "application/json".  (At
+        publication of <xref type="rfc" data="rfc6839"/>, there is no
+        fragment identification syntax defined for
+        "application/json".)
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment
+        identifiers for a specific "xxx/yyy+json"
+        SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +json, where the
+        fragment identifier resolves per the +json
+        rules, then as specified in +json.
+        </paragraph>
+        <paragraph>
+        For cases defined in +json, where the
+        fragment identifier does not resolve per
+        the +json rules, then as specified in "xxx/
+        yyy+json".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +json, then as
+        specified in "xxx/yyy+json".
+        </paragraph>   
+      </fragment>
+      <security>See <xref type="rfc" data="rfc8259"/>.</security>
+      <contact>Apps Area Working Group (apps-discuss@ietf.org)</contact>
+      <controller>The Apps Area Working Group.  IESG has
+        change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2012-11-27">
+      <name>Basic Encoding Rules (BER) message transfer syntax</name>
+      <suffix>+ber</suffix>
+      <xref type="text">ITU.X690.2008</xref><xref type="rfc" data="rfc6839"/>
+      <encoding>BER is a binary encoding.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+        At publication of <xref type="rfc" data="rfc6839"/>, there is no
+        fragment identification syntax defined for
+        +ber.
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment
+        identifiers for a specific "xxx/yyy+ber"
+        SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +ber, where the
+        fragment identifier resolves per the +ber
+        rules, then as specified in +ber.
+        </paragraph>
+        <paragraph>
+        For cases defined in +ber, where the
+        fragment identifier does not resolve per
+        the +ber rules, then as specified in "xxx/
+        yyy+ber".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +ber, then as
+        specified in "xxx/yyy+ber".
+        </paragraph>
+      </fragment>
+      <security>
+        <paragraph>
+        Each individual media type registered with
+        a +ber suffix can have additional security
+        considerations.
+        </paragraph>
+        <paragraph>
+        BER has a type-length-value structure, and it is
+        easy to construct malicious content with invalid
+        length fields that can cause buffer overrun
+        conditions.
+        </paragraph>
+        <paragraph>
+        BER allows for arbitrary levels of nesting, which
+        may make it possible to construct malicious
+        content that will cause a stack overflow.
+        </paragraph>
+        <paragraph>
+        Interpreters of the BER structures should be
+        aware of these issues and should take appropriate
+        measures to guard against buffer overflows and
+        stack overruns in particular and malicious
+        content in general.
+        </paragraph>
+      </security>
+      <contact>Apps Area Working Group (apps-discuss@ietf.org)</contact>
+      <controller>The Apps Area Working Group.  IESG has
+        change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+
+    <record date="2013-09-19">
+      <name>Concise Binary Object Representation (CBOR)</name>
+      <suffix>+cbor</suffix>
+      <xref type="rfc" data="rfc8949"/>
+      <encoding>CBOR is a binary format.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+      The syntax and semantics of
+      fragment identifiers specified for +cbor SHOULD be as specified
+      for "application/cbor".  (At publication of <xref type="rfc" data="rfc8949"/>, there
+      is no fragment identification syntax defined for "application/
+      cbor".)
+        </paragraph>
+        <paragraph>
+     The syntax and semantics for fragment identifiers for a specific
+      "xxx/yyy+cbor" SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+     *  For cases defined in +cbor, where the fragment identifier
+         resolves per the +cbor rules, then process as specified in
+         +cbor.
+        </paragraph>
+        <paragraph>
+      *  For cases defined in +cbor, where the fragment identifier does
+         not resolve per the +cbor rules, then process as specified in
+         "xxx/yyy+cbor".
+        </paragraph>
+        <paragraph>
+      *  For cases not defined in +cbor, then process as specified in
+         "xxx/yyy+cbor".
+         </paragraph>
+      </fragment>
+      <security>See Section 10 of <xref type="rfc" data="rfc8949"/>
+      </security>
+      <contact>IETF CBOR Working Group
+      (cbor@ietf.org) or IETF Applications and Real-Time Area
+	  (art@ietf.org)
+      </contact>
+      <controller>IETF (cbor@ietf.org)</controller>
+      <mod-dates>2020-10-16</mod-dates>
+    </record>
+
+    <record date="2012-11-27">
+      <name>Distinguished Encoding Rules (DER) message transfer syntax</name>
+      <suffix>+der</suffix>
+      <xref type="text">ITU.X690.2008</xref><xref type="rfc" data="rfc6839"/>
+      <encoding>DER is a binary encoding.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+        At publication of <xref type="rfc" data="rfc6839"/>, there is no
+        fragment identification syntax defined for
+        +der.
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment
+        identifiers for a specific "xxx/yyy+der"
+        SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +der, where the
+        fragment identifier resolves per the +der
+        rules, then as specified in +der.
+        </paragraph>
+        <paragraph>
+        For cases defined in +der, where the
+        fragment identifier does not resolve per
+        the +der rules, then as specified in "xxx/
+        yyy+der".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +der, then as
+        specified in "xxx/yyy+der".
+        </paragraph>
+      </fragment>
+      <security>
+        <paragraph>
+        Each individual media type registered with
+        a +der suffix can have additional security
+        considerations.
+        </paragraph>
+        <paragraph>
+        DER has a type-length-value structure, and it is
+        easy to construct malicious content with invalid
+        length fields that can cause buffer overrun
+        conditions.
+        </paragraph>
+        <paragraph>
+        DER allows for arbitrary levels of nesting, which
+        may make it possible to construct malicious
+        content that will cause a stack overflow.
+        </paragraph>
+        <paragraph>
+        Interpreters of the DER structures should be
+        aware of these issues and should take appropriate
+        measures to guard against buffer overflows and
+        stack overruns in particular and malicious
+        content in general.
+        </paragraph>
+      </security>
+      <contact>Apps Area Working Group (apps-discuss@ietf.org)</contact>
+      <controller>The Apps Area Working Group.  IESG has
+        change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2012-11-27">
+      <name>Fast Infoset document format</name>
+      <suffix>+fastinfoset</suffix>
+      <xref type="text">ITU.X891.2005</xref><xref type="rfc" data="rfc6839"/>
+      <encoding>Fast Infoset is a binary encoding.  The
+        binary, quoted-printable and base64 content-
+        transfer-encodings are suitable for use with Fast
+        Infoset.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+        The syntax and semantics of fragment
+        identifiers specified for +fastinfoset SHOULD
+        be as specified for "application/fastinfoset".
+        (At publication of <xref type="rfc" data="rfc6839"/>, there is no
+        fragment identification syntax defined for
+        "application/fastinfoset".)
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment
+        identifiers for a specific "xxx/
+        yyy+fastinfoset" SHOULD be processed as
+        follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +fastinfoset, where
+        the fragment identifier resolves per the
+        +fastinfoset rules, then as specified in
+        +fastinfoset.
+        </paragraph>
+        <paragraph>
+        For cases defined in +fastinfoset, where
+        the fragment identifier does not resolve
+        per the +fastinfoset rules, then as
+        specified in "xxx/yyy+fastinfoset".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +fastinfoset, then
+        as specified in "xxx/yyy+fastinfoset".
+        </paragraph>
+      </fragment>
+      <security>There are no security considerations
+        inherent in Fast Infoset.  Each individual media
+        type registered with a +fastinfoset suffix can
+        have additional security considerations.
+      </security>
+      <contact>Apps Area Working Group (apps-discuss@ietf.org)</contact>
+      <controller>The Apps Area Working Group.  IESG has
+        change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2012-11-27">
+      <name>WAP Binary XML (WBXML) document format</name>
+      <suffix>+wbxml</suffix>
+      <xref type="text">Open Mobile Alliance, "Binary XML Content Format
+        Specification", OMA Wireless Access Protocol WAP-192-
+        WBXML-20010725-a, July 2001.</xref><xref type="rfc" data="rfc6839"/>
+      <encoding>WBXML is a binary encoding.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+        The syntax and semantics of fragment
+        identifiers specified for +wbxml SHOULD be as
+        specified for "application/vnd.wap.wbxml".
+        (At publication of <xref type="rfc" data="rfc6839"/>, there is no
+        fragment identification syntax defined for
+        "application/vnd.wap.wbxml".)
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment
+        identifiers for a specific "xxx/yyy+wbxml"
+        SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +wbxml, where the
+        fragment identifier resolves per the +wbxml
+        rules, then as specified in +wbxml.
+        </paragraph>
+        <paragraph>
+        For cases defined in +wbxml, where the
+        fragment identifier does not resolve per
+        the +wbxml rules, then as specified in
+        "xxx/yyy+wbxml".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +wbxml, then as
+        specified in "xxx/yyy+wbxml".
+        </paragraph>
+      </fragment>
+      <security>There are no security considerations
+        inherent in WBXML.  Each individual media type
+        registered with a +wbxml suffix can have
+        additional security considerations.
+      </security>
+      <contact>Apps Area Working Group (apps-discuss@ietf.org)</contact>
+      <controller>The Apps Area Working Group.  IESG has
+        change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2012-11-27">
+      <name>ZIP file storage and transfer format</name>
+      <suffix>+zip</suffix>
+      <xref type="text">PKWARE, Inc., "APPNOTE.TXT - .ZIP File Format
+        Specification", PKWARE .ZIP File Format Specification -
+        Version 6.3.2, September 2007.</xref><xref type="rfc" data="rfc6839"/>
+      <encoding>ZIP is a binary encoding.</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>
+        The syntax and semantics of fragment
+        identifiers specified for +zip SHOULD be as
+        specified for "application/zip".  (At
+        publication of <xref type="rfc" data="rfc6839"/>, there is no
+        fragment identification syntax defined for
+        "application/zip".)
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment
+        identifiers for a specific "xxx/yyy+zip"
+        SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +zip, where the
+        fragment identifier resolves per the +zip
+        rules, then as specified in +zip.
+        </paragraph>
+        <paragraph>
+        For cases defined in +zip, where the
+        fragment identifier does not resolve per
+        the +zip rules, then as specified in "xxx/
+        yyy+zip".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +zip, then as
+        specified in "xxx/yyy+zip".
+        </paragraph>
+      </fragment>
+      <security>ZIP files support two forms of encryption:
+        Strong Encryption and AES 128-bit, 192-bit and
+        256-bit encryption; see the specification for
+        further details.  Each individual media type
+        registered with a +zip suffix can have additional
+        security considerations.
+      </security>
+      <contact>Apps Area Working Group (apps-discuss@ietf.org)</contact>
+      <controller>The Apps Area Working Group.  IESG has
+        change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2016-06-19">
+      <name>Type Length Value</name>
+      <suffix>+tlv</suffix>
+      <xref type="uri" data="http://www.openmobilealliance.org/tech/extref/OMA-TS-LightweightM2M-V1_0.zip">“Lightweight Machine to Machine Technical Specification”, OMA-TS-LightweightM2M-V1_0, especially section 6.3.3</xref>
+      <encoding>TLV is a binary format.</encoding>
+      <interop>n/a</interop>
+      <fragment>The syntax and semantics of fragment identifiers specified for 
+        +tlv should be as specified for "application/vnd.oma.lwm2m+tlv". 
+        (At publication of this document, there is no fragment identification 
+        syntax defined for "application/vnd.oma.lwm2m+tlv".) The syntax and 
+        semantics for fragment identifiers for a specific "xxx/yyy+tlv" 
+        should be processed as follows: For cases defined in +tlv, where the 
+        fragment identifier resolves per the +tlv rules, then process as 
+        specified in +tlv. For cases defined in +tlv, where the fragment 
+        identifier does not resolve per the +tlv rules, then process as 
+        specified in "xxx/yyy+tlv". For cases not defined in +tlv, then 
+        process as specified in "xxx/yyy+tlv".
+      </fragment>
+      <security>
+        <paragraph>
+        Each individual media type registered with a +tlv suffix can have
+        additional security considerations.
+        </paragraph>
+        <paragraph>
+        As with any format with internal length fields, it is easy to construct
+        malicious content with invalid length fields that can cause buffer
+        overrun conditions.
+        </paragraph>
+        <paragraph>
+        TLV allows for arbitrary levels of nesting, which may make it
+        possible to construct malicious content that will cause a stack
+        overflow.
+        </paragraph>
+        <paragraph>
+        Interpreters of the TLV structures should be aware of these issues
+        and should take appropriate measures to guard against buffer
+        overflows and stack overruns in particular and malicious content
+        in general.
+        </paragraph>
+      </security>
+      <contact><xref type="person" data="John_Mudge"/></contact>
+      <controller><xref type="person" data="Open_Mobile_Naming_Authority"/> (OMNA)</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2017-01-05">
+      <name>JSON Text Sequence</name>
+      <suffix>+json-seq</suffix>
+      <xref type="rfc" data="rfc7464"/>
+      <xref type="rfc" data="rfc8091"/>
+      <encoding>See <xref type="rfc" data="rfc7464"/> Section 2.2</encoding>
+      <interop>n/a</interop>
+      <fragment>
+        <paragraph>The syntax and semantics of
+        fragment identifiers specified for +json-seq SHOULD be as
+        specified for "application/json-seq".  (At publication of <xref type="rfc" data="rfc8091"/>, 
+        there is no fragment identification syntax defined for
+        "application/json-seq".)
+        </paragraph>
+        <paragraph>
+        The syntax and semantics for fragment identifiers for a
+        specific "xxx/yyy+json-seq" SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+        For cases defined in +json-seq, where the fragment
+        identifier resolves per the +json-seq rules, then process as
+        specified in +json-seq.
+        </paragraph>
+        <paragraph>
+        For cases defined in +json-seq, where the fragment
+        identifier does not resolve per the +json-seq rules, then
+        process as specified in "xxx/yyy+json-seq".
+        </paragraph>
+        <paragraph>
+        For cases not defined in +json-seq, then process as
+        specified in "xxx/yyy+json-seq".
+        </paragraph>
+      </fragment>
+      <security>See <xref type="rfc" data="rfc7464"/> Section 3</security>
+      <contact>Applications and Real-Time Area Discussion (art@ietf.org), or any IESG-designated successor.</contact>
+      <controller>The Applications and Real-Time Area
+        Working Group.  IESG has change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2018-02-12">
+      <name>SQLite3 database</name>
+      <suffix>+sqlite3</suffix>
+      <xref type="uri" data="http://www.sqlite.org/fileformat2.html"/>
+      <xref type="uri" data="http://www.sqlite.org/lang.html"/>
+      <xref type="person" data="Clemens_Ladisch"/>
+      <encoding>binary</encoding>
+      <interop>
+        <paragraph>
+          Same as for "application/vnd.sqlite3".
+        </paragraph>
+        <paragraph>To allow identification of files when the media type name is not
+          available, each individual "xxx/yyy+sqlite3" registration should
+          specify an appliction ID value to be set with PRAGMA application_id
+          (http://www.sqlite.org/pragma.html#pragma_application_id), and should
+          specifiy it as a second magic number (file offset 68, see
+          http://www.sqlite.org/fileformat2.html#application_id) in addition to
+          the header string at offset 0. This value should also be added to the
+          magic.txt file in the SQLite repository http://www.sqlite.org/src/artifact?ci=trunk&amp;filename=magic.txt) by
+          submitting a patch to &lt;sqlite-users@mailinglists.sqlite.org&gt;.
+        </paragraph>
+      </interop>
+      <fragment>
+        <paragraph>The syntax and semantics of fragment identifiers specified for
+          +sqlite3 should be as specified for "application/vnd.sqlite3".
+          (At publication of this document, there is no fragment identification
+          syntax defined for "application/vnd.sqlite3".)
+        </paragraph>
+        <paragraph>
+          The syntax and semantics of fragment identifiers for a specific
+          "xxx/yyy+sqlite3" should be processed as follows:
+        </paragraph>
+        <paragraph>
+          For cases defined in +sqlite3, where the fragment identifier resolves
+          per the +sqlite3 rules, then as specified in +sqlite3.
+        </paragraph>
+        <paragraph>
+          For cases defined in +sqlite3, where the fragment identifier does not
+          resolve per the +sqlite3 rules, then as specified in "xxx/yyy+sqlite3".
+        </paragraph>
+        <paragraph>
+          For cases not defined in +sqlite3, then as specified in "xxx/yyy+sqlite3".
+        </paragraph>
+      </fragment>
+      <security>
+      <paragraph>
+        All the security considerations for "application/vnd.sqlite3" apply
+        to any type based on the sqlite3 format.
+      </paragraph>
+      <paragraph>
+        Each individual media type registered with a +sqlite3 suffix can have
+        additional security considerations. For example, if a specific
+        registration requires that certain extension functions are available,
+        or that blob fields contain data to be processed by other libraries or
+        external tools, or if only a single implementation exists to handle
+        a specific registered media type, then this increases the known attack
+        surface available to an attacker.
+      </paragraph>
+      </security>
+      <contact><xref type="person" data="SQLite_mailing_list"/></contact>
+      <controller><xref type="person" data="Clemens_Ladisch"/></controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2018-05-15">
+      <name>JSON Web Token (JWT)</name>
+      <suffix>+jwt</suffix>
+      <xref type="rfc" data="rfc7519">RFC7519, Section 3</xref>
+      <xref type="rfc" data="rfc8417">RFC8417, Section 7.2</xref>
+      <encoding>binary; JWT values are encoded as a
+        series of base64url-encoded values (with trailing '=' characters
+        removed), some of which may be the empty string, separated by
+        period ('.') characters.</encoding>
+      <interop>
+        <paragraph>
+          N/A
+        </paragraph>
+      </interop>
+      <fragment>
+        <paragraph>The syntax and semantics of fragment identifiers specified for
+          +jwt SHOULD be as specified for "application/jwt".  (At
+          publication of <xref type="rfc" data="rfc8417"/>, there is no fragment identification
+          syntax defined for "application/jwt".)
+        </paragraph>
+        <paragraph>
+          The syntax and semantics for fragment identifiers for a specific
+          "xxx/yyy+jwt" SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+          For cases defined in +jwt where the fragment identifier resolves
+          per the +jwt rules, process as specified in +jwt.
+        </paragraph>
+        <paragraph>
+          For cases defined in +jwt where the fragment identifier does not
+          resolve per the +jwt rules, process as specified in "xxx/yyy+jwt".
+        </paragraph>
+        <paragraph>
+          For cases not defined in +jwt, process as specified in "xxx/
+          yyy+jwt".
+        </paragraph>
+      </fragment>
+      <security>
+        <paragraph>
+          See Section 11 of <xref type="rfc" data="rfc7519"/>.
+        </paragraph>
+      </security>
+      <contact><xref type="person" data="Michael_B._Jones"/></contact>
+      <controller>Security Events Working Group.
+        The IESG has change control over this registration.</controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2018-06-14">
+      <name>gzip file storage and transfer format</name>
+      <suffix>+gzip</suffix>
+      <xref type="rfc" data="rfc1952"/>
+      <xref type="rfc" data="rfc6713"/>
+      <encoding>gzip is a binary encoding.</encoding>
+      <interop>
+        <paragraph>n/a</paragraph>
+      </interop>
+      <fragment>
+        <paragraph>
+          The syntax and semantics of
+          fragment identifiers specified for +gzip SHOULD be as specified for
+          "application/gzip".  (At publication of <xref type="rfc" data="rfc8460"/>, 
+          there is no fragment identification syntax defined for "application/gzip".)  
+          The syntax and semantics for fragment identifiers for a specific 
+          "xxx/yyy+gzip" SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+          For cases defined in +gzip, where the fragment identifier
+          resolves per the +gzip rules, process as specified in
+          +gzip.
+        </paragraph>
+        <paragraph>
+          For cases defined in +gzip, where the fragment identifier does
+          not resolve per the +gzip rules, process as specified in
+          "xxx/yyy+gzip".
+        </paragraph>
+        <paragraph>
+          For cases not defined in +gzip, process as specified in
+          "xxx/yyy+gzip".
+        </paragraph>
+      </fragment>
+      <security>
+        <paragraph>
+          gzip format doesn't provide confidentiality
+          protection.  Integrity protection is provided by an Adler-32
+          checksum, which is not cryptographically strong.  See also the security
+          considerations of <xref type="rfc" data="rfc6713"/>.  Each individual media type registered
+          with a +gzip suffix can have additional security considerations.
+          Additionally, gzip objects can contain multiple files and associated
+          paths.  File paths must be validated when the files are extracted; a
+          malicious file path could otherwise cause the extractor to overwrite
+          application or system files.
+        </paragraph>
+      </security>
+      <contact>art@ietf.org</contact>
+      <controller><xref type="person" data="IETF"/></controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2019-10-10">
+      <name>CBOR Sequence</name>
+      <suffix>+cbor-seq</suffix>
+      <xref type="rfc" data="rfc8742"/>
+      <encoding>binary</encoding>
+      <interop>
+        <paragraph>n/a</paragraph>
+      </interop>
+      <fragment>
+        <paragraph>
+		  The syntax and semantics of
+		  fragment identifiers specified for +cbor-seq SHOULD be as
+		  specified for "application/cbor-seq".  (At publication of <xref type="rfc" data="rfc8742"/>, 
+      there is no fragment identification syntax defined for
+		  "application/cbor-seq".)  
+		</paragraph>
+        <paragraph>
+		  The syntax and semantics for fragment identifiers for a
+		  specific "xxx/yyy+cbor-seq" SHOULD be processed as follows:
+        </paragraph>
+        <paragraph>
+		  For cases defined in +cbor-seq, where the fragment
+		  identifier resolves per the +cbor-seq rules, then process as
+		  specified in +cbor-seq.
+        </paragraph>
+        <paragraph>
+		  For cases defined in +cbor-seq, where the fragment
+		  identifier does not resolve per the +cbor-seq rules, then
+		  process as specified in "xxx/yyy+cbor-seq".
+        </paragraph>
+        <paragraph>
+		  For cases not defined in +cbor-seq, then process as
+		  specified in "xxx/yyy+cbor-seq".
+        </paragraph>
+      </fragment>
+      <security>
+        <paragraph>
+          See <xref type="rfc" data="rfc8742"/>, Section 5
+        </paragraph>
+      </security>
+      <contact><xref type="person" data="CBOR_WG_mailing_list"/></contact>
+      <controller><xref type="person" data="IETF"/></controller>
+      <mod-dates/>
+    </record>
+    
+    <record date="2020-05-19">
+      <name>Zstandard</name>
+      <suffix>+zstd</suffix>
+      <xref type="rfc" data="rfc8878"/>
+      <encoding>binary</encoding>
+      <interop>
+        <paragraph>N/A</paragraph>
+      </interop>
+      <fragment>
+        <paragraph>
+          The syntax and semantics of
+          fragment identifiers specified for +zstd should be as specified
+          for "application/zstd".
+        </paragraph>
+      </fragment>
+      <security>
+        <paragraph>
+          See Section 8 of <xref type="rfc" data="rfc8878"/>.
+        </paragraph>
+      </security>
+      <contact>Refer to the author for the 'application/zstd' media type.</contact>
+      <controller><xref type="person" data="IETF"/></controller>
+      <mod-dates/>
+    </record>
+  </registry>
+  
+  <people>
+    <person id="CBOR_WG_mailing_list">
+      <name>CBOR WG mailing list</name>
+      <uri>mailto:cbor&amp;ietf.org</uri>
+      <updated>2019-10-10</updated>
+    </person>
+    <person id="Clemens_Ladisch">
+      <name>Clemens Ladisch</name>
+      <uri>mailto:clemens&amp;ladisch.de</uri>
+      <updated>2018-02-12</updated>
+    </person>
+    <person id="IETF">
+      <name>IETF</name>
+      <uri>mailto:iesg&amp;ietf.org</uri>
+    </person>
+    <person id="John_Mudge">
+      <name>John Mudge</name>
+      <uri>mailto:helpdesk&amp;omaorg.org</uri>
+      <updated>2016-06-19</updated>
+    </person>
+    <person id="Michael_B._Jones">
+      <name>Michael B. Jones</name>
+      <uri>mailto:mbj&amp;microsoft.com</uri>
+      <updated>2018-05-15</updated>
+    </person>
+    <person id="Open_Mobile_Naming_Authority">
+      <name>Open Mobile Naming Authority (OMNA)</name>
+      <uri>mailto:helpdesk&amp;omaorg.org</uri>
+      <updated>2016-06-19</updated>
+    </person>
+    <person id="SQLite_mailing_list">
+      <name>SQLite mailing list</name>
+      <uri>mailto:sqlite-users&amp;mailinglists.sqlite.org</uri>
+      <updated>2018-02-12</updated>
+    </person>
+  </people>
+</registry>

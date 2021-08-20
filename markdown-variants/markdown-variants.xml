@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="markdown-variants.xsl"?>
+<?xml-model href="markdown-variants.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="markdown-variants">
+  <title>Markdown Variants</title>
+  <category>Multipurpose Internet Mail Extensions (MIME) and Media Types</category>
+  <created>2015-10-22</created>
+  <updated>2020-01-13</updated>
+
+  <registry id="variants">
+    <title>Markdown Variants</title>
+    <xref type="rfc" data="rfc7763"/>
+    <registration_rule>First Come First Served</registration_rule>
+    <note>While documentation is required, any level of documentation is sufficient. 
+Registrations can be updated with IETF Review.</note>
+    <note>The variant names Standard, Common, and Markdown are reserved and cannot be 
+registered.
+    </note>
+    
+    <record date="2015-10-22">
+      <identifier><file type="template">Original</file></identifier>
+      <name>Markdown</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7763"/>      
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">MultiMarkdown</file></identifier>
+      <name>MultiMarkdown</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">GFM</file></identifier>
+      <name>GitHub Flavored Markdown</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">pandoc</file></identifier>
+      <name>Pandoc</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">Fountain</file></identifier>
+      <name>Fountain</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">CommonMark</file></identifier>
+      <name>CommonMark</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">kramdown-rfc2629</file></identifier>
+      <name>Markdown for RFCs</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">rfc7328</file></identifier>
+      <name>Pandoc2rfc</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2015-10-26">
+      <identifier><file type="template">Extra</file></identifier>
+      <name>Markdown Extra</name>
+      <expiration/>
+      <xref type="rfc" data="rfc7764"/>
+    </record>
+    
+    <record date="2020-01-13">
+      <identifier><file type="template">SSW</file></identifier>
+      <name>Markdown for SSW</name>
+      <expiration/>
+      <xref type="person" data="Paulina_Ciupak"/>
+    </record>
+    
+  </registry>
+
+  <people>
+    <person id="Paulina_Ciupak">
+      <name>Paulina Ciupak</name>
+      <uri>mailto:polyna&amp;posteo.net</uri>
+      <updated>2020-01-13</updated>
+    </person>
+  </people>
+  
+</registry>

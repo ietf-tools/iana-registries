@@ -1,0 +1,597 @@
+<?xml version="1.0"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.iana.org/assignments">
+
+  <include href="../_support/iana-registry.rng"/>
+
+  <start>
+    <element name="registry">
+      <ref name="registryMeta"/>
+      
+      
+      <!--Message Types-->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+    <!-- TC Message-Type-specific Message TLV Types-->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- TC Message-Type-specific Address Block TLV Types-->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      
+      <!--Packet TLV Types-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+      <!--Message TLV Types-->       
+
+
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+      <!-- Type 0 Message TLV Type Extensions -->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><text/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+           
+      <!-- Type 1 Message TLV Type Extensions-->    
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+ 
+      <!-- Type 7 Message TLV Type Extensions -->     
+
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- Type 8 Message TLV Type Extensions -->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+
+      <!--HELLO Message-Type-specific Message TLV Types-->    
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+
+      <!--Address Block TLV Types-->   
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+      <!-- Type 0 Address Block TLV Type Extensions --> 
+
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- Type 1 Address Block TLV Type Extensions--> 
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- Type 2 Address Block TLV Type Extension --> 
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+     
+      <!-- Type 3 Address Block TLV Type Extensions --> 
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- Type 4 Address Block TLV Type Extensions --> 
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+     <!-- LINK_METRIC Address Block TLV Type Extensions -->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- Type 8 Address Block TLV Type Extensions -->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- Type 9 Address Block TLV Type Extensions -->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- GATEWAY Message Type Extensions-->     
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="name"><ref name="richText"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--HELLO Message-Type-specific Address Block TLV Types-->    
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--ICV Packet TLV Types-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--TimeStamp Packet TLV Types-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--ICV Message TLV Types-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--TimeStamp Message TLV Types-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- ICV Address Block TLV Type Extensions -->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!-- TIMESTAMP Address Block TLV Type Extensions -->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+ 
+      <!--Hash Functions-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <optional><element name="algorithm"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--Cryptographic Algorithm-->
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>            
+            <optional><element name="algorithm"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+  
+      <!--SMF_TYPE Message TLV Type Extensions-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>            
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--SMF_NBR_TYPE Address Block TLV Type Extensions-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+      
+      <!--SMF Relay Algorithm IDs-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <optional><element name="name"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+  
+        <!--LOCAL_IF TLV Values-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <optional><element name="name"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+ 
+    <!--LINK_STATUS TLV Values-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <optional><element name="name"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+    <!--OTHER_NEIGHB TLV Values-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="value"><ref name="genericRange"/></element>
+            <optional><element name="name"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+<!--MPR TLV Bit Values-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="bit"><text/></element>
+            <element name="value"><text/></element>
+            <optional><element name="name"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+<!--NBR_ADDR_TYPE Address Block TLV Bit Values-->        
+      
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
+            <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
+            <element name="bit"><ref name="genericRange"/></element>
+            <element name="value"><text/></element>
+            <optional><element name="name"><text/></element></optional>
+            <element name="description"><ref name="richText"/></element>
+            <ref name="references"/>
+          </element>
+        </zeroOrMore>
+      </element>
+
+    <ref name="people"/>
+    </element>
+    
+  </start>
+
+</grammar>

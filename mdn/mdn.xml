@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="mdn.xsl"?>
+<?xml-model href="mdn.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="mdn">
+  <title>Message Disposition Notification (MDN) Parameters</title>
+  <updated>2017-03-03</updated>
+  
+  <registry id="disp-mod">
+    <title>MDN-Disposition-modifier-names</title>
+    <xref type="rfc" data="rfc8098"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Tony Hansen</expert>
+    <record>
+      <value>Alternative-preferred</value>
+      <xref type="rfc" data="rfc3297"/>
+    </record>
+    <record>
+      <value>Original-lost</value>
+      <xref type="rfc" data="rfc3297"/>
+    </record>
+    <record>
+      <value>warning</value>
+      <xref type="rfc" data="rfc4130"/>
+    </record>
+  </registry>
+  
+  <registry id="disp-not-opt">
+    <title>MDN-Disposition-notification-option-names</title>
+    <xref type="rfc" data="rfc8098"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record>
+      <value>Alternative-available</value>
+      <xref type="rfc" data="rfc3297"/>
+    </record>
+    <record>
+      <value>Alternative-not-available</value>
+      <xref type="rfc" data="rfc3297"/>
+    </record>
+    <record>
+      <value>signed-receipt-protocol</value>
+      <xref type="rfc" data="rfc3335"/>
+    </record>
+    <record>
+      <value>signed-receipt-micalg</value>
+      <xref type="rfc" data="rfc3335"/>
+    </record>
+  </registry>
+  
+  <registry id="ext-field-names">
+    <title>MDN-Extension-field-names</title>
+    <xref type="rfc" data="rfc8098"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record>
+      <value>Received-content-MIC</value>
+      <description>Message Integrity Check value of sent document</description>
+      <xref type="rfc" data="rfc3335"/>
+    </record>
+  </registry>
+  
+  <people/>
+</registry>

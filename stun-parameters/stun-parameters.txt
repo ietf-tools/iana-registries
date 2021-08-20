@@ -1,0 +1,277 @@
+                                                Session Traversal Utilities for NAT (STUN) Parameters
+
+   Created
+           2008-08-01
+
+   Last Updated
+           2020-09-15
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * STUN Methods
+     * STUN Attributes
+     * STUN Error Codes
+     * Traversal Using Relays around NAT (TURN) Channel Numbers
+     * STUN Security Features
+     * STUN Password Algorithms
+
+STUN Methods
+
+   Expert(s)
+
+ Dan Wing
+
+   Reference
+           [RFC8489][RFC7983]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   0x000-0x07F IETF Review
+   0x080-0x0FF Expert Review
+
+      Value                                                            Name                                                            Reference
+   0x000       Reserved                                                                                                             [RFC8489]
+   0x001       Binding                                                                                                              [RFC8489]
+   0x002       Reserved; was SharedSecret prior to [RFC5389]                                                                        [RFC8489]
+   0x003       Allocate                                                                                                             [RFC8656]
+   0x004       Refresh                                                                                                              [RFC8656]
+   0x005       Unassigned
+   0x006       Send                                                                                                                 [RFC8656]
+   0x007       Data                                                                                                                 [RFC8656]
+   0x008       CreatePermission                                                                                                     [RFC8656]
+   0x009       ChannelBind                                                                                                          [RFC8656]
+   0x00A       Connect                                                                                                              [RFC6062]
+   0x00B       ConnectionBind                                                                                                       [RFC6062]
+   0x00C       ConnectionAttempt                                                                                                    [RFC6062]
+   0x00D-0x07F Unassigned
+   0x080       GOOG-PING                                                                                                            [Jonas_Oreland]
+   0x081-0x0FF Unassigned
+   0x100-0xFFF Reserved (For DTLS-SRTP multiplexing collision avoidance, see [RFC7983]. Cannot be made available for assignment     [RFC7983]
+               without IETF Review.)
+
+STUN Attributes
+
+   Expert(s)
+
+ Dan Wing
+
+   Reference
+           [RFC8489]
+
+   Available Formats
+           [IMG]
+           CSV
+
+       Range     Registration Procedures             Note
+   0x0000-0x3FFF IETF Review             comprehension-required range
+   0x4000-0x7FFF Expert Review           comprehension-required range
+   0x8000-0xBFFF IETF Review             comprehension-optional range
+   0xC000-0xFFFF Expert Review           comprehension-optional range
+
+       Value                           Name                                Reference
+      0x0000     Reserved                                          [RFC8489]
+      0x0001     MAPPED-ADDRESS                                    [RFC8489]
+      0x0002     Reserved; was RESPONSE-ADDRESS prior to [RFC5389] [RFC8489]
+      0x0003     Reserved; was CHANGE-REQUEST prior to [RFC5389]   [RFC5780][RFC Errata 4233]
+      0x0004     Reserved; was SOURCE-ADDRESS prior to [RFC5389]   [RFC8489]
+      0x0005     Reserved; was CHANGED-ADDRESS prior to [RFC5389]  [RFC8489]
+      0x0006     USERNAME                                          [RFC8489]
+      0x0007     Reserved; was PASSWORD prior to [RFC5389]         [RFC8489]
+      0x0008     MESSAGE-INTEGRITY                                 [RFC8489]
+      0x0009     ERROR-CODE                                        [RFC8489]
+      0x000A     UNKNOWN-ATTRIBUTES                                [RFC8489]
+      0x000B     Reserved; was REFLECTED-FROM prior to [RFC5389]   [RFC8489]
+      0x000C     CHANNEL-NUMBER                                    [RFC8656]
+      0x000D     LIFETIME                                          [RFC8656]
+   0x000E-0x000F Reserved
+      0x0010     Reserved (was BANDWIDTH)                          [RFC8656]
+      0x0011     Reserved
+      0x0012     XOR-PEER-ADDRESS                                  [RFC8656]
+      0x0013     DATA                                              [RFC8656]
+      0x0014     REALM                                             [RFC8489]
+      0x0015     NONCE                                             [RFC8489]
+      0x0016     XOR-RELAYED-ADDRESS                               [RFC8656]
+      0x0017     REQUESTED-ADDRESS-FAMILY                          [RFC8656]
+      0x0018     EVEN-PORT                                         [RFC8656]
+      0x0019     REQUESTED-TRANSPORT                               [RFC8656]
+      0x001A     DONT-FRAGMENT                                     [RFC8656]
+      0x001B     ACCESS-TOKEN                                      [RFC7635]
+      0x001C     MESSAGE-INTEGRITY-SHA256                          [RFC8489]
+      0x001D     PASSWORD-ALGORITHM                                [RFC8489]
+      0x001E     USERHASH                                          [RFC8489]
+   0x001F-0x001F Unassigned
+      0x0020     XOR-MAPPED-ADDRESS                                [RFC8489]
+      0x0021     Reserved (was TIMER-VAL)                          [RFC8656]
+      0x0022     RESERVATION-TOKEN                                 [RFC8656]
+      0x0023     Reserved
+      0x0024     PRIORITY                                          [RFC8445]
+      0x0025     USE-CANDIDATE                                     [RFC8445]
+      0x0026     PADDING                                           [RFC5780]
+      0x0027     RESPONSE-PORT                                     [RFC5780]
+   0x0028-0x0029 Reserved
+      0x002A     CONNECTION-ID                                     [RFC6062]
+   0x002B-0x002F Unassigned
+      0x0030     Reserved
+   0x0031-0x7FFF Unassigned
+      0x8000     ADDITIONAL-ADDRESS-FAMILY                         [RFC8656]
+      0x8001     ADDRESS-ERROR-CODE                                [RFC8656]
+      0x8002     PASSWORD-ALGORITHMS                               [RFC8489]
+      0x8003     ALTERNATE-DOMAIN                                  [RFC8489]
+      0x8004     ICMP                                              [RFC8656]
+   0x8005-0x8021 Unassigned
+      0x8022     SOFTWARE                                          [RFC8489]
+      0x8023     ALTERNATE-SERVER                                  [RFC8489]
+      0x8024     Reserved
+      0x8025     TRANSACTION_TRANSMIT_COUNTER                      [RFC7982]
+      0x8026     Reserved
+      0x8027     CACHE-TIMEOUT                                     [RFC5780]
+      0x8028     FINGERPRINT                                       [RFC8489]
+      0x8029     ICE-CONTROLLED                                    [RFC8445]
+      0x802A     ICE-CONTROLLING                                   [RFC8445]
+      0x802B     RESPONSE-ORIGIN                                   [RFC5780]
+      0x802C     OTHER-ADDRESS                                     [RFC5780]
+      0x802D     ECN-CHECK STUN                                    [RFC6679]
+      0x802E     THIRD-PARTY-AUTHORIZATION                         [RFC7635]
+      0x802F     Unassigned
+      0x8030     MOBILITY-TICKET                                   [RFC8016]
+   0x8031-0xBFFF Unassigned
+      0xC000     CISCO-STUN-FLOWDATA                               [Dan_Wing]
+      0xC001     ENF-FLOW-DESCRIPTION                              [Pål_Erik_Martinsen]
+      0xC002     ENF-NETWORK-STATUS                                [Pål_Erik_Martinsen]
+   0xC003-0xC056 Unassigned
+      0xC057     GOOG-NETWORK-INFO                                 [Jonas_Oreland]
+      0xC058     GOOG-LAST-ICE-CHECK-RECEIVED                      [Jonas_Oreland]
+      0xC059     GOOG-MISC-INFO                                    [Jonas_Oreland]
+      0xC05A     GOOG-OBSOLETE-1                                   [Jonas_Oreland]
+      0xC05B     GOOG-CONNECTION-ID                                [Jonas_Oreland]
+      0xC05C     GOOG-DELTA                                        [Jonas_Oreland]
+      0xC05D     GOOG-DELTA-ACK                                    [Jonas_Oreland]
+   0xC05E-0xC05F Unassigned
+      0xC060     GOOG-MESSAGE-INTEGRITY-32                         [Jonas_Oreland]
+   0xC061-0xFFFF Unassigned
+
+STUN Error Codes
+
+   Registration Procedure(s)
+
+ IETF Review
+
+   Reference
+           [RFC8489]
+
+   Available Formats
+           [IMG]
+           CSV
+
+    Value               Name              Reference
+    0-299  Reserved
+     300   Try Alternate                  [RFC8489]
+   301-399 Unassigned
+     400   Bad Request                    [RFC8489]
+     401   Unauthenticated                [RFC8489]
+     402   Unassigned
+     403   Forbidden                      [RFC8656]
+     404   Unassigned
+     405   Mobility Forbidden             [RFC8016]
+   406-419 Unassigned
+     420   Unknown Attribute              [RFC8489]
+   421-436 Unassigned
+     437   Allocation Mismatch            [RFC8656]
+     438   Stale Nonce                    [RFC8489]
+     439   Unassigned
+     440   Address Family not Supported   [RFC8656]
+     441   Wrong Credentials              [RFC8656]
+     442   Unsupported Transport Protocol [RFC8656]
+     443   Peer Address Family Mismatch   [RFC8656]
+   444-445 Unassigned
+     446   Connection Already Exists      [RFC6062]
+     447   Connection Timeout or Failure  [RFC6062]
+   448-485 Unassigned
+     486   Allocation Quota Reached       [RFC8656]
+     487   Role Conflict                  [RFC8445]
+   488-499 Unassigned
+     500   Server Error                   [RFC8489]
+   501-507 Unassigned
+     508   Insufficient Capacity          [RFC8656]
+   509-699 Unassigned
+
+Traversal Using Relays around NAT (TURN) Channel Numbers
+
+   Registration Procedure(s)
+
+ Standards Action
+
+   Reference
+           [RFC7983][RFC8656]
+
+   Note
+
+ Values 0x0000 through 0x3FFF are not available for use, since they conflict
+ with the STUN header.
+
+
+   Available Formats
+           [IMG]
+           CSV
+
+       Value                                       Name                                   Reference
+   0x0000-0x3FFF Reserved                                                                 [RFC8656]
+   0x4000-0x4FFF Used by TURN                                                             [RFC8656]
+   0x5000-0xFFFF Reserved (For DTLS-SRTP multiplexing collision avoidance, see [RFC7983]) [RFC7983]
+
+STUN Security Features
+
+   Registration Procedure(s)
+
+ Standards Action
+
+   Reference
+           [RFC8489]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit         Name         Reference
+    0   Password algorithms [RFC8489]
+    1   Username anonymity  [RFC8489]
+   2-23 Unassigned
+
+STUN Password Algorithms
+
+   Expert(s)
+
+ Dan Wing
+
+   Reference
+           [RFC8489]
+
+   Available Formats
+           [IMG]
+           CSV
+
+       Range     Registration Procedures
+   0x0000-0x7FFF IETF Review
+   0x8000-0xFFFF Expert Review
+
+       Value        Name    Reference
+      0x0000     Reserved   [RFC8489]
+      0x0001     MD5        [RFC8489]
+      0x0002     SHA-256    [RFC8489]
+   0x0003-0xFFFF Unassigned
+
+                                                                 Contact Information
+
+            ID                 Name               Contact URI        Last Updated
+   [Dan_Wing]           Dan Wing           mailto:dwing&cisco.com    2008-10-30
+   [Jonas_Oreland]      Jonas Oreland      mailto:jonaso&google.com  2020-09-15
+   [Pål_Erik_Martinsen] Pål-Erik Martinsen mailto:palmarti&cisco.com 2016-04-20

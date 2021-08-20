@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="webpush-parameters.xsl"?>
+<?xml-model href="webpush-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="webpush-parameters">
+  <title>Web Push Parameters</title>
+  <created>2016-11-02</created>
+  <updated>2017-12-26</updated>
+
+  <registry id="identifiers">
+    <title>Web Push Identifiers</title>
+    <xref type="rfc" data="rfc8030"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record date="2016-11-02">
+      <value>urn:ietf:params:push</value>
+      <description>This link relation type is used to identify a resource
+        for sending push messages.</description>
+      <contact>The WEBPUSH WG of the IETF (webpush@ietf.org)</contact>
+      <index>N/A</index>
+      <xref type="rfc" data="rfc8030"/>
+    </record>
+    <record date="2016-11-02">
+      <value>urn:ietf:params:push:set</value>
+      <description>This link relation type is used to identify a
+        collection of push message subscriptions.</description>
+      <contact>The WEBPUSH WG of the IETF (webpush@ietf.org)</contact>
+      <index>N/A</index>
+      <xref type="rfc" data="rfc8030"/>
+    </record>
+    <record date="2016-11-02">
+      <value>urn:ietf:params:push:receipt</value>
+      <description>This link relation type is used to identify a resource
+        for receiving delivery confirmations for push messages.</description>
+      <contact>The WEBPUSH WG of the IETF (webpush@ietf.org)</contact>
+      <index>N/A</index>
+      <xref type="rfc" data="rfc8030"/>
+    </record>
+  </registry>
+  
+  <registry id="vapid-authentication-scheme-parameters">
+    <title>VAPID Authentication Scheme Parameters</title>
+    <xref type="rfc" data="rfc8292"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Martin Thomson</expert>
+    <record date="2017-10-19">
+      <value>t</value>
+      <description>JWT authentication token</description>
+      <header>Authorization</header>
+      <xref type="rfc" data="rfc8292">RFC 8292, Section 3.1</xref>
+    </record>
+    <record date="2017-10-19">
+      <value>k</value>
+      <description>signing key</description>
+      <header>Authorization</header>
+      <xref type="rfc" data="rfc8292">RFC 8292, Section 3.2</xref>
+    </record>
+  </registry>
+  
+  <people/>
+</registry>

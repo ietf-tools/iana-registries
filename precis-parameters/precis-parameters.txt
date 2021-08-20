@@ -1,0 +1,59 @@
+                                     Preparation and Comparison of Internationalized Strings (PRECIS) Parameters
+
+   Created
+           2015-03-06
+
+   Last Updated
+           2017-10-09
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * PRECIS Base Classes
+     * PRECIS Profiles
+
+PRECIS Base Classes
+
+   Registration Procedure(s)
+
+ RFC Required
+
+   Reference
+           [RFC8264]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Base Class      Description                                                                                               Reference
+   FreeformClass   A sequence of letters, numbers, symbols, spaces, and other code points that is used for free-form         [RFC8264, Section 4.3]
+                   strings.
+   IdentifierClass A sequence of letters, numbers, and symbols that is used to identify or address a network entity.         [RFC8264, Section 4.2]
+
+PRECIS Profiles
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Peter Saint-Andre (primary), Pete Resnick (secondary), Andrew Sullivan (backup)
+
+   Reference
+           [RFC8264]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Name                  Base Class      Replaces                           Template                           Reference
+   UsernameCaseMapped    IdentifierClass The SASLprep profile of Stringprep profiles/UsernameCaseMapped.txt    [RFC8265, Section 3.3]
+   UsernameCasePreserved IdentifierClass The SASLprep profile of Stringprep profiles/UsernameCasePreserved.txt [RFC8265, Section 3.4]
+   OpaqueString          FreeformClass   The SASLprep profile of Stringprep profiles/OpaqueString.txt          [RFC8265, Section 4.2]
+   Nickname              FreeformClass   None                               profiles/Nickname.txt              [RFC8266]

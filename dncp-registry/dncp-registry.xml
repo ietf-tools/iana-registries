@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="dncp-registry.xsl"?>
+<?xml-model href="dncp-registry.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="dncp-registry">
+  <title>Distributed Node Consensus Protocol (DNCP)</title>
+  <created>2015-11-03</created>
+  <updated>2016-04-21</updated>
+
+  <registry id="tlv-types">
+    <title>DNCP TLV Types</title>
+    <xref type="rfc" data="rfc7787"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record date="2015-11-03">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>1</value>
+      <description>Request network state</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>2</value>
+      <description>Request node state</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>3</value>
+      <description>Node endpoint</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>4</value>
+      <description>Network state</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>5</value>
+      <description>Node state</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>6</value>
+      <description>Reserved for future use (was: Custom)</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>7</value>
+      <description>Reserved for future use (was: Fragment count)</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>8</value>
+      <description>Peer</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>9</value>
+      <description>Keep-alive interval</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>10</value>
+      <description>Trust-Verdict</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record>
+      <value>11-31</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-11-03">
+      <value>32-511</value>
+      <description>Reserved for per-DNCP profile use</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record>
+      <value>512-767</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-11-03">
+      <value>768-1023</value>
+      <description>Reserved for Private Use</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+    <record date="2015-11-03">
+      <value>1024-65535</value>
+      <description>Reserved for future use</description>
+      <xref type="rfc" data="rfc7787"/>
+    </record>
+  </registry>
+
+  <registry id="hncp-tlv-types">
+    <title>HNCP TLV Types</title>
+    <xref type="rfc" data="rfc7788"/>
+    <registration_rule>RFC Required</registration_rule>
+    <record date="2016-01-05">
+      <value>32</value>
+      <description>HNCP-Version</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>33</value>
+      <description>External-Connection</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>34</value>
+      <description>Delegated-Prefix</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>35</value>
+      <description>Assigned-Prefix</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>36</value>
+      <description>Node-Address</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>37</value>
+      <description>DHCPv4-Data</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>38</value>
+      <description>DHCPv6-Data</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>39</value>
+      <description>DNS-Delegated-Zone</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>40</value>
+      <description>Domain-Name</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>41</value>
+      <description>Node-Name</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>42</value>
+      <description>Managed-PSK</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>43</value>
+      <description>Prefix-Policy</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+    <record date="2016-01-05">
+      <value>44-511</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-01-05">
+      <value>768-1023</value>
+      <description>Reserved for Private Use</description>
+      <xref type="rfc" data="rfc7788"/>
+    </record>
+  </registry>
+
+  <people/>
+</registry>

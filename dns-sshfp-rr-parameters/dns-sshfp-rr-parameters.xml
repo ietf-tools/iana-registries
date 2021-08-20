@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="dns-sshfp-rr-parameters.xsl"?>
+<?xml-model href="dns-sshfp-rr-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="dns-sshfp-rr-parameters">
+  <title>DNS SSHFP Resource Record Parameters</title>
+  <category>Domain Name System (DNS) Parameters</category>
+  <created>2003-09-19</created>
+  <updated>2020-02-25</updated>
+  <registry id="dns-sshfp-rr-parameters-1">
+    <title>SSHFP RR Types for public key algorithms</title>
+    <xref type="rfc" data="rfc4255"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record>
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc4255"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>RSA</description>
+      <xref type="rfc" data="rfc4255"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>DSA</description>
+      <xref type="rfc" data="rfc4255"/>
+    </record>
+    <record>
+      <value>3</value>
+      <description>ECDSA</description>
+      <xref type="rfc" data="rfc6594"/>
+    </record>
+    <record date="2014-05-09" updated="2015-03-03">
+      <value>4</value>
+      <description>Ed25519</description>
+      <xref type="rfc" data="rfc7479"/>
+    </record>
+    <record>
+      <value>5</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2014-05-09" updated="2015-03-03">
+      <value>6</value>
+      <description>Ed448</description>
+      <xref type="rfc" data="rfc8709"/>
+    </record>
+  </registry>
+  <registry id="dns-sshfp-rr-parameters-2">
+    <title>SSHFP RR types for fingerprint types</title>
+    <xref type="rfc" data="rfc4255"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record>
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc4255"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>SHA-1</description>
+      <xref type="rfc" data="rfc4255"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>SHA-256</description>
+      <xref type="rfc" data="rfc6594"/>
+    </record>
+  </registry>
+  <people/>
+</registry>

@@ -1,0 +1,162 @@
+                                                        JSON Meta Application Protocol (JMAP)
+
+   Created
+           2019-03-28
+
+   Last Updated
+           2021-03-26
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * JMAP Capabilities
+     * JMAP Error Codes
+
+JMAP Capabilities
+
+   Expert(s)
+
+ Neil Jenkins, Chris Newman
+
+   Reference
+           [RFC8620]
+
+   Available Formats
+           [IMG]
+           CSV
+
+                        Range                      Registration Procedures
+   intended use field is “common" or “placeholder” Specification Required
+   all other values                                Expert Review
+
+              Capability Name            Intended Use Change Controller Security and Privacy Considerations       Reference
+   urn:ietf:params:jmap:core             common       IETF              [RFC8620, Section 8]                [RFC8620, Section 2]
+   urn:ietf:params:jmap:error:           placeholder  IETF              [RFC8620, Section 8]                [RFC8620, Section 9.5]
+   urn:ietf:params:jmap:mail             common       IETF              [RFC8621, Section 9]                [RFC8621]
+   urn:ietf:params:jmap:mdn              common       IETF              [RFC9007, Section 5]                [RFC9007]
+   urn:ietf:params:jmap:submission       common       IETF              [RFC8621, Section 9]                [RFC8621]
+   urn:ietf:params:jmap:vacationresponse common       IETF              [RFC8621, Section 9]                [RFC8621]
+
+JMAP Error Codes
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Neil Jenkins, Chris Newman
+
+   Reference
+           [RFC8620]
+
+   Available Formats
+           [IMG]
+           CSV
+
+           JMAP Error Code         Intended Use Change Controller                       Description                               Reference
+   accountNotFound                 common       IETF              The accountId does not correspond to a valid account.    [RFC8620, Section 3.6.2]
+   accountNotSupportedByMethod     common       IETF              The accountId given corresponds to a valid account, but  [RFC8620, Section 3.6.2]
+                                                                  the account does not support this method or data type.
+                                                                  This method modifies state, but the account is read-only
+   accountReadOnly                 common       IETF              (as returned on the corresponding Account object in the  [RFC8620, Section 3.6.2]
+                                                                  JMAP Session resource).
+   anchorNotFound                  common       IETF              An anchor argument was supplied, but it cannot be found  [RFC8620, Section 5.5]
+                                                                  in the results of the query.
+                                                                  The server forbids duplicates, and the record already
+   alreadyExists                   common       IETF              exists in the target account. An existingId property of  [RFC8620, Section 5.4]
+                                                                  type Id MUST be included on the SetError object with the
+                                                                  id of the existing record.
+   cannotCalculateChanges          common       IETF              The server cannot calculate the changes from the state   [RFC8620, Section 5.2
+                                                                  string given by the client.                              and 5.6]
+   forbidden                       common       IETF              The action would violate an ACL or other permissions     [RFC8620, Section 3.6.2,
+                                                                  policy.                                                  5.3, and 7.2.1]
+   fromAccountNotFound             common       IETF              The fromAccountId does not correspond to a valid         [RFC8620, Section 5.4
+                                                                  account.                                                 and 6.3]
+   fromAccountNotSupportedByMethod common       IETF              The fromAccountId given corresponds to a valid account,  [RFC8620, Section 5.4]
+                                                                  but the account does not support this data type.
+   invalidArguments                common       IETF              One of the arguments is of the wrong type or otherwise   [RFC8620, Section 3.6.2]
+                                                                  invalid, or a required argument is missing.
+   invalidPatch                    common       IETF              The PatchObject given to update the record was not a     [RFC8620, Section 5.3]
+                                                                  valid patch.
+   invalidProperties               common       IETF              The record given is invalid.                             [RFC8620, Section 5.3]
+   notFound                        common       IETF              The id given cannot be found.                            [RFC8620, Section 5.3]
+                                                                  The content type of the request was not
+   notJSON                         common       IETF              application/json, or the request did not parse as        [RFC8620, Section 3.6.1]
+                                                                  I-JSON.
+   notRequest                      common       IETF              The request parsed as JSON but did not match the type    [RFC8620, Section 3.6.1]
+                                                                  signature of the Request object.
+   overQuota                       common       IETF              The create would exceed a server-defined limit on the    [RFC8620, Section 5.3]
+                                                                  number or total size of objects of this type.
+                                                                  Too many objects of this type have been created
+   rateLimit                       common       IETF              recently, and a server-defined rate limit has been       [RFC8620, Section 5.3]
+                                                                  reached. It may work if tried again later.
+                                                                  The total number of actions exceeds the maximum number   [RFC8620, Section 5.1
+   requestTooLarge                 common       IETF              the server is willing to process in a single method      and 5.3]
+                                                                  call.
+   invalidResultReference          common       IETF              The method used a result reference for one of its        [RFC8620, Section 3.6.2]
+                                                                  arguments, but this failed to resolve.
+                                                                  An unexpected or unknown error occurred during the
+   serverFail                      common       IETF              processing of the call. The method call made no changes  [RFC8620, Section 3.6.2]
+                                                                  to the server's state.
+                                                                  Some, but not all, expected changes described by the
+   serverPartialFail               limited      IETF              method occurred. The client MUST resynchronise impacted  [RFC8620, Section 3.6.2]
+                                                                  data to determine the server state.
+                                                                  Some internal server resource was temporarily
+   serverUnavailable               common       IETF              unavailable. Attempting the same operation later         [RFC8620, Section 3.6.2]
+                                                                  (perhaps after a backoff with a random factor) may
+                                                                  succeed.
+   singleton                       common       IETF              This is a singleton type, so you cannot create another   [RFC8620, Section 5.3]
+                                                                  one or destroy the existing one.
+   stateMismatch                   common       IETF              An ifInState argument was supplied, and it does not      [RFC8620, Section 5.3]
+                                                                  match the current state.
+                                                                  The action would result in an object that exceeds a
+   tooLarge                        common       IETF              server-defined limit for the maximum size of a single    [RFC8620, Section 5.3]
+                                                                  object of this type.
+   tooManyChanges                  common       IETF              There are more changes than the client's maxChanges      [RFC8620, Section 5.6]
+                                                                  argument.
+   unknownCapability               common       IETF              The client included a capability in the "using" property [RFC8620, Section 3.6.1]
+                                                                  of the request that the server does not support.
+   unknownMethod                   common       IETF              The server does not recognise this method name.          [RFC8620, Section 3.6.2]
+   unsupportedFilter               common       IETF              The filter is syntactically valid, but the server cannot [RFC8620, Section 5.5]
+                                                                  process it.
+                                                                  The sort is syntactically valid but includes a property
+   unsupportedSort                 common       IETF              the server does not support sorting on or a collation    [RFC8620, Section 5.5]
+                                                                  method it does not recognise.
+                                                                  The client requested an object be both updated and
+   willDestroy                     common       IETF              destroyed in the same /set request, and the server has   [RFC8620, Section 5.3]
+                                                                  decided to therefore ignore the update.
+                                                                  The Mailbox still has at least one child Mailbox. The
+   mailboxHasChild                 common       IETF              client MUST remove these before it can delete the parent [RFC8621, Section 2.5]
+                                                                  Mailbox.
+   mailboxHasEmail                 common       IETF              The Mailbox has at least one message assigned to it, and [RFC8621, Section 2.5]
+                                                                  the onDestroyRemoveEmails argument was false.
+   blobNotFound                    common       IETF              At least one blob id referenced in the object doesn't    [RFC8621, Section 4.6]
+                                                                  exist.
+   tooManyKeywords                 common       IETF              The change to the Email's keywords would exceed a        [RFC8621, Section 4.6]
+                                                                  server-defined maximum.
+   tooManyMailboxes                common       IETF              The change to the set of Mailboxes that this Email is in [RFC8621, Section 4.6]
+                                                                  would exceed a server-defined maximum.
+   invalidEmail                    common       IETF              The Email to be sent is invalid in some way.             [RFC8621, Section 7.5]
+   tooManyRecipients               common       IETF              The envelope [RFC5321] (supplied or generated) has more  [RFC8621, Section 7.5]
+                                                                  recipients than the server allows.
+   noRecipients                    common       IETF              The envelope [RFC5321] (supplied or generated) does not  [RFC8621, Section 7.5]
+                                                                  have any rcptTo email addresses.
+                                                                  The rcptTo property of the envelope [RFC5321] (supplied
+   invalidRecipients               common       IETF              or generated) contains at least one rcptTo value that is [RFC8621, Section 7.5]
+                                                                  not a valid email address for sending to.
+   forbiddenMailFrom               common       IETF              The server does not permit the user to send a message    [RFC8621, Section 7.5]
+                                                                  with this envelope From address [RFC5321].
+                                                                  The server does not permit the user to send a message    [RFC8621, Sections 6.3
+   forbiddenFrom                   common       IETF              with the From header field [RFC5322] of the message to   and 7.5]
+                                                                  be sent.
+   forbiddenToSend                 common       IETF              The user does not have permission to send at all right   [RFC8621, Section 7.5]
+                                                                  now.
+                                                                  The message has the "$mdnsent" keyword already set. The
+   mdnAlreadySent                  common       IETF              client MUST NOT try again to send an MDN for this        [RFC9007, Section 2.1]
+                                                                  message.

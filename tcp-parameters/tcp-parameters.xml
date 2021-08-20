@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="tcp-parameters.xsl"?>
+<?xml-model href="tcp-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="tcp-parameters">
+  <title>Transmission Control Protocol (TCP) Parameters</title>
+  <updated>2021-02-19</updated>
+  <registry id="tcp-parameters-1">
+    <title>TCP Option Kind Numbers</title>
+    <xref type="rfc" data="rfc2780"/>
+    <registration_rule>Standards Action or IESG Approval</registration_rule>
+    <note>The Transmission Control Protocol (TCP) has provision for optional
+header fields identified by an option kind field.  Options 0 and 1 are
+exactly one octet which is their kind field.  All other options have
+their one octet kind field, followed by a one octet length field,
+followed by length-2 octets of option data.
+
+[*] It is only appropriate to use these values in explicitly-
+    configured experiments; they MUST NOT be shipped as defaults in
+    implementations.  See <xref type="rfc" data="rfc3692"/> for details.
+    
+[**] These values have been deployed in the Internet without proper
+    IANA assignment. At some point, these numbers may be officially
+    allocated for some new purpose. It is therefore strongly recommended
+    that implementers migrate to mechanisms with IANA-assigned values to
+    avoid potential issues with their systems or products at a later point.
+
+[***] This value has been deployed on the Internet in ways that are 
+    not compatible with the documented use in this IANA allocation. 
+
+    </note>
+    <record>
+      <value>0</value>
+      <length>-</length>
+      <description>End of Option List</description>
+      <xref type="rfc" data="rfc793"/>
+    </record>
+    <record>
+      <value>1</value>
+      <length>-</length>
+      <description>No-Operation</description>
+      <xref type="rfc" data="rfc793"/>
+    </record>
+    <record>
+      <value>2</value>
+      <length>4</length>
+      <description>Maximum Segment Size</description>
+      <xref type="rfc" data="rfc793"/>
+    </record>
+    <record>
+      <value>3</value>
+      <length>3</length>
+      <description>Window Scale</description>
+      <xref type="rfc" data="rfc7323"/>
+    </record>
+    <record>
+      <value>4</value>
+      <length>2</length>
+      <description>SACK Permitted</description>
+      <xref type="rfc" data="rfc2018"/>
+    </record>
+    <record>
+      <value>5</value>
+      <length>N</length>
+      <description>SACK</description>
+      <xref type="rfc" data="rfc2018"/>
+    </record>
+    <record>
+      <value>6</value>
+      <length>6</length>
+      <description>Echo (obsoleted by option 8)</description>
+      <xref type="rfc" data="rfc1072"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>7</value>
+      <length>6</length>
+      <description>Echo Reply (obsoleted by option 8)</description>
+      <xref type="rfc" data="rfc1072"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>8</value>
+      <length>10</length>
+      <description>Timestamps</description>
+      <xref type="rfc" data="rfc7323"/>
+    </record>
+    <record>
+      <value>9</value>
+      <length>2</length>
+      <description>Partial Order Connection Permitted (obsolete)</description>
+      <xref type="rfc" data="rfc1693"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>10</value>
+      <length>3</length>
+      <description>Partial Order Service Profile (obsolete)</description>
+      <xref type="rfc" data="rfc1693"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>11</value>
+      <description>CC (obsolete)</description>
+      <xref type="rfc" data="rfc1644"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>12</value>
+      <description>CC.NEW (obsolete)</description>
+      <xref type="rfc" data="rfc1644"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>13</value>
+      <description>CC.ECHO (obsolete)</description>
+      <xref type="rfc" data="rfc1644"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>14</value>
+      <length>3</length>
+      <description>TCP Alternate Checksum Request (obsolete)</description>
+      <xref type="rfc" data="rfc1146"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record>
+      <value>15</value>
+      <length>N</length>
+      <description>TCP Alternate Checksum Data (obsolete)</description>
+      <xref type="rfc" data="rfc1146"/>
+      <xref type="rfc" data="rfc6247"/>
+    </record>
+    <record date="1995-03">
+      <value>16</value>
+      <description>Skeeter</description>
+      <xref type="person" data="Stev_Knowles"/>
+    </record>
+    <record date="1995-03">
+      <value>17</value>
+      <description>Bubba</description>
+      <xref type="person" data="Stev_Knowles"/>
+    </record>
+    <record date="1994-09">
+      <value>18</value>
+      <length>3</length>
+      <description>Trailer Checksum Option</description>
+      <xref type="person" data="Subbu_Subramaniam"/>
+      <xref type="person" data="Monroe_Bridges"/>
+    </record>
+    <record>
+      <value>19</value>
+      <length>18</length>
+      <description>MD5 Signature Option (obsoleted by option 29)</description>
+      <xref type="rfc" data="rfc2385"/>
+    </record>
+    <record date="1999-02">
+      <value>20</value>
+      <description>SCPS Capabilities</description>
+      <xref type="person" data="Keith_Scott"/>
+    </record>
+    <record date="1999-02">
+      <value>21</value>
+      <description>Selective Negative Acknowledgements</description>
+      <xref type="person" data="Keith_Scott"/>
+    </record>
+    <record date="1999-02">
+      <value>22</value>
+      <description>Record Boundaries</description>
+      <xref type="person" data="Keith_Scott"/>
+    </record>
+    <record date="1999-02">
+      <value>23</value>
+      <description>Corruption experienced</description>
+      <xref type="person" data="Keith_Scott"/>
+    </record>
+    <record date="1999-02">
+      <value>24</value>
+      <description>SNAP</description>
+      <xref type="person" data="Vladimir_Sukonnik"/>
+    </record>
+    <record>
+      <value>25</value>
+      <description>Unassigned (released 2000-12-18)</description>
+    </record>
+    <record date="2000-03">
+      <value>26</value>
+      <description>TCP Compression Filter</description>
+      <xref type="person" data="Steve_Bellovin"/>
+    </record>
+    <record>
+      <value>27</value>
+      <length>8</length>
+      <description>Quick-Start Response</description>
+      <xref type="rfc" data="rfc4782"/>
+    </record>
+    <record>
+      <value>28</value>
+      <length>4</length>
+      <description>User Timeout Option (also, other known unauthorized use) [***]<xref type="note" data="1"/></description>
+      <xref type="rfc" data="rfc5482"/>
+    </record>
+    <record>
+      <value>29</value>
+      <description>TCP Authentication Option (TCP-AO)</description>
+      <xref type="rfc" data="rfc5925"/>
+    </record>
+    <record updated="2019-07-26">
+      <value>30</value>
+      <length>N</length>
+      <description>Multipath TCP (MPTCP)</description>
+      <xref type="rfc" data="rfc8684"/>
+    </record>
+    <record>
+      <value>31</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record>
+      <value>32</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record>
+      <value>33</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record date="2014-10-07">
+      <value>34</value>
+      <length>variable</length>
+      <description>TCP Fast Open Cookie</description>
+      <xref type="rfc" data="rfc7413"/>
+    </record>
+    <record>
+      <value>35-68</value>
+      <description>Reserved</description>
+    </record>
+    <record>
+      <value>69</value>
+      <length>N</length>
+      <description>Encryption Negotiation (TCP-ENO)</description>
+      <xref type="rfc" data="rfc8547"/>
+    </record>
+    <record>
+      <value>70</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record>
+      <value>71-75</value>
+      <description>Reserved</description>
+    </record>
+    <record>
+      <value>76</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record>
+      <value>77</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record>
+      <value>78</value>
+      <description>Reserved (known unauthorized use without proper IANA assignment) [**]</description>
+    </record>
+    <record>
+      <value>79-252</value>
+      <description>Reserved</description>
+    </record>
+    <record>
+      <value>253</value>
+      <length>N</length>
+      <description>RFC3692-style Experiment 1 (also improperly used for shipping
+        products) [*]</description>
+      <xref type="rfc" data="rfc4727"/>
+    </record>
+    <record>
+      <value>254</value>
+      <length>N</length>
+      <description>RFC3692-style Experiment 2 (also improperly used for shipping
+        products) [*]</description>
+      <xref type="rfc" data="rfc4727"/>
+    </record>
+  </registry>
+  
+  <registry id="tcp-parameters-2">
+    <title>TCP Alternate Checksum Numbers</title>
+    <xref type="rfc" data="rfc1146"/>
+    <registration_rule>Not defined</registration_rule>
+    <record>
+      <value>0</value>
+      <description>TCP Checksum</description>
+      <xref type="rfc" data="rfc1146"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>8-bit Fletchers's algorithm</description>
+      <xref type="rfc" data="rfc1146"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>16-bit Fletchers's algorithm</description>
+      <xref type="rfc" data="rfc1146"/>
+    </record>
+    <record date="1994-09">
+      <value>3</value>
+      <description>Redundant Checksum Avoidance</description>
+      <xref type="person" data="J_Kay"/>
+    </record>
+  </registry>
+  
+  <registry id="tcp-parameters-3">
+    <title>Cryptographic Algorithms for TCP-AO Registration</title>
+    <xref type="rfc" data="rfc5926"/>
+    <registration_rule>RFC Publication After Expert Review</registration_rule>
+    <record>
+      <description>SHA1</description>
+      <xref type="rfc" data="rfc5926"/>
+    </record>
+    <record>
+      <description>AES128</description>
+      <xref type="rfc" data="rfc5926"/>
+    </record>
+  </registry>
+  
+  <registry id="mptcp-option-subtypes">
+    <title>MPTCP Option Subtypes</title>
+    <xref type="rfc" data="rfc8684"/>
+    <registration_rule>Standards Action</registration_rule>
+    <note>This registry specifies the MPTCP Option Subtypes for MPTCP v1,
+which obsoletes the Experimental MPTCP v0.  For the MPTCP v0
+subtypes, please refer to <xref type="rfc" data="rfc6824"/>.</note>
+    <record updated="2019-07-26">
+      <value>0x0</value>
+      <symbol>MP_CAPABLE</symbol>
+      <description>Multipath Capable</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.1</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>0x1</value>
+      <symbol>MP_JOIN</symbol>
+      <description>Join Connection</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.2</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>0x2</value>
+      <symbol>DSS</symbol>
+      <description>Data Sequence Signal (Data ACK and Data Sequence Mapping)</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.3</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>0x3</value>
+      <symbol>ADD_ADDR</symbol>
+      <description>Add Address</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.4.1</xref></spec>
+    </record> 
+    <record updated="2019-07-26">
+      <value>0x4</value>
+      <symbol>REMOVE_ADDR</symbol>
+      <description>Remove Address</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.4.2</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>0x5</value>
+      <symbol>MP_PRIO</symbol>
+      <description>Change Subflow Priority</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.3.8</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>0x6</value>
+      <symbol>MP_FAIL</symbol>
+      <description>Fallback</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.7</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>0x7</value>
+      <symbol>MP_FASTCLOSE</symbol>
+      <description>Fast Close</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.5</xref></spec>
+    </record>
+    <record date="2019-07-26">
+      <value>0x8</value>
+      <symbol>MP_TCPRST</symbol>
+      <description>Subflow Reset</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></spec>
+    </record>
+    <record>
+      <value>0x9-0xe</value>
+      <symbol>Unassigned</symbol>
+      <description/>
+      <spec/>
+    </record>
+    <record updated="2019-07-26">
+      <value>0xf</value>
+      <symbol>Reserved for Private Use</symbol>
+      <description/>
+      <spec><xref type="rfc" data="rfc8684"/></spec>
+    </record>
+  </registry>
+  
+  <registry id="mptcp-handshake">
+    <title>MPTCP Handshake Algorithms</title>
+    <xref type="rfc" data="rfc8684"/>
+    <registration_rule>Standards Action</registration_rule>
+    <note>This registry specifies the MPTCP Handshake Algorithms for
+MPTCP v1, which obsoletes the Experimental MPTCP v0.  For the MPTCP
+v0 subtypes, please refer to <xref type="rfc" data="rfc6824"/>.</note>
+    <record updated="2019-07-26">
+      <value>A</value>
+      <description>Checksum required</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.1</xref></spec>
+    </record>
+    <record updated="2019-07-26">
+      <value>B</value>
+      <description>Extensibility</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.1</xref></spec>
+    </record>
+    <record date="2019-07-26">
+      <value>C</value>
+      <description>Do not attempt to establish new subflows to the source address.</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.1</xref></spec>
+    </record>
+    <record>
+      <value>D-G</value>
+      <description>Unassigned</description>
+      <spec/>
+    </record>
+    <record updated="2019-07-26">
+      <value>H</value>
+      <description>HMAC-SHA256</description>
+      <spec><xref type="rfc" data="rfc8684">RFC8684, Section 3.2</xref></spec>
+    </record> 
+  </registry>
+  
+  <registry id="tcp-exids">
+    <title>TCP Experimental Option Experiment Identifiers (TCP ExIDs)</title>
+    <xref type="rfc" data="rfc6994"/>
+    <registration_rule>First Come First Served</registration_rule>
+    <note>IANA will record known duplicate uses.
+      
+    </note>
+    <record date="2021-02-19">
+      <value>0x00AC</value>
+      <description>TCP ACK Rate Request</description>
+      <reference><xref type="draft" data="draft-gomez-tcpm-ack-rate-request-02"/></reference>
+    </record>
+    <record date="2014-01-14">
+      <value>0x0348</value>
+      <description>HOST_ID</description>
+      <reference><xref type="rfc" data="rfc7974"/></reference>
+    </record>
+    <record date="2018-06-25">
+      <value>0x0A0D</value>
+      <description>Autonomous System Compensation</description>
+      <reference><xref type="draft" data="draft-donnerhacke-linktax"/></reference>
+    </record>
+    <record date="2016-12-09">
+      <value>0x0CA0</value>
+      <description>TCP Capability Option</description>
+      <reference><xref type="draft" data="draft-boucadair-tcpm-capability-option"/></reference>
+    </record>
+    <record date="2014-10-12">
+      <value>0x0ED0</value>
+      <description>Extended Data Offset</description>
+      <reference><xref type="draft" data="draft-ietf-tcpm-tcp-edo"/></reference>
+    </record>
+    <record date="2016-05-05">
+      <value>0x454E</value>
+      <description>TCP-ENO <xref type="note" data="2"/></description>
+      <reference><xref type="rfc" data="rfc8547"/></reference>
+    </record> 
+      <record date="2013-09-05">
+      <value>0x5323</value>
+      <description>Service Number</description>
+      <reference><xref type="draft" data="draft-touch-tcpm-sno"/></reference>
+    </record>
+    <record date="2013-07-16">
+      <value>0x75ECFFEE</value>
+      <description>Timestamp Interval</description>
+      <reference><xref type="draft" data="draft-trammell-tcpm-timestamp-interval"/></reference>
+    </record>
+      <record date="2015-10-19">
+      <value>0xACCE</value>
+      <description>AccECN Experimental Option</description>
+      <reference><xref type="draft" data="draft-kuehlewind-tcpm-accurate-ecn"/></reference>
+    </record>
+     <record>
+      <value>0xE2D4C3D9</value>
+      <description>Shared Memory communications over RMDA protocol</description>
+       <reference><xref type="rfc" data="rfc7609"/></reference>
+    </record>   
+    <record>
+      <value>0xF989</value>
+      <description>Fast Open (current and new implementations SHOULD use option 34)</description>
+      <reference><xref type="rfc" data="rfc7413"/></reference>
+    </record>
+    <record date="2017-06-30">
+      <value>0xF990</value>
+      <description>Low Latency</description>
+      <reference><xref type="draft" data="draft-wang-tcpm-low-latency-opt"/></reference>
+    </record>
+
+ 
+</registry>
+  
+  <registry id="tcp-encryption">
+    <title>TCP Encryption Protocol Identifiers</title>
+    <xref type="rfc" data="rfc8547"/>
+    <registration_rule>IETF Review or Expert Review with RFC Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2019-01-11">
+      <value>0x20</value>
+      <description>Experimental Use</description>
+      <reference><xref type="rfc" data="rfc8547"/></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x21</value>
+      <description>TCPCRYPT_ECDHE_P256</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x22</value>
+      <description>TCPCRYPT_ECDHE_P521</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x23</value>
+      <description>TCPCRYPT_ECDHE_Curve25519</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x24</value>
+      <description>TCPCRYPT_ECDHE_Curve448</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record>
+      <value>0x25-0x6f</value>
+      <description>Unassigned</description>
+      <reference/>
+    </record>
+    <record date="2019-01-11">
+      <value>0x70-0x7f</value>
+      <description>Reserved for extended values</description>
+      <reference><xref type="rfc" data="rfc8547"/></reference>
+    </record> 
+  </registry>
+
+  <registry id="tcpcrypt-aead-algorithms">
+    <title>tcpcrypt AEAD Algorithms</title>
+    <xref type="rfc" data="rfc8548"/>
+    <registration_rule>IETF Review or Expert Review with RFC Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record>
+      <value>0x0000</value>
+      <description>Reserved</description>
+      <reference/>
+    </record>
+    <record date="2019-01-14">
+      <value>0x0001</value>
+      <description>AEAD_AES_128_GCM</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x0002</value>
+      <description>AEAD_AES_256_GCM</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record>
+      <value>0x0003-0x000f</value>
+      <description>Unassigned</description>
+      <reference/>
+    </record>
+    <record date="2019-01-14">
+      <value>0x0010</value>
+      <description>AEAD_CHACHA20_POLY1305</description>
+      <reference><xref type="rfc" data="rfc8548"/></reference>
+    </record>
+    <record>
+      <value>0x0011-0xffff</value>
+      <description>Unassigned</description>
+      <reference/>
+    </record>
+  </registry>
+  
+  <registry id="mptcp-mp-tcprst-reason-codes">
+    <title>MPTCP MP_TCPRST Reason Codes</title>
+    <xref type="rfc" data="rfc8684"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record>
+      <value>0x00</value>
+      <description>Unspecified error</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x01</value>
+      <description>MPTCP-specific error</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x02</value>
+      <description>Lack of resources</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x03</value>
+      <description>Administratively prohibited</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x04</value>
+      <description>Too much outstanding data</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x05</value>
+      <description>Unacceptable performance</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record date="2019-01-14">
+      <value>0x06</value>
+      <description>Middlebox interference</description>
+      <reference><xref type="rfc" data="rfc8684">RFC8684, Section 3.6</xref></reference>
+    </record>
+    <record>
+      <value>0x07-0xff</value>
+      <description>Unassigned</description>
+      <reference/>
+    </record>
+  </registry>
+
+<footnote anchor="1"><xref type="uri" data="https://devcentral.f5.com/tech-tips/articles/accessing-tcp-options-from-irules"/></footnote>
+<footnote anchor="2">current and new TCP-ENO implementations MUST use TCP option kind 69.</footnote>
+  
+  <people>
+    <person id="J_Kay">
+      <name>J. Kay</name>
+      <uri>mailto:jkay&amp;ucsd.edu</uri>
+      <updated>1994-09</updated>
+    </person>
+    <person id="Keith_Scott">
+      <name>Keith Scott</name>
+      <uri>mailto:kscott&amp;mitre.org</uri>
+      <updated>1999-02</updated>
+    </person>
+    <person id="Monroe_Bridges">
+      <name>Monroe Bridges</name>
+      <uri>mailto:monroe&amp;cup.hp.com</uri>
+      <updated>1994-09</updated>
+    </person>
+    <person id="Stev_Knowles">
+      <name>Stev Knowles</name>
+      <uri>mailto:stev&amp;ftp.com</uri>
+      <updated>1995-03</updated>
+    </person>
+    <person id="Steve_Bellovin">
+      <name>Steve Bellovin</name>
+      <uri>mailto:smb&amp;research.att.com</uri>
+      <updated>2000-03</updated>
+    </person>
+    <person id="Subbu_Subramaniam">
+      <name>Subbu Subramaniam</name>
+      <uri>mailto:subbu&amp;cup.hp.com</uri>
+      <updated>1994-09</updated>
+    </person>
+    <person id="Vladimir_Sukonnik">
+      <name>Vladimir Sukonnik</name>
+      <uri>mailto:vladimir&amp;sitaranetworks.com</uri>
+      <updated>1999-02</updated>
+    </person>
+  </people>
+</registry>

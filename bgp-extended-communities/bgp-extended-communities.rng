@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes" ns="http://www.iana.org/assignments">
+
+  <include href="../_support/iana-registry.rng"/>
+
+  
+  <define name="value_name_xref">
+    <element name="registry">
+      <ref name="registryMeta"/>
+      <zeroOrMore>
+        <element name="record">
+          <optional>
+            <attribute name="date"><ref name="genericDate"/></attribute>
+          </optional>
+          <optional>
+            <attribute name="updated"><ref name="genericDate"/></attribute>
+          </optional>
+          <element name="value"><ref name="genericRange"/></element>
+          <element name="name"><text/></element>
+          <optional>
+            <ref name="references"/>
+          </optional>
+        </element>
+      </zeroOrMore>
+      <ref name="footnotes"/>
+    </element>
+  </define>
+
+  <start>
+    <element name="registry">
+      <ref name="registryMeta"/>
+
+      <!-- BGP Transitive Extended Community Types -->     
+      <ref name="value_name_xref"/>
+
+      <!-- BGP Non-Transitive Extended Community Type -->     
+      <ref name="value_name_xref"/>
+
+      <!-- EVPN Sub-Types -->     
+      <ref name="value_name_xref"/>
+
+      <!-- Transitive Two-Octet AS-specific -->     
+      <ref name="value_name_xref"/>
+
+      <!-- Non-Transitive Two-Octet AS-specific -->    
+      <ref name="value_name_xref"/>
+
+      <!-- Transitive Four-Octet AS-specific -->    
+      <ref name="value_name_xref"/>
+
+      <!-- Non-Transitive Four-Octet AS-specific -->   
+      <ref name="value_name_xref"/>
+
+      <!-- Transitive IPv4-Address-Specific -->  
+      <ref name="value_name_xref"/>
+      
+       <!-- Non-Transitive IPv4-Address-Specific -->   
+      <ref name="value_name_xref"/>
+
+      <!-- Transitive Opaque Extended Community -->     
+      <ref name="value_name_xref"/>
+      
+      <!-- Non-Transitive Opaque Extended Community -->     
+      <ref name="value_name_xref"/>
+ 
+     <!-- Generic Transitive Experimental Use Sub-Types -->
+      <ref name="value_name_xref"/>
+      
+      <!--Generic Transitive Experimental Use Extended Commuity Part 2 Use Sub-Types-->   
+      <ref name="value_name_xref"/>
+      
+      <!--Generic Transitive Experimental Use Extended Commuity Part 3 Use Sub-Types-->   
+      <ref name="value_name_xref"/>
+ 
+      <!-- Traffic Action Fields -->
+      <ref name="value_name_xref"/>
+
+      <!-- Transitive IPv6-Address-Specific -->  
+      <ref name="value_name_xref"/>
+      
+       <!-- Non-Transitive IPv6-Address-Specific -->   
+      <ref name="value_name_xref"/>
+      
+      <!-- Additional PMSI Tunnel Attribute Flags -->   
+      <ref name="value_name_xref"/>
+      
+      <!-- EVPN Layer 2 Attributes Control Flags -->   
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="name"><ref name="text_with_references"/></element>
+            <optional>
+              <ref name="references"/>
+            </optional>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+
+      <!-- E-Tree Flags -->     
+      <ref name="value_name_xref"/>
+      
+      <!-- Layer2 Extended Community Control Flags Bit Vector -->     
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="name"><ref name="text_with_references"/></element>
+            <optional>
+              <ref name="references"/>
+            </optional>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- DF Alg -->     
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="name"><ref name="text_with_references"/></element>
+            <optional>
+              <ref name="references"/>
+            </optional>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+      
+      <!-- DF Election Capabilities -->     
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="name"><ref name="text_with_references"/></element>
+            <optional>
+              <ref name="references"/>
+            </optional>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+	  
+      <!-- SFC Extended Community Sub-Types -->     
+      <element name="registry">
+        <ref name="registryMeta"/>
+        <zeroOrMore>
+          <element name="record">
+            <optional>
+              <attribute name="date"><ref name="genericDate"/></attribute>
+            </optional>
+            <optional>
+              <attribute name="updated"><ref name="genericDate"/></attribute>
+            </optional>
+            <element name="value"><text/></element>
+            <element name="name"><ref name="text_with_references"/></element>
+            <optional>
+              <ref name="references"/>
+            </optional>
+          </element>
+        </zeroOrMore>
+        <ref name="footnotes"/>
+      </element>
+
+      <!-- ARP/ND Extended Community Flags -->
+      <ref name="value_name_xref"/>
+
+      <ref name="people"/>
+    </element>
+  </start>
+
+</grammar>

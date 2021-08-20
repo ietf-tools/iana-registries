@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="iana-tunnel-type.xsl"?>
+<?xml-model href="iana-tunnel-type.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="iana-tunnel-type">
+  <title>iana-tunnel-type YANG Module</title>
+  <category>YANG Modules</category>
+  <created>2019-06-25</created>
+  <registration_rule>This is one of the available formats of the Tunnel Types (tunnelType) registry.</registration_rule>
+  <description>This module mirrors the Tunnel Types (tunnelType) registry at <xref type="registry" data="smi-numbers"/>.
+    
+Module: <xref type="uri" data="https://www.iana.org/assignments/yang-parameters/iana-tunnel-type@2021-04-23.yang">iana-tunnel-type@2021-04-23.yang</xref>  
+  </description>
+  <xref type="rfc" data="rfc4087"/>
+  <xref type="rfc" data="rfc8675"/>
+  <xref type="rfc" data="rfc8892"/>
+  <people/>
+</registry>

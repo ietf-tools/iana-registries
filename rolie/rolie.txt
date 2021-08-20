@@ -1,0 +1,73 @@
+                                      Resource-Oriented Lightweight Information Exchange (ROLIE) URN Parameters
+
+   Created
+           2017-12-21
+
+   Last Updated
+           2018-02-22
+
+   Note
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * ROLIE URN Parameters
+     * ROLIE Information Types
+
+ROLIE URN Parameters
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ David Waltermire, Stephen Banghart
+
+   Reference
+           [RFC8322]
+
+   Available Formats
+           [IMG]
+           CSV
+
+             Name                                   Extension URI                     Reference                              Subregistry
+                                                                                      [RFC8322,
+category:information-type       urn:ietf:params:rolie:category:information-type       Section   [https://www.iana.org/assignments/rolie/rolie.xhtml#information-type]
+                                                                                      8.4]
+                                                                                      [RFC8322,
+property:content-author-name    urn:ietf:params:rolie:property:content-author-name    Section   None
+                                                                                      7.4]
+                                                                                      [RFC8322,
+property:content-id             urn:ietf:params:rolie:property:content-id             Section   None
+                                                                                      7.4]
+                                                                                      [RFC8322,
+property:content-published-date urn:ietf:params:rolie:property:content-published-date Section   None
+                                                                                      7.4]
+                                                                                      [RFC8322,
+property:content-updated-date   urn:ietf:params:rolie:property:content-updated-date   Section   None
+                                                                                      7.4]
+
+ROLIE Information Types
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ David Waltermire, Stephen Banghart
+
+   Reference
+           [RFC8322]
+
+   Note
+
+ Registrations will consist of a "Name," "Index," and "Reference" field.
+
+   No registrations at this time.

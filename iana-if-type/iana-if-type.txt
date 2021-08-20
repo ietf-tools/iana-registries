@@ -1,0 +1,26 @@
+                                                               iana-if-type YANG Module
+
+   Created
+           2014-01-27
+
+   Registration Procedure(s)
+
+ This is one of the available formats of the Interface Types (ifType) registry.
+
+   Description
+
+ Interface types must not be directly added to the iana-if-type YANG
+ module. They must instead be added to the "Interface Types (ifType)"
+ registry at [IANA registry smi-numbers].
+
+   Module: [iana-if-type@2021-06-21.yang]
+
+
+   Reference
+           [RFC1213][RFC2863][RFC7224][RFC8892]
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text

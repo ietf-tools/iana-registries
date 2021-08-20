@@ -1,0 +1,40 @@
+                                                                  POSH Service Names
+
+   Created
+           2015-09-20
+
+   Last Updated
+           2015-11-24
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * POSH Service Names
+
+POSH Service Names
+
+   Registration Procedure(s)
+
+ Expert Review or IETF Review
+
+   Expert(s)
+
+ Unassigned
+
+   Reference
+           [RFC7711]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Value    Change Controller                                           Definition and Usage                                           Reference
+   xmpp-client IETF              Specifies the location of a POSH file containing verification material or a reference thereto that       [RFC7712]
+                                 enables a client to verify the identity of a server for a client-to-server stream in XMPP
+   xmpp-server IETF              Specifies the location of a POSH file containing verification material or a reference thereto that       [RFC7712]
+                                 enables a server to verify the identity of a peer server for a server-to-server stream in XMPP

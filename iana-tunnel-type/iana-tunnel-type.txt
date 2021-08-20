@@ -1,0 +1,24 @@
+                                                             iana-tunnel-type YANG Module
+
+   Created
+           2019-06-25
+
+   Registration Procedure(s)
+
+ This is one of the available formats of the Tunnel Types (tunnelType) registry.
+
+   Description
+
+ This module mirrors the Tunnel Types (tunnelType) registry at [IANA registry smi-numbers].
+
+ Module: [iana-tunnel-type@2021-04-23.yang]
+
+
+   Reference
+           [RFC4087][RFC8675][RFC8892]
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text

@@ -1,0 +1,64 @@
+(registered 2016-09-27, last updated 2016-10-05)
+
+Name: Paul Norman
+Email: paul.norman&osmfoundation.org
+
+Media type name: application
+Media subtype name: vnd.openstreetmap.data+xml
+
+Required parameters: N/A
+
+Optional parameters:
+"charset": This parameter has semantics identical to the charset
+parameter of the "application/xml" media type as specified in
+[RFC7303].
+
+Encoding considerations: binary
+Same as encoding considerations of application/xml as specified in RFC 7303.
+
+Security considerations:
+OpenStreetMap data carries the same security considerations as GeoJSON. See Section 10 of RFC7946.
+
+In addition, as this media type uses the "+xml" convention, it
+shares the same security considerations as described in RFC7303.
+
+Interoperability considerations:
+Different implementations of may produce a stricter subset of OSM XML which other implementations may assume.
+
+OpenStreetMap XML is not described by a DTD and applies only the well-formedness rules of XML. It should only be parsed by a non-validating parser.
+
+Published specification:
+http://wiki.openstreetmap.org/wiki/OSM_XML
+
+Applications which use this media:
+Various. Consumers of this format include http://wiki.openstreetmap.org/wiki/Editors. Major producers are https://github.com/zerebubuth/openstreetmap-cgimap and https://github.com/openstreetmap/openstreetmap-website
+
+Fragment identifier considerations:
+N/A
+
+Restrictions on usage:
+N/A
+
+Provisional registration? (standards tree only):
+N/A
+
+Additional information:
+
+1. Deprecated alias names for this type: None
+2. Magic number(s): None
+3. File extension(s): osm
+4. Macintosh file type code: None
+5. Object Identifiers: None
+
+General Comments:
+
+
+Person to contact for further information:
+
+1. Name: Paul Norman
+2. Email: paul.norman&osmfoundation.org
+
+Intended usage: Common
+Used for exchanging OpenStreetMap geodata
+
+Author/Change controller: Paul Norman

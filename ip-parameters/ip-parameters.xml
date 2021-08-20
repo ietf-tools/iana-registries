@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="ip-parameters.xsl"?>
+<?xml-model href="ip-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="ip-parameters">
+  <title>Internet Protocol Version 4 (IPv4) Parameters</title>
+  <updated>2018-05-03</updated>
+
+  <registry id="ip-parameters-1">
+  <title>IP Option Numbers</title>
+  <registration_rule>Not defined</registration_rule>
+  <note>The Internet Protocol (IP) has provision for optional header fields
+identified by an option type field.  Options 0 and 1 are exactly one
+octet which is their type field.  All other options have their one
+octet type field, followed by a one octet length field, followed by
+length-2 octets of option data.  The option type field is sub-divided
+into a one bit copied flag, a two bit class field, and a five bit
+option number.  These taken together form an eight bit value for the
+option type field.  IP options are commonly referred to by this value.
+  </note>
+    <record date="1994-10">
+      <copy>0</copy>
+      <class>0</class>
+      <number>0</number>
+      <value>0</value>
+      <description>EOOL   - End of Options List</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record date="1994-10">
+      <copy>0</copy>
+      <class>0</class>
+      <number>1</number>
+      <value>1</value>
+      <description>NOP    - No Operation</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>2</number>
+      <value>130</value>
+      <description>SEC    - Security</description>
+      <xref type="rfc" data="rfc1108"/>
+    </record>
+    <record date="1994-10">
+      <copy>1</copy>
+      <class>0</class>
+      <number>3</number>
+      <value>131</value>
+      <description>LSR    - Loose Source Route</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record date="1994-10">
+      <copy>0</copy>
+      <class>2</class>
+      <number>4</number>
+      <value>68</value>
+      <description>TS     - Time Stamp</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>5</number>
+      <value>133</value>
+      <description>E-SEC  - Extended Security</description>
+      <xref type="rfc" data="rfc1108"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>6</number>
+      <value>134</value>
+      <description>CIPSO  - Commercial Security</description>
+      <xref type="draft" data="draft-ietf-cipso-ipsecurity-01"/>
+    </record>
+    <record date="1994-10">
+      <copy>0</copy>
+      <class>0</class>
+      <number>7</number>
+      <value>7</value>
+      <description>RR     - Record Route</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record date="1994-10">
+      <copy>1</copy>
+      <class>0</class>
+      <number>8</number>
+      <value>136</value>
+      <description>SID    - Stream ID</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record date="1994-10">
+      <copy>1</copy>
+      <class>0</class>
+      <number>9</number>
+      <value>137</value>
+      <description>SSR    - Strict Source Route</description>
+      <xref type="rfc" data="rfc791"/>
+      <xref type="person" data="Jon_Postel"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>0</class>
+      <number>10</number>
+      <value>10</value>
+      <description>ZSU    - Experimental Measurement</description>
+      <xref type="text">ZSu</xref>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>0</class>
+      <number>11</number>
+      <value>11</value>
+      <description>MTUP   - MTU Probe</description>
+      <xref type="rfc" data="rfc1063"/>
+      <xref type="rfc" data="rfc1191"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>0</class>
+      <number>12</number>
+      <value>12</value>
+      <description>MTUR   - MTU Reply</description>
+      <xref type="rfc" data="rfc1063"/>
+      <xref type="rfc" data="rfc1191"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record date="1994-10">
+      <copy>1</copy>
+      <class>2</class>
+      <number>13</number>
+      <value>205</value>
+      <description>FINN   - Experimental Flow Control</description>
+      <xref type="person" data="Greg_Finn"/>
+    </record>
+    <record date="1994-10">
+      <copy>1</copy>
+      <class>0</class>
+      <number>14</number>
+      <value>142</value>
+      <description>VISA   - Experimental Access Control</description>
+      <xref type="person" data="Deborah_Estrin"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>0</class>
+      <number>15</number>
+      <value>15</value>
+      <description>ENCODE - ???</description>
+      <xref type="text">VerSteeg</xref>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>16</number>
+      <value>144</value>
+      <description>IMITD  - IMI Traffic Descriptor</description>
+      <xref type="text">Lee</xref>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>17</number>
+      <value>145</value>
+      <description>EIP    - Extended Internet Protocol</description>
+      <xref type="rfc" data="rfc1385"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>2</class>
+      <number>18</number>
+      <value>82</value>
+      <description>TR     - Traceroute</description>
+      <xref type="rfc" data="rfc1393"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>19</number>
+      <value>147</value>
+      <description>ADDEXT - Address Extension</description>
+      <xref type="text">Ullmann IPv7</xref>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>20</number>
+      <value>148</value>
+      <description>RTRALT - Router Alert</description>
+      <xref type="rfc" data="rfc2113"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>21</number>
+      <value>149</value>
+      <description>SDB    - Selective Directed Broadcast</description>
+      <xref type="person" data="Charles_Bud_Graff"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>22</number>
+      <value>150</value>
+      <description>       - Unassigned (Released 18 October 2005)</description>
+    </record>
+    <record date="1999-04">
+      <copy>1</copy>
+      <class>0</class>
+      <number>23</number>
+      <value>151</value>
+      <description>DPS    - Dynamic Packet State</description>
+      <xref type="person" data="Andy_Malis"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record date="1999-05">
+      <copy>1</copy>
+      <class>0</class>
+      <number>24</number>
+      <value>152</value>
+      <description>UMP    - Upstream Multicast Pkt.</description>
+      <xref type="person" data="Dino_Farinacci"/>
+      <xref type="rfc" data="rfc6814"/>
+      <xref type="note" data="1"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>0</class>
+      <number>25</number>
+      <value>25</value>
+      <description>QS     - Quick-Start</description>
+      <xref type="rfc" data="rfc4782"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>0</class>
+      <number>30</number>
+      <value>30</value>
+      <description>EXP    - RFC3692-style Experiment <xref type="note" data="2"/></description>
+      <xref type="rfc" data="rfc4727"/>
+    </record>
+    <record>
+      <copy>0</copy>
+      <class>2</class>
+      <number>30</number>
+      <value>94</value>
+      <description>EXP    - RFC3692-style Experiment <xref type="note" data="2"/></description>
+      <xref type="rfc" data="rfc4727"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>0</class>
+      <number>30</number>
+      <value>158</value>
+      <description>EXP    - RFC3692-style Experiment <xref type="note" data="2"/></description>
+      <xref type="rfc" data="rfc4727"/>
+    </record>
+    <record>
+      <copy>1</copy>
+      <class>2</class>
+      <number>30</number>
+      <value>222</value>
+      <description>EXP    - RFC3692-style Experiment <xref type="note" data="2"/></description>
+      <xref type="rfc" data="rfc4727"/>
+    </record>
+    <footnote anchor="1">obsoleted IP Option Number</footnote>
+    <footnote anchor="2">It is only appropriate to use these values
+in explicitly-configured experiments; they MUST NOT be shipped as
+defaults in implementations.  See RFC 3692 for details.</footnote>
+  </registry>
+   
+  <registry id="ipv4-router-alert-option-values">
+    <title>IPv4 Router Alert Option Values</title>
+    <xref type="rfc" data="rfc5350"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record>
+      <value>0</value>
+      <description>Router shall examine packet</description>
+      <xref type="rfc" data="rfc2113"/>
+    </record>
+    <record>
+      <value>1-32</value>
+      <description>Aggregated Reservation Nesting Level</description>
+      <xref type="rfc" data="rfc3175"/>
+    </record>
+    <record>
+      <value>33-64</value>
+      <description>QoS NSLP Aggregation Levels 0-31</description>
+      <xref type="rfc" data="rfc5974"/>
+    </record>
+    <record>
+      <value>65</value>
+      <description>NSIS NATFW NSLP</description>
+      <xref type="rfc" data="rfc5973"/>
+    </record>
+    <record>
+      <value>66-65502</value>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <value>65503-65534</value>
+      <description>Reserved for experimental use</description>
+      <xref type="rfc" data="rfc5350"/>
+    </record>
+    <record>
+      <value>65535</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc5350"/>
+    </record>
+  </registry>
+  
+  <registry id="ip-parameters-2">
+    <title>IP Time to Live Parameter</title>
+    <registration_rule>Not defined</registration_rule>
+    <note>The current recommended default time to live (TTL) for the Internet
+Protocol (IP) is 64 <xref type="rfc" data="rfc791"/><xref type="rfc" data="rfc1122"/>.
+    </note>
+  </registry>
+  
+  <registry id="ip-parameters-3">
+    <title>IP TOS Parameters</title>
+    <registration_rule>Registrations no longer accepted</registration_rule>
+    <note>This registry was deprecated following the publication of <xref type="rfc" data="rfc2474"/>.
+    </note>
+  </registry>
+
+  <registry id="ip-parameters-4">
+    <title>Type-of-Service Values</title>
+    <registration_rule>Registrations no longer accepted</registration_rule>
+    <note>This registry was deprecated following the publication of <xref type="rfc" data="rfc2474"/>.
+    </note>
+  </registry>
+
+  <people>
+    <person id="Andy_Malis">
+      <name>Andy Malis</name>
+      <uri>mailto:agmalis&amp;gmail.com</uri>
+      <updated>2013-05-28</updated>
+    </person>
+    <person id="Charles_Bud_Graff">
+      <name>Charles "Bud" Graff</name>
+      <uri>mailto:bud&amp;fotlan.army.mil</uri>
+      <updated>1995-03</updated>
+    </person>
+    <person id="Deborah_Estrin">
+      <name>Deborah Estrin</name>
+      <uri>mailto:Estrin&amp;usc.edu</uri>
+      <updated>1994-10</updated>
+    </person>
+    <person id="Dino_Farinacci">
+      <name>Dino Farinacci</name>
+      <uri>mailto:dino&amp;cisco.com</uri>
+      <updated>1999-05</updated>
+    </person>
+    <person id="Greg_Finn">
+      <name>Greg Finn</name>
+      <uri>mailto:Finn&amp;isi.edu</uri>
+      <updated>1994-10</updated>
+    </person>
+    <person id="Jon_Postel">
+      <name>Jon Postel</name>
+      <uri>mailto:postel&amp;isi.edu</uri>
+      <updated>1994-10</updated>
+    </person>
+  </people>
+</registry>

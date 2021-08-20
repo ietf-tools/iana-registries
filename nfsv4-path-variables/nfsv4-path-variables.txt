@@ -1,0 +1,70 @@
+                                                                 NFSv4 Path Variables
+
+   Created
+           2009-01-16
+
+   Last Updated
+           2020-08-19
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * NFSv4 Path Variables
+     * NFSv4 ${ietf.org:CPU_ARCH} Values
+     * NFSv4 ${ietf.org:OS_TYPE} Values
+
+NFSv4 Path Variables
+
+   Expert(s)
+
+ Spencer Shepler
+
+   Reference
+           [RFC8881]
+
+   Available Formats
+           [IMG]
+           CSV
+
+          Range               Registration Procedures
+   ietf.org domain      Standards Action with Expert Review
+   non-ietf.org. domain First Come First Served
+
+       Variable Name         RFC    Point of Contact
+    ${ietf.org:CPU_ARCH}  [RFC8881] [IESG]
+    ${ietf.org:OS_TYPE}   [RFC8881] [IESG]
+   ${ietf.org:OS_VERSION} [RFC8881] [IESG]
+
+NFSv4 ${ietf.org:CPU_ARCH} Values
+
+   Registration Procedure(s)
+
+ First Come First Served
+
+   Reference
+           [RFC8881]
+
+   Variable Name RFC Point of Contact
+   No registrations at this time.
+
+NFSv4 ${ietf.org:OS_TYPE} Values
+
+   Registration Procedure(s)
+
+ First Come First Served
+
+   Reference
+           [RFC8881]
+
+   Variable Name RFC Point of Contact
+   No registrations at this time.
+
+                                                                 Contact Information
+
+     ID   Name     Contact URI      Last Updated
+   [IESG] IESG mailto:iesg&ietf.org 2009-01-16

@@ -1,0 +1,43 @@
+Type name: application
+
+Subtype name: tlsrpt+json
+
+Required parameters: N/A
+
+Optional parameters: N/A
+
+Encoding considerations: Encoding considerations are identical to
+those specified for the "application/json" media type.  See
+[RFC7493].
+
+Security considerations: Security considerations relating to SMTP TLS
+Reporting are discussed in Section 7.
+
+Interoperability considerations: This document specifies the format
+of conforming messages and the interpretation thereof.
+
+Published specification: Section 5.3 of RFC 8460.
+
+Applications that use this media type: Mail User Agents (MUAs) and
+Mail Transfer Agents.
+
+Additional information:
+
+	Deprecated alias names for this type: N/A
+
+	Magic number(s): N/A
+
+	File extension(s): ".json"
+
+	Macintosh file type code(s): N/A
+
+Person & email address to contact for further information:
+See the Authors' Addresses section.
+
+Intended usage: COMMON
+
+Restrictions on usage: N/A
+
+Author: See the Authors' Addresses section.
+
+Change controller: Internet Engineering Task Force (iesg&ietf.org).

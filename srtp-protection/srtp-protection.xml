@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="srtp-protection.xsl"?>
+<?xml-model href="srtp-protection.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="srtp-protection">
+  <title>Datagram Transport Layer Security (DTLS) Extension to Establish Keys for Secure Real-time Transport Protocol (SRTP)</title>
+  <created>2009-03-18</created>
+  <updated>2020-05-01</updated>
+  <registry id="srtp-protection-1">
+    <title>DTLS-SRTP Protection Profiles</title>
+    <xref type="rfc" data="rfc5764"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Eric Rescorla</expert>
+    <record>
+      <value>{0x00, 0x00}</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc5764"/>
+    </record>
+    <record>
+      <value>{0x00, 0x01}</value>
+      <description>SRTP_AES128_CM_HMAC_SHA1_80</description>
+      <xref type="rfc" data="rfc5764"/>
+    </record>
+    <record>
+      <value>{0x00, 0x02}</value>
+      <description>SRTP_AES128_CM_HMAC_SHA1_32</description>
+      <xref type="rfc" data="rfc5764"/>
+    </record>
+    <record>
+      <value>{0x00, 0x03-4}</value>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <value>{0x00, 0x05}</value>
+      <description>SRTP_NULL_HMAC_SHA1_80</description>
+      <xref type="rfc" data="rfc5764"/>
+    </record>
+    <record>
+      <value>{0x00, 0x06}</value>
+      <description>SRTP_NULL_HMAC_SHA1_32</description>
+      <xref type="rfc" data="rfc5764"/>
+    </record>
+    <record date="2015-10-21">
+      <value>{0x00, 0x07}</value>
+      <description>SRTP_AEAD_AES_128_GCM</description>
+      <xref type="rfc" data="rfc7714"/>
+    </record>
+    <record date="2015-10-21">
+      <value>{0x00, 0x08}</value>
+      <description>SRTP_AEAD_AES_256_GCM</description>
+      <xref type="rfc" data="rfc7714"/>
+    </record>
+    <record date="2017-05-22">
+      <value>{0x00, 0x09}</value>
+      <description>DOUBLE_AEAD_AES_128_GCM_AEAD_AES_128_GCM</description>
+      <xref type="rfc" data="rfc8723"/>
+    </record>
+    <record date="2017-05-22">
+      <value>{0x00, 0x0A}</value>
+      <description>DOUBLE_AEAD_AES_256_GCM_AEAD_AES_256_GCM</description>
+       <xref type="rfc" data="rfc8723"/>
+    </record>
+    <record date="2017-09-01">
+      <value>{0x00, 0x0B}</value>
+      <description>SRTP_ARIA_128_CTR_HMAC_SHA1_80</description>
+      <xref type="rfc" data="rfc8269"/>
+    </record>
+    <record date="2017-09-01">
+      <value>{0x00, 0x0C}</value>
+      <description>SRTP_ARIA_128_CTR_HMAC_SHA1_32</description>
+      <xref type="rfc" data="rfc8269"/>
+    </record>
+    <record date="2017-09-01">
+      <value>{0x00, 0x0D}</value>
+      <description>SRTP_ARIA_256_CTR_HMAC_SHA1_80</description>
+      <xref type="rfc" data="rfc8269"/>
+    </record>
+    <record date="2017-09-01">
+      <value>{0x00, 0x0E}</value>
+      <description>SRTP_ARIA_256_CTR_HMAC_SHA1_32</description>
+      <xref type="rfc" data="rfc8269"/>
+    </record>
+    <record date="2017-09-01">
+      <value>{0x00, 0x0F}</value>
+      <description>SRTP_AEAD_ARIA_128_GCM</description>
+      <xref type="rfc" data="rfc8269"/>
+    </record>
+    <record date="2017-09-01">
+      <value>{0x00, 0x10}</value>
+      <description>SRTP_AEAD_ARIA_256_GCM</description>
+      <xref type="rfc" data="rfc8269"/>
+    </record>
+  </registry>
+  <people/>
+</registry>

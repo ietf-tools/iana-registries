@@ -1,0 +1,127 @@
+                                                      Open Shortest Path First (OSPF) Parameters
+
+   Created
+           2015-11-03
+
+   Last Updated
+           2021-06-18
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * OSPF Router Information (RI) TLVs
+     * OSPF Router Informational Capability Bits
+     * OSPF Router Functional Capability Bits
+     * OSPF Tunnel Parameter Sub-TLVs
+
+OSPF Router Information (RI) TLVs
+
+   Reference
+           [RFC7770]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures         Note
+   1-32767     IETF Review
+   32768-32777 Experimentation         IANA does not assign
+   32778-65535 Reserved                IANA does not assign
+
+      Value                                                 TLV Name                                                          Reference
+        0      Reserved                                                                                           [RFC7770]
+        1      Router Informational Capabilities                                                                  [RFC7770]
+        2      Router Functional Capabilities                                                                     [RFC7770]
+        3      TE-MESH-GROUP TLV (IPv4)                                                                           [RFC4972]
+        4      TE-MESH-GROUP TLV (IPv6)                                                                           [RFC4972]
+        5      TE Node Capability Descriptor                                                                      [RFC5073]
+        6      PCED                                                                                               [RFC5088]
+        7      OSPF Dynamic Hostname                                                                              [RFC5642]
+        8      SR-Algorithm TLV                                                                                   [RFC8665]
+        9      SID/Label Range TLV                                                                                [RFC8665]
+       10      Node Admin Tag TLV                                                                                 [RFC7777]
+       11      S-BFD Discriminator                                                                                [RFC7884]
+       12      Node MSD                                                                                           [RFC8476]
+       13      Tunnel Encapsulations                                                                              [RFC9013]
+       14      SR Local Block TLV                                                                                 [RFC8665]
+       15      SRMS Preference TLV                                                                                [RFC8665]
+       16      Flexible Algorithm Definition TLV (TEMPORARY - registered 2018-06-04, extension registered         [draft-ietf-lsr-flex-algo-14]
+               2021-04-22, expires 2022-06-04)
+       17      OSPF Area Leader Sub-TLV (TEMPORARY - registered 2019-07-31, extension registered 2021-06-18,      [draft-ietf-lsr-dynamic-flooding]
+               expires 2022-07-31)
+       18      OSPF Dynamic Flooding Sub-TLV (TEMPORARY - registered 2019-07-31, extension registered 2021-06-18, [draft-ietf-lsr-dynamic-flooding]
+               expires 2022-07-31)
+    19-32767   Unassigned
+   32768-32777 Experimentation                                                                                    [RFC7770]
+   32778-65535 Reserved                                                                                           [RFC7770]
+
+OSPF Router Informational Capability Bits
+
+   Registration Procedure(s)
+
+ IETF Review
+
+   Reference
+           [RFC7770]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit Number         Capability Name          Reference
+       0      OSPF graceful restart capable    [RFC3623]
+       1      OSPF graceful restart helper     [RFC3623]
+       2      OSPF Stub Router support         [RFC3137]
+       3      OSPF Traffic Engineering support [RFC3630]
+       4      OSPF point-to-point over LAN     [RFC5309]
+       5      OSPF Experimental TE             [RFC4973]
+       6      Two-Part Metric support          [RFC8042]
+       7      OSPF Host Router                 [RFC8770]
+      8-31    Unassigned
+
+OSPF Router Functional Capability Bits
+
+   Registration Procedure(s)
+
+ IETF Review
+
+   Reference
+           [RFC7770]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit Number Capability Name Reference
+      0-31    Unassigned
+
+OSPF Tunnel Parameter Sub-TLVs
+
+   Reference
+           [RFC9013]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   1-34999     Standards Action
+   35000-65499 First Come First Served
+
+      Value           TLV Name                       Reference
+        0      Reserved               [RFC9013]
+        1      Encapsulation          [RFC9013][draft-ietf-idr-tunnel-encaps]
+        2      Protocol Type          [RFC9013][draft-ietf-idr-tunnel-encaps]
+        3      Tunnel Egress Endpoint [RFC9013][RFC Errata 6576]
+        4      Color                  [RFC9013]
+        5      Load-Balancing Block   [RFC9013][RFC5640]
+        6      DS Field               [RFC9013][draft-ietf-idr-tunnel-encaps]
+        7      UDP Destination Port   [RFC9013][draft-ietf-idr-tunnel-encaps]
+     8-65499   Unassigned
+   65500-65534 Experimental           [RFC9013]
+      65535    Reserved               [RFC9013]

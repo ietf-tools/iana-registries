@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="method-tokens.xsl"?>
+<?xml-model href="method-tokens.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="method-tokens">
+  <title>Method Tokens</title>
+  <category>Geopriv Location Object Registries</category>
+  <created>2004-11-03</created>
+  <updated>2019-04-22</updated>
+  <registry id="method-tokens-1">
+    <title>Method Tokens</title>
+    <xref type="rfc" data="rfc4119"/>
+    <registration_rule>First Come First Served</registration_rule>
+    <note>These tokens are associated with the PIDF-LO object.</note>
+    <record date="2018-12-07">
+      <token>A-GNSS</token>
+      <description>Assisted Global Navigation Satellite Systems</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record>
+      <token>A-GPS</token>
+      <description>GPS with assistance</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+    <record>
+      <token>AOA</token>
+      <description>Angle of Arrival</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record date="2012-01-11">
+      <token>best-guess</token>
+      <description>The LIS cannot provide an accurate location. The value is its best guess, but may be very inaccurate.</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record>
+      <token>Cell</token>
+      <description>Location of the cellular radio antenna</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+    <record date="2019-03-21">
+      <token>DBH</token>
+      <description>Device-Based Hybrid</description>
+      <xref type="person" data="Apple"/>
+    </record>
+    <record date="2019-03-21">
+      <token>DBH_HELO</token>
+      <description>Device-Based Hybrid using Apple Hybridized Emergency Location</description>
+      <xref type="person" data="Apple"/>
+    </record>
+    <record date="2008-07-15">
+      <token>Derived</token>
+      <description>This value is intended to represent a location       
+object determined by geocoding or reverse geocoding
+a location determined by some other method.</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record>
+      <token>Device-Assisted_A-GPS</token>
+      <description>Device provides psuedo-ranges to a network element   
+that computes the location</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Device-Assisted_EOTD</token>
+      <description>Enhanced Observed Time Difference, device provides   
+measurements, network element computes location</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Device-Based_A-GPS</token>
+      <description>Network provides psuedo-ranges to the device and     
+the device computes its location</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Device-Based_EOTD</token>
+      <description>Enhanced Observed Time Difference, network element   
+provides measurements and device computes location</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>DHCP</token>
+      <description>Provided by DHCP (used for wireline access           
+networks, see 802.11 below)</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+    <record date="2018-12-07">
+      <token>E-CID</token>
+      <description>Enhanced Cell Identifier</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2019-04-22">
+      <token>ELS-BLE</token>
+      <description>Civic Address representing the associated location of the 
+        UE based upon the Bluetooth beacon from ELS</description>
+      <xref type="uri" data="http://www.atis.org">ATIS-0700028.v002</xref>
+      <xref type="person" data="Roger_Marshall"/>
+    </record>
+    <record date="2019-04-22">
+      <token>ELS-WiFi</token>
+      <description>Civic Address representing the associated location of the 
+        UE based upon the referenced Wi-Fi Access Point from ELS</description>
+      <xref type="uri" data="http://www.atis.org">ATIS-0700028.v002</xref>
+      <xref type="person" data="Roger_Marshall"/>
+    </record>
+    <record date="2018-12-07">
+      <token>GNSS</token>
+      <description>Global Navigation Satellite Systems</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record>
+      <token>GPS</token>
+      <description>Global Positioning System</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+    <record>
+      <token>Handset_AFLT</token>
+      <description>Advanced Forward Link Trilateration</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Handset_EFLT</token>
+      <description>Enhanced Forward Link Trilateration</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Hybrid_A-GPS</token>
+      <description>Device provides psuedo-rangesto a network element    
+that computes the location in combination with
+network measurements</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record date="2018-12-07">
+      <token>hybridAGPS_AFLT</token>
+      <description>Hybrid of Assisted GPS and Advanced Forward Link Trilateration</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2018-12-07">
+      <token>hybridCellSector_AGPS</token>
+      <description>Hybrid of Cell/Sector based and Assisted GPS</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2018-12-07">
+      <token>hybridTDOA_AOA</token>
+      <description>Hybrid of Time Difference of Arrival and Angle of Arrival</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2018-12-07">
+      <token>hybridTDOA_AGPS</token>
+      <description>Hybrid of Time Difference of Arrival and AGPS</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2018-12-07">
+      <token>hybridTDOA_AGPS_AOA</token>
+      <description>Hybrid of Time Difference of Arrival, Assisted GPS and Angle of Arrival</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record>
+      <token>IPDL</token>
+      <description>Idle Period Down Link</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>LLDP-MED</token>
+      <description>Provided by Link Layer Discovery Protocol - Media    
+Endpoint Discovery (LLDP-MED)</description>
+      <xref type="text">Telecommunications Industry Association, "Link Layer Discovery
+Protocol for Media Endpoint Devices", ANSI/TIA-1057, April 2006.</xref>
+      <xref type="person" data="Peter_Blatherwick"/>
+    </record>
+    <record>
+      <token>Manual</token>
+      <description>Entered manually by an operator or user, e.g.,       
+based on subscriber billing or service location
+information</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+    <record date="2017-05-25">
+      <token>MBS</token>
+      <description>Metropolitan Beacon System</description>
+      <xref type="person" data="NextNav"/>
+    </record>
+    <record date="2007-10-18">
+      <token>MPL</token>
+      <description>Measured Path Loss</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record date="2016-05-12">
+      <token>NEAD-BLE</token>
+      <description>Civic Address representing the provisioned location of a 
+        Bluetooth beacon to support the dispatching of emergency services.</description>
+      <xref type="uri" data="http://www.atis.org">ATIS-0700028</xref>
+      <xref type="person" data="Roger_Marshall"/>
+    </record>
+    <record date="2016-05-12">
+      <token>NEAD-WiFi</token>
+      <description>Civic Address representing the provisioned location of a 
+        Wi-Fi Access Point to support the dispatching of emergency services.</description>
+      <xref type="uri" data="http://www.atis.org">ATIS-0700028</xref>
+      <xref type="person" data="Roger_Marshall"/>
+    </record>
+    <record date="2018-12-07">
+      <token>networkRFFingerprinting</token>
+      <description>Network Based RF Fingerprinting</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2018-12-07">
+      <token>networkTDOA</token>
+      <description>Network Based Time Difference of Arrival</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record date="2018-12-07">
+      <token>networkTOA</token>
+      <description>Network Based Time of Arrival</description>
+      <xref type="person" data="Brian_Rosen"/>
+    </record>
+    <record>
+      <token>NMR</token>
+      <description>Network Measurement Reports</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>OTDOA</token>
+      <description>Observed Time Difference of Arrival</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>RFID</token>
+      <description>Proximity to a Radio Frequency Identification        
+beacon</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record date="2007-10-18">
+      <token>RSSI</token>
+      <description>Received Signal Strength Indicator</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record date="2007-10-18">
+      <token>RSSI-RTT</token>
+      <description>Combination of Received Signal Strength Indicator    
+and Round Trip Time used to determine the location
+of the Target</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>RTT</token>
+      <description>Round Trip Time</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>TA</token>
+      <description>Timing Advance</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>TA-NMR</token>
+      <description>Timing Advance and Network Measurement Reports</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Triangulation</token>
+      <description>Triangulated from time-of-arrival, signal strength   
+or similar measurements</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+    <record>
+      <token>UTDOA</token>
+      <description>Uplink Time Difference of Arrival</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>Wiremap</token>
+      <description>Location determined using wiremap correlations to    
+ciruit identifiers</description>
+      <xref type="person" data="James_Winterbottom"/>
+    </record>
+    <record>
+      <token>802.11</token>
+      <description>802.11 access point (used for DHCP-based             
+provisioning over wireless access networks)</description>
+      <xref type="rfc" data="rfc4119"/>
+    </record>
+  </registry>
+  <people>
+    <person id="Apple">
+      <name>Apple, Inc.</name>
+      <uri>mailto:helo&amp;group.apple.com</uri>
+      <updated>2019-03-21</updated>
+    </person>
+    <person id="Brian_Rosen">
+      <name>Brian Rosen</name>
+      <uri>mailto:br&amp;brianrosen.net</uri>
+      <updated>2012-01-11</updated>
+    </person>
+    <person id="James_Winterbottom">
+      <name>James Winterbottom</name>
+      <uri>mailto:james.winterbottom&amp;andrew.com</uri>
+      <updated>2007-10-18</updated>
+    </person>
+    <person id="NextNav">
+      <name>NextNav</name>
+      <uri>mailto:info&amp;NextNav.com</uri>
+      <updated>2017-05-25</updated>
+    </person>
+    <person id="Peter_Blatherwick">
+      <name>Peter Blatherwick</name>
+      <uri>mailto:peter_blatherwick&amp;mitel.com</uri>
+      <updated>2006-07-19</updated>
+    </person>
+    <person id="Roger_Marshall">
+      <name>Roger Marshall</name>
+      <uri>mailto:roger.marshall&amp;comtechtel.com</uri>
+      <updated>2019-04-22</updated>
+    </person>
+  </people>
+</registry>

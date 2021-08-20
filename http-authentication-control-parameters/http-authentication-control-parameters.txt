@@ -1,0 +1,65 @@
+                                         Hypertext Transfer Protocol (HTTP) Authentication Control Parameters
+
+   Created
+           2016-11-17
+
+   Last Updated
+           2017-04-13
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * HTTP Authentication Control Parameters
+     * HTTP Mutual Authentication Host Validation Methods
+
+HTTP Authentication Control Parameters
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rifaat Shekh-Yusef, Yutaka Oiwa
+
+   Reference
+           [RFC8053]
+
+   Available Formats
+           [IMG]
+           CSV
+
+               Token                   Reference
+   auth-style                    [RFC8053, Section 4.2]
+   location-when-unauthenticated [RFC8053, Section 4.3]
+   no-auth                       [RFC8053, Section 4.4]
+   location-when-logout          [RFC8053, Section 4.5]
+   logout-timeout                [RFC8053, Section 4.6]
+   username                      [RFC8053, Section 4.7]
+
+HTTP Mutual Authentication Host Validation Methods
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Rifaat Shekh-Yusef, Yutaka Oiwa
+
+   Reference
+           [RFC8120]
+
+   Available Formats
+           [IMG]
+           CSV
+
+          Token                Description              Reference
+   host                 Hostname verification only [RFC8120, Section 7]
+   tls-server-end-point TLS certificate-based      [RFC8120, Section 7]
+   tls-unique           TLS unique key-based       [RFC8120, Section 7]

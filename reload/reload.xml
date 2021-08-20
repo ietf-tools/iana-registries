@@ -1,0 +1,1036 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="reload.xsl"?>
+<?xml-model href="reload.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="reload">
+    <title>REsource LOcation And Discovery (RELOAD)</title>
+    <created>2013-03-26</created>
+    <updated>2017-03-24</updated>
+    
+    <registry id="overlay-alg">
+        <title>RELOAD Overlay Algorithm Types</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>IETF Review</registration_rule>
+        <record>
+            <description>CHORD-RELOAD</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>EXP-OVERLAY</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>
+        <record date="2014-07-31">
+            <description>CHORD-SELF-TUNING</description>
+            <xref type="rfc" data="rfc7363"/>
+        </record>
+    </registry>
+    
+    
+    <registry id="access-control">
+        <title>RELOAD Access Control Policies</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>
+        <record>
+            <description>USER-MATCH</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>
+        <record>
+            <description>NODE-MATCH</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>
+        <record>
+            <description>USER-NODE-MATCH</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>NODE-MULTIPLE</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>EXP-MATCH</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>
+        <record>
+            <description>NODE-ID-MATCH</description>
+            <xref type="rfc" data="rfc7374"/>
+        </record>
+        <record date="2016-12-12">
+            <description>USER-CHAIN-ACL</description>
+            <xref type="rfc" data="rfc8076"/>
+        </record>
+    </registry>
+    
+    
+   <registry id="app-id">
+    <title>RELOAD Application-ID</title>
+    <xref type="rfc" data="rfc6940"/>
+    <expert>Marc Petit-Huguenin (primary), Cullen Jennings (secondary)</expert>
+    <range>
+      <value>1-32767</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>32768-61440</value>
+      <registration_rule>Expert Review</registration_rule>
+    </range>
+        <record>
+            <value>0</value>
+            <description>INVALID</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       
+        <record>
+            <value>1-5059</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>       
+        <record>
+            <value>5060</value>
+            <description>SIP</description>
+            <spec>Reserved for use by SIP Usage</spec>
+        </record>        
+        <record>
+            <value>5061</value>
+            <description>SIP</description>
+            <spec>Reserved for use by SIP Usage</spec>
+        </record>
+        <record>
+            <value>5062-61440</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>              
+        <record>
+            <value>61441-65534</value>
+            <description>Reserved for Private Use</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>    
+        <record>
+            <value>65535</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+  </registry>
+    
+    
+    <registry id="data-kind-id">
+    <title>RELOAD Data Kind-ID</title>
+    <xref type="rfc" data="rfc6940"/>
+    <expert>Marc Petit-Huguenin (primary), Cullen Jennings (secondary)</expert>
+    <range>
+      <value>0x00000001-0x7fffffff</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>0x8000000-0xf0000000</value>
+      <registration_rule>Expert Review</registration_rule>
+    </range>
+        <record>
+            <value>0x0</value>
+            <description>INVALID</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>          
+        <record date="2016-05-20">
+            <value>0x1</value>
+            <description>SIP-REGISTRATION</description>
+            <spec><xref type="rfc" data="rfc7904"/></spec>
+        </record>       
+        <record>
+            <value>0x2</value>
+            <description>TURN-SERVICE</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x3</value>
+            <description>CERTIFICATE_BY_NODE</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        <record date="2016-12-12">
+            <value>0x4</value>
+            <description>ACCESS-CONTROL-LIST</description>
+            <spec><xref type="rfc" data="rfc8076"/></spec>
+        </record>
+        <record>
+            <value>0x5-0x9</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>       
+        <record>
+            <value>0x10</value>
+            <description>CERTIFICATE_BY_USER</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        <record>
+            <value>0x11-0x103</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>
+        <record date="2014-08-29">
+            <value>0x104</value>
+            <description>REDIR</description>
+            <spec><xref type="rfc" data="rfc7374"/></spec>
+        </record>
+        <record date="2015-08-10">
+            <value>0x105</value>
+            <description>CoAP-REGISTRATION</description>
+            <spec><xref type="rfc" data="rfc7650"/></spec>
+        </record>
+        <record date="2015-08-10">
+            <value>0x106</value>
+            <description>CoAP-CACHING</description>
+            <spec><xref type="rfc" data="rfc7650"/></spec>
+        </record>     
+        <record>
+            <value>0x107-0x7ffffffe</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>                  
+        <record>
+            <value>0x7fffffff</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x8000000-0xf0000000</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>0xf0000001-0xfffffffe</value>
+            <description>Reserved for Private Use</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xffffffff</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+  </registry>    
+
+
+    <registry id="data-model">
+        <title>RELOAD Data Model</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>
+        <record>
+            <description>INVALID</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>SINGLE</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>ARRAY</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>DICTIONARY</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>EXP-DATA</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>        
+        <record>
+            <description>RESERVED</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>
+    </registry>
+    
+    
+    <registry id="message-codes">
+        <title>RELOAD Message Codes</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>    
+        <record>
+            <value>0x0</value>
+            <description>invalidMessageCode</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>          
+        <record>
+            <value>0x1</value>
+            <description>probe_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>         
+        <record>
+            <value>0x2</value>
+            <description>probe_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>         
+        <record>
+            <value>0x3</value>
+            <description>attach_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x4</value>
+            <description>attach_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x5-0x6</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>0x7</value>
+            <description>store_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       
+        <record>
+            <value>0x8</value>
+            <description>store_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       
+        <record>
+            <value>0x9</value>
+            <description>fetch_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       <record>
+            <value>0xa</value>
+            <description>fetch_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xb-0xc</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>       
+        <record>
+            <value>0xd</value>
+            <description>find_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xe</value>
+            <description>find_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xf</value>
+            <description>join_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x10</value>
+            <description>join_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x11</value>
+            <description>leave_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x12</value>
+            <description>leave_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x13</value>
+            <description>update_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x14</value>
+            <description>update_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x15</value>
+            <description>route_query_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x16</value>
+            <description>route_query_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x17</value>
+            <description>ping_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x18</value>
+            <description>ping_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x19</value>
+            <description>stat_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        <record>
+            <value>0x1a</value>
+            <description>stat_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x1b-0x1c</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>0x1d</value>
+            <description>app_attach_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x1e</value>
+            <description>app_attach_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x1f-0x20</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>0x21</value>
+            <description>config_update_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x22</value>
+            <description>config_update_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x23</value>
+            <description>exp_a_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x24</value>
+            <description>exp_a_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x25</value>
+            <description>exp_b_req</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x26</value>
+            <description>exp_b_ans</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x27</value>
+            <description>path_track_req</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x28</value>
+            <description>path_track_ans</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>        
+        <record>
+            <value>0x29-0x7fff</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>0x8000-0xfffe</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xffff</value>
+            <description>error</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        </registry>
+
+
+    <registry id="error-codes">
+        <title>RELOAD Error Codes</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>    
+        <record>
+            <value>0x0</value>
+            <description>invalidErrorCode</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>          
+        <record>
+            <value>0x1</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>         
+        <record>
+            <value>0x2</value>
+            <description>Error_Forbidden</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>         
+        <record>
+            <value>0x3</value>
+            <description>Error_Not_Found</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x4</value>
+            <description>Error_Request_Timeout</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x5</value>
+            <description>Error_Generation_Counter_Too_Low</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x6</value>
+            <description>Error_Incompatible_with_Overlay</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x7</value>
+            <description>Error_Unsupported_Forwarding_Option</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       
+        <record>
+            <value>0x8</value>
+            <description>Error_Data_Too_Large</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       
+        <record>
+            <value>0x9</value>
+            <description>Error_Data_Too_Old</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>       
+        <record>
+            <value>0xa</value>
+            <description>Error_TTL_Exceeded</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xb</value>
+            <description>Error_Message_Too_Large</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xc</value>
+            <description>Error_Unknown_Kind</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>      
+        <record>
+            <value>0xd</value>
+            <description>Error_Unknown_Extension</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xe</value>
+            <description>Error_Response_Too_Large</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0xf</value>
+            <description>Error_Config_Too_Old</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x10</value>
+            <description>Error_Config_Too_New</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x11</value>
+            <description>Error_In_Progress</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x12</value>
+            <description>Error_Exp_A</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x13</value>
+            <description>Error_Exp_B</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>0x14</value>
+            <description>Error_Invalid_Message</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x15</value>
+            <description>Error_Underlay_Destination_Unreachable</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x16</value>
+            <description>Error_Underlay_Time_Exceeded</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x17</value>
+            <description>Error_Message_Expired</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x18</value>
+            <description>Error_Upstream_Misrouting</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x19</value>
+            <description>Error_Loop_Detected</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>
+        <record date="2016-04-04">
+            <value>0x1a</value>
+            <description>Error_TTL_Hops_Exceeded</description>
+            <spec><xref type="rfc" data="rfc7851"/></spec>
+        </record>        
+        <record>
+            <value>0x1b-0x7fff</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>         
+        <record>
+            <value>0x8000-0xffff</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+    </registry>
+
+
+    <registry id="overlay-link-types">
+        <title>RELOAD Overlay Link Registry</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>    
+        <record>
+            <value>0</value>
+            <description>INVALID-PROTOCOL</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>1</value>
+            <description>DTLS-UDP-SR</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>2</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>3</value>
+            <description>DTLS-UDP-SR-NO-ICE</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>4</value>
+            <description>TLS-TCP-FH-NO-ICE</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>5</value>
+            <description>EXP-LINK</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>6-254</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>255</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+    </registry>
+
+
+    <registry id="overlay-link-protocols">
+        <title>RELOAD Overlay Link Protocol Registry</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>
+        <record>
+            <description>TLS</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>         
+        <record>
+            <description>EXP-PROTOCOL</description>
+            <xref type="rfc" data="rfc6940"/>
+        </record>
+        <record date="2013-10-16">
+            <description>HIP</description>
+            <xref type="rfc" data="rfc7086"/>
+        </record>  
+    </registry>
+
+
+    <registry id="forwarding-options">
+        <title>RELOAD Forwarding Option Registry</title>
+        <xref type="rfc" data="rfc6940"/>
+         <expert>Marc Petit-Huguenin (primary), Cullen Jennings (secondary)</expert>
+        <range>
+            <value>01-127</value>
+            <registration_rule>Standards Action</registration_rule>
+        </range>        
+         <range>
+            <value>128-254</value>
+            <registration_rule>Specification Required</registration_rule>
+        </range>
+        <record>
+            <value>0</value>
+            <description>invalidForwardingOption</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>1</value>
+            <description>exp-forward</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+        <record>
+            <value>2</value>
+            <description>extensive_routing_mode</description>
+            <spec><xref type="rfc" data="rfc7263"/><xref type="rfc" data="rfc7263"/></spec>
+        </record>              
+        <record>
+            <value>3-254</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>255</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+    </registry>
+
+
+    <registry id="probe-info">
+        <title>RELOAD Probe Information Type Registry</title>
+        <xref type="rfc" data="rfc6940"/>
+        <registration_rule>Standards Action</registration_rule>    
+        <record>
+            <value>0</value>
+            <description>invalidProbeOption</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>1</value>
+            <description>responsible_set</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>2</value>
+            <description>num_resources</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>3</value>
+            <description>uptime</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>        
+        <record>
+            <value>4</value>
+            <description>exp-probe</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>         
+        <record>
+            <value>5-254</value>
+            <description>Unassigned</description>
+            <spec/>
+        </record>        
+        <record>
+            <value>255</value>
+            <description>Reserved</description>
+            <spec><xref type="rfc" data="rfc6940"/></spec>
+        </record>
+    </registry>
+    
+    
+    <registry id="message-extensions">
+    <title>RELOAD Extensions Registry</title>
+    <xref type="rfc" data="rfc6940"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Marc Petit-Huguenin (primary), Cullen Jennings (secondary)</expert>
+    <record>
+        <value>0x0</value>
+        <description>invalidMessageExtensionType</description>
+        <spec><xref type="rfc" data="rfc6940"/></spec>
+    </record>        
+    <record>
+        <value>0x1</value>
+        <description>exp-ext</description>
+        <spec><xref type="rfc" data="rfc6940"/></spec>
+    </record>
+    <record date="2016-04-04">
+        <value>0x2</value>
+        <description>Diagnostic_Ping</description>
+        <spec><xref type="rfc" data="rfc7851"/></spec>
+    </record>
+    <record date="2014-07-31">
+        <value>0x3</value>
+        <description>self_tuning_data</description>
+        <spec><xref type="rfc" data="rfc7363"/></spec>
+    </record>              
+    <record>
+        <value>0x4-0xfffe</value>
+        <description>Unassigned</description>
+        <spec/>
+    </record>        
+    <record>
+        <value>0xffff</value>
+        <description>Reserved</description>
+        <spec><xref type="rfc" data="rfc6940"/></spec>
+    </record>
+</registry>
+
+
+    <registry id="services">
+    <title>RELOAD Services Registry</title>
+    <xref type="rfc" data="rfc7374"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    <record>
+        <value>turn-server</value>
+        <spec><xref type="rfc" data="rfc7374"/></spec>
+    </record>
+      <record>
+        <value>voice-mail</value>
+        <spec><xref type="rfc" data="rfc7374"/></spec>
+    </record>
+    </registry>
+    
+    
+    <registry id="access-control-policy">
+      <title>CoAP Usage for RELOAD Access Control Policy</title>
+      <xref type="rfc" data="rfc7650"/>
+      <registration_rule>Specification Required</registration_rule>
+      <expert>Unassigned</expert>
+      <record date="2015-08-10">
+        <value>URI-NODE-MATCH</value>
+        <xref type="rfc" data="rfc7650"/>
+      </record>
+      <record date="2015-08-10">
+        <value>URI-MATCH</value>
+        <xref type="rfc" data="rfc7650"/>
+      </record>
+    </registry>
+    
+    
+    <registry id="diagnostics-flag">
+    <title>RELOAD Diagnostics Flag</title>
+    <xref type="rfc" data="rfc7851"/>
+    <registration_rule>Standards Action</registration_rule>
+    <note>Assignments must be accompanied by the registration of corresponding 
+values in the RELOAD Diagnostic Kind ID registry. 
+    </note>        
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0000</value>
+        <description>Reserved All 0s value</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0001</value>
+        <description>Reserved First Bit</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0002</value>
+        <description>STATUS_INFO</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0004</value>
+        <description>ROUTING_TABLE_SIZE</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0008</value>
+        <description>PROCESS_POWER</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0010</value>
+        <description>UPSTREAM_BANDWIDTH</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0020</value>
+        <description>DOWNSTREAM_ BANDWIDTH</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0040</value>
+        <description>SOFTWARE_VERSION</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0080</value>
+        <description>MACHINE_UPTIME</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0100</value>
+        <description>APP_UPTIME</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0200</value>
+        <description>MEMORY_FOOTPRINT</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0400</value>
+        <description>DATASIZE_STORED</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 0800</value>
+        <description>INSTANCES_STORED</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 1000</value>
+        <description>MESSAGES_SENT_RCVD</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 2000</value>
+        <description>EWMA_BYTES_SENT</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 4000</value>
+        <description>EWMA_BYTES_RCVD</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0000 8000</value>
+        <description>UNDERLAY_HOP</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 0000 0000 0001 0000</value>
+        <description>BATTERY_STATUS</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x 8000 0000 0000 0000</value>
+        <description>Reserved Last Bit</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x ffff ffff ffff ffff</value>
+        <description>Reserved All 1s value</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>    
+    </registry>
+    
+    
+    <registry id="diagnostic-kind-id">
+    <title>RELOAD Diagnostic Kind ID</title>
+    <xref type="rfc" data="rfc7851"/>
+    <registration_rule>Standards Action</registration_rule>
+    <note>Assignments in the 0x0001 to 0x003e range must be accompanied by 
+the registration of corresponding values in the RELOAD Diagnostics Flag 
+registry.
+    </note>  
+        <record date="2016-04-04">
+        <value>0x0000</value>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0001</value>
+        <description>STATUS_INFO</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0002</value>
+        <description>ROUTING_TABLE_SIZE</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0003</value>
+        <description>PROCESS_POWER</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0004</value>
+        <description>UPSTREAM_BANDWIDTH</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0005</value>
+        <description>DOWNSTREAM_ BANDWIDTH</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0006</value>
+        <description>SOFTWARE_VERSION</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0007</value>
+        <description>MACHINE_UPTIME</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0008</value>
+        <description>APP_UPTIME</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0009</value>
+        <description>MEMORY_FOOTPRINT</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x000a</value>
+        <description>DATASIZE_STORED</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x000b</value>
+        <description>INSTANCES_STORED</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x000c</value>
+        <description>MESSAGES_SENT_RCVD</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x000d</value>
+        <description>EWMA_BYTES_SENT</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x000e</value>
+        <description>EWMA_BYTES_RCVD</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x000f</value>
+        <description>UNDERLAY_HOP</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0x0010</value>
+        <description>BATTERY_STATUS</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record>
+        <value>0x0011-0x003e</value>
+        <description>Unassigned</description>
+        </record>
+        <record date="2016-04-04">
+        <value>0xf000-0xfffe</value>
+        <description>local use (Reserved)</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>
+        <record date="2016-04-04">
+        <value>0xffff</value>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc7851"/>
+        </record>      
+    </registry>
+
+
+    <people/>
+</registry>

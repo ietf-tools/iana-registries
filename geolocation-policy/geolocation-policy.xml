@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="geolocation-policy.xsl"?>
+<?xml-model href="geolocation-policy.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="geolocation-policy">
+  <title>Geolocation Policy</title>
+  <created>2012-09-06</created>
+  <updated>2013-01-11</updated>
+  
+  <registry id="location-profiles">
+    <title>Geolocation Policy Location Profile Names</title>
+    <xref type="rfc" data="rfc6772"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Unassigned</expert>
+    
+    <record>
+      <name>geodetic-condition</name>
+      <xref type="rfc" data="rfc6772"/>
+    </record>
+    <record>
+      <name>civic-condition</name>
+      <xref type="rfc" data="rfc6772"/>
+    </record>
+    <record>
+      <name>geodetic-transformation</name>
+      <xref type="rfc" data="rfc6772"/>
+    </record>
+    <record>
+      <name>civic-transformation</name>
+      <xref type="rfc" data="rfc6772"/>
+    </record>
+    
+  </registry>
+  
+  <people/>
+</registry>

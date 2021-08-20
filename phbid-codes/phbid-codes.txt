@@ -1,0 +1,39 @@
+                                                        Per Hop Behavior Identification Codes
+
+   Last Updated
+           2001-06-21
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * Per Hop Behavior Identification Codes
+
+Per Hop Behavior Identification Codes
+
+   Registration Procedure(s)
+
+ Expert or area director review
+
+   Expert(s)
+
+ Primary: Brian Carpenter; Secondary: David Black
+
+   Reference
+           [RFC3140]
+
+   Note
+
+ Please see Section 4 of [RFC3140] for details regarding ID Codes.
+
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Value  Description Reference Change Controller
+   0-4095 Unassigned

@@ -1,0 +1,1491 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="trill-parameters.xsl"?>
+<?xml-model href="trill-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="trill-parameters">
+  <title>Transparent Interconnection of Lots of Links (TRILL) Parameters</title>
+  <created>2010-03-26</created>
+  <updated>2019-04-26</updated>
+  
+  
+  <registry id="trill-parameters-1">
+    <title>TRILL Nicknames</title>
+    <xref type="rfc" data="rfc6325"/>
+    <registration_rule>RFC Required (single value) or IETF Review (single or multiple values)</registration_rule>
+    <record>
+      <code>0x0000</code>
+      <profile>Reserved to indicate no nickname specified</profile>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+    <record>
+      <code>0x0001-0xFFBF</code>
+      <profile>Dynamically allocated by the RBridges within each RBridge campus</profile>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+    <record>
+      <code>0xFFC0</code>
+      <profile>Any-RBridge</profile>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record date="2014-02-06" updated="2015-11-04">
+      <code>0xFFC1</code>
+      <profile>OOMF (Overload Originated Multi-destination Frame)</profile>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record>
+      <code>0xFFC2-0xFFD7</code>
+      <profile>Unassigned</profile>
+    </record>
+    <record date="2015-11-04">
+      <code>0xFFD8-0xFFDF</code>
+      <profile>For use in documentation examples</profile>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record>
+      <code>0xFFE0-0xFFFE</code>
+      <profile>Unassigned</profile>
+    </record>
+    <record>
+      <code>0xFFFF</code>
+      <profile>Permanently reserved</profile>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+  </registry>
+  
+  
+  <registry id="trill-parameters-2">
+    <title>TRILL Multicast Addresses</title>
+    <xref type="rfc" data="rfc6325"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record>
+      <code>01-80-C2-00-00-40</code>
+      <algorithm>All-RBridges</algorithm>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+    <record>
+      <code>01-80-C2-00-00-41</code>
+      <algorithm>All-IS-IS-RBridges</algorithm>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+    <record>
+      <code>01-80-C2-00-00-42</code>
+      <algorithm>All-ESADI-RBridges/All-Egress-RBridges</algorithm>
+      <xref type="rfc" data="rfc6325"/><xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <code>01-80-C2-00-00-43 to 01-80-C2-00-00-44</code>
+      <algorithm>Unassigned</algorithm>
+    </record> 
+    <record>
+      <code>01-80-C2-00-00-45</code>
+      <algorithm>TRILL-End-Stations</algorithm>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <code>01-80-C2-00-00-46</code>
+      <algorithm>All-Edge-RBridges</algorithm>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record date="2017-03-17">
+      <code>01-80-C2-00-00-47</code>
+      <algorithm>TRILL-ES-IS</algorithm>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record>
+      <code>01-80-C2-00-00-48 to 01-80-C2-00-00-4F</code>
+      <algorithm>Unassigned</algorithm>
+    </record> 
+  </registry>
+
+  <registry id="trill-ethertypes">
+    <title>TRILL Ethertypes</title>
+    <xref type="rfc" data="rfc8377"/>
+    <registration_rule>Ethertypes are assigned by the IEEE Registration Authority. 
+Updates to this registry are coordinated with the designated 
+expert.</registration_rule>
+    <expert>Donald Eastlake (primary), Sue Hares (secondary)</expert>
+    <note>This registry provides centralized documentation of
+Ethertypes that were assigned by the IEEE for initial use
+with TRILL. In some cases, particularly L2-IS-IS and MT,
+they may be used with other protocols.      
+    </note>
+    <record date="2018-07-23">
+      <value>0x22F3</value>
+      <mnemonic>TRILL</mnemonic>
+      <description>TRILL data</description>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+    <record date="2018-07-23">
+      <value>0x22F4</value>
+      <mnemonic>L2-IS-IS</mnemonic>
+      <description>IS-IS</description>
+      <xref type="rfc" data="rfc6325"/>
+    </record>
+    <record date="2018-07-23">
+      <value>0x893B</value>
+      <mnemonic>FGL</mnemonic>
+      <description>Fine Grained Labeling</description>
+      <xref type="rfc" data="rfc7172"/>
+    </record>
+    <record date="2018-07-23">
+      <value>0x8946</value>
+      <mnemonic>-</mnemonic>
+      <description>TRILL RBridge Channel</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record date="2018-07-23">
+      <value>0x9A22</value>
+      <mnemonic>MT</mnemonic>
+      <description>Multi-Topology</description>
+      <xref type="rfc" data="rfc8377"/>
+    </record>
+  </registry>
+
+  <registry id="extended-header-flags">
+    <title>TRILL Extended Header Flags</title>
+    <xref type="rfc" data="rfc7179"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record>
+      <bits>0-2</bits>
+      <purpose>Critical Summary Bits</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record>
+      <bits>3-6</bits>
+      <purpose>available critical hop-by-hop flags</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record>
+      <bits>7</bits>
+      <purpose>Critical Channel Alert Flag</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record>
+      <bits>8</bits>
+      <purpose>Non-critical Channel Alert Flag</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record>
+      <bits>9-11</bits>
+      <purpose>available non-critical hop-by-hop flags</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record date="2018-03-13">
+      <bits>12-13</bits>
+      <purpose>TRILL-ECN (Explicit Congestion Notification)</purpose>
+      <xref type="draft" data="RFC-ietf-trill-ecn-support-07"/>
+    </record>
+    <record updated="2015-11-04">
+      <bits>14-16</bits>
+      <purpose>Extended Hop Count</purpose>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record>
+      <bits>17-20</bits>
+      <purpose>available non-critical reserved flags</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record>
+      <bits>21-25</bits>
+      <purpose>available critical ingress-to-egress flags</purpose>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record date="2018-03-13">
+      <bits>26</bits>
+      <purpose>Critical Congestion Experienced (CCE)</purpose>
+      <xref type="draft" data="RFC-ietf-trill-ecn-support-07"/>
+    </record>
+    <record updated="2015-11-04">
+      <bits>27-28</bits>
+      <purpose>Extended Color</purpose>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record updated="2015-11-04">
+      <bits>29-31</bits>
+      <purpose>available non-critical ingress-to-egress flags</purpose>
+      <xref type="rfc" data="rfc7179"/>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+  </registry>
+  
+  <registry id="rbridge-channel-protocol">
+    <title>RBridge Channel Protocols</title>
+    <xref type="rfc" data="rfc7178"/>
+    <range>
+      <value>0x002-0x0FF</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note/>
+    </range>
+    <range>
+      <value>0x100-0xFF7</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>allocation of a single value</note>
+    </range>
+    <range>
+      <value>0x100-0xFF7</value>
+      <registration_rule>IESG Approval</registration_rule>
+      <note>allocation of multiple values</note>
+    </range>
+    <record>
+      <name>0x000</name>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <name>0x001</name>
+      <description>RBridge Channel Error</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <name>0x002</name>
+      <description>BFD Control</description>
+      <xref type="rfc" data="rfc7175"/>
+    </record>
+    <record>
+      <name>0x003</name>
+      <description>BFD Echo</description>
+      <xref type="rfc" data="rfc7175"/>
+    </record>
+    <record date="2016-08-19">
+      <name>0x004</name>
+      <description>RBridge Channel Extension</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+    <record date="2017-03-17">
+      <name>0x005</name>
+      <description>Pull Directory Services</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <name>0x006</name>
+      <description>Port-Shutdown</description>
+      <xref type="rfc" data="rfc8139"/>
+    </record>
+    <record date="2018-02-08">
+      <name>0x007</name>
+      <description>P2MP BFD Control</description>
+      <xref type="rfc" data="rfc8564"/>
+    </record>
+    <record date="2018-03-14">
+      <name>0x008</name>
+      <description>Vendor-Specific RBridge Channel</description>
+      <xref type="rfc" data="rfc8381"/>
+    </record>
+    <record date="2018-03-20">
+      <name>0x009</name>
+      <description>Address Flush</description>
+      <xref type="rfc" data="rfc8383"/>
+    </record>
+    <record>
+      <name>0x00A-0xFF7</name>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <name>0xFF8-0xFFE</name>
+      <description>Reserved for Private Use</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <name>0xFFF</name>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    
+    <registry id="trill-address-flush-tlv-types">
+      <title>TRILL Address Flush TLV Types</title>
+      <xref type="rfc" data="rfc8383"/>
+      <registration_rule>IETF Review</registration_rule>
+      <record date="2018-03-20">
+        <name>0</name>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>1</name>
+        <description>Blocks of VLANs</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>2</name>
+        <description>Bit Map of VLANs</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>3</name>
+        <description>Blocks of FGLs</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>4</name>
+        <description>List of FGLs</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>5</name>
+        <description>Bit Map of FGLs</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>6</name>
+        <description>All Data Labels</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>7</name>
+        <description>MAC Address List</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record date="2018-03-20">
+        <name>8</name>
+        <description>MAC Address Blocks</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+      <record>
+        <name>9-254</name>
+        <description>Unassigned</description>
+      </record>
+      <record date="2018-03-20">
+        <name>255</name>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc8383"/>
+      </record>
+    </registry>
+    
+  </registry>
+  
+  <registry id="extended-rbridge-channel-payload-types">
+    <title>Extended RBridge Channel Payload Types</title>
+    <xref type="rfc" data="rfc7978"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record date="2016-08-19">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+    <record date="2016-08-19">
+      <value>1</value>
+      <description>Null</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 3.1</xref>
+    </record>
+    <record date="2016-08-19">
+      <value>2</value>
+      <description>Ethertyped Payload</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 3.2</xref>
+    </record>
+    <record date="2016-08-19">
+      <value>3</value>
+      <description>Ethernet Frame</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 3.3</xref>
+    </record>
+    <record>
+      <value>4-14</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-08-19">
+      <value>15</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+  </registry>
+  
+  <registry id="extended-rbridge-channel-security-types">
+    <title>Extended RBridge Channel Security Types</title>
+    <xref type="rfc" data="rfc7978"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record date="2016-08-19">
+      <value>0</value>
+      <description>None</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 4.2</xref>
+    </record>
+    <record date="2016-08-19">
+      <value>1</value>
+      <description>IS-IS CRYPTO_AUTH-Based Authentication</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 4.3</xref>
+    </record>
+    <record date="2016-08-19">
+      <value>2</value>
+      <description>DTLS Pairwise Security</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 4.4</xref>
+    </record>
+    <record date="2016-08-19">
+      <value>3</value>
+      <description>Composite Security</description>
+      <xref type="rfc" data="rfc7978">RFC7978, Section 4.5</xref>
+    </record>
+    <record>
+      <value>4-14</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-08-19">
+      <value>15</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+  </registry>
+  
+  <registry id="rbridge-channel-header-flags">
+    <title>RBridge Channel Header Flags</title>
+    <xref type="rfc" data="rfc7178"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record>
+      <bit>0</bit>
+      <mnemonic>SL</mnemonic>
+      <description>Silent</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <bit>1</bit>
+      <mnemonic>MH</mnemonic>
+      <description>Multi-hop</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <bit>2</bit>
+      <mnemonic>NA</mnemonic>
+      <description>Native</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <bit>3-11</bit>
+      <mnemonic/>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+  
+  <registry id="rbridge-channel-error-codes">
+    <title>RBridge Channel Error Codes</title>
+    <xref type="rfc" data="rfc7178"/>
+    <registration_rule>Standards Action</registration_rule>
+    <note>Value 15 is intended to be allocated by Standards Action for an error
+code expansion feature when it appears likely that all other
+available error codes are being allocated.
+    </note>
+    <record>
+      <value>0</value>
+      <description>No error</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>Frame too short (truncated Ethertype or Channel Header)</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>Unrecognized Ethertype</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <value>3</value>
+      <description>Unimplemented value of CHV</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <value>4</value>
+      <description>Wrong value of NA flag</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record>
+      <value>5</value>
+      <description>Channel Protocol is reserved or unimplemented</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    <record date="2016-08-19">
+      <value>6</value>
+      <description>Unknown or unsupported field value</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+    <record date="2016-08-19">
+      <value>7</value>
+      <description>Authentication failure</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+    <record date="2016-08-19">
+      <value>8</value>
+      <description>Error in nested RBridge Channel message</description>
+      <xref type="rfc" data="rfc7978"/>
+    </record>
+    <record>
+      <value>9-14</value>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <value>15</value>
+      <description>Reserved (see Note)</description>
+      <xref type="rfc" data="rfc7178"/>
+    </record>
+    
+    <registry id="rbridge-channel-suberror-codes">
+      <title>RBridge Channel SubError Codes</title>
+      <xref type="rfc" data="rfc7978"/>
+      <registration_rule>IETF Review</registration_rule>
+      <record date="2016-08-19">
+        
+        <value>0</value>
+        <subvalue/>
+        <description>No Error, suberrors not allowed</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>1-5</value>
+        <subvalue/>
+        <description>(no suberrors assigned)</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>0</subvalue>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>1</subvalue>
+        <description>Non-zero RESV4 nibble</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>2</subvalue>
+        <description>Unsupported SType</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>3</subvalue>
+        <description>Unsupported PType</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>4</subvalue>
+        <description>Unknown Key ID</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>5</subvalue>
+        <description>Unsupported Ethertype with PType = 2</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>6</subvalue>
+        <description>Unsupported authentication algorithm for SType = 1</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>6</value>
+        <subvalue>7</subvalue>
+        <description>Non-zero SubERR with zero ERR field</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record>
+        <value>6</value>
+        <subvalue>8-15</subvalue>
+        <description>Unassigned</description>
+      </record>
+      <record date="2016-08-19">
+        <value>7-14</value>
+        <subvalue/>
+        <description>(no suberrors assigned)</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+      <record date="2016-08-19">
+        <value>15</value>
+        <subvalue/>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc7978"/>
+      </record>
+    </registry>
+    
+    <registry id="vendor-rbridge-channel-error-codes">
+      <title>Vendor RBridge Channel Error Codes</title>
+      <xref type="rfc" data="rfc8381"/>
+      <registration_rule>Standards Action</registration_rule>
+      <record date="2018-03-14">
+        <value>0x00</value>
+        <description>No error</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+      <record date="2018-03-14">
+        <value>0x01</value>
+        <description>Message too short</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+      <record date="2018-03-14">
+        <value>0x02</value>
+        <description>Unknown OUI/CID</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+      <record date="2018-03-14">
+        <value>0x03</value>
+        <description>Unknown Sub-Protocol</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+      <record date="2018-03-14">
+        <value>0x04</value>
+        <description>Unknown Sub-Version</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+      <record date="2018-03-14">
+        <value>0x05-0x0F</value>
+        <description>Unassigned</description>
+      </record>
+      <record date="2018-03-14">
+        <value>0x10-0xFE</value>
+        <description>Reserved for vendor use</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+      <record date="2018-03-14">
+        <value>0xFF</value>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc8381"/>
+      </record>
+    </registry>
+    
+  </registry>
+  
+  <registry id="trill-ver-capability">
+    <title>TRILL-VER Sub-TLV Capability Flags</title>
+    <xref type="rfc" data="rfc7176"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record updated="2016-03-25">
+      <value>0</value>
+      <description>Affinity sub-TLV support</description>
+      <xref type="rfc" data="rfc7783"/>
+    </record>
+    <record date="2014-02-04">
+      <value>1</value>
+      <description>FGL-safe</description>
+      <xref type="rfc" data="rfc7172"/>
+    </record>
+    <record date="2014-11-07">
+      <value>2</value>
+      <description>OAM capable</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record date="2014-11-07" updated="2015-03-04">
+      <value>3</value>
+      <description>Backwards-compatible OAM</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record date="2015-11-04">
+      <value>4</value>
+      <description>E-L1FS FS-LSP support</description>
+      <xref type="rfc" data="rfc7780"/>
+      <xref type="rfc" data="rfc7356"/>
+    </record>
+    <record date="2018-03-20">
+      <value>5</value>
+      <description>Able to handle the NickBlockFlags APPsub-TLV</description>
+      <xref type="rfc" data="rfc8397"/>
+    </record>
+    <record>
+      <value>6-13</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-11-04">
+      <value>14</value>
+      <description>Extended Hop Count support</description>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record>
+      <value>15-16</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-11-04">
+      <value>17-20</value>
+      <description>available non-critical reserved flags</description>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record date="2015-11-04">
+      <value>21-26</value>
+      <description>available critical ingress-to-egress flags</description>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record date="2015-11-04">
+      <value>27-28</value>
+      <description>Extended Color support</description>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record updated="2015-11-04">
+      <value>29-31</value>
+      <description>Extended header flag support</description>
+      <xref type="rfc" data="rfc7179"/>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+  </registry>
+    
+  <registry id="port-trill-ver-capability">
+    <title>PORT-TRILL-VER Sub-TLV Capability Flags</title>
+    <xref type="rfc" data="rfc7176"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record updated="2017-03-20">
+      <value>0</value>
+      <description>Hello reduction support.</description>
+      <xref type="rfc" data="rfc8139"/>
+    </record>
+    <record>
+      <value>1-2</value>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <value>3-13</value>
+      <description>Hop-by-hop extended flag support.</description>
+      <xref type="rfc" data="rfc7179"/>
+    </record>
+    <record date="2018-03-13">
+      <value>14-15</value>
+      <description>Topology labeling support.</description>
+      <xref type="rfc" data="rfc8377"/>
+    </record>
+    <record>
+      <value>16-31</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+  
+  <registry id="neighbor-record-flags">
+    <title>TRILL Neighbor TLV NEIGHBOR RECORD Flags</title>
+    <xref type="rfc" data="rfc7176"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record>
+      <value>0</value>
+      <name>Fail</name>
+      <description>Failed MTU test</description>
+      <xref type="rfc" data="rfc6325"/>
+      <xref type="rfc" data="rfc7176"/>
+      <xref type="rfc" data="rfc7177"/>
+    </record>
+    <record updated="2015-11-04">
+      <value>1</value>
+      <name>OOMF</name>
+      <description>Offering OOMF service</description>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record>
+      <value>2-7</value>
+      <name>Unassigned</name>
+      <description/>
+    </record>
+  </registry>
+
+  <registry id="interested-vlans-flags">
+    <title>Interested VLANs Flag Bits</title>
+    <xref type="rfc" data="rfc7176"/>
+    <xref type="rfc" data="rfc7357"/>
+    <registration_rule>IETF Review</registration_rule>
+    <note>These bits appear in the Interested VLANs record within the
+Interested VLANs and Spanning Tree Roots Sub-TLV (INT-VLAN)
+specified in <xref type="rfc" data="rfc7176"/>.
+    </note>
+    <record>
+      <value>0</value>
+      <name>M4</name>
+      <description>IPv4 Multicast Router Attached</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+    <record>
+      <value>1</value>
+      <name>M6</name>
+      <description>IPv6 Multicast Router Attached</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+    <record>
+      <value>2</value>
+      <name/>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <value>3</value>
+      <name>ES</name>
+      <description>ESADI Participation</description>
+      <xref type="rfc" data="rfc7357"/>
+    </record>
+    <record>
+      <value>4-15</value>
+      <name/>
+      <description>(used for a VLAN ID)</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+    <record date="2015-11-03">
+      <value>16</value>
+      <name>AA</name>
+      <description>VLANs for Active-Active</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record>
+      <value>17</value>
+      <name/>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-03-17">
+      <value>18</value>
+      <name>PUL</name>
+      <description>Pull Directory</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>19</value>
+      <name>NOD</name>
+      <description>No Data</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record>
+      <value>20-31</value>
+      <name/>
+      <description>(used for a VLAN ID)</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+  </registry>
+
+  <registry id="interested-labels-flags">
+    <title>Interested Labels Flag Bits</title>
+    <xref type="rfc" data="rfc7176"/>
+    <xref type="rfc" data="rfc7357"/>
+    <registration_rule>IETF Review</registration_rule>
+    <note>These bits appear in the Interested Labels record within the
+Interested Labels and Spanning Tree Roots Sub-TLV (INT-LABEL)
+specified in <xref type="rfc" data="rfc7176"/>.
+    </note>
+    <record>
+      <value>0</value>
+      <name>M4</name>
+      <description>IPv4 Multicast Router Attached</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+    <record>
+      <value>1</value>
+      <name>M6</name>
+      <description>IPv6 Multicast Router Attached</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+    <record>
+      <value>2</value>
+      <name>BM</name>
+      <description>Bit Map</description>
+      <xref type="rfc" data="rfc7176"/>
+    </record>
+    <record>
+      <value>3</value>
+      <name>ES</name>
+      <description>ESADI Participation</description>
+      <xref type="rfc" data="rfc7357"/>
+    </record>
+    <record date="2015-11-03">
+      <value>4</value>
+      <name>AA</name>
+      <description>FGLs for Active-Active</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record>
+      <value>5</value>
+      <name/>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-03-17">
+      <value>6</value>
+      <name>PUL</name>
+      <description>Pull Directory</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>7</value>
+      <name>NOD</name>
+      <description>No Data</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+  </registry>
+
+  <registry id="isis-tlv-251-app-id-1">
+    <title>TRILL APPsub-TLV Types under IS-IS TLV 251 Application Identifier 1</title>
+    <xref type="rfc" data="rfc7357"/>
+    <registration_rule>IETF Review with additional requirements on the 
+documentation of the use being registered as specified in 
+Section 7.2 of <xref type="rfc" data="rfc7357"/>.</registration_rule>
+    <note>Types greater than 255 are only usable in contexts permitting 
+a type larger than one byte, such as extended TLVs <xref type="rfc" data="rfc7356"/>.
+    </note>
+    <note>Also see <xref type="registry" data="isis-tlv-codepoints">Application Identifiers for TLV 251</xref>
+    </note>
+    <record>
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7357"/>
+    </record>
+    <record updated="2017-03-17">
+      <value>1</value>
+      <description>ESADI-PARAM</description>
+      <xref type="rfc" data="rfc7357"/>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2015-10-01">
+      <value>2</value>
+      <description>PN-LAALP-Membership</description>
+      <xref type="rfc" data="rfc7781"/>
+    </record>
+    <record date="2015-10-01">
+      <value>3</value>
+      <description>PN-RBv</description>
+      <xref type="rfc" data="rfc7781"/>
+    </record>
+    <record date="2015-10-01">
+      <value>4</value>
+      <description>PN-MAC-RI-LAALP-INFO-START</description>
+      <xref type="rfc" data="rfc7781"/>
+    </record>
+    <record date="2015-10-01">
+      <value>5</value>
+      <description>PN-MAC-RI-LAALP-INFO-END</description>
+      <xref type="rfc" data="rfc7781"/>
+    </record>
+    <record date="2015-11-04">
+      <value>6</value>
+      <description>NICKFLAGS</description>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record date="2016-07-07">
+      <value>7</value>
+      <description>TENANT-GWMAC-LABEL</description>
+      <xref type="rfc" data="rfc7956"/>
+    </record>
+    <record date="2016-07-07">
+      <value>8</value>
+      <description>IPV4-PREFIX</description>
+      <xref type="rfc" data="rfc7956"/>
+    </record>
+    <record date="2016-07-07">
+      <value>9</value>
+      <description>IPV6-PREFIX</description>
+      <xref type="rfc" data="rfc7956"/>
+    </record>
+    <record date="2016-07-12">
+      <value>10</value>
+      <description>IA</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record date="2016-07-12">
+      <value>11</value>
+      <description>Tree and VLANs</description>
+      <xref type="rfc" data="rfc7968"/>
+    </record>
+    <record date="2016-07-12">
+      <value>12</value>
+      <description>Tree and VLANs Used</description>
+      <xref type="rfc" data="rfc7968"/>
+    </record>
+    <record date="2016-07-12">
+      <value>13</value>
+      <description>Tree and FGLs</description>
+      <xref type="rfc" data="rfc7968"/>
+    </record>
+    <record date="2016-07-12">
+      <value>14</value>
+      <description>Tree and FGLs Used</description>
+      <xref type="rfc" data="rfc7968"/>
+    </record>
+    <record date="2016-07-12">
+      <value>15</value>
+      <description>Tree and Groups</description>
+      <xref type="rfc" data="rfc7968"/>
+    </record>
+    <record date="2016-07-12">
+      <value>16</value>
+      <description>Tree and Groups Used</description>
+      <xref type="rfc" data="rfc7968"/>
+    </record>
+    <record date="2017-03-21">
+      <value>17</value>
+      <description>AppointmentBitmap</description>
+      <xref type="rfc" data="rfc8139"/>
+    </record>
+    <record date="2017-03-21">
+      <value>18</value>
+      <description>AppointmentList</description>
+      <xref type="rfc" data="rfc8139"/>
+    </record>
+    <record date="2017-03-21">
+      <value>19</value>
+      <description>FGL-VLAN-Bitmap</description>
+      <xref type="rfc" data="rfc8139"/>
+    </record>
+    <record date="2017-03-21">
+      <value>20</value>
+      <description>FGL-VLAN-Pairs</description>
+      <xref type="rfc" data="rfc8139"/>
+    </record>
+    <record date="2017-08-07">
+      <value>21</value>
+      <description>originatingSNPBufferSize</description>
+      <xref type="rfc" data="rfc8249"/>
+    </record>
+    <record date="2018-03-20">
+      <value>22</value>
+      <description>Smart-Parameters</description>
+      <xref type="rfc" data="rfc8384"/>
+    </record>
+    <record date="2018-03-20">
+      <value>23</value>
+      <description>Smart-MAC</description>
+      <xref type="rfc" data="rfc8384"/>
+    </record>
+    <record date="2018-03-20">
+      <value>24</value>
+      <description>NickBlockFlags</description>
+      <xref type="rfc" data="rfc8397"/>
+    </record>
+    <record>
+      <value>25-251</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-11-03">
+      <value>252</value>
+      <description>AA-LAALP-GROUP-RBRIDGES</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record date="2015-11-03">
+      <value>253</value>
+      <description>AA-LAALP-GROUP-MAC</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record date="2015-11-03">
+      <value>254</value>
+      <description>EXTENDED-RBRIDGE-CAP</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record>
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7357"/>
+    </record>
+    <record>
+      <value>256-65534</value>
+      <description>Unassigned</description>
+    </record>
+    <record>
+      <value>65535</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7357"/>
+    </record>
+    
+
+    
+    <registry id="esadi-parameter-appsub-tlv-flag-bits">
+      <title>ESADI-Parameter APPsub-TLV Flag Bits</title>
+      <xref type="rfc" data="rfc7357"/>
+      <xref type="rfc" data="rfc8171"/>
+      <registration_rule>Standards Action</registration_rule>
+      <record date="2017-03-17">
+        <value>0</value>
+        <mnemonic>UN</mnemonic>
+        <description>Supports Unicast ESADI</description>
+        <xref type="rfc" data="rfc7357"/>
+      </record>
+      <record date="2017-03-17">
+        <value>1-2</value>
+        <mnemonic>PDSS</mnemonic>
+        <description>Push Directory Server Status</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record>
+        <value>3-7</value>
+        <mnemonic/>
+        <description>Unassigned</description>
+      </record>
+    </registry>
+    
+    <registry id="nickflags-bits">
+    <title>NickFlags Bits</title>
+    <xref type="rfc" data="rfc7780"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record date="2015-11-04">
+      <value>0</value>
+      <mnemonic>IN</mnemonic>
+      <description>Used as ingress</description>
+      <xref type="rfc" data="rfc7780"/>
+    </record>
+    <record date="2016-07-07">
+      <value>1</value>
+      <mnemonic>SE</mnemonic>
+      <description>Inter-Subnet Egress</description>
+      <xref type="rfc" data="rfc7956"/>
+    </record>
+      <record date="2018-02-01">
+        <value>2</value>
+        <mnemonic>R</mnemonic>
+        <description>Replication Nickname</description>
+        <xref type="rfc" data="rfc8361"/>
+      </record>
+      <record date="2018-02-01">
+        <value>3</value>
+        <mnemonic>C</mnemonic>
+        <description>Special RPF Check</description>
+        <xref type="rfc" data="rfc8361"/>
+      </record>
+    <record>
+      <value>4-15</value>
+      <mnemonic/>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+
+  <registry id="ia-appsub-tlv-sub-sub-tlvs">
+    <title>Interface Addresses APPsub-TLV Sub-sub-TLVs</title>
+    <xref type="rfc" data="rfc7961"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Unassigned</expert>
+    <note>Types greater than 255 are not usable in some contexts.
+    </note>
+    <record date="2016-07-12">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record date="2016-07-12">
+      <value>1</value>
+      <description>AFN Size</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record date="2016-07-12">
+      <value>2</value>
+      <description>Fixed Address</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record date="2016-07-12">
+      <value>3</value>
+      <description>Data Label</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record date="2016-07-12">
+      <value>4</value>
+      <description>Topology</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record>
+      <value>5-254</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-07-12">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+    <record>
+      <value>256-65534</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2016-07-12">
+      <value>65535</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7961"/>
+    </record>
+  </registry>
+  
+  <registry id="extended-rbridge-capabilities">
+    <title>Extended RBridge Capabilities</title>
+    <xref type="rfc" data="rfc7782"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Unassigned</expert>
+    <record date="2015-11-03">
+      <value>0</value>
+      <mnemonic>E</mnemonic>
+      <description>Option B Support</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record date="2015-11-03">
+      <value>1</value>
+      <mnemonic>H</mnemonic>
+      <description>Option A Support</description>
+      <xref type="rfc" data="rfc7782"/>
+    </record>
+    <record date="2015-11-03">
+      <value>2-63</value>
+      <mnemonic/>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+    
+  </registry> 
+
+  <registry id="trill-oam-return-codes">
+    <title>TRILL OAM Return Codes</title>
+    <xref type="rfc" data="rfc7455"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record>
+      <value>0</value>
+      <description>Request message</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>Reply message</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record>
+      <value>2-255</value>
+      <description>Unassigned</description>
+    </record>
+    
+    
+
+  <registry id="trill-oam-return-sub-code-0">
+    <title>Sub-codes for TRILL OAM Return Code 0</title>
+    <xref type="rfc" data="rfc7455"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record>
+      <value>0</value>
+      <description>Valid request</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record>
+      <value>1-255</value>
+      <description>Unassigned</description>
+    </record>
+    </registry>
+    
+     <registry id="trill-oam-return-sub-code-1">
+    <title>Sub-codes for TRILL OAM Return Code 1</title>
+    <xref type="rfc" data="rfc7455"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record>
+      <value>0</value>
+      <description>Valid response</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>Fragment limit exceeded</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>Intermediate RBridge</description>
+      <xref type="rfc" data="rfc7455"/>
+    </record>
+    <record>
+      <value>3-255</value>
+      <description>Unassigned</description>
+    </record>
+    </registry>
+    
+    </registry> 
+    
+  <registry id="trill-pull-directory-qtypes">
+    <title>TRILL Pull Directory Query Types (QTYPEs)</title>
+    <xref type="rfc" data="rfc8171"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record date="2017-03-17">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>1</value>
+      <description>Address query</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>2</value>
+      <description>Frame query</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record>
+      <value>3-4</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-03-17">
+      <value>5</value>
+      <description>Unknown unicast MAC query frame</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record>
+      <value>6-14</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-03-17">
+      <value>15</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+  </registry>
+  
+  <registry id="trill-pull-directory-errors">
+    <title>TRILL Pull Directory Errors</title>
+    <xref type="rfc" data="rfc8171"/>
+    <registration_rule>IETF Review</registration_rule>
+    <record date="2017-03-17">
+      <value>0</value>
+      <level/>
+      <description>No Error</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>1</value>
+      <level>Message</level>
+      <description>Unknown or reserved Query Message field value</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>2</value>
+      <level>Message</level>
+      <description>Request Message/data too short</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>3</value>
+      <level>Message</level>
+      <description>Unknown or reserved Update Message field value</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>4</value>
+      <level>Message</level>
+      <description>Update Message/data too short</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record>
+      <value>5-126</value>
+      <level>Message</level>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-03-17">
+      <value>127</value>
+      <level/>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>128</value>
+      <level>Record</level>
+      <description>Unknown or reserved QUERY Record field value</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>129</value>
+      <level>Record</level>
+      <description>QUERY Record truncated</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>130</value>
+      <level>Record</level>
+      <description>Address not found</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>131</value>
+      <level>Record</level>
+      <description>Unknown or reserved RESPONSE Record field value</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record date="2017-03-17">
+      <value>132</value>
+      <level>Record</level>
+      <description>RESPONSE Record truncated</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    <record>
+      <value>133-254</value>
+      <level>Record</level>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-03-17">
+      <value>255</value>
+      <level/>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8171"/>
+    </record>
+    
+    
+    
+    <registry id="trill-pull-directory-errors-sub-code-1-3">
+      <title>Sub-codes for TRILL Pull Directory Errors 1 and 3</title>
+      <xref type="rfc" data="rfc8171"/>
+      <registration_rule>Expert Review</registration_rule>
+      <expert>Unassigned</expert>
+      <record date="2017-03-17">
+        <value>0</value>
+        <description>Unspecified</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>1</value>
+        <description>Version not understood (see Section 3.1.1 of <xref type="rfc" data="rfc8171"/>)</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>2</value>
+        <description>Unknown Type field value</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>3</value>
+        <description>Specified Data Label not being served</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record>
+        <value>4-254</value>
+        <description>Unassigned</description>
+      </record>
+      <record date="2017-03-17">
+        <value>255</value>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+    </registry>
+    
+    <registry id="trill-pull-directory-errors-sub-code-128-131">
+      <title>Sub-codes for TRILL Pull Directory Errors 128 and 131</title>
+      <xref type="rfc" data="rfc8171"/>
+      <registration_rule>Expert Review</registration_rule>
+      <expert>Unassigned</expert>
+      <record date="2017-03-17">
+        <value>0</value>
+        <description>Unspecified</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>1</value>
+        <description>Unknown AFN field value</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>2</value>
+        <description>Unknown or Reserved QTYPE field value</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>3</value>
+        <description>Invalid or inconsistent SIZE field value</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>4</value>
+        <description>Invalid frame for QTYPE 2 (other than SEND)</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>5</value>
+        <description>SEND frame sent as QTYPE 2</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record date="2017-03-17">
+        <value>6</value>
+        <description>Invalid frame for QTYPE 5 (such as multicast MacDA)</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+      <record>
+        <value>7-254</value>
+        <description>Unassigned</description>
+      </record>
+      <record date="2017-03-17">
+        <value>255</value>
+        <description>Reserved</description>
+        <xref type="rfc" data="rfc8171"/>
+      </record>
+    </registry>
+    
+  </registry> 
+    
+  <people/>
+</registry>

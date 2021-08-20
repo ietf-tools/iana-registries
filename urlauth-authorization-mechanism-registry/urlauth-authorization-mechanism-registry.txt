@@ -1,0 +1,38 @@
+                                   Internet Message Access Protocol (IMAP) URLAUTH Authorization Mechanism Registry
+
+   Created
+           2006-04-20
+
+   Last Updated
+           2006-08-03
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * IMAP URLAUTH Authorization Mechanism Registry
+
+IMAP URLAUTH Authorization Mechanism Registry
+
+   Registration Procedure(s)
+
+ Standards Track or IESG-Approved Experimental RFC
+
+   Reference
+           [RFC4467]
+
+   Note
+
+ Registry is case-insensitive.
+
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Mechanism Name Reference
+   INTERNAL       [RFC4467]

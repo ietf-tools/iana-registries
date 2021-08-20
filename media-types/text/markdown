@@ -1,0 +1,124 @@
+(registered 2014-11-11, updated 2016-03-28; see RFC7763)
+
+ Type name: text
+
+ Subtype name: markdown
+
+ Required parameters:
+
+  charset: Per Section 4.2.1 of [RFC6838], charset is REQUIRED. There
+    is no default value because neither [MDSYNTAX] nor many popular
+    implementations at the time of this registration do either.
+    [MDSYNTAX] clearly describes Markdown as a "writing format"; its
+    syntax rules operate on characters (specifically, on punctuation)
+    rather than code points. Many Markdown processors will get along
+    just fine by operating on characters in the US-ASCII repertoire
+    (specifically punctuation), blissfully oblivious to other
+    characters or codes.
+
+ Optional parameters:
+
+  variant: An optional identifier of the specific Markdown variant
+    that the author intended. The value serves as a "hint" to the
+    recipient, meaning that the recipient MAY interpret the Markdown
+    as that variant, but is under no obligation to do so. When
+    omitted, there is no hint; the interpretation is entirely up to
+    the receiver and context. This identifier is plain US-ASCII and
+    case-insensitive. To promote interoperability, identifiers can be
+    registered in the registry defined in Section 6. If a receiver
+    does not recognize the variant identifier, the receiver MAY
+    present the identifier to a user to inform him or her of it.
+
+  Other parameters MAY be included with the media type. The variant
+  SHOULD define the semantics of such other parameters. Additionally,
+  the variant MAY be registered under another media type; this
+  text/markdown registration does not preclude other registrations.
+
+ Encoding considerations:
+
+  Markdown content is plain text content; any octet sequence is valid
+  as long as it conforms to the character codes of the charset
+  parameter. See [RFC2046]. Markup characters in [MDSYNTAX] are
+  limited to printable US-ASCII; however, other variants can define
+  markup characters outside this range (including control characters
+  such as NUL and characters encoded in multiple octets).
+
+ Security considerations:
+
+  Markdown interpreted as plain text is relatively harmless. A text
+  editor need only display the text. The editor SHOULD take care to
+  handle control characters appropriately, and to limit the effect of
+  the Markdown to the text editing area itself; malicious Unicode-
+  based Markdown could, for example, surreptitiously change the
+  directionality of the text. An editor for normal text would already
+  take these control characters into consideration, however.
+
+  Markdown interpreted as a precursor to other formats, such as HTML,
+  carries all of the security considerations as the target formats.
+  For example, HTML can contain instructions to execute scripts,
+  redirect the user to other webpages, download remote content, and
+  upload personally identifiable information. Markdown also can
+  contain islands of formal markup, such as HTML. These islands of
+  formal markup may be passed as-is, transformed, or ignored (perhaps
+  because the islands are conditional or incompatible) when the
+  Markdown is processed. Since Markdown may have different
+  interpretations depending on the tool and the environment, a better
+  approach is to analyze (and sanitize or block) the output markup,
+  rather than attempting to analyze the Markdown.
+
+Interoperability considerations:
+
+  Markdown variations (some might say "innovations") are designed to
+  be broadly compatible with humans ("humane"), but not necessarily
+  with each other. Therefore, syntax in one Markdown derivative may
+  be ignored or treated differently in another derivative. The
+  overall effect is a general degradation of the output that
+  increases with the quantity of variant-specific Markdown used in
+  the text. When it is desirable to reflect the author's intent in
+  the output, stick with the variant identified in the variant
+  parameter, i.e., receivers SHOULD only accept Markdown variants
+  that they explicitly know about, and senders SHOULD avoid use of
+  variants that intended recipients are not known to understand.
+
+Published specification: RFC7763; [MDSYNTAX].
+
+Applications that use this media type:
+
+  Markdown conversion tools, Markdown WYSIWYG editors, and plain text
+  editors and viewers; markup processor targets indirectly use
+  Markdown (e.g., web browsers for Markdown converted to HTML).
+
+Fragment identifier considerations:
+
+  See Section 3.
+
+Additional information:
+
+  Magic number(s): None
+  File extension(s): .md, .markdown
+  Macintosh file type code(s):
+    TEXT. A uniform type identifier (UTI) of
+    "net.daringfireball.markdown", which conforms to "public.plain-
+    text", is RECOMMENDED [MDUTI]. See [MDMTGUID] for other
+    considerations.
+
+Person & email address to contact for further information:
+
+  Sean Leonard <dev+ietf&seantek.com>
+
+Restrictions on usage: None.
+
+Author/Change controller: Sean Leonard <dev+ietf&seantek.com>
+
+Intended usage: COMMON
+
+Provisional registration? No
+
+Implementations SHOULD record the value of the variant parameter (and
+other parameters if defined by the variant) along with the Markdown
+content when the content leaves the domain of Internet media type-
+capable formats. Strategies for doing so are discussed in [MDMTGUID].
+
+The Content-Disposition header (particularly the preview-type
+parameter) can be used with Markdown content. See Section 4 of 
+RFC7763.

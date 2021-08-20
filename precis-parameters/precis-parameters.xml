@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="precis-parameters.xsl"?>
+<?xml-model href="precis-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="precis-parameters">
+  <title>Preparation and Comparison of Internationalized Strings (PRECIS) Parameters</title>
+  <created>2015-03-06</created>
+  <updated>2017-10-09</updated>
+  
+  <registry id="base-classes">
+    <title>PRECIS Base Classes</title>
+    <xref type="rfc" data="rfc8264"/>
+    <registration_rule>RFC Required</registration_rule>
+    <record date="2015-03-06">
+      <value>FreeformClass</value>
+      <description>A sequence of letters, numbers, symbols, spaces, and 
+        other code points that is used for free-form strings.</description>
+      <xref type="rfc" data="rfc8264">RFC8264, Section 4.3</xref>
+    </record>
+    <record date="2015-03-06">
+      <value>IdentifierClass</value>
+      <description>A sequence of letters, numbers, and symbols that is 
+        used to identify or address a network entity.</description>
+      <xref type="rfc" data="rfc8264">RFC8264, Section 4.2</xref> 
+    </record>
+  </registry>
+
+  <registry id="profiles">
+    <title>PRECIS Profiles</title>
+    <xref type="rfc" data="rfc8264"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Peter Saint-Andre (primary), Pete Resnick (secondary), Andrew Sullivan (backup)</expert>
+    <record date="2015-06-08" updated="2017-07-31">
+      <name>UsernameCaseMapped</name>
+      <class>IdentifierClass</class>
+      <replaces>The SASLprep profile of Stringprep</replaces>
+      <file type="template">profiles/UsernameCaseMapped.txt</file>
+      <xref type="rfc" data="rfc8265">RFC8265, Section 3.3</xref>
+    </record>
+    <record date="2015-06-08" updated="2017-07-31">
+      <name>UsernameCasePreserved</name>
+      <class>IdentifierClass</class>
+      <replaces>The SASLprep profile of Stringprep</replaces>
+      <file type="template">profiles/UsernameCasePreserved.txt</file>
+      <xref type="rfc" data="rfc8265">RFC8265, Section 3.4</xref>
+    </record>
+    <record date="2015-06-08" updated="2017-07-31">
+      <name>OpaqueString</name>
+      <class>FreeformClass</class>
+      <replaces>The SASLprep profile of Stringprep</replaces>
+      <file type="template">profiles/OpaqueString.txt</file>
+      <xref type="rfc" data="rfc8265">RFC8265, Section 4.2</xref>
+    </record>
+    <record date="2015-09-11" updated="2017-10-06">
+      <name>Nickname</name>
+      <class>FreeformClass</class>
+      <replaces>None</replaces>
+      <file type="template">profiles/Nickname.txt</file>
+      <xref type="rfc" data="rfc8266">RFC8266</xref>
+    </record>
+  </registry>
+
+
+  <people/>
+</registry>

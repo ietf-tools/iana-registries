@@ -1,0 +1,64 @@
+                                                Data Channel Establishment Protocol (DCEP) Parameters
+
+   Created
+           2015-01-19
+
+   Last Updated
+           2021-01-21
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * Message Types
+     * Channel Types
+
+Message Types
+
+   Registration Procedure(s)
+
+ RFC Required
+
+   Reference
+           [RFC8832]
+
+   Available Formats
+           [IMG]
+           CSV
+
+     Type          Name        Reference
+     0x00    Reserved          [RFC8832]
+     0x01    Reserved          [RFC8832]
+     0x02    DATA_CHANNEL_ACK  [RFC8832]
+     0x03    DATA_CHANNEL_OPEN [RFC8832]
+   0x04-0xfe Unassigned
+     0xff    Reserved          [RFC8832]
+
+Channel Types
+
+   Registration Procedure(s)
+
+ RFC Required
+
+   Reference
+           [RFC8832]
+
+   Available Formats
+           [IMG]
+           CSV
+
+     Type                         Name                      Reference
+     0x00    DATA_CHANNEL_RELIABLE                          [RFC8832]
+     0x01    DATA_CHANNEL_PARTIAL_RELIABLE_REXMIT           [RFC8832]
+     0x02    DATA_CHANNEL_PARTIAL_RELIABLE_TIMED            [RFC8832]
+   0x03-0x7e Unassigned
+     0x7f    Reserved                                       [RFC8832]
+     0x80    DATA_CHANNEL_RELIABLE_UNORDERED                [RFC8832]
+     0x81    DATA_CHANNEL_PARTIAL_RELIABLE_REXMIT_UNORDERED [RFC8832]
+     0x82    DATA_CHANNEL_PARTIAL_RELIABLE_TIMED_UNORDERED  [RFC8832]
+   0x83-0xfe Unassigned
+     0xff    Reserved                                       [RFC8832]

@@ -1,0 +1,62 @@
+                                                     SMTP MTA Strict Transport Security (MTA-STS)
+
+   Created
+           2018-06-21
+
+   Last Updated
+           2018-09-28
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * MTA-STS TXT Record Fields
+     * MTA-STS Policy Fields
+
+MTA-STS TXT Record Fields
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Reference
+           [RFC8461]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Field Name    Description           Reference
+   v          Record version     [RFC8461, Section 3.1]
+   id         Policy instance ID [RFC8461, Section 3.1]
+
+MTA-STS Policy Fields
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Reference
+           [RFC8461]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Field Name     Description            Reference
+   version    Policy version       [RFC8461, Section 3.2]
+   mode       Enforcement behavior [RFC8461, Section 3.2]
+   max_age    Policy lifetime      [RFC8461, Section 3.2]
+   mx         MX identities        [RFC8461, Section 3.2]

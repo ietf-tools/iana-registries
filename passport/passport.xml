@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="passport.xsl"?>
+<?xml-model href="passport.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="passport">
+  <category>JSON Web Token (JWT)</category>
+  <title>Personal Assertion Token (PASSporT)</title>
+  <created>2017-06-12</created>
+  <updated>2021-02-16</updated>
+  
+  <registry id="passport-extensions">
+    <title>Personal Assertion Token (PASSporT) Extensions</title>
+    <xref type="rfc" data="rfc8225"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Chris Wendt (primary), Russ Housley (secondary)</expert>
+    <record date="2018-07-13">
+      <value>rph</value>
+      <xref type="rfc" data="rfc8443"/>
+    </record>
+    <record date="2019-03-26">
+      <value>shaken</value>
+      <xref type="rfc" data="rfc8588"/>
+    </record>
+    <record date="2019-05-14">
+      <value>msec</value>
+      <xref type="rfc" data="rfc8862"/>
+    </record>
+    <record date="2020-07-28">
+      <value>div</value>
+      <xref type="rfc" data="rfc8946">RFC8946, Section 3</xref>
+    </record>
+    <record date="2020-07-28">
+      <value>div-o</value>
+      <xref type="rfc" data="rfc8946">RFC8946, Section 5</xref>
+    </record>
+  </registry>
+  
+  <registry id="passport-rph-types">
+    <title>PASSporT Resource Priority Header (rph) Types</title>
+    <xref type="rfc" data="rfc8443"/>
+    <registration_rule>Specification Required</registration_rule>
+    <expert>Martin Dolly, Subir Das</expert>
+    <record date="2018-07-13">
+      <value>auth</value>
+      <xref type="rfc" data="rfc8443"/>
+    </record>
+  </registry>
+  
+  <people/>
+  
+</registry>

@@ -1,0 +1,32 @@
+FOR ARCHIVING: Registration form for 'arevela'
+
+---
+
+LANGUAGE SUBTAG REGISTRATION FORM
+
+1. Name of requester: Doug Ewell
+2. E-mail address of requester: doug at ewellic.org
+3. Record Requested:
+
+Type: variant
+Subtag: arevela
+Description: Eastern Armenian
+Deprecated: 2018-03-24
+Prefix: hy
+Comments: Preferred tag is hy
+
+4. Intended meaning of the subtag:
+
+5. Reference to published description of the language (book or article):
+
+6. Any other relevant information:
+
+This registration corrects an error made on 2018-03-24 to the
+registration of variant subtag 'arevela'. In deprecating the subtag, a
+Preferred-Value was created that consisted of the language subtag 'hy'.
+According to RFC 5646, Section 3.1.2, "For fields of type 'script',
+'region', or 'variant', 'Preferred-Value' contains the subtag of the
+same type that is preferred for forming the language tag." Thus a
+variant subtag cannot have a language subtag as its Preferred-Value.
+This registration removes the invalid Preferred-Value and adds a
+Comments field to aid the user in selecting the correct tag.

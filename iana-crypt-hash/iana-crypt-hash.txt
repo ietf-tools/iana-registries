@@ -1,0 +1,28 @@
+                                                             iana-crypt-hash YANG Module
+
+   Created
+           2014-06-03
+
+   Last Updated
+           2014-08-08
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Kent Watsen
+
+   Description
+
+ Module: [iana-crypt-hash@2014-08-06.yang]
+
+   Reference
+           [RFC7317]
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text

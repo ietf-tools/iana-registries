@@ -1,0 +1,859 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="email-auth.xsl"?>
+<?xml-model href="email-auth.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="email-auth">
+  <title>Email Authentication Parameters</title>
+  <created>2009-01-30</created>
+  <updated>2020-09-22</updated>
+
+  
+  <registry id="email-auth-methods">
+    <title>Email Authentication Methods</title>
+    <xref type="rfc" data="rfc8601"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Murray Kucherawy (primary), Scott Kitterman (secondary)</expert>
+    <record date="2018-12-21">
+      <method>arc</method>
+      <xref type="rfc" data="rfc8617">RFC8617, Section 6</xref>
+      <ptype>smtp</ptype>
+      <name>remote-ip</name>
+      <value>IP address (v4 or v6) of originating SMTP connection</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2018-12-21">
+      <method>arc</method>
+      <xref type="rfc" data="rfc8617">RFC8617, Section 6</xref>
+      <ptype>header</ptype>
+      <name>oldest-pass</name>
+      <value>The instance id of the oldest validating AMS or 0 if they
+        all pass (see <xref type="rfc" data="rfc8617">RFC8617, Section 5.2</xref>)</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2019-02-07">
+      <method>auth</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>smtp</ptype>
+      <name>auth</name>
+      <value>identity confirmed by the AUTH command</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>auth</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>smtp</ptype>
+      <name>mailfrom</name>
+      <value>AUTH parameter of the SMTP MAIL command</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>dkim</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>header</ptype>
+      <name>d</name>
+      <value>value of signature "d" tag</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>dkim</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>header</ptype>
+      <name>i</name>
+      <value>value of signature "i" tag</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2015-05-31">
+      <method>dkim</method>
+      <xref type="rfc" data="rfc6008"/>
+      <ptype>header</ptype>
+      <name>b</name>
+      <value>full or partial value of signature "b" tag</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2019-02-07">
+      <method>dkim</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>header</ptype>
+      <name>a</name>
+      <value>value of signature "a" tag</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2019-02-07">
+      <method>dkim</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>header</ptype>
+      <name>s</name>
+      <value>value of signature "s" tag</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2015-05-31">
+      <method>dkim-adsp</method>
+      <xref type="rfc" data="rfc5617"/><xref type="rfc" data="rfc7601"/>
+      <ptype>header</ptype>
+      <name>from</name>
+      <value>contents of the [RFC5322] From: header field, with comments removed</value>
+      <status>deprecated</status>
+      <version>1</version>
+    </record>
+    <record>
+      <method>dkim-atps</method>
+      <xref type="rfc" data="rfc6541"/>
+      <ptype>header</ptype>
+      <name>from</name>
+      <value>contents of the [RFC5322] From: header field, with comments removed</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2015-01-27" updated="2015-03-16">
+      <method>dmarc</method>
+      <xref type="rfc" data="rfc7489"/>
+      <ptype>header</ptype>
+      <name>from</name>
+      <value>the domain portion of the RFC5322.From field</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2020-03-02">
+      <method>dmarc</method>
+      <xref type="rfc" data="rfc7489"/>
+      <ptype>policy</ptype>
+      <name>dmarc</name>
+      <value>Evaluated DMARC policy applied/to be applied after policy options 
+        including pct: and sp: have been processed. Must be none, quarantine, 
+        or reject.</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2020-04-30">
+      <method>dnswl</method>
+      <xref type="rfc" data="rfc8904"/>
+      <ptype>dns</ptype>
+      <name>zone</name>
+      <value>DNSWL publicly accessible query root domain</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2020-04-30">
+      <method>dnswl</method>
+      <xref type="rfc" data="rfc8904"/>
+      <ptype>policy</ptype>
+      <name>ip</name>
+      <value>type A response received (or a quoted, comma-separated list 
+        thereof)</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2020-04-30">
+      <method>dnswl</method>
+      <xref type="rfc" data="rfc8904"/>
+      <ptype>policy</ptype>
+      <name>txt</name>
+      <value>type TXT query response</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2020-04-30">
+      <method>dnswl</method>
+      <xref type="rfc" data="rfc8904"/>
+      <ptype>dns</ptype>
+      <name>sec</name>
+      <value>one of "yes" for DNSSEC authenticated data, "no" for 
+        not signed, or "na" for not applicable</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2015-05-31">
+      <method>domainkeys</method>
+      <xref type="rfc" data="rfc7601"/>
+      <ptype>header</ptype>
+      <name>d</name>
+      <value>value of signature "d" tag</value>
+      <status>deprecated</status>
+      <version>1</version>
+    </record>
+    <record updated="2015-05-31">
+      <method>domainkeys</method>
+      <xref type="rfc" data="rfc7601"/>
+      <ptype>header</ptype>
+      <name>from</name>
+      <value>contents of the <xref type="rfc" data="rfc5322"/> From: header field, after removing
+          comments, and removing the local-part and following "@" if not
+          authenticated</value>
+      <status>deprecated</status>
+      <version>1</version>
+    </record>
+    <record updated="2015-05-31">
+      <method>domainkeys</method>
+      <xref type="rfc" data="rfc7601"/>
+      <ptype>header</ptype>
+      <name>sender</name>
+      <value>contents of the <xref type="rfc" data="rfc5322"/> Sender: header field, after
+          removing comments, and removing the local-part and following
+          "@" if not authenticated</value>
+      <status>deprecated</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>iprev</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>policy</ptype>
+      <name>iprev</name>
+      <value>client IP address</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2014-04-17">
+      <method>rrvs</method>
+      <xref type="rfc" data="rfc7293"/>
+      <ptype>smtp</ptype>
+      <name>rcptto</name>
+      <value>envelope recipient</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>sender-id</method>
+      <xref type="rfc" data="rfc7601"/>
+      <ptype>header</ptype>
+      <name>name of header field used by PRA</name>
+      <value>value of header field used by PRA after removing comments and parts 
+        not authenticated</value>
+      <status>deprecated</status>
+      <version>1</version>
+    </record>
+    <record date="2014-04-08" updated="2015-05-31">
+      <method>smime</method>
+      <xref type="rfc" data="rfc7281"/>
+      <ptype>body</ptype>
+      <name>smime-part</name>
+      <value>The MIME body part reference that contains the S/MIME signature.  
+      See <xref type="rfc" data="rfc7281">Section 3.2.1 of RFC7281</xref> for full syntax.</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2014-04-08" updated="2015-05-31">
+      <method>smime</method>
+      <xref type="rfc" data="rfc7281"/>
+      <ptype>body</ptype>
+      <name>smime-identifer</name>
+      <value>The email address <xref type="rfc" data="rfc5322"/> associated with the 
+      S/MIME signature. The email address can be specified explicitly or derived 
+      from the identity of the signer. Note that this email address can correspond 
+      to a countersignature.</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2014-04-08" updated="2015-05-31">
+      <method>smime</method>
+      <xref type="rfc" data="rfc7281"/>
+      <ptype>body</ptype>
+      <name>smime-serial</name>
+      <value>serialNumber of the certificate associated with the S/MIME signature 
+      (see Section 4.1.2.2 of <xref type="rfc" data="rfc5280"/>).</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record date="2014-04-08" updated="2015-05-31">
+      <method>smime</method>
+      <xref type="rfc" data="rfc7281"/>
+      <ptype>body</ptype>
+      <name>smime-issuer</name>
+      <value>Issuer name DN (e.g., "CN=CA1,ST=BC,c=CA") of the certificate 
+      associated with the S/MIME signature (see section 4.1.2.2 of  
+      <xref type="rfc" data="rfc5280"/>).</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>spf</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>smtp</ptype>
+      <name>mailfrom</name>
+      <value>envelope sender after removing parts not authenticated</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record updated="2019-02-07">
+      <method>spf</method>
+      <xref type="rfc" data="rfc8601"/>
+      <ptype>smtp</ptype>
+      <name>helo</name>
+      <value>HELO/EHLO value</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record>
+      <method>vbr</method>
+      <xref type="rfc" data="rfc6212"/>
+      <ptype>header</ptype>
+      <name>md</name>
+      <value>DNS domain name used as the subject of a VBR query</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+    <record>
+      <method>vbr</method>
+      <xref type="rfc" data="rfc6212"/>
+      <ptype>header</ptype>
+      <name>mv</name>
+      <value>DNS domain name of the entity acting as the voucher</value>
+      <status>active</status>
+      <version>1</version>
+    </record>
+  </registry>
+
+  
+  <registry id="email-auth-result-names">
+    <title>Email Authentication Result Names</title>
+    <xref type="rfc" data="rfc8601"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Murray Kucherawy (primary), Scott Kitterman (secondary)</expert>
+    <record date="2018-12-21">
+      <name>arc</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc8617"/> section 2.2</meaning>
+      <status>active</status>
+    </record>
+    <record date="2018-12-21">
+      <name>arc</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc8617"/> section 2.2</meaning>
+      <status>active</status>
+    </record>
+    <record date="2018-12-21">
+      <name>arc</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc8617"/> section 2.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>auth</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>auth</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>auth</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>auth</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>auth</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>neutral</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>policy</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>dkim</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>discard</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>nxdomain</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>dkim-adsp</name>
+      <code>unknown</code>
+      <meaning><xref type="rfc" data="rfc7601"/>, <xref type="rfc" data="rfc5617"/> section 5.4</meaning>
+      <status>deprecated</status>
+    </record>
+    <record>
+      <name>dkim-atps</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc6541"/> section 8.3</meaning>
+      <status>active</status>
+    </record>
+    <record>
+      <name>dkim-atps</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc6541"/> section 8.3</meaning>
+      <status>active</status>
+    </record>
+    <record>
+      <name>dkim-atps</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc6541"/> section 8.3</meaning>
+      <status>active</status>
+    </record>
+    <record>
+      <name>dkim-atps</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc6541"/> section 8.3</meaning>
+      <status>active</status>
+    </record>
+    <record>
+      <name>dkim-atps</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc6541"/> section 8.3</meaning>
+      <status>active</status>
+    </record>
+    <record date="2015-01-27"> 
+      <name>dmarc</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc7489"/> section 11.2</meaning>
+      <status>active</status>
+    </record>
+    <record date="2015-01-27" updated="2015-06-04"> 
+      <name>dmarc</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc7489"/> section 11.2</meaning>
+      <status>active</status>
+    </record>
+    <record date="2015-01-27" updated="2015-06-04"> 
+      <name>dmarc</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc7489"/> section 11.2</meaning>
+      <status>active</status>
+    </record>
+    <record date="2015-01-27" updated="2015-06-04"> 
+      <name>dmarc</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc7489"/> section 11.2</meaning>
+      <status>active</status>
+    </record>
+    <record date="2015-01-27" updated="2015-06-04"> 
+      <name>dmarc</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7489"/></meaning>
+      <status>active</status>
+    </record>
+    <record date="2020-04-30">
+      <name>dnswl</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc8904"/></meaning>
+      <status>active</status>
+    </record>
+    <record date="2020-04-30">
+      <name>dnswl</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc8904"/></meaning>
+      <status>active</status>
+    </record>
+    <record date="2020-04-30">
+      <name>dnswl</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc8904"/></meaning>
+      <status>active</status>
+    </record>
+    <record date="2020-04-30">
+      <name>dnswl</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc8904"/></meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>neutral</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>policy</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>domainkeys</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.1</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>iprev</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.3</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>iprev</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.3</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>iprev</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.3</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>iprev</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.3</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-17">
+      <name>rrvs</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc7293"/> section 11</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-17">
+      <name>rrvs</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc7293"/> section 11</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-17">
+      <name>rrvs</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc7293"/> section 11</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-17">
+      <name>rrvs</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc7293"/> section 11</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-17">
+      <name>rrvs</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7293"/> section 11</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-17">
+      <name>rrvs</name>
+      <code>unknown</code>
+      <meaning><xref type="rfc" data="rfc7293"/> section 11</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-05">
+      <name>sender-id</name>
+      <code>hardfail</code>
+      <meaning><xref type="rfc" data="rfc5451"/> section 2.4.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>neutral</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>policy</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>softfail</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2019-02-07">
+      <name>sender-id</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7601"/> section 2.7.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>neutral</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>policy</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record date="2014-04-08">
+      <name>smime</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc7281"/> section 3.1</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-05">
+      <name>spf</name>
+      <code>hardfail</code>
+      <meaning><xref type="rfc" data="rfc5451"/> section 2.4.2</meaning>
+      <status>deprecated</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>neutral</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>policy</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>softfail</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>spf</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc8601"/> section 2.7.2</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>vbr</name>
+      <code>fail</code>
+      <meaning><xref type="rfc" data="rfc6212"/> section 4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>vbr</name>
+      <code>none</code>
+      <meaning><xref type="rfc" data="rfc6212"/> section 4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>vbr</name>
+      <code>pass</code>
+      <meaning><xref type="rfc" data="rfc6212"/> section 4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>vbr</name>
+      <code>permerror</code>
+      <meaning><xref type="rfc" data="rfc6212"/> section 4</meaning>
+      <status>active</status>
+    </record>
+    <record updated="2015-06-04">
+      <name>vbr</name>
+      <code>temperror</code>
+      <meaning><xref type="rfc" data="rfc6212"/> section 4</meaning>
+      <status>active</status>
+    </record>    
+  </registry>
+
+  
+  <registry id="property-types">
+    <title>Email Authentication Property Types</title>
+    <xref type="rfc" data="rfc8601"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>Murray Kucherawy (primary), Scott Kitterman (secondary)</expert>
+    <record updated="2015-05-31">
+      <value>body</value>
+      <definition><xref type="rfc" data="rfc8601"/> section 2.3</definition>
+      <description>The property being reported was found in the body of the message.</description>
+    </record>
+    <record updated="2020-04-30">
+      <value>dns</value>
+      <definition><xref type="rfc" data="rfc8904"/></definition>
+      <description>The property being reported belongs to the Domain Name System.</description>
+    </record>
+    <record updated="2015-05-31">
+      <value>header</value>
+      <definition><xref type="rfc" data="rfc8601"/> section 2.3</definition>
+      <description>The property being reported was found in a header field of the message.</description>
+    </record>
+    <record updated="2015-05-31">
+      <value>policy</value>
+      <definition><xref type="rfc" data="rfc8601"/> section 2.3</definition>
+      <description>The property being reported relates to a locally-defined policy.</description>
+    </record>
+    <record updated="2015-05-31">
+      <value>smtp</value>
+      <definition><xref type="rfc" data="rfc8601"/> section 2.3</definition>
+      <description>The property being reported is a parameter to an SMTP command used to relay the message.</description>
+    </record>
+  </registry>
+
+
+</registry>

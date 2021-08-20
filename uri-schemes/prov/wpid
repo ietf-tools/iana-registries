@@ -1,0 +1,52 @@
+(registered 2016-04-15, last updated 2016-12-01)
+
+Scheme name:
+     wpid
+ 
+Status:
+     Provisional
+ 
+Applications/protocols that use this scheme name:
+     None
+ 
+Contact:
+     Name:  Eld Zierau
+     Addr.: The Royal Library, Digital Preservation Dept.
+            P.O. Box 2149, 1016 Copenhagen K, Denmark
+     Phone: (+45) 9132 4690 
+     Email: elzi&kb.dk 
+ 
+Change controller:
+     Name:  Eld Zierau
+     Addr.: The Royal Library, Digital Preservation Dept.
+            P.O. Box 2149, 1016 Copenhagen K, Denmark
+     Phone: (+45) 9132 4690 
+     Email: elzi&kb.dk 
+ 
+Description:
+     The wpid scheme was introduced in the nominated best paper 
+     at the iPRES 2016 conference ("Persistent Web References 
+     – Best Practices and New Suggestions", and can be found in the 
+     iPRES 2016 proceedings [IPRES]. There have been a lot of useful 
+     comments which are taken into account in a RFC to be submitted 
+     before end of 2016. 
+     
+     The name "wpid" will be changed to "pwid" as a result of the  
+     comments. The reasons are:
+     * There was a concern that wpid was interpreted as a PID related
+       to a PID-system as e.g. the DOI. All though PID does not have
+       a precise definition that makes it wrong to call it a wpid,
+       the danger is that it is confused with PID systems which is not
+       the intension
+     * As the title of the iPres 2016 conference paper suggests, the
+       name ´"Persistent Web Identifier" is more straightforward than
+       "Web Persistent Identifier"
+
+References:
+[IPRES]   Zierau, E., Nyvang, C., and T. Kromann, "Persistent Web
+          References - Best Practices and New Suggestions", October
+          2016, <http://www.ipres2016.ch/frontend/organizers/media/
+          iPRES2016/_PDF/
+          IPR16.Proceedings_4_Web_Broschuere_Link.pdf>.
+          In: proceedings of the 13th International Conference on
+          Preservation of Digital Objects (iPres) 2016, pp. 237-246

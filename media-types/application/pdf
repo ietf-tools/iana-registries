@@ -1,0 +1,49 @@
+Type name: application
+
+Subtype name: pdf
+
+Required parameters: none
+
+Optional parameter: none
+
+Encoding considerations: binary
+
+Security considerations: See Section 7 of RFC-hardy-pdf-mime-05.
+
+Interoperability considerations: See Section 5 of RFC-hardy-pdf-mime-05.
+
+Published specification: ISO 32000-2 (PDF 2.0) [ISOPDF2] is the most
+recent.
+
+Applications that use this media type: See Section 6 of 
+RFC-hardy-pdf-mime-05.
+
+Fragment identifier considerations: See Section 3 of 
+RFC-hardy-pdf-mime-05.
+
+Additional information:
+
+Deprecated alias names for this type: none
+
+Magic number(s): All PDF files start with the characters "%PDF-"
+followed by the PDF version number, e.g., "%PDF-1.7" or
+"%PDF-2.0".  These characters are in US-ASCII encoding.
+
+File extension(s): .pdf
+
+Macintosh file type code(s): "PDF "
+
+Person & email address to contact for further information: Duff
+Johnson <duff&duff-johnson.com>, Peter Wyatt
+<Peter.wyatt&cisra.canon.com.au>, ISO 32000 Project Leaders
+
+Intended usage: COMMON
+
+Restrictions on usage: none
+
+Author: Authors of this document
+
+Change controller: ISO; in particular, ISO 32000 is by ISO/TC 171/SC
+02/WG 08, "PDF specification".  Duff Johnson <duff&duff-johnson.com>
+and Peter Wyatt <Peter.wyatt&cisra.canon.com.au> are current ISO 32000
+Project Leaders.

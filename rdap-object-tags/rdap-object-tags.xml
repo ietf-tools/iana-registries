@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="rdap-object-tags.xsl"?>
+<?xml-model href="rdap-object-tags.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="rdap-object-tags">
+  <title>Bootstrap Service Registry for Provider Object Tags</title>
+  <category>Registration Data Access Protocol (RDAP)</category>
+  <created>2018-11-21</created>
+  <xref type="rfc" data="rfc8521"/>
+  <file type="json">http://data.iana.org/rdap/object-tags.json</file>
+  <people/>
+</registry>

@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="loa-profiles.xsl"?>
+<?xml-model href="loa-profiles.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="loa-profiles">
+  <title>Level of Assurance (LoA) Profiles</title>
+  <created>2012-05-18</created>
+  <updated>2020-12-17</updated>
+  
+  <registry id="loa-profiles-1">
+    <title>Level of Assurance Profiles</title>
+    <xref type="rfc" data="rfc6711"/>
+    <registration_rule>Expert Review</registration_rule>
+    <expert>John Bradley, Joni Brennan, Jim Fenton, Leif Johansson and Lucy Lynch</expert>
+
+ <record date="2013-04-24" updated="2015-12-24">
+  <uri>http://id.sambi.se/loa/loa2</uri>
+  <name>sambi.se-loa2</name>
+  <url><xref type="uri" data="https://www.sambi.se/sambi-loa"/></url>
+  <xref type="person" data="Stefan_Halén-sambi.se"/>
+  <file type="template">sambi.se-loa2/sambi.se-loa2.xsd</file>
+</record>
+<record date="2013-04-24" updated="2015-12-24">
+  <uri>http://id.sambi.se/loa/loa3</uri>
+  <name>sambi.se-loa3</name>
+  <url><xref type="uri" data="https://www.sambi.se/sambi-loa"/></url>
+  <xref type="person" data="Stefan_Halén-sambi.se"/>
+  <file type="template">sambi.se-loa3/sambi.se-loa3.xsd</file>
+</record>
+<record date="2013-04-24" updated="2015-12-24">
+  <uri>http://id.sambi.se/loa/loa4</uri>
+  <name>sambi.se-loa4</name>
+  <url><xref type="uri" data="https://www.sambi.se/sambi-loa"/></url>
+  <xref type="person" data="Stefan_Halén-sambi.se"/>
+  <file type="template">sambi.se-loa4/sambi.se-loa4.xsd</file>
+</record>
+<record date="2013-04-24" updated="2015-04-16">
+  <uri>http://id.skolfederation.se/loa/loa2</uri>
+  <name>skolfederation.se-loa2</name>
+  <url><xref type="uri" data="https://www.skolfederation.se/skolfederation-loa"/></url>
+  <xref type="person" data="Stefan_Halén-skolfederation.se"/>
+  <file type="template">skolfederation.se-loa2/skolfederation.se-loa2.xsd</file>
+</record>
+ <record date="2013-04-24" updated="2015-04-16">
+  <uri>http://id.skolfederation.se/loa/loa3</uri>
+  <name>skolfederation.se-loa3</name>
+  <url><xref type="uri" data="https://www.skolfederation.se/skolfederation-loa"/></url>
+  <xref type="person" data="Stefan_Halén-skolfederation.se"/>
+  <file type="template">skolfederation.se-loa3/skolfederation.se-loa3.xsd</file>
+</record> 
+<record date="2013-04-24" updated="2015-04-16">
+  <uri>http://id.skolfederation.se/loa/bas</uri>
+  <name>skolfederation.se-bas</name>
+  <url><xref type="uri" data="https://www.skolfederation.se/skolfederation-loa"/></url>
+  <xref type="person" data="Stefan_Halén-skolfederation.se"/>
+  <file type="template">skolfederation.se-bas/skolfederation.se-bas.xsd</file>
+</record>
+<record date="2014-03-14">
+  <uri>http://id.incommon.org/assurance/bronze</uri>
+  <name>InC-Bronze</name>
+  <url><xref type="uri" data="http://assurance.incommon.org"/></url>
+  <xref type="person" data="Ann_West"/>
+  <file type="template">InC-Bronze/InC-Bronze.xsd</file>
+</record>
+<record date="2014-03-14">
+  <uri>http://id.incommon.org/assurance/silver</uri>
+  <name>InC-Silver</name>
+  <url><xref type="uri" data="http://assurance.incommon.org"/></url>
+  <xref type="person" data="Ann_West"/>
+  <file type="template">InC-Silver/InC-Silver.xsd</file>
+</record>
+<record date="2014-03-17" updated="2015-04-26">
+  <uri>http://id.skolfederation.se/loa/2fa</uri>
+  <name>skolfederation.se-2fa</name>
+  <url><xref type="uri" data="https://www.skolfederation.se/skolfederation-loa"/></url>
+  <xref type="person" data="Stefan_Halén-skolfederation.se"/>
+  <file type="template">skolfederation.se-2fa/skolfederation.se-2fa.xsd</file>
+</record>
+<record date="2016-01-14" updated="2020-12-17">
+  <uri>http://www.swamid.se/policy/assurance/al1</uri>
+  <name>SWAMID-AL1</name>
+  <url><xref type="uri" data="https://www.swamid.se/policy/assurance/al1"/></url>
+  <xref type="person" data="Pål_Axelsson"/>
+  <file type="template">SWAMID-AL1/SWAMID-AL1.xsd</file>
+</record>
+<record date="2016-01-14" updated="2020-12-17">
+  <uri>http://www.swamid.se/policy/assurance/al2</uri>
+  <name>SWAMID-AL2</name>
+  <url><xref type="uri" data="https://www.swamid.se/policy/assurance/al2"/></url>
+  <xref type="person" data="Pål_Axelsson"/>
+  <file type="template">SWAMID-AL2/SWAMID-AL2.xsd</file>
+</record>
+<record date="2016-05-19">
+  <uri>https://refeds.org/sirtfi</uri>
+  <name>Sirtfi</name>
+  <url><xref type="uri" data="https://refeds.org/sirtfi"/></url>
+  <xref type="person" data="H._Short"/>
+  <file type="template">Sirtfi/Sirtfi.xsd</file>
+</record>
+<record date="2017-10-26">
+  <uri>https://igtf.net/ap/authn-assurance/aspen</uri>
+  <name>IGTF-ASPEN</name>
+  <url><xref type="uri" data="https://www.igtf.net/ap/authn-assurance/"/></url>
+  <xref type="person" data="David_Groep"/>
+  <file type="template">IGTF-ASPEN/IGTF-ASPEN.xsd</file>
+</record>
+<record date="2017-10-26">
+  <uri>https://igtf.net/ap/authn-assurance/birch</uri>
+  <name>IGTF-BIRCH</name>
+  <url><xref type="uri" data="https://www.igtf.net/ap/authn-assurance/"/></url>
+  <xref type="person" data="David_Groep"/>
+  <file type="template">IGTF-BIRCH/IGTF-BIRCH.xsd</file>
+</record>
+<record date="2017-10-26">
+  <uri>https://igtf.net/ap/authn-assurance/cedar</uri>
+  <name>IGTF-CEDAR</name>
+  <url><xref type="uri" data="https://www.igtf.net/ap/authn-assurance/"/></url>
+  <xref type="person" data="David_Groep"/>
+  <file type="template">IGTF-CEDAR/IGTF-CEDAR.xsd</file>
+</record>
+<record date="2017-10-26">
+  <uri>https://igtf.net/ap/authn-assurance/dogwood</uri>
+  <name>IGTF-DOGWOOD</name>
+  <url><xref type="uri" data="https://www.igtf.net/ap/authn-assurance/"/></url>
+  <xref type="person" data="David_Groep"/>
+  <file type="template">IGTF-DOGWOOD/IGTF-DOGWOOD.xsd</file>
+</record>
+    <record date="2018-02-12">
+      <uri>https://www.hkaf.edu.hk/policy/assurance/idal1</uri>
+      <name>HKAF-IDAL1</name>
+      <url><xref type="uri" data="https://www.hkaf.edu.hk/compliance/hkaf-identity-assurance-framework"/></url>
+      <xref type="person" data="Jonathan_Cheng"/>
+      <file type="template">idal1.hkaf-edu-hk/idal1.hkaf-edu-hk.xsd</file>
+    </record>
+    <record date="2019-08-28">
+      <uri>http://id.ubiqu.com/eidas/high</uri>
+      <name>ubiqu-eidas-high-credential</name>
+      <url><xref type="uri" data="https://ubiqu.com/eidas/"/></url>
+      <xref type="person" data="Boris_Goranov"/>
+      <file type="template">ubiqu-eidas-high-credential/ubiqu-eidas-high-credential.xsd</file>
+    </record>
+    <record date="2019-11-01">
+      <uri>https://refeds.org/profile/sfa</uri>
+      <name>REFEDS-SFA</name>
+      <url><xref type="uri" data="https://refeds.org/profile/sfa"/></url>
+      <xref type="person" data="Jule_Ziegler"/>
+      <file type="template">REFEDS-SFA/REFEDS-SFA.xsd</file>
+    </record>
+    <record date="2019-11-01">
+      <uri>https://refeds.org/profile/mfa</uri>
+      <name>REFEDS-MFA</name>
+      <url><xref type="uri" data="https://refeds.org/profile/mfa"/></url>
+      <xref type="person" data="Jule_Ziegler"/>
+      <file type="template">REFEDS-MFA/REFEDS-MFA.xsd</file>
+    </record>
+    <record date="2019-11-01">
+      <uri>https://refeds.org/assurance/profile/cappuccino</uri>
+      <name>RAF-Cappuccino</name>
+      <url><xref type="uri" data="https://refeds.org/assurance"/></url>
+      <xref type="person" data="Jule_Ziegler"/>
+      <file type="template">RAF-Cappuccino/RAF-Cappuccino.xsd</file>
+    </record>
+    <record date="2019-11-01">
+      <uri>https://refeds.org/assurance/profile/espresso</uri>
+      <name>RAF-Espresso</name>
+      <url><xref type="uri" data="https://refeds.org/assurance"/></url>
+      <xref type="person" data="Jule_Ziegler"/>
+      <file type="template">RAF-Espresso/RAF-Espresso.xsd</file>
+    </record>
+    <record date="2020-08-03">
+      <uri>http://eidas.europa.eu/LoA/low</uri>
+      <name>eidas-loa-low</name>
+      <url><xref type="uri" data="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS+Levels+of+assurance"/></url>
+      <xref type="person" data="Carlos_Gómez"/>
+      <file type="template">eidas-loa-low/eidas-loa-low.xsd</file>
+    </record>
+    <record date="2020-08-03">
+      <uri>http://eidas.europa.eu/LoA/substantial</uri>
+      <name>eidas-loa-substantial</name>
+      <url><xref type="uri" data="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS+Levels+of+assurance"/></url>
+      <xref type="person" data="Carlos_Gómez"/>
+      <file type="template">eidas-loa-substantial/eidas-loa-substantial.xsd</file>
+    </record>
+    <record date="2020-08-03">
+      <uri>http://eidas.europa.eu/LoA/high</uri>
+      <name>eidas-loa-high</name>
+      <url><xref type="uri" data="https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/eIDAS+Levels+of+assurance"/></url>
+      <xref type="person" data="Carlos_Gómez"/>
+      <file type="template">eidas-loa-high/eidas-loa-high.xsd</file>
+    </record>
+    <record date="2020-12-17">
+  <uri>http://www.swamid.se/policy/assurance/al3</uri>
+  <name>SWAMID-AL3</name>
+  <url><xref type="uri" data="https://www.swamid.se/policy/assurance/al3"/></url>
+  <xref type="person" data="Pål_Axelsson"/>
+  <file type="template">SWAMID-AL3/SWAMID-AL3.xsd</file>
+</record>
+  </registry>
+  
+  <people>
+    <person id="Ann_West">
+      <name>Ann West</name>
+      <uri>mailto:admin&amp;incommon.org</uri>
+      <updated>2014-03-14</updated>
+    </person>
+    <person id="Boris_Goranov">
+      <name>Boris Goranov</name>
+      <uri>mailto:boris.goranov&amp;ubiqu.com</uri>
+      <updated>2019-08-28</updated>
+    </person>
+    <person id="Carlos_Gómez">
+      <name>Carlos Gómez</name>
+      <uri>mailto:cnect-h4&amp;ec.europa.eu</uri>
+      <updated>2020-08-14</updated>
+    </person>
+    <person id="David_Groep">
+      <name>David Groep</name>
+      <uri>mailto:registry&amp;igtf.net</uri>
+      <updated>2017-10-26</updated>
+    </person>
+    <person id="H._Short">
+      <name>H. Short</name>
+      <uri>mailto:sirtfi&amp;lists.refeds.org</uri>
+      <updated>2016-05-19</updated>
+    </person>
+    <person id="Jonathan_Cheng">
+      <name>Jonathan Cheng</name>
+      <uri>mailto:hkaf-admin&amp;jucc.edu.hk</uri>
+      <updated>2018-02-12</updated>
+    </person>
+    <person id="Jule_Ziegler">
+      <name>Jule Ziegler</name>
+      <uri>mailto:loa-registry&amp;lists.refeds.org</uri>
+      <updated>2019-11-01</updated>
+    </person>
+    <person id="Pål_Axelsson">
+      <name>Pål Axelsson</name>
+      <uri>mailto:operations&amp;swamid.se</uri>
+      <updated>2016-01-14</updated>
+    </person>
+    <person id="Stefan_Halén-sambi.se">
+      <name>Stefan Halén</name>
+      <uri>mailto:info&amp;sambi.se</uri>
+      <updated>2015-12-24</updated>
+    </person>
+    <person id="Stefan_Halén-skolfederation.se">
+      <name>Stefan Halén</name>
+      <uri>mailto:info&amp;skolfederation.se</uri>
+      <updated>2015-04-16</updated>
+    </person>
+  </people>
+</registry>

@@ -1,0 +1,50 @@
+(RFC2388 version replaced by RFC7578)
+
+Type name:  multipart
+
+Subtype name:  form-data
+
+Required parameters:  boundary
+
+Optional parameters:  none
+
+Encoding considerations:  Common use is BINARY.
+   In limited use (or transports that restrict the encoding to 7bit
+   or 8bit), each part is encoded separately using Content-Transfer-
+   Encoding; see Section 4.7 of RFC7578.
+
+Security considerations:  See Section 7 of this document.
+
+Interoperability considerations:  This document makes several
+   recommendations for interoperability with deployed
+   implementations, including Section 4.7 of RFC7578.
+
+Published specification:  RFC7578
+
+Applications that use this media type:  Numerous web browsers,
+   servers, and web applications.
+
+Fragment identifier considerations:  None; fragment identifiers are
+   not defined for this type.
+
+Additional information:
+
+Additional information:
+
+      Deprecated alias names for this type: N/A
+      Magic number(s): N/A
+      File extension(s): N/A
+      Macintosh file type code(s): N/A
+
+Person & email address to contact for further information:  Author of
+  RFC7578.
+
+Intended usage:  COMMON
+
+Restrictions on usage:  none
+
+Author:  Author of RFC7578.
+
+Change controller:  IETF
+
+Provisional registration:  N/A

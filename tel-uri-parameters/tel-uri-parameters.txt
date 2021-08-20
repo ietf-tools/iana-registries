@@ -1,0 +1,55 @@
+                                                                  tel URI Parameters
+
+   Created
+           2008-07-10
+
+   Last Updated
+           2017-10-25
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * tel URI Parameters
+
+tel URI Parameters
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Vijay Gurbani
+
+   Reference
+           [RFC5341]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Parameter Name Predefined Values                            Reference
+   isub           Constrained       [RFC3966]
+   isub-encoding  Constrained       [RFC4715]
+   ext            Constrained       [RFC3966]
+   phone-context  Constrained       [RFC3966]
+   enumdi         No value          [RFC4759]
+   npdi           No value          [RFC4694]
+   rn             Constrained       [RFC4694]
+   rn-context     Constrained       [RFC4694]
+   cic            Constrained       [RFC4694]
+   cic-context    Constrained       [RFC4694]
+   tgrp           Constrained       [RFC4904]
+   trunk-context  Constrained       [RFC4904]
+   premium-rate   Constrained       [3GPP TS 24.229 12.14.0 (cf subclause 7.2A.17)][Frederic_Firmin]
+   verstat        Constrained       [3GPP TS 24.229 v.14.5.0 sub-clause 7.2A.20][Frederic_Firmin]
+
+                                                                 Contact Information
+
+          ID              Name                 Contact URI           Last Updated
+   [Frederic_Firmin] Frederic Firmin mailto:frederic.firmin&etsi.org 2017-10-25

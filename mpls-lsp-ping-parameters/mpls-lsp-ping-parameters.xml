@@ -1,0 +1,2273 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="mpls-lsp-ping-parameters.xsl"?>
+<?xml-model href="mpls-lsp-ping-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="mpls-lsp-ping-parameters">
+  <title>Multiprotocol Label Switching (MPLS) Label Switched Paths (LSPs) Ping Parameters</title>
+  <category>Multiprotocol Label Switching Architecture (MPLS)</category>
+  <created>2006-01-12</created>
+  <updated>2021-07-27</updated>
+  
+  <registry id="message-types">
+    <title>Message Types</title>
+    <xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-191</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>192-247</value>
+      <registration_rule>RFC Required</registration_rule>
+    </range>
+    <range>
+      <value>248-251</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned</note>
+    </range>
+    <range>
+      <value>252-255</value>
+      <registration_rule>Private Use</registration_rule>
+      <note>Reserved, not to be assigned</note>
+    </range>
+    <record date="2021-03-10">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc9041"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>MPLS Echo Request</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>MPLS Echo Reply</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-04-08">
+      <value>3</value>
+      <description>MPLS Proxy Ping Request</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <value>4</value>
+      <description>MPLS Proxy Ping Reply</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-10-16">
+      <value>5</value>
+      <description>MPLS Relayed Echo Reply</description>
+      <xref type="rfc" data="rfc7743"/>
+    </record>
+    <record>
+      <value>6-247</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2021-03-10">
+      <value>248-251</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc9041"/>
+    </record>
+    <record>
+      <value>252-255</value>
+      <description>Reserved for Private Use</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+  </registry>
+  
+  <registry id="reply-modes">
+    <title>Reply Modes</title>
+    <xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-191</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>192-247</value>
+      <registration_rule>RFC Required</registration_rule>
+    </range>
+    <range>
+      <value>248-251</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned</note>
+    </range>
+    <range>
+      <value>252-255</value>
+      <registration_rule>Private Use</registration_rule>
+      <note>Reserved, not to be assigned</note>
+    </range>
+    <record date="2021-03-10">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc9041"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>Do not reply</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>Reply via an IPv4/IPv6 UDP packet</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>3</value>
+      <description>Reply via an IPv4/IPv6 UDP packet with Router Alert</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>4</value>
+      <description>Reply via application-level control channel</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>5</value>
+      <description>Reply via Specified Path</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>6-247</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2021-03-10">
+      <value>248-251</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc9041"/>
+    </record>
+    <record>
+      <value>252-255</value>
+      <description>Reserved for Private Use</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+  </registry>
+  
+  <registry id="return-codes">
+    <title>Return Codes</title>
+    <xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-191</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>192-247</value>
+      <registration_rule>RFC Required</registration_rule>
+    </range>
+    <range>
+      <value>248-251</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned</note>
+    </range>
+    <range>
+      <value>252-255</value>
+      <registration_rule>Private Use</registration_rule>
+      <note>Reserved, not to be assigned</note>
+    </range>
+    <record>
+      <value>0</value>
+      <description>No Return Code</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>Malformed echo request received</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>2</value>
+      <description>One or more of the TLVs was not understood</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>3</value>
+      <description>Replying router is an egress for the FEC at stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>4</value>
+      <description>Replying router has no mapping for the FEC at stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>5</value>
+      <description>Downstream Mapping Mismatch (See <xref type="note" data="1"/>)</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>6</value>
+      <description>Upstream Interface Index Unknown (See <xref type="note" data="1"/>)</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>7</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>8</value>
+      <description>Label switched at stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>9</value>
+      <description>Label switched but no MPLS forwarding at stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>10</value>
+      <description>Mapping for this FEC is not the given label at stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>11</value>
+      <description>No label entry at stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>12</value>
+      <description>Protocol not associated with interface at FEC stack-depth &lt;RSC&gt;</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>13</value>
+      <description>Premature termination of ping due to label stack             
+shrinking to a single label</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>14</value>
+      <description>See DDMAP TLV for meaning of Return Code and Return Subcode (See <xref type="note" data="2"/>)</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>15</value>
+      <description>Label switched with FEC change</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-04-08">
+      <value>16</value>
+      <description>Proxy Ping not authorized</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <value>17</value>
+      <description>Proxy Ping parameters need to be modified</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <value>18</value>
+      <description>MPLS Echo Request could not be sent</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <value>19</value>
+      <description>Replying router has FEC mapping for topmost FEC</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-10-16">
+      <value>20</value>
+      <description>One or more TLVs not returned due to MTU size</description>
+      <xref type="rfc" data="rfc7743"/>
+    </record>
+    <record date="2015-12-06">
+      <value>21</value>
+      <description>OAM Problem/Unsupported BFD Version</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>22</value>
+      <description>OAM Problem/Unsupported BFD Encapsulation format</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>23</value>
+      <description>OAM Problem/Unsupported BFD Authentication Type</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>24</value>
+      <description>OAM Problem/Mismatch of BFD Authentication Key ID</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>25</value>
+      <description>OAM Problem/Unsupported Timestamp Format</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>26</value>
+      <description>OAM Problem/Unsupported Delay Mode</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>27</value>
+      <description>OAM Problem/Unsupported Loss Mode</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>28</value>
+      <description>OAM Problem/Delay variation unsupported</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>29</value>
+      <description>OAM Problem/Dyadic mode unsupported</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>30</value>
+      <description>OAM Problem/Loopback mode unsupported</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>31</value>
+      <description>OAM Problem/Combined mode unsupported</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>32</value>
+      <description>OAM Problem/Fault management signaling unsupported</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>33</value>
+      <description>OAM Problem/Unable to create fault management association</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2016-02-09">
+      <value>34</value>
+      <description>OAM Problem/PM Configuration Error</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2017-10-20">
+      <value>35</value>
+      <description>Mapping for this FEC is not associated with the incoming interface</description>
+      <xref type="rfc" data="rfc8287">RFC8287, Section 7.4</xref>
+    </record>
+    <record>
+      <value>36-247</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2021-03-10">
+      <value>248-251</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc9041"/>
+    </record>
+    <record>
+      <value>252-255</value>
+      <description>Reserved for Private Use</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <footnote anchor="1">The Return Subcode (RSC) contains the point in the label stack where pro-
+cessing was terminated. If the RSC is 0, no labels were processed.
+Otherwise, the packet was label switched at depth RSC.</footnote>
+    <footnote anchor="2">The Return Code is per "Downstream Detailed Mapping TLV" (Section 3.4). 
+This Return Code MUST be used only in the message header and MUST be set 
+only in the MPLS echo reply message. If the Return Code is set in the 
+MPLS echo request message, then it MUST be ignored. When this Return 
+Code is set, each Downstream Detailed Mapping TLV MUST have an 
+appropriate Return Code and Return Subcode. This Return Code 
+MUST be used when there are multiple downstreams for a given 
+node (such as Point-to-Multipoint (P2MP)or ECMP),and the 
+node needs to return a Return Code/Return Subcode for 
+each downstream. This Return Code MAY be used even 
+when there is only one downstream for a given node.</footnote>
+  </registry>
+  
+  <registry id="tlvs">
+    <title>TLVs</title>
+    <xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-16383</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for TLVs that require an error
+          message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>16384-31739</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for TLVs that require an error
+      message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31740-31743</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31744-32767</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>32768-49161</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>49162-64507</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64508-64511</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64512-65535</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <record date="2021-03-10">
+      <type>0</type>
+      <name>Reserved</name>
+      <xref type="rfc" data="rfc9041"/>
+      <subtlv/>
+    </record>
+    <record>
+      <type>1</type>
+      <name>Target FEC Stack</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-1-16-21"/></subtlv>
+    </record>
+    <record>
+      <type>2</type>
+      <name>Downstream Mapping (DEPRECATED)</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>3</type>
+      <name>Pad</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2019-04-26">
+      <type>4</type>
+      <name>LSR Capability</name>
+      <xref type="rfc" data="rfc8611"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>5</type>
+      <name>Vendor Enterprise Number</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2019-04-26">
+      <type>6</type>
+      <name>Detailed Interface and Label Stack</name>
+      <xref type="rfc" data="rfc8611"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-6"/></subtlv>
+    </record>
+    <record>
+      <type>7</type>
+      <name>Interface and Label Stack</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>8</type>
+      <name>Unassigned</name>
+      <subtlv/>
+    </record>
+    <record>
+      <type>9</type>
+      <name>Errored TLVs</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-9"/></subtlv>
+    </record>
+    <record>
+      <type>10</type>
+      <name>Reply TOS Byte</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>11</type>
+      <name>P2MP Responder Identifier</name>
+      <xref type="rfc" data="rfc6425"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-11"/></subtlv>
+    </record>
+    <record>
+      <type>12</type>
+      <name>Echo Jitter</name>
+      <xref type="rfc" data="rfc6425"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>13</type>
+      <name>Source ID</name>
+      <xref type="rfc" data="rfc6426"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>14</type>
+      <name>Destination ID</name>
+      <xref type="rfc" data="rfc6426"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>15</type>
+      <name>BFD Discriminator</name>
+      <xref type="rfc" data="rfc5884"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>16</type>
+      <name>Reverse-path Target FEC Stack</name>
+      <xref type="rfc" data="rfc6426"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-1-16-21"/></subtlv>
+    </record>
+    <record>
+      <type>17-19</type>
+      <name>Unassigned</name>
+      <subtlv/>
+    </record>
+    <record>
+      <type>20</type>
+      <name>Downstream Detailed Mapping</name>
+      <xref type="rfc" data="rfc8029"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-20"/></subtlv>
+    </record>
+    <record>
+      <type>21</type>
+      <name>Reply Path</name>
+      <xref type="rfc" data="rfc7110"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-1-16-21"/></subtlv>
+    </record>
+    <record date="2014-01-15">
+      <type>22</type>
+      <name>Reply TC</name>
+      <xref type="rfc" data="rfc7110"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2015-04-08">
+      <type>23</type>
+      <name>Proxy Echo Parameters</name>
+      <xref type="rfc" data="rfc7555"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-23"/></subtlv>
+    </record>
+    <record date="2015-04-08">
+      <type>24</type>
+      <name>Reply-to Address</name>
+      <xref type="rfc" data="rfc7555"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2015-04-08">
+      <type>25</type>
+      <name>Upstream Neighbor Address</name>
+      <xref type="rfc" data="rfc7555"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2015-04-08">
+      <type>26</type>
+      <name>Downstream Neighbor Address</name>
+      <xref type="rfc" data="rfc7555"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2015-12-06">
+      <type>27</type>
+      <name>MPLS OAM Functions</name>
+      <xref type="rfc" data="rfc7759"/>
+      <subtlv><xref type="uri" data="http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xml#sub-tlv-27"/></subtlv>
+    </record>
+    <record>
+      <type>28-31739</type>
+      <name>Unassigned</name>
+      <subtlv/>
+    </record>
+    <record date="2021-03-10">
+      <type>31740-31743</type>
+      <name>Reserved for Experimental Use</name>
+      <xref type="rfc" data="rfc9041"/>
+      <subtlv>Not to be assigned. This range is for TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></subtlv>
+    </record>
+    <record>
+      <type>31744-32767</type>
+      <name>Unassigned</name>
+      <subtlv/>
+    </record>
+    <record date="2015-10-16">
+      <type>32768</type>
+      <name>Relay Node Address Stack TLV</name>
+      <xref type="rfc" data="rfc7743"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2014-10-06">
+      <type>32769</type>
+      <name>Time To Live</name>
+      <xref type="rfc" data="rfc7394"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record date="2015-10-16">
+      <type>32770</type>
+      <name>Reply Mode Order TLV</name>
+      <xref type="rfc" data="rfc7737"/>
+      <subtlv>No Sub-TLVs</subtlv>
+    </record>
+    <record>
+      <type>32771-64507</type>
+      <name>Unassigned</name>
+      <subtlv/>
+    </record>
+    <record date="2021-03-10">
+      <type>64508-64511</type>
+      <name>Reserved for Experimental Use</name>
+      <xref type="rfc" data="rfc9041"/>
+      <subtlv>Not to be assigned. This range is for TLVs that can be silently dropped if not recognized.</subtlv>
+    </record>
+    <record>
+      <type>64512-65535</type>
+      <name>Unassigned</name>
+      <subtlv/>
+    </record>
+  
+  <registry id="sub-tlv-1-16-21">
+    <title>Sub-TLVs for TLV Types 1, 16, and 21</title>
+    <xref type="rfc" data="rfc6425"/><xref type="rfc" data="rfc6426"/><xref type="rfc" data="rfc7110"/><xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-16383</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+          message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>16384-31739</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+      message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31740-31743</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31744-32767</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>32768-49161</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>49162-64507</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64508-64511</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64512-65535</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <record date="2021-03-10">
+      <type>0</type>
+      <name>Reserved</name>
+      <xref type="rfc" data="rfc9041"/>
+    <comment/>
+    </record>
+    <record>
+      <type>1</type>
+      <name>LDP IPv4 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>
+    <record>
+      <type>2</type>
+      <name>LDP IPv6 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>3</type>
+      <name>RSVP IPv4 LSP</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>4</type>
+      <name>RSVP IPv6 LSP</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>5</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>    
+    <record>
+      <type>6</type>
+      <name>VPN IPv4 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>     
+    <record>
+      <type>7</type>
+      <name>VPN IPv6 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>8</type>
+      <name>L2 VPN endpoint</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>9</type>
+      <name>"FEC 128" Pseudowire - IPv4</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment>DEPRECATED</comment>
+    </record>    
+    <record>
+      <type>10</type>
+      <name>"FEC 128" Pseudowire - IPv4</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>11</type>
+      <name>"FEC 129" Pseudowire - IPv4</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>12</type>
+      <name>BGP labeled IPv4 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>13</type>
+      <name>BGP labeled IPv6 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>14</type>
+      <name>Generic IPv4 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>15</type>
+      <name>Generic IPv6 prefix</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>16</type>
+      <name>Nil FEC</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>17</type>
+      <name>RSVP P2MP IPv4 Session</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>18</type>
+      <name>RSVP P2MP IPv6 Session</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>19</type>
+      <name>Multicast P2MP LDP FEC Stack</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>20</type>
+      <name>Multicast MP2MP LDP FEC Stack</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>21</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>    
+    <record>
+      <type>22</type>
+      <name>Static LSP</name>
+      <xref type="rfc" data="rfc6426"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>23</type>
+      <name>Static Pseudowire</name>
+      <xref type="rfc" data="rfc6426"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>24</type>
+      <name>"FEC 128" Pseudowire - IPv6</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+    <record>
+      <type>25</type>
+      <name>"FEC 129" Pseudowire - IPv6</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>
+    <record date="2013-12-18">
+      <type>26</type>
+      <name>IPv4 RSVP Tunnel</name>
+      <xref type="rfc" data="rfc7110"/>
+      <comment/>
+    </record>
+    <record date="2013-12-18">
+      <type>27</type>
+      <name>IPv6 RSVP Tunnel</name>
+      <xref type="rfc" data="rfc7110"/>
+      <comment/>
+    </record>
+    <record date="2013-12-18">
+      <type>28</type>
+      <name>Static Tunnel</name>
+      <xref type="rfc" data="rfc7110"/>
+      <comment/>
+    </record>
+    <record date="2014-01-09">
+      <type>29</type>
+      <name>HSMP-upstream LDP FEC Stack</name>
+      <xref type="rfc" data="rfc7140"/>
+      <comment/>
+    </record>
+    <record date="2014-01-09">
+      <type>30</type>
+      <name>HSMP-downstream LDP FEC Stack</name>
+      <xref type="rfc" data="rfc7140"/>
+      <comment/>
+    </record>
+    <record date="2014-05-01">
+      <type>31</type>
+      <name>MT LDP IPv4 prefix</name>
+      <xref type="rfc" data="rfc7307"/>
+      <comment/>
+    </record>
+    <record date="2014-05-01">
+      <type>32</type>
+      <name>MT LDP IPv6 prefix</name>
+      <xref type="rfc" data="rfc7307"/>
+      <comment/>
+    </record>
+    <record date="2016-09-13">
+      <type>33</type>
+      <name>Entropy label FEC</name>
+      <xref type="rfc" data="rfc8012"/>
+      <comment/>
+    </record>
+    <record date="2016-09-15" updated="2019-09-11">
+      <type>34</type>
+      <name>IPv4 IGP-Prefix Segment ID</name>
+      <xref type="rfc" data="rfc8287">RFC8287, Section 5.1</xref>
+      <xref type="rfc" data="rfc8690"/>
+      <comment/>
+    </record>
+    <record date="2016-09-15" updated="2019-09-11">
+      <type>35</type>
+      <name>IPv6 IGP-Prefix Segment ID</name>
+      <xref type="rfc" data="rfc8287">RFC8287, Section 5.2</xref>
+      <xref type="rfc" data="rfc8690"/>
+      <comment/>
+    </record>
+    <record date="2016-09-15" updated="2019-09-11">
+      <type>36</type>
+      <name>IGP-Adjacency Segment ID</name>
+      <xref type="rfc" data="rfc8287">RFC8287, Section 5.3</xref>
+      <xref type="rfc" data="rfc8690"/>
+      <comment/>
+    </record>
+    <record date="2017-08-25">
+      <type>37</type>
+      <name>P2MP Pseudowire sub-TLV</name>
+      <xref type="rfc" data="rfc8339"/>
+      <comment/>
+    </record>
+    <record date="2021-05-11">
+      <type>38</type>
+      <name>PeerAdj SID Sub-TLV (TEMPORARY - registered 2021-05-11, expires 2022-05-11)</name>
+      <xref type="draft" data="draft-ietf-mpls-sr-epe-oam-03"/>
+      <comment/>
+    </record>
+    <record date="2021-05-11">
+      <type>39</type>
+      <name>PeerNode SID Sub-TLV (TEMPORARY - registered 2021-05-11, expires 2022-05-11)</name>
+      <xref type="draft" data="draft-ietf-mpls-sr-epe-oam-03"/>
+      <comment/>
+    </record>
+    <record date="2021-05-11">
+      <type>40</type>
+      <name>PeerSet SID Sub-TLV (TEMPORARY - registered 2021-05-11, expires 2022-05-11)</name>
+      <xref type="draft" data="draft-ietf-mpls-sr-epe-oam-03"/>
+      <comment/>
+    </record>
+    <record>
+      <type>41-31739</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+          <type>31740-31743</type>
+          <name>Reserved for Experimental Use</name>
+          <xref type="rfc" data="rfc9041"/>
+          <comment>Not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></comment>
+        </record>
+        <record>
+          <type>31744-64507</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+        <type>64508-64511</type>
+        <name>Reserved for Experimental Use</name>
+        <xref type="rfc" data="rfc9041"/>
+        <comment>Not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</comment>
+      </record>
+      <record>
+        <type>64512-65535</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      </registry>
+  
+    <registry id="sub-tlv-6">
+      <title>Sub-TLVs for TLV Type 6</title>
+      <xref type="rfc" data="rfc8611"/>
+      <xref type="rfc" data="rfc9041"/>
+      <range>
+        <value>0-16383</value>
+        <registration_rule>Standards Action</registration_rule>
+        <note>This range is for sub-TLVs that require an error
+            message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+      </range>
+      <range>
+        <value>16384-31739</value>
+        <registration_rule>RFC Required</registration_rule>
+        <note>This range is for sub-TLVs that require an error
+        message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+      </range>
+      <range>
+        <value>31740-31743</value>
+        <registration_rule>Experimental Use</registration_rule>
+        <note>Reserved, not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+      </range>
+      <range>
+        <value>31744-32767</value>
+        <registration_rule>First Come First Served</registration_rule>
+        <note>This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+      </range>
+      <range>
+        <value>32768-49161</value>
+        <registration_rule>Standards Action</registration_rule>
+        <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+      </range>
+      <range>
+        <value>49162-64507</value>
+        <registration_rule>RFC Required</registration_rule>
+        <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+      </range>
+      <range>
+        <value>64508-64511</value>
+        <registration_rule>Experimental Use</registration_rule>
+        <note>Reserved, not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+      </range>
+      <range>
+        <value>64512-65535</value>
+        <registration_rule>First Come First Served</registration_rule>
+        <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+      </range>
+      <record date="2019-05-31">
+        <type>0</type>
+        <name>Reserved</name>
+        <xref type="rfc" data="rfc8611"/>
+        <xref type="rfc" data="rfc9041"/>
+        <comment/>
+      </record>
+      <record date="2019-04-26">
+        <type>1</type>
+        <name>Incoming Label Stack</name>
+        <xref type="rfc" data="rfc8611"/>
+        <comment/>
+      </record>
+      <record date="2019-04-26">
+        <type>2</type>
+        <name>Incoming Interface Index</name>
+        <xref type="rfc" data="rfc8611"/>
+        <comment/>
+      </record>
+      <record>
+        <type>3-31739</type>
+          <name>Unassigned</name>
+          <comment/>
+        </record>
+        <record date="2021-03-10">
+            <type>31740-31743</type>
+            <name>Reserved for Experimental Use</name>
+            <xref type="rfc" data="rfc9041"/>
+            <comment>Not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></comment>
+          </record>
+          <record>
+            <type>31744-64507</type>
+          <name>Unassigned</name>
+          <comment/>
+        </record>
+        <record date="2021-03-10">
+          <type>64508-64511</type>
+          <name>Reserved for Experimental Use</name>
+          <xref type="rfc" data="rfc9041"/>
+          <comment>Not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</comment>
+        </record>
+        <record>
+          <type>64512-65535</type>
+          <name>Unassigned</name>
+          <comment/>
+        </record>
+        </registry>
+  
+  <registry id="sub-tlv-9">
+    <title>Sub-TLVs for TLV Type 9</title>
+      <xref type="rfc" data="rfc8029"/>
+    <registration_rule>None</registration_rule>
+    <record>
+      <type>Any value</type>
+      <name>TLV Not Understood</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment>The entire errored TLV is returned</comment>
+    </record>
+    </registry>
+  
+   <registry id="sub-tlv-11">
+    <title>Sub-TLVs for TLV Type 11</title>
+    <xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-16383</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+          message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>16384-31739</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+      message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31740-31743</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31744-32767</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>32768-49161</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>49162-64507</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64508-64511</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64512-65535</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <record date="2021-03-10">
+      <type>0</type>
+      <name>Reserved</name>
+      <xref type="rfc" data="rfc9041"/>
+      <comment/>
+    </record>
+    <record>
+      <type>1</type>
+      <name>IPv4 Egress Address P2MP Responder</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>    
+      <record>
+      <type>2</type>
+      <name>IPv6 Egress Address P2MP Responder</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>       
+    <record>
+      <type>3</type>
+      <name>IPv4 Node Address P2MP Responder</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>
+    <record>
+      <type>4</type>
+      <name>IPv6 Node Address P2MP Responder</name>
+      <xref type="rfc" data="rfc6425"/>
+      <comment/>
+    </record>
+    <record>
+      <type>5-31739</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+          <type>31740-31743</type>
+          <name>Reserved for Experimental Use</name>
+          <xref type="rfc" data="rfc9041"/>
+          <comment>Not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></comment>
+        </record>
+        <record>
+          <type>31744-64507</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+        <type>64508-64511</type>
+        <name>Reserved for Experimental Use</name>
+        <xref type="rfc" data="rfc9041"/>
+        <comment>Not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</comment>
+      </record>
+      <record>
+        <type>64512-65535</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      </registry>
+  
+   <registry id="sub-tlv-20">
+    <title>Sub-TLVs for TLV Type 20</title>
+     <xref type="rfc" data="rfc8029"/>
+     <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-16383</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+          message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>16384-31739</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+      message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31740-31743</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31744-32767</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>32768-49161</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>49162-64507</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64508-64511</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64512-65535</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <record date="2021-03-10">
+      <type>0</type>
+      <name>Reserved</name>
+      <xref type="rfc" data="rfc9041"/>
+      <comment/>
+    </record>
+    <record>
+      <type>1</type>
+      <name>Multipath data</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>    
+     <record>
+      <type>2</type>
+      <name>Label stack</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>
+    <record>
+      <type>3</type>
+      <name>FEC stack change</name>
+      <xref type="rfc" data="rfc8029"/>
+      <comment/>
+    </record>
+    <record date="2019-04-26">
+      <type>4</type>
+      <name>Local Interface Index</name>
+      <xref type="rfc" data="rfc8611"/>
+      <comment/>
+    </record>
+     <record date="2019-04-26">
+       <type>5</type>
+       <name>Remote Interface Index</name>
+       <xref type="rfc" data="rfc8611"/>
+       <comment/>
+     </record>
+    <record>
+      <type>6-31739</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+          <type>31740-31743</type>
+          <name>Reserved for Experimental Use</name>
+          <xref type="rfc" data="rfc9041"/>
+          <comment>Not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></comment>
+        </record>
+        <record>
+          <type>31744-64507</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+        <type>64508-64511</type>
+        <name>Reserved for Experimental Use</name>
+        <xref type="rfc" data="rfc9041"/>
+        <comment>Not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</comment>
+      </record>
+      <record>
+        <type>64512-65535</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      </registry>
+  
+  <registry id="sub-tlv-23">
+    <title>Sub-TLVs for TLV Type 23</title>
+    <xref type="rfc" data="rfc7555"/>
+	<xref type="rfc" data="rfc8029"/>
+  <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-16383</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+          message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>16384-31739</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+      message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31740-31743</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31744-32767</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>32768-49161</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>49162-64507</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64508-64511</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64512-65535</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <record date="2015-04-08">
+      <type>0</type>
+      <name>Reserved</name>
+      <xref type="rfc" data="rfc7555"/>
+      <comment/>
+    </record>
+    <record date="2015-04-08">
+      <type>1</type>
+      <name>Next Hop</name>
+      <xref type="rfc" data="rfc7555"/>
+      <comment/>
+    </record>
+    <record>
+      <type>2-31739</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+          <type>31740-31743</type>
+          <name>Reserved for Experimental Use</name>
+          <xref type="rfc" data="rfc9041"/>
+          <comment>Not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></comment>
+        </record>
+        <record>
+          <type>31744-64507</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+        <type>64508-64511</type>
+        <name>Reserved for Experimental Use</name>
+        <xref type="rfc" data="rfc9041"/>
+        <comment>Not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</comment>
+      </record>
+      <record>
+        <type>64512-65535</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      </registry>
+    
+  <registry id="sub-tlv-27">
+    <title>Sub-TLVs for TLV Type 27</title>
+    <xref type="rfc" data="rfc7759"/>
+	<xref type="rfc" data="rfc8029"/>
+  <xref type="rfc" data="rfc9041"/>
+    <range>
+      <value>0-16383</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+          message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>16384-31739</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that require an error
+      message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31740-31743</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>31744-32767</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></note>
+    </range>
+    <range>
+      <value>32768-49161</value>
+      <registration_rule>Standards Action</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>49162-64507</value>
+      <registration_rule>RFC Required</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64508-64511</value>
+      <registration_rule>Experimental Use</registration_rule>
+      <note>Reserved, not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <range>
+      <value>64512-65535</value>
+      <registration_rule>First Come First Served</registration_rule>
+      <note>This range is for sub-TLVs that can be silently dropped if not recognized.</note>
+    </range>
+    <record date="2015-12-07">
+      <type>0</type>
+      <name>Reserved</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record>
+      <type>1-99</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>100</type>
+      <name>BFD Configuration</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>101</type>
+      <name>BFD Local Discriminator</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>102</type>
+      <name>BFD Negotiation Timer Parameters</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>103</type>
+      <name>BFD Authentication</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>104</type>
+      <name>Traffic Class</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record>
+      <type>105-199</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>
+    <record date="2015-12-06" updated="2016-02-09">
+      <type>200</type>
+      <name>Performance Monitoring</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>201</type>
+      <name>PM Loss Measurement</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>202</type>
+      <name>PM Delay Measurement</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record>
+      <type>203-299</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>300</type>
+      <name>Fault Management Signal</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record>
+      <type>301-399</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>
+    <record date="2015-12-06">
+      <type>400</type>
+      <name>Source MEP-ID</name>
+      <xref type="rfc" data="rfc7759"/>
+      <comment/>
+    </record>
+    <record>
+      <type>401-31739</type>
+        <name>Unassigned</name>
+        <comment/>
+      </record>
+      <record date="2021-03-10">
+        <type>31740-31743</type>
+        <name>Reserved for Experimental Use</name>
+        <xref type="rfc" data="rfc9041"/>
+        <comment>Not to be assigned. This range is for sub-TLVs that require an error message if not recognized. <xref type="rfc" data="rfc9041">RFC9041, Section 3.1</xref></comment>
+      </record>
+      <record>
+        <type>31744-64507</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>
+    <record date="2021-03-10">
+      <type>64508-64511</type>
+      <name>Reserved for Experimental Use</name>
+      <xref type="rfc" data="rfc9041"/>
+      <comment>Not to be assigned. This range is for sub-TLVs that can be silently dropped if not recognized.</comment>
+    </record>
+    <record>
+      <type>64512-65535</type>
+      <name>Unassigned</name>
+      <comment/>
+    </record>
+    </registry>
+  
+</registry>
+  
+  <registry id="measurement-timestamp">
+    <title>Measurement Timestamp Type</title>
+    <hide/>
+    <xref type="rfc" data="rfc6374"/><xref type="rfc" data="rfc7214"/>
+    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+per <xref type="rfc" data="rfc7214"/>.
+    </note>
+  </registry>
+  
+  <registry id="loss-delay-control-code-query">
+    <title>Loss/Delay Measurement Control Code: Query Codes</title>
+    <hide/>
+    <xref type="rfc" data="rfc6374"/><xref type="rfc" data="rfc7214"/>
+    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+per <xref type="rfc" data="rfc7214"/>.
+    </note>
+  </registry>
+  
+  <registry id="loss-delay-control-code-response">
+    <title>Loss/Delay Measurement Control Code: Response Codes</title>
+    <hide/>
+    <xref type="rfc" data="rfc6374"/><xref type="rfc" data="rfc7214"/>
+    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+per <xref type="rfc" data="rfc7214"/>.
+    </note>
+  </registry>
+  
+  <registry id="loss-delay-measurement-tlv">
+    <title>MPLS Loss/Delay Measurement TLV Object</title>
+    <hide/>
+    <xref type="rfc" data="rfc6374"/><xref type="rfc" data="rfc7214"/>
+    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+per <xref type="rfc" data="rfc7214"/>.
+    </note>
+  </registry>
+ 
+  <registry id="global-flags">
+    <title>Global Flags</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc6425"/>
+    <record>
+      <value>15</value>
+      <description>V Flag</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>14</value>
+      <description>T Flag</description>
+      <xref type="rfc" data="rfc6425"/>
+    </record>
+    <record date="2015-01-05">
+      <value>13</value>
+      <description>Validate Reverse Path</description>
+      <xref type="rfc" data="rfc6426"/>
+      <xref type="rfc-errata" data="4012"/>
+    </record>
+    <record>
+      <value>12-0</value>
+      <description>Unassigned</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+  </registry>
+  
+  <registry id="downstream-mapping">
+    <title>Downstream Detailed Mapping Address Type Registry</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc6426"/>
+    <xref type="rfc" data="rfc7555"/>
+	<xref type="rfc" data="rfc8029"/>
+    <note>When a code point is assigned that is not also assigned in the
+Next Hop Address Type Registry, the code point there must be
+marked "Reserved".
+    </note>
+    <record>
+      <type>0</type>
+      <description>Unassigned</description>
+      <size/>
+    </record>
+    <record>
+      <type>1</type>
+      <description>IPv4 Numbered</description>
+      <size>16</size>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <type>2</type>
+      <description>IPv4 Unnumbered</description>
+      <size>16</size>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <type>3</type>
+      <description>IPv6 Numbered</description>
+      <size>40</size>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <type>4</type>
+      <description>IPv6 Unnumbered</description>
+      <size>28</size>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <type>5</type>
+      <description>Non IP</description>
+      <size>12</size>
+      <xref type="rfc" data="rfc6426"/>
+    </record>
+    <record date="2015-04-08">
+      <type>6</type>
+      <description>Reserved</description>
+      <size/>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <type>7</type>
+      <description>Reserved</description>
+      <size/>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record>
+      <type>8-255</type>
+      <description>Unassigned</description>
+      <size/>
+    </record>
+  </registry>  
+  
+  <registry id="next-hop-address-type">
+    <title>Next Hop Address Type Registry</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc7555"/>
+    <note>When a code point is assigned that is not also assigned in the
+Downstream Mapping Address Type Registry, the code point there must be
+marked "Reserved".
+    </note>
+    <record>
+      <type>0</type>
+      <description>Unassigned</description>
+      <addr/>
+      <if/>
+    </record>
+    <record date="2015-04-08">
+      <type>1</type>
+      <description>IPv4 Numbered</description>
+      <addr>4</addr>
+      <if>4</if>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-04-08">
+      <type>2</type>
+      <description>IPv4 Unnumbered</description>
+      <addr>4</addr>
+      <if>4</if>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-04-08">
+      <type>3</type>
+      <description>IPv6 Numbered</description>
+      <addr>16</addr>
+      <if>16</if>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-04-08">
+      <type>4</type>
+      <description>IPv6 Unnumbered</description>
+      <addr>16</addr>
+      <if>4</if>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-04-08">
+      <type>5</type>
+      <description>Reserved</description>
+      <addr/>
+      <if/>
+      <xref type="rfc" data="rfc6426"/>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <type>6</type>
+      <description>IPv4 Protocol Adj</description>
+      <addr>4</addr>
+      <if>0</if>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-04-08">
+      <type>7</type>
+      <description>IPv6 Protocol Adj</description>
+      <addr>16</addr>
+      <if>0</if>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record>
+      <type>8-255</type>
+      <description>Unassigned</description>
+      <addr/>
+      <if/>
+    </record>
+  </registry> 
+  
+  <registry id="reply-path-return-codes">
+    <title>Reply Path Return Codes</title>
+    <xref type="rfc" data="rfc7110"/>
+    <range>
+      <value>0x0000-0xFFFB</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>0xFFFC-0xFFFF</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record>
+      <value>0x0000</value>
+      <description>No return code</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0x0001</value>
+      <description>Malformed Reply Path TLV was received</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0x0002</value>
+      <description>One or more of the sub-TLVs in the Reply Path TLV were not understood</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0x0003</value>
+      <description>The echo reply was sent successfully using the specified Reply Path</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0x0004</value>
+      <description>The specified Reply Path was not found, the echo reply was sent via other LSP</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0x0005</value>
+      <description>The specified Reply Path was not found, the echo reply was sent via pure IP forwarding (non-MPLS) path</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0x0006-0xFFFB</value>
+      <description>Unassigned</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+    <record>
+      <value>0xFFFC-0xFFFF</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc7110"/>
+    </record>
+  </registry>
+  
+  <registry id="ds-flags">
+    <title>DS Flags</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc8029"/>
+    <record date="2015-03-17">
+      <value>7</value>
+      <description>N: Treat as a Non-IP Packet</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>6</value>
+      <description>I: Interface and Label Stack Object Request</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2016-09-13">
+      <value>5</value>
+      <description>E: ELI/EL push indicator</description>
+      <xref type="rfc" data="rfc8012"/>
+    </record>
+    <record date="2016-09-13">
+      <value>4</value>
+      <description>L: Label-based load balance indicator</description>
+      <xref type="rfc" data="rfc8012"/>
+    </record>
+    <record date="2019-04-26">
+      <value>3</value>
+      <description>G: LAG Description Indicator</description>
+      <xref type="rfc" data="rfc8611"/>
+    </record>
+    <record>
+      <value>2-0</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+  
+  <registry id="multipath-type">
+    <title>Multipath Types</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc8029"/>
+    <range>
+      <value>0-250</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>251-254</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record date="2015-03-17">
+      <value>0</value>
+      <description>no multipath</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>1</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-03-17">
+      <value>2</value>
+      <description>IP address</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>3</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-03-17">
+      <value>4</value>
+      <description>IP address range</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>5-7</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-03-17">
+      <value>8</value>
+      <description>Bit-masked IP address set</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>9</value>
+      <description>Bit-masked label set</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2016-09-13">
+      <value>10</value>
+      <description>IP and label set</description>
+      <xref type="rfc" data="rfc8012"/>
+    </record>
+    <record>
+      <value>11-250</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-03-17">
+      <value>251-254</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+  </registry>
+
+  <registry id="pad-type">
+    <title>Pad Types</title>
+    <xref type="rfc" data="rfc8029"/>
+    <range>
+      <value>1-250</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>251-254</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record date="2015-03-17">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>1</value>
+      <description>Drop Pad TLV from reply</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>2</value>
+      <description>Copy Pad TLV to reply</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>3-250</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-03-17">
+      <value>251-254</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+  </registry>
+  
+  <registry id="interface-label-stack-address-type">
+    <title>Interface and Label Stack and Detailed Interface and Label Stack Address Types</title>
+    <xref type="rfc" data="rfc8029"/>
+    <xref type="rfc" data="rfc8611"/>
+    <range>
+      <value>1-250</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>251-254</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record date="2015-03-17">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>1</value>
+      <description>IPv4 Numbered</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>2</value>
+      <description>IPv4 Unnumbered</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>3</value>
+      <description>IPv6 Numbered</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>4</value>
+      <description>IPv6 Unnumbered</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record>
+      <value>5-250</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2015-03-17">
+      <value>251-254</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+    <record date="2015-03-17">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8029"/>
+    </record>
+  </registry>
+
+  <registry id="proxy-flags">
+    <title>Proxy Flags</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc7555"/>
+    <record date="2015-05-21">
+      <value>0</value>
+      <description>Request for FEC Neighbor Address info</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-05-21">
+      <value>1</value>
+      <description>Request for Downstream Mapping</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-05-21">
+      <value>2</value>
+      <description>Request for Downstream Detailed Mapping</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record date="2015-05-21">
+      <value>3</value>
+      <description>Explicit DSCP Request</description>
+      <xref type="rfc" data="rfc7555"/>
+    </record>
+    <record>
+      <value>4-15</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+  
+  <registry id="oam-function-flags">
+    <title>MPLS OAM Function Flags</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc7759"/>
+    <record date="2015-12-06">
+      <value>0</value>
+      <flag>C</flag>
+      <description>Continuity Check (CC)</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>1</value>
+      <flag>V</flag>
+      <description>Connectivity Verification (CV)</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>2</value>
+      <flag>F</flag>
+      <description>Fault Management Signal (FMS)</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06" updated="2016-02-09">
+      <value>3</value>
+      <flag>L</flag>
+      <description>Performance Monitoring/Loss (PM/Loss)</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06" updated="2016-02-09">
+      <value>4</value>
+      <flag>D</flag>
+      <description>Performance Monitoring/Delay (PM/Delay)</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record date="2015-12-06">
+      <value>5</value>
+      <flag>T</flag>
+      <description>Throughput Measurement</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    <record>
+      <value>6-30</value>
+      <flag/>
+      <description>Unassigned (Must be zero)</description>
+    </record>
+    <record date="2015-12-06">
+      <value>31</value>
+      <flag/>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc7759"/>
+    </record>
+    </registry>
+  
+  <registry id="protocol-segment-id-sub-tlv">
+    <title>Protocol in the Segment ID sub-TLV</title>
+    <xref type="rfc" data="rfc8287"/>
+    <range>
+      <value>0-250</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>251-254</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record date="2017-10-20">
+      <value>0</value>
+      <description>Any IGP Protocol</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record date="2017-10-20">
+      <value>1</value>
+      <description>OSPF</description>
+      <xref type="rfc" data="rfc8287"/>
+      <notes>Will be updated to be used with OSPFv2
+        only when draft-ietf-mpls-lsp-ping-ospfv3-codepoint is approved as an
+        RFC</notes>
+    </record>
+    <record date="2017-10-20">
+      <value>2</value>
+      <description>ISIS</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record date="2020-03-27" updated="2021-03-24">
+      <value>3</value>
+      <description>OSPFv3 (TEMPORARY - registered 2020-03-27, extension registered 2021-03-24, expires 2022-03-27)</description>
+      <xref type="draft" data="draft-ietf-mpls-lsp-ping-ospfv3-codepoint"/>
+    </record>
+    <record>
+      <value>4-250</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-10-20">
+      <value>251-254</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record date="2017-10-20">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+  </registry>
+  
+  <registry id="adjacency-type-igp-adjacency-segment-id">
+    <title>Adjacency Type in the IGP-Adjacency Segment ID</title>
+    <xref type="rfc" data="rfc8287"/>
+    <range>
+      <value>0-250</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>251-254</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record date="2017-10-20">
+      <value>0</value>
+      <description>Unnumbered interface Adjacency</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record date="2017-10-20">
+      <value>1</value>
+      <description>Parallel Adjacency</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record>
+      <value>2-3</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-10-20">
+      <value>4</value>
+      <description>IPv4, non-parallel Adjacency</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record>
+      <value>5</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-10-20">
+      <value>6</value>
+      <description>IPv4, non-parallel Adjacency</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record>
+      <value>7-250</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-10-20">
+      <value>251-254</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record date="2017-10-20">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+  </registry>
+  
+  <registry id="protocol-label-stack-sub-tlv-downstream-detailed-mapping-tlv">
+    <title>Protocol in Label Stack Sub-TLV of Downstream Detailed Mapping TLV</title>
+    <xref type="rfc" data="rfc8287"/>
+    <range>
+      <value>0-250</value>
+      <registration_rule>Standards Action</registration_rule>
+    </range>
+    <range>
+      <value>251-254</value>
+      <registration_rule>Experimental Use</registration_rule>
+    </range>
+    <record date="2017-10-20">
+      <value>0</value>
+      <description>Unknown</description>
+      <xref type="rfc" data="rfc8029">RFC8029, Section 3.4.1.2</xref>
+    </record>
+    <record date="2017-10-20">
+      <value>1</value>
+      <description>Static</description>
+      <xref type="rfc" data="rfc8029">RFC8029, Section 3.4.1.2</xref>
+    </record>
+    <record date="2017-10-20">
+      <value>2</value>
+      <description>BGP</description>
+      <xref type="rfc" data="rfc8029">RFC8029, Section 3.4.1.2</xref>
+    </record>
+    <record date="2017-10-20">
+      <value>3</value>
+      <description>LDP</description>
+      <xref type="rfc" data="rfc8029">RFC8029, Section 3.4.1.2</xref>
+    </record>
+    <record date="2017-10-20">
+      <value>4</value>
+      <description>RSVP-TE</description>
+      <xref type="rfc" data="rfc8029">RFC8029, Section 3.4.1.2</xref>
+    </record>
+    <record date="2017-10-20">
+      <value>5</value>
+      <description>OSPF</description>
+      <xref type="rfc" data="rfc8287">RFC8287, Section 6</xref>
+      <notes>Will be updated to be used with OSPFv2
+        only when draft-ietf-mpls-lsp-ping-ospfv3-codepoint is approved as an
+        RFC</notes>
+    </record>
+    <record date="2017-10-20">
+      <value>6</value>
+      <description>ISIS</description>
+      <xref type="rfc" data="rfc8287">RFC8287, Section 6</xref>
+    </record>
+    <record date="2020-03-27" updated="2021-03-24">
+      <value>7</value>
+      <description>OSPFv3 (TEMPORARY - registered 2020-03-27, extension registered 2021-03-24, expires 2022-03-27)</description>
+      <xref type="draft" data="draft-ietf-mpls-lsp-ping-ospfv3-codepoint"/>
+    </record>
+    <record>
+      <value>8-250</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2017-10-20">
+      <value>251-254</value>
+      <description>Reserved for Experimental Use</description>
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+    <record date="2017-10-20">
+      <value>255</value>
+      <description>Reserved</description> 
+      <xref type="rfc" data="rfc8287"/>
+    </record>
+  </registry>
+
+  <registry id="lsr-capability-flags">
+    <title>LSR Capability Flags</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc8611"/>
+    <record date="2019-04-26">
+      <value>31</value>
+      <description>D: Downstream LAG Info Accommodation</description>
+      <xref type="rfc" data="rfc8611"/>
+    </record>
+    <record date="2019-04-26">
+      <value>30</value>
+      <description>U: Upstream LAG Info Accommodation</description>
+      <xref type="rfc" data="rfc8611"/>
+    </record>
+    <record>
+      <value>0-29</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+  
+  <registry id="interface-index-flags">
+    <title>Interface Index Flags</title>
+    <registration_rule>Standards Action</registration_rule>
+    <xref type="rfc" data="rfc8611"/>
+    <record date="2019-04-26">
+      <value>15</value>
+      <description>M: LAG Member Link Indicator</description>
+      <xref type="rfc" data="rfc8611"/>
+    </record>
+    <record>
+      <value>0-14</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+
+  <people/>
+  
+</registry>

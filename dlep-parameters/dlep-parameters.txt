@@ -1,0 +1,404 @@
+                                                   Dynamic Link Exchange Protocol (DLEP) Parameters
+
+   Created
+           2017-04-03
+
+   Last Updated
+           2020-03-30
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * Signal Type Values
+     * Message Type Values
+     * Data Item Type Values
+     * Status Code Values
+     * Extension Type Values
+     * IPv4 Connection Point Flags
+     * IPv6 Connection Point Flags
+     * Peer Type Flags
+     * IPv4 Address Flags
+     * IPv6 Address Flags
+     * IPv4 Attached Subnet Flags
+     * IPv6 Attached Subnet Flags
+     * Hop Control Actions Values
+     * Queue Parameter Sub-Data Item Type Values
+
+Signal Type Values
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   3-65519     Specification Required
+   65520-65534 Private Use
+
+    Type Code        Description        Reference
+   0           Reserved                 [RFC8175]
+   1           Peer Discovery Signal    [RFC8175]
+   2           Peer Offer Signal        [RFC8175]
+   3-65519     Unassigned
+   65520-65534 Reserved for Private Use [RFC8175]
+   65535       Reserved                 [RFC8175]
+
+Message Type Values
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   17-65519    Specification Required
+   65520-65534 Private Use
+
+    Type Code                Description               Reference
+   0           Reserved                                [RFC8175]
+   1           Session Initialization Message          [RFC8175]
+   2           Session Initialization Response Message [RFC8175]
+   3           Session Update Message                  [RFC8175]
+   4           Session Update Response Message         [RFC8175]
+   5           Session Termination Message             [RFC8175]
+   6           Session Termination Response Message    [RFC8175]
+   7           Destination Up Message                  [RFC8175]
+   8           Destination Up Response Message         [RFC8175]
+   9           Destination Announce Message            [RFC8175]
+   10          Destination Announce Response Message   [RFC8175]
+   11          Destination Down Message                [RFC8175]
+   12          Destination Down Response Message       [RFC8175]
+   13          Destination Update Message              [RFC8175]
+   14          Link Characteristics Request Message    [RFC8175]
+   15          Link Characteristics Response Message   [RFC8175]
+   16          Heartbeat Message                       [RFC8175]
+   17-65519    Unassigned
+   65520-65534 Reserved for Private Use                [RFC8175]
+   65535       Reserved                                [RFC8175]
+
+Data Item Type Values
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   26-65407    Specification Required
+   65408-65534 Private Use
+
+    Type Code                Description               Reference
+   0           Reserved                                [RFC8175]
+   1           Status                                  [RFC8175]
+   2           IPv4 Connection Point                   [RFC8175]
+   3           IPv6 Connection Point                   [RFC8175]
+   4           Peer Type                               [RFC8175]
+   5           Heartbeat Interval                      [RFC8175]
+   6           Extensions Supported                    [RFC8175]
+   7           MAC Address                             [RFC8175]
+   8           IPv4 Address                            [RFC8175]
+   9           IPv6 Address                            [RFC8175]
+   10          IPv4 Attached Subnet                    [RFC8175]
+   11          IPv6 Attached Subnet                    [RFC8175]
+   12          Maximum Data Rate (Receive) (MDRR)      [RFC8175]
+   13          Maximum Data Rate (Transmit) (MDRT)     [RFC8175]
+   14          Current Data Rate (Receive) (CDRR)      [RFC8175]
+   15          Current Data Rate (Transmit) (CDRT)     [RFC8175]
+   16          Latency                                 [RFC8175]
+   17          Resources (RES)                         [RFC8175]
+   18          Relative Link Quality (Receive) (RLQR)  [RFC8175]
+   19          Relative Link Quality (Transmit) (RLQT) [RFC8175]
+   20          Maximum Transmission Unit (MTU)         [RFC8175]
+   21          Hop Count                               [RFC8629]
+   22          Hop Control                             [RFC8629]
+   23          Queue Parameters                        [RFC8651]
+   24          Pause                                   [RFC8651]
+   25          Restart                                 [RFC8651]
+   26          Link Identifier Length                  [RFC8703]
+   27          Link Identifier                         [RFC8703]
+   28          Latency Range                           [RFC8757]
+   29-65407    Unassigned
+   65408-65534 Reserved for Private Use                [RFC8175]
+   65535       Reserved                                [RFC8175]
+
+Status Code Values
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+    Range  Registration Procedures
+   4-111   Specification Required
+   112-127 Private Use
+   133-239 Specification Required
+   240-254 Private Use
+
+   Status Code Failure Mode       Description        Reference
+   0           Continue     Success                  [RFC8175]
+   1           Continue     Not Interested           [RFC8175]
+   2           Continue     Request Denied           [RFC8175]
+   3           Continue     Inconsistent Data        [RFC8175]
+   4-111       Continue     Unassigned
+   112-127     Continue     Reserved for Private Use [RFC8175]
+   128         Terminate    Unknown Message          [RFC8175]
+   129         Terminate    Unexpected Message       [RFC8175]
+   130         Terminate    Invalid Data             [RFC8175]
+   131         Terminate    Invalid Destination      [RFC8175]
+   132         Terminate    Timed Out                [RFC8175]
+   133-239     Terminate    Unassigned
+   240-254     Terminate    Reserved for Private Use [RFC8175]
+   255         Terminate    Shutting Down            [RFC8175]
+
+Extension Type Values
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   2-65519     Specification Required
+   65520-65534 Private Use
+
+      Code            Description        Reference
+   0           Reserved                  [RFC8175]
+   1           Multi-Hop Forwarding      [RFC8629]
+   2           Control-Plane-Based Pause [RFC8651]
+   3           Link Identifiers          [RFC8703]
+   4           Latency Range             [RFC8757]
+   5-65519     Unassigned
+   65520-65534 Reserved for Private Use  [RFC8175]
+   65535       Reserved                  [RFC8175]
+
+IPv4 Connection Point Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit         Description         Reference
+   0-6 Unassigned
+   7   Use TLS [RFC5246] indicator [RFC8175]
+
+IPv6 Connection Point Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit         Description         Reference
+   0-6 Unassigned
+   7   Use TLS [RFC5246] indicator [RFC8175]
+
+Peer Type Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit       Description        Reference
+   0-6 Unassigned
+   7   Secured Medium indicator [RFC8175]
+
+IPv4 Address Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit    Description     Reference
+   0-6 Unassigned
+   7   Add/Drop indicator [RFC8175]
+
+IPv6 Address Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit    Description     Reference
+   0-6 Unassigned
+   7   Add/Drop indicator [RFC8175]
+
+IPv4 Attached Subnet Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit    Description     Reference
+   0-6 Unassigned
+   7   Add/Drop indicator [RFC8175]
+
+IPv6 Attached Subnet Flags
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8175]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit    Description     Reference
+   0-6 Unassigned
+   7   Add/Drop indicator [RFC8175]
+
+Hop Control Actions Values
+
+   Expert(s)
+
+ Rick Taylor
+
+   Reference
+           [RFC8629]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   4-65519     Specification Required
+   65520-65534 Private Use
+
+      Value             Action          Reference
+   0           Reset                    [RFC8629]
+   1           Terminate                [RFC8629]
+   2           Direct Connection        [RFC8629]
+   3           Suppress Forwarding      [RFC8629]
+   4-65519     Unassigned
+   65520-65534 Reserved for Private Use [RFC8629]
+   65535       Reserved                 [RFC8629]
+
+Queue Parameter Sub-Data Item Type Values
+
+   Expert(s)
+
+ Unassigned
+
+   Reference
+           [RFC8651]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Range    Registration Procedures
+   2-65407     Specification Required
+   65408-65534 Private Use
+
+    Type Code     Description/Policy    Reference
+   0           Reserved                 [RFC8651]
+   1           Queue Parameter          [RFC8651]
+   2-65407     Unassigned
+   65408-65534 Reserved for Private Use [RFC8651]
+   65535       Reserved                 [RFC8651]

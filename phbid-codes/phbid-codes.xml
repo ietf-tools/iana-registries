@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="phbid-codes.xsl"?>
+<?xml-model href="phbid-codes.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<registry xmlns="http://www.iana.org/assignments" id="phbid-codes">
+  <title>Per Hop Behavior Identification Codes</title>
+  <updated>2001-06-21</updated>
+  <registry id="phbid-codes-1">
+    <title>Per Hop Behavior Identification Codes</title>
+    <xref type="rfc" data="rfc3140"/>
+    <registration_rule>Expert or area director review</registration_rule>
+    <expert>Primary: Brian Carpenter; Secondary: David Black</expert>
+    <note>Please see Section 4 of <xref type="rfc" data="rfc3140"/> for details regarding ID Codes.
+    </note>
+    <record>
+      <value>0-4095</value>
+      <description>Unassigned</description>
+      <controller/>
+    </record>
+  </registry>
+  <people/>
+</registry>

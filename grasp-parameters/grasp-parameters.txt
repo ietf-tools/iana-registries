@@ -1,0 +1,88 @@
+                                               GeneRic Autonomic Signaling Protocol (GRASP) Parameters
+
+   Created
+           2017-07-20
+
+   Last Updated
+           2021-05-26
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registries included below
+
+     * GRASP Messages and Options
+     * GRASP Objective Names
+
+GRASP Messages and Options
+
+   Registration Procedure(s)
+
+ Standards Action
+
+   Reference
+           [RFC8990]
+
+   Available Formats
+           [IMG]
+           CSV
+
+    Value  Message/Option Reference
+   0       M_NOOP         [RFC8990]
+   1       M_DISCOVERY    [RFC8990]
+   2       M_RESPONSE     [RFC8990]
+   3       M_REQ_NEG      [RFC8990]
+   4       M_REQ_SYN      [RFC8990]
+   5       M_NEGOTIATE    [RFC8990]
+   6       M_END          [RFC8990]
+   7       M_WAIT         [RFC8990]
+   8       M_SYNCH        [RFC8990]
+   9       M_FLOOD        [RFC8990]
+   10-98   Unassigned
+   99      M_INVALID      [RFC8990]
+   100     O_DIVERT       [RFC8990]
+   101     O_ACCEPT       [RFC8990]
+   102     O_DECLINE      [RFC8990]
+   103     O_IPv6_LOCATOR [RFC8990]
+   104     O_IPv4_LOCATOR [RFC8990]
+   105     O_FQDN_LOCATOR [RFC8990]
+   106     O_URI_LOCATOR  [RFC8990]
+   107-255 Unassigned
+
+GRASP Objective Names
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Michael Richardson
+
+   Reference
+           [RFC8990]
+
+   Available Formats
+           [IMG]
+           CSV
+
+      Objective Name    Reference
+   EX0                  [RFC8990]
+   EX1                  [RFC8990]
+   EX2                  [RFC8990]
+   EX3                  [RFC8990]
+   EX4                  [RFC8990]
+   EX5                  [RFC8990]
+   EX6                  [RFC8990]
+   EX7                  [RFC8990]
+   EX8                  [RFC8990]
+   EX9                  [RFC8990]
+   PrefixManager        [RFC8992]
+   PrefixManager.Params [RFC8992]
+   AN_ACP               [RFC8994]
+   SRV.est              [RFC8994]
+   AN_Proxy             [RFC8995]
+   AN_join_registrar    [RFC8995]

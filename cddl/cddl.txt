@@ -1,0 +1,53 @@
+                                                       Concise Data Definition Language (CDDL)
+
+   Created
+           2019-03-28
+
+   Last Updated
+           2021-07-17
+
+   Available Formats
+           [IMG]
+           XML [IMG]
+           HTML [IMG]
+           Plain text
+
+   Registry included below
+
+     * CDDL Control Operators
+
+CDDL Control Operators
+
+   Expert(s)
+
+ Jeffrey Yasskin, Henk Birkholz
+
+   Reference
+           [RFC8610]
+
+   Available Formats
+           [IMG]
+           CSV
+
+                 Range                Registration Procedures
+   name includes internal dot         IETF Review
+   name does not include internal dot Specification Required
+
+     Name   Reference
+   .size    [RFC8610]
+   .bits    [RFC8610]
+   .regexp  [RFC8610]
+   .cbor    [RFC8610]
+   .cborseq [RFC8610]
+   .within  [RFC8610]
+   .and     [RFC8610]
+   .lt      [RFC8610]
+   .le      [RFC8610]
+   .gt      [RFC8610]
+   .ge      [RFC8610]
+   .eq      [RFC8610]
+   .ne      [RFC8610]
+   .default [RFC8610]
+   .sdnv    [RFC9090]
+   .sdnvseq [RFC9090]
+   .oid     [RFC9090]
