@@ -1,7 +1,7 @@
                                                       Uniform Resource Identifier (URI) Schemes
 
    Last Updated
-           2021-07-21
+           2021-08-23
 
    Available Formats
            [IMG]
@@ -58,6 +58,7 @@ amss                                 prov/amss                                 a
 android                              prov/android                              android                              Provisional -          [Adam_Barth][https://developer.android.com/guide/topics/manifest/manifest-intro]
 appdata                              prov/appdata                              appdata                              Provisional -          [urischemeowners_at_microsoft.com]
 apt                                  prov/apt                                  apt                                  Provisional -          [Dave_Thaler]
+ar                                   prov/ar                                   ar                                   Provisional -          [Arweave_Team]
 ark                                  prov/ark                                  ark                                  Provisional -          [ARK_agency][https://n2t.net/ark:/21206/10015]
 attachment                           prov/attachment                           attachment                           Provisional -          [Dave_Thaler]
 aw                                   prov/aw                                   aw                                   Provisional -          [Dave_Thaler]
@@ -413,6 +414,7 @@ z39.50s                                                                        Z
    [Alexander_Shishenko]                        Alexander Shishenko                   mailto:alex&librevault.com                         2016-06-13
    [Arild_Hegvik]                               Arild Hegvik                          mailto:arild&bitcoincheque.org                     2020-01-08
    [ARK_agency]                                 ARK Maintenance Agency                mailto:marioxcc.mt&yandex.com                      2019-08-22
+   [Arweave_Team]                               Arweave Team                          mailto:sam&arweave.org                             2021-08-23
    [Bíró_Tamás]                                 Bíró Tamás                            mailto:tamas.biro&sensenet.com                     2014-05-16
    [Bob_Hinkle]                                 Bob Hinkle                            mailto:bohinkle&cisco.com                          2019-06-24
    [Bob_Van_Zant]                               Bob Van Zant                          mailto:bob&veznat.com                              2011-11-14
