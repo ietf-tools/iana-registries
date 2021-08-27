@@ -4,7 +4,7 @@
            2020-01-16
 
    Last Updated
-           2021-08-18
+           2021-06-14
 
    Available Formats
            [IMG]
@@ -103,16 +103,7 @@ DOTS Signal Channel CBOR Key Values
    peer-hb-status                             51             7               IESG              [RFC-ietf-dots-rfc8782-bis-08]
    activation-type                            52             0               IESG              [RFC-ietf-dots-signal-filter-control-07]
    ietf-dots-signal-control:acl-list          53             4               IESG              [RFC-ietf-dots-signal-filter-control-07]
-   Unassigned                                 54-127
-   ietf-dots-call-home:source-prefix          128            4               IESG              [RFC-ietf-dots-signal-call-home-14]
-   ietf-dots-call-home:source-port-range      129            4               IESG              [RFC-ietf-dots-signal-call-home-14]
-   ietf-dots-call-home:source-icmp-type-range 130            4               IESG              [RFC-ietf-dots-signal-call-home-14]
-   lower-type                                 131            0               IESG              [RFC-ietf-dots-signal-call-home-14]
-   upper-type                                 132            0               IESG              [RFC-ietf-dots-signal-call-home-14]
-   ietf-dots-call-home:alt-ch-client          133            3               IESG              [RFC-ietf-dots-signal-call-home-14]
-   ietf-dots-call-home:alt-ch-client-record   134            4               IESG              [RFC-ietf-dots-signal-call-home-14]
-   ietf-dots-call-home:ttl                    135            0               IESG              [RFC-ietf-dots-signal-call-home-14]
-   Unassigned                                 136-49151
+   Unassigned                                 54-49151
    Reserved for Private Use                   49152-65535                                      [RFC-ietf-dots-rfc8782-bis-08]
 
 DOTS Signal Channel Status Codes
@@ -202,19 +193,15 @@ DOTS Signal Channel Conflict Cause Codes
            [IMG]
            CSV
 
-       Code                    Label                                        Description                                      Reference
-   0            Reserved                                                                                        [RFC-ietf-dots-rfc8782-bis-08]
-   1            overlapping-targets                 Overlapping targets.                                        [RFC-ietf-dots-rfc8782-bis-08]
-                                                    Conflicts with an existing accept-list. This code is
-   2            conflict-with-acceptlist            returned when the DDoS mitigation detects source            [RFC-ietf-dots-rfc8782-bis-08]
-                                                    addresses/prefixes in the accept-listed ACLs are attacking
-                                                    the target.
-   3            cuid-collision                      CUID Collision. This code is returned when a DOTS client    [RFC-ietf-dots-rfc8782-bis-08]
-                                                    uses a 'cuid' that is already used by another DOTS client.
-                                                    Mitigation request rejected. This code is returned by the
-   4            request-rejected-legitimate-traffic DOTS server to indicate the attack traffic has been         [RFC-ietf-dots-signal-call-home-14]
-                                                    classified as legitimate traffic.
-   5-2147483647 Unassigned
+       Code              Label                                           Description                                           Reference
+   0            Reserved                                                                                             [RFC-ietf-dots-rfc8782-bis-08]
+   1            overlapping-targets      Overlapping targets.                                                        [RFC-ietf-dots-rfc8782-bis-08]
+                                         Conflicts with an existing accept-list. This code is returned when the DDoS
+   2            conflict-with-acceptlist mitigation detects source addresses/prefixes in the accept-listed ACLs are  [RFC-ietf-dots-rfc8782-bis-08]
+                                         attacking the target.
+   3            cuid-collision           CUID Collision. This code is returned when a DOTS client uses a 'cuid' that [RFC-ietf-dots-rfc8782-bis-08]
+                                         is already used by another DOTS client.
+   4-2147483647 Unassigned
 
 DOTS Signal Channel Attack Status Codes
 
