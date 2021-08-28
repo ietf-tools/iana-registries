@@ -1,7 +1,7 @@
                                                                      Media Types
 
    Last Updated
-           2021-08-26
+           2021-07-27
 
    Registration Procedure(s)
 
@@ -78,7 +78,7 @@ application
 3gppHalForms+json                                                        application/3gppHalForms+json                                                        [_3GPP][Ulrich_Wiehe]
 3gpp-ims+xml                                                             application/3gpp-ims+xml                                                             [_3GPP][John_M_Meredith]
 A2L                                                                      application/A2L                                                                      [ASAM][Thomas_Thomsen]
-ace+cbor                                                                 application/ace+cbor                                                                 [RFC-ietf-ace-oauth-authz-44]
+ace+cbor                                                                 application/ace+cbor                                                                 [RFC-ietf-ace-oauth-authz-43]
 activemessage                                                            application/activemessage                                                            [Ehud_Shapiro]
 activity+json                                                            application/activity+json                                                            [W3C][Benjamin_Goering]
 alto-costmap+json                                                        application/alto-costmap+json                                                        [RFC7285]
@@ -153,7 +153,7 @@ CSTAdata+xml                                                             applica
 csvm+json                                                                application/csvm+json                                                                [W3C][Ivan_Herman]
 cwt                                                                      application/cwt                                                                      [RFC8392]
 cybercash                                                                application/cybercash                                                                [Donald_E._Eastlake_3rd]
-dash+xml                                                                 application/dash+xml                                                                 [ISO-IEC_JTC1][Thomas_Stockhammer]
+dash+xml                                                                 application/dash+xml                                                                 [Thomas_Stockhammer][ISO-IEC_JTC1]
 dashdelta                                                                application/dashdelta                                                                [David_Furbeck]
 davmount+xml                                                             application/davmount+xml                                                             [RFC4709]
 dca-rft                                                                  application/dca-rft                                                                  [Larry_Campbell]
@@ -161,8 +161,8 @@ DCD                                                                      applica
 dec-dx                                                                   application/dec-dx                                                                   [Larry_Campbell]
 dialog-info+xml                                                          application/dialog-info+xml                                                          [RFC4235]
 dicom                                                                    application/dicom                                                                    [RFC3240]
-dicom+json                                                               application/dicom+json                                                               [DICOM_Standards_Committee][David_Clunie]
-dicom+xml                                                                application/dicom+xml                                                                [DICOM_Standards_Committee][David_Clunie]
+dicom+json                                                               application/dicom+json                                                               [DICOM_Standards_Committee][David_Clunie][James_F_Philbin]
+dicom+xml                                                                application/dicom+xml                                                                [DICOM_Standards_Committee][David_Clunie][James_F_Philbin]
 DII                                                                      application/DII                                                                      [ASAM][Thomas_Thomsen]
 DIT                                                                      application/DIT                                                                      [ASAM][Thomas_Thomsen]
 dns                                                                      application/dns                                                                      [RFC4027]
@@ -198,7 +198,6 @@ eshop                                                                    applica
 example                                                                  application/example                                                                  [RFC4735]
 exi                                                                      application/exi                                                                      [W3C][http://www.w3.org/TR/2009/CR-exi-20091208/#mediaTypeRegistration]
 expect-ct-report+json                                                    application/expect-ct-report+json                                                    [RFC-ietf-httpbis-expect-ct-08]
-express                                                                  application/express                                                                  [ISO-TC_184-SC_4][Dana_Tripp]
 fastinfoset                                                              application/fastinfoset                                                              [ITU-T_ASN.1_Rapporteur][ISO-IEC_JTC1_SC6_ASN.1_Rapporteur]
 fastsoap                                                                 application/fastsoap                                                                 [ITU-T_ASN.1_Rapporteur][ISO-IEC_JTC1_SC6_ASN.1_Rapporteur]
 fdt+xml                                                                  application/fdt+xml                                                                  [RFC6726]
@@ -332,7 +331,6 @@ ogg                                                                      applica
 opc-nodeset+xml                                                          application/opc-nodeset+xml                                                          [OPC_Foundation]
 oscore                                                                   application/oscore                                                                   [RFC8613]
 oxps                                                                     application/oxps                                                                     [Ecma_International_Helpdesk]
-p21                                                                      application/p21                                                                      [ISO-TC_184-SC_4][Dana_Tripp]
 p21+zip                                                                  application/p21+zip                                                                  [ISO-TC_184-SC_4][Dana_Tripp]
 p2p-overlay+xml                                                          application/p2p-overlay+xml                                                          [RFC6940]
 parityfec                                                                application/parityfec                                                                [RFC3009]
@@ -1623,7 +1621,7 @@ audio
    PCMU                                           audio/PCMU                          [RFC4856]
    PCMU-WB                                        audio/PCMU-WB                       [RFC5391]
    prs.sid                                        audio/prs.sid                       [Linus_Walleij]
-   QCELP                                          audio/QCELP                         [RFC3555][RFC3625]
+   QCELP                                                                              [RFC3555][RFC3625]
    raptorfec                                      audio/raptorfec                     [RFC6682]
    RED                                            audio/RED                           [RFC3555]
    rtp-enc-aescm128                               audio/rtp-enc-aescm128              [_3GPP]
@@ -1857,8 +1855,6 @@ model
    mesh                                                                    [RFC2077]
    mtl                              model/mtl                              [DICOM_Standards_Committee][Luiza_Kowalczyk]
    obj                              model/obj                              [DICOM_Standards_Committee][Luiza_Kowalczyk]
-   step                             model/step                             [ISO-TC_184-SC_4][Dana_Tripp]
-   step+xml                         model/step+xml                         [ISO-TC_184-SC_4][Dana_Tripp]
    step+zip                         model/step+zip                         [ISO-TC_184-SC_4][Dana_Tripp]
    step-xml+zip                     model/step-xml+zip                     [ISO-TC_184-SC_4][Dana_Tripp]
    stl                              model/stl                              [DICOM_Standards_Committee][Lisa_Spellman]
@@ -2028,7 +2024,7 @@ video
    DV                               video/DV                               [RFC6469]
    encaprtp                         video/encaprtp                         [RFC6849]
    example                          video/example                          [RFC4735]
-   FFV1                             video/FFV1                             [RFC9043]
+   FFV1                             video/FFV1                             [RFC-ietf-cellar-ffv1-20]
    flexfec                          video/flexfec                          [RFC8627]
    H261                             video/H261                             [RFC4587]
    H263                             video/H263                             [RFC3555]
@@ -2041,7 +2037,6 @@ video
    iso.segment                      video/iso.segment                      [David_Singer][ISO-IEC_JTC1]
    JPEG                             video/JPEG                             [RFC3555]
    jpeg2000                         video/jpeg2000                         [RFC5371][RFC5372]
-   jxsv                             video/jxsv                             [RFC-ietf-payload-rtp-jpegxs-18]
    mj2                              video/mj2                              [RFC3745]
    MP1S                             video/MP1S                             [RFC3555]
    MP2P                             video/MP2P                             [RFC3555]
@@ -2635,6 +2630,7 @@ video
    [Nils_Peters]                                      Nils Peters               mailto:npeters&qti.qualcomm.com                        2020-04-04
    [David_Petersen]                                   David Petersen            mailto:david.petersen&sealedmedia.com                  2003-09-20
    [Silvia_Pfeiffer]                                  Silvia Pfeiffer           mailto:silviapfeiffer1&gmail.com                       2019-10-14
+   [James_F_Philbin]                                  James F Philbin           mailto:jfphilbin&gmail.com                             2016-09-26
    [Peeter_Piegaze]                                   Peeter Piegaze            mailto:ppiegaze at adobe.com                           2003-09-20
    [Francois_Pirsch]                                  Francois Pirsch           mailto:fpirsch&geocube.fr                              2009-12-15
    [Dan_Plastina]                                     Dan Plastina              mailto:danpl&microsoft.com                             2002-03-20
@@ -2785,7 +2781,7 @@ video
    [Luke_Tomasello]                                   Luke Tomasello            mailto:luket&intertrust.com
    [Szilveszter_Tóth]                                 Szilveszter Tóth          mailto:sztoth&microsec.hu                              2007-07-31
    [Chad_Trabant]                                     Chad Trabant              mailto:chad&iris.washington.edu                        2009-04-07
-   [Dana_Tripp]                                       Dana Tripp                mailto:trippdsc4&gmail.com                             2021-08-10
+   [Dana_Tripp]                                       Dana Tripp                mailto:trippdsc4&gmail.com                             2021-07-20
    [Christian_Trosclair]                              Christian Trosclair       mailto:christian&patentdive.com                        2017-10-19
    [Jeff_Tupper]                                      Jeff Tupper               mailto:tupper&peda.com                                 2000-02-20
    [Eric_Turcotte]                                    Eric Turcotte             mailto:eric.turcotte&ericsson.com                      2013-07-23
