@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="dots">
   <title>Distributed Denial-of-Service Open Threat Signaling (DOTS) Signal Channel</title>
   <created>2020-01-16</created>
-  <updated>2021-06-14</updated>
+  <updated>2021-08-18</updated>
 
   <registry id="dots-signal-channel-cbor-key-values">
   <title>DOTS Signal Channel CBOR Key Values</title>
@@ -425,7 +425,69 @@ Required range should be sent to the mailing list described in
     </record>
   <record>
     <name>Unassigned</name>
-    <key>54-49151</key>
+    <key>54-127</key>
+    <type/>
+    <controller/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>ietf-dots-call-home:source-prefix</name>
+    <key>128</key>
+    <type>4</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>ietf-dots-call-home:source-port-range</name>
+    <key>129</key>
+    <type>4</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>ietf-dots-call-home:source-icmp-type-range</name>
+    <key>130</key>
+    <type>4</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>lower-type</name>
+    <key>131</key>
+    <type>0</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>upper-type</name>
+    <key>132</key>
+    <type>0</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>ietf-dots-call-home:alt-ch-client</name>
+    <key>133</key>
+    <type>3</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>ietf-dots-call-home:alt-ch-client-record</name>
+    <key>134</key>
+    <type>4</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record date="2021-08-17" updated="2021-08-18">
+    <name>ietf-dots-call-home:ttl</name>
+    <key>135</key>
+    <type>0</type>
+    <controller>IESG</controller>
+    <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+  </record>
+  <record>
+    <name>Unassigned</name>
+    <key>136-49151</key>
     <type/>
     <controller/>
   </record>
@@ -596,8 +658,16 @@ channel</xref> must be updated as defined in <xref type="draft" data="RFC-ietf-d
         another DOTS client.</description>
       <xref type="draft" data="RFC-ietf-dots-rfc8782-bis-08"/>
     </record>
+    <record date="2021-08-17">
+      <value>4</value>
+      <name>request-rejected-legitimate-traffic</name>
+      <description>Mitigation request rejected. This code is 
+        returned by the DOTS server to indicate the attack traffic 
+        has been classified as legitimate traffic.</description>
+      <xref type="draft" data="RFC-ietf-dots-signal-call-home-14"/>
+    </record>
     <record>
-      <value>4-2147483647</value>
+      <value>5-2147483647</value>
       <name>Unassigned</name>
       <description/>
     </record>
