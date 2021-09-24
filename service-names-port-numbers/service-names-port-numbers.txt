@@ -1,7 +1,7 @@
                                                Service Name and Transport Protocol Port Number Registry
 
    Last Updated
-           2021-09-21
+           2021-09-24
 
    Expert(s)
 
@@ -12231,8 +12231,8 @@ primaserver        6105        tcp    Prima Server                 [Prima_Design
 primaserver        6105        udp    Prima Server                 [Prima_Designs_System]                                [Prima_Designs_System]
 mpsserver          6106        tcp    MPS Server                   [Prima_Designs_System]                                [Prima_Designs_System]
 mpsserver          6106        udp    MPS Server                   [Prima_Designs_System]                                [Prima_Designs_System]
-etc-control        6107        tcp    ETC Control                  [Steve_Polishinski]                                   [Steve_Polishinski]
-etc-control        6107        udp    ETC Control                  [Steve_Polishinski]                                   [Steve_Polishinski]
+etc-control        6107        tcp    ETC Control                  [Electronic_Theatre_Controls_Inc]                     [ETC_IANA_Registration]                                                2021-09-24
+etc-control        6107        udp    ETC Control                  [Electronic_Theatre_Controls_Inc]                     [ETC_IANA_Registration]                                                2021-09-24
 sercomm-scadmin    6108        tcp    Sercomm-SCAdmin              [Melinda_Tsao_2]                                      [Melinda_Tsao_2]
 sercomm-scadmin    6108        udp    Sercomm-SCAdmin              [Melinda_Tsao_2]                                      [Melinda_Tsao_2]
 globecast-id       6109        tcp    GLOBECAST-ID                 [Piers_Scannell_2]                                    [Piers_Scannell_2]
@@ -20482,6 +20482,8 @@ zigbee-gateway                 udp    ZigBee IP Gateway            [ZigBee_Allia
 [Eivan_Cerasi]                                            Eivan Cerasi                                        mailto:eivan.cerasi&eurocontrol.int                           2008-10-10
 [Ekkehard_Morgenstern]                                    Ekkehard Morgenstern                                mailto:ekkehard&ekkehardmorgenstern.de                        2003-03
 [Eldar_Kleiner]                                           Eldar Kleiner              INFINIDAT                mailto:eldark&infinidat.com                                   2015-05-01
+[Electronic_Theatre_Controls_Inc]                                                    Electronic Theatre       mailto:ianaregistration&etcconnect.com                        2021-09-24
+                                                                                     Controls, Inc.
 [Eleks_Ltd]                                                                          Eleks, Ltd.              mailto:eleksinfo&eleks.com                                    2013-04-08
 [Elgato]                                                  Elgato                                              mailto:support&elgato.com
 [Elgato_Systems]                                          Elgato Systems                                      mailto:portinfo&elgato.com                                    2004-11
@@ -20573,6 +20575,8 @@ zigbee-gateway                 udp    ZigBee IP Gateway            [ZigBee_Allia
 [ESPeasy]                                                                            ESPeasy                  mailto:gijs.noorlander&gmail.com                              2018-11-28
 [Eugene_Hopkinson]                                        Eugene Hopkinson           VoxelStorm               mailto:slowriot&voxelstorm.com                                2012-11-08
 [Etai_Lev_Ran]                                            Etai Lev-Ran                                        mailto:elevran&cisco.com                                      2005-02
+[ETC_IANA_Registration]                                   ETC IANA Registration      Electronic Theatre       mailto:ianaregistration&etcconnect.com                        2021-09-24
+                                                                                     Controls, Inc.
 [Ethan_Fremen]                                            Ethan Fremen                                        mailto:mindlace&digicool.com
 [Eugen_Bacic]                                             Eugen Bacic                                         mailto:ebacic&texar.com
 [Eugen_Bacic_2]                                           Eugen Bacic                                         mailto:eugen&texar.com
@@ -23898,7 +23902,6 @@ zigbee-gateway                 udp    ZigBee IP Gateway            [ZigBee_Allia
 [Steve_McKinty]                                           Steve McKinty              Oracle Corporation       mailto:steve.mckinty&oracle.com                               2013-08-14
 [Steve_Meyer_Sr]                                          Steve Meyer Sr.                                     mailto:stevem&avanti-tech.com                                 2007-02
 [Steve_Olson]                                             Steve Olson                                         mailto:solson&cognex.com
-[Steve_Polishinski]                                       Steve Polishinski                                   mailto:spolishinski&etcconnect.com
 [Steve_Qi]                                                Steve Qi                                            mailto:steve.qi&dyn-site.com                                  2003-11
 [Steve_Quintana]                                          Steve Quintana                                      mailto:steve&icgresearch.com
 [Steve_Ravida]                                            Steve Ravida                                        mailto:steve.ravida&nebulaholdings.com
