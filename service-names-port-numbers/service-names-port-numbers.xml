@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="service-names-port-numbers">
   <title>Service Name and Transport Protocol Port Number Registry</title>
   <category>Service Names and Transport Protocol Port Numbers</category>
-  <updated>2021-09-24</updated>
+  <updated>2021-09-27</updated>
   <xref type="rfc" data="rfc6335"/>
   <expert>TCP/UDP: Joe Touch; Eliot Lear, Allison Mankin, Markku Kojo, Kumiko Ono, Martin Stiemerling, 
 Lars Eggert, Alexey Melnikov, Wes Eddy, Alexander Zimmermann, Brian Trammell, and Jana Iyengar
@@ -93759,6 +93759,16 @@ reserved for use in illustrative examples in books and other documentation.</not
     <note>Defined TXT keys: None</note>
     <xref type="person" data="Oriol_Ferrer_Mesia"/>
   </record>
+  <record date="2021-09-27">
+    <name>fisk</name>
+    <protocol>tcp</protocol>
+    <assignee>
+      <xref type="person" data="Armando_Vrushi"/>
+    </assignee>
+    <description>Fiscalization service of Click.al</description>
+    <note>Defined TXT keys: fisk-srv</note>
+    <xref type="person" data="Armando_Vrushi"/>
+  </record>
   <record>
     <name>fix</name>
     <description>Financial Information Exchange (FIX) Protocol</description>
@@ -100448,6 +100458,11 @@ implementations.  See RFC 3692 for details.</footnote>
       <name>Arman Bedonian</name>
       <uri>mailto:Arman.Bedonian&amp;asg.com</uri>
       <updated>2009-07-15</updated>
+    </person>
+    <person id="Armando_Vrushi">
+      <name>Armando Vrushi</name>
+      <uri>mailto:mandi&amp;vrushi.me</uri>
+      <updated>2021-09-27</updated>
     </person>
     <person id="Armin_Liebchen">
       <name>Armin Liebchen</name>

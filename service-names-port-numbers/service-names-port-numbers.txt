@@ -1,7 +1,7 @@
                                                Service Name and Transport Protocol Port Number Registry
 
    Last Updated
-           2021-09-24
+           2021-09-27
 
    Expert(s)
 
@@ -17660,6 +17660,8 @@ feldwesen                      tcp    proprietary                  [Kiel_Univers
 firetask                              Firetask task sharing and    [Gerald_Aquila]                                       [Gerald_Aquila]                                                                                                                                          Defined TXT keys: None
                                       synchronization protocol
 fish                                  Fish                         [Oriol_Ferrer_Mesia]                                  [Oriol_Ferrer_Mesia]                                                                                                                                     Defined TXT keys: None
+fisk                           tcp    Fiscalization service of     [Armando_Vrushi]                                      [Armando_Vrushi]                                          2021-09-27                                                                                     Defined TXT keys: fisk-srv
+                                      Click.al
                                                                                                                                                                                                                                                                                   Defined TXT keys: Currently valid enumerated values: FIX
                                                                                                                                                                                                                                                                                   Session Protocol Versions (SESSIONVERSION): 1.1 FIX
                                                                                                                                                                                                                                                                                   Application Protocol Versions (APPLICATIONVERSION): 2.7, 3.0,
@@ -19296,6 +19298,7 @@ zigbee-gateway                 udp    ZigBee IP Gateway            [ZigBee_Allia
 [Arjen_Lentz]                                             Arjen Lentz                                         mailto:arjen&mysql.com                                        2004-11
 [Arlo_Leach]                                              Arlo Leach                                          mailto:arlo&arlomedia.com                                     2017-04-21
 [Arman_Bedonian]                                          Arman Bedonian                                      mailto:Arman.Bedonian&asg.com                                 2009-07-15
+[Armando_Vrushi]                                          Armando Vrushi                                      mailto:mandi&vrushi.me                                        2021-09-27
 [Armin_Liebchen]                                          Armin Liebchen                                      mailto:armin&anteradesign.com                                 2007-06
 [Armin_Sawusch]                                           Armin Sawusch                                       mailto:armin&esd1.esd.de
 [Armin_Solies]                                            Armin Solies               DEIF A/S                 mailto:aes&deif.com                                           2012-10-15
