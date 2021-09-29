@@ -8,6 +8,9 @@
   <start>
     <element name="registry">
       <ref name="registryMeta"/>
+      
+      <!-- HTTP Cache-Status -->
+      
       <element name="registry">
         <ref name="registryMeta"/>
         <zeroOrMore>
@@ -15,11 +18,12 @@
             <optional><attribute name="date"><ref name="genericDate"/></attribute></optional>
             <optional><attribute name="updated"><ref name="genericDate"/></attribute></optional>
             <element name="name"><text/></element>
+            <element name="description"><ref name="richText"/></element>
             <ref name="references"/>
-            <element name="description"><ref name="text_with_references"/></element>
           </element>
         </zeroOrMore>
       </element>
+    
       <ref name="people"/>
     </element>
   </start>
