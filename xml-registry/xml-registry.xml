@@ -386,6 +386,12 @@ The registration template should cite the specification.
       <file type="template">ns/epp/loginSec-1.0.txt</file>
       <xref type="rfc" data="rfc8807"/>
     </record>
+    <record date="2021-10-12">
+      <value>epp:maintenance-1.0</value>
+      <name>urn:ietf:params:xml:ns:epp:maintenance-1.0</name>
+      <file type="template">ns/epp/maintenance-1.0.txt</file>
+      <xref type="draft" data="RFC-ietf-regext-epp-registry-maintenance-19"/>
+    </record>
     <record date="2018-12-26">
       <value>epp:org-1.0</value>
       <name>urn:ietf:params:xml:ns:epp:org-1.0</name>
@@ -2447,6 +2453,12 @@ Per <xref type="rfc" data="rfc6685"/>, IODEF schemas require an additional revie
       <name>urn:ietf:params:xml:schema:epp:loginSec-1.0</name>
       <file type="template">schema/epp/loginSec-1.0.xsd</file>
       <xref type="rfc" data="rfc8807"/>
+    </record>
+    <record date="2021-10-12">
+      <value>epp:maintenance-1.0</value>
+      <name>urn:ietf:params:xml:schema:epp:maintenance-1.0</name>
+      <file type="template">schema/epp/maintenance-1.0.xsd</file>
+      <xref type="draft" data="RFC-ietf-regext-epp-registry-maintenance-19"/>
     </record>
     <record date="2018-12-26">
       <value>epp:org-1.0</value>
