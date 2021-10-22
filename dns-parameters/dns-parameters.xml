@@ -3,7 +3,7 @@
 <?xml-model href="dns-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="dns-parameters">
   <title>Domain Name System (DNS) Parameters</title>
-  <updated>2021-09-23</updated>
+  <updated>2021-10-22</updated>
 
 
   <registry id="dns-parameters-2">
