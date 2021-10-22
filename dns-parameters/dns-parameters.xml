@@ -450,7 +450,7 @@ be allocated for ordinary use.</registration_rule>
       <value>40</value>
       <description>SINK</description>
       <xref type="person" data="Donald_E_Eastlake"/>
-      <xref type="uri" data="http://tools.ietf.org/html/draft-eastlake-kitchen-sink"/>
+      <xref type="draft" data="draft-eastlake-kitchen-sink"/>
     </record>
     <record>
       <type>OPT</type>
