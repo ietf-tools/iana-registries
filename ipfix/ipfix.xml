@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="ipfix">
 <title>IP Flow Information Export (IPFIX) Entities</title>
 <created>2007-05-10</created>
-<updated>2021-10-15</updated>
+<updated>2022-06-07</updated>
 
 <note><xref type="rfc" data="rfc7012"/> has obsoleted <xref type="rfc" data="rfc5102"/>. However, references to <xref type="rfc" data="rfc5102"/>
 remain as part of the historical record.</note>
@@ -120,7 +120,7 @@ See <xref type="rfc" data="rfc791"/> for the specification of the IPv4
 protocol field.
 See <xref type="rfc" data="rfc8200"/> for the specification of the
 IPv6 protocol field.
-See the list of protocol numbers assigned by IANA at <xref type="uri" data="http://www.iana.org/assignments/protocol-numbers"/>.
+See the list of protocol numbers assigned by IANA at <xref type="uri" data="https://www.iana.org/assignments/protocol-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -171,7 +171,7 @@ set to 1.  The bit is cleared to 0 otherwise.
 </paragraph>
 <paragraph>
 The values of each bit are shown below, per the definition of the
-bits in the TCP header <xref type="rfc" data="rfc793"/><xref type="rfc" data="rfc3168"/>:
+bits in the TCP header <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/><xref type="rfc" data="rfc3168"/>:
 </paragraph>
 <artwork>
  MSb                                                         LSb
@@ -204,7 +204,7 @@ value  name  description
 </artwork>
 <paragraph>
 As the most significant 4 bits of octets 12 and 13 (counting from
-zero) of the TCP header <xref type="rfc" data="rfc793"/> are used to encode the TCP data
+zero) of the TCP header <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> are used to encode the TCP data
 offset (header length), the corresponding bits in this Information
 Element MUST be exported as zero and MUST be ignored by the
 collector.  Use the tcpHeaderLength Information Element to encode
@@ -212,7 +212,7 @@ this value.
 </paragraph>
 <paragraph>
 Each of the 3 bits (0x800, 0x400, and 0x200), which are reserved
-for future use in <xref type="rfc" data="rfc793"/>, SHOULD be exported as observed in the
+for future use in <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/>, SHOULD be exported as observed in the
 TCP headers of the packets of this Flow.
 </paragraph>
 <paragraph>
@@ -242,7 +242,7 @@ given exporter.
 </description>
 <references>
 <paragraph>
-<xref type="rfc" data="rfc793"/><xref type="rfc" data="rfc3168"/>
+<xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/><xref type="rfc" data="rfc3168"/>
 </paragraph>
 </references>
 <xref type="rfc" data="rfc7125"/>
@@ -271,13 +271,13 @@ have 16-bit source port identifiers.
 <paragraph>
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP
 source port field.
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 source port field.
-See <xref type="rfc" data="rfc4960"/> for the definition of SCTP.
+See <xref type="rfc" data="rfc9260"/> for the definition of SCTP.
 </paragraph>
 <paragraph>
 Additional information on defined UDP and TCP port numbers can be
-found at <xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+found at <xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -380,13 +380,13 @@ that have 16-bit destination port identifiers.
 <paragraph>
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP
 destination port field.
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 destination port field.
-See <xref type="rfc" data="rfc4960"/> for the definition of SCTP.
+See <xref type="rfc" data="rfc9260"/> for the definition of SCTP.
 </paragraph>
 <paragraph>
 Additional information on defined UDP and TCP port numbers can be
-found at <xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+found at <xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -962,7 +962,7 @@ algorithm used for sampled NetFlow:
 The values are not compatible with the selectorAlgorithm IE, where
 "Deterministic" has been replaced by "Systematic count-based" (1)
 or "Systematic time-based" (2), and "Random" is (3).  Conversion
-is required; see <xref type="uri" data="http://www.iana.org/assignments/psamp-parameters">Packet Sampling (PSAMP) Parameters.</xref>
+is required; see <xref type="uri" data="https://www.iana.org/assignments/psamp-parameters">Packet Sampling (PSAMP) Parameters.</xref>
 </paragraph>
 </description>
 <xref type="rfc" data="rfc7270"/>
@@ -1201,13 +1201,13 @@ IPv4 source address prefix.
 This field identifies the control protocol that allocated the
 top-of-stack label.  Values for this field are listed in the 
 MPLS label type registry. See 
-<xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-mpls-label-type"/>
+<xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-mpls-label-type"/>
 </paragraph>
 </description>
 <references>
 <paragraph>
 See <xref type="rfc" data="rfc3031"/> for the MPLS label structure.
-See the list of MPLS label types assigned by IANA at <xref type="uri" data="http://www.iana.org/assignments/mpls-label-values"/>.
+See the list of MPLS label types assigned by IANA at <xref type="uri" data="https://www.iana.org/assignments/mpls-label-values"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -1533,7 +1533,7 @@ field in the IPv4 packet header.
 See <xref type="rfc" data="rfc8200"/> for the definition of the
 version field in the IPv6 packet header.
 Additional information on defined version numbers can be found at
-<xref type="uri" data="http://www.iana.org/assignments/version-numbers"/>.
+<xref type="uri" data="https://www.iana.org/assignments/version-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -2216,7 +2216,7 @@ MSB  -  0   1   2   3   4   5   6   7  -  LSB
       +---+---+---+---+---+---+---+---+
 </artwork>
 <paragraph>
-See the Forwarding Status sub-registries at <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#forwarding-status"/>.
+See the Forwarding Status sub-registries at <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#forwarding-status"/>.
 </paragraph>
 <artwork>
 Examples:
@@ -2511,7 +2511,7 @@ application assignments.
 <paragraph>
 Values for this field are listed in the Classification
 Engine IDs registry. See 
-<xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#classification-engine-ids"/>
+<xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#classification-engine-ids"/>
 </paragraph>
 </description>
 <xref type="rfc" data="rfc6759"/>
@@ -2782,7 +2782,7 @@ treatment since the Metering Process
 <status>current</status>
 <description>
 <paragraph>
-  The reason for Flow termination. Values are listed in the flowEndReason registry. See <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-flow-end-reason"/>.
+  The reason for Flow termination. Values are listed in the flowEndReason registry. See <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-flow-end-reason"/>.
 </paragraph>
 </description>
 <xref type="rfc" data="rfc5102"/>
@@ -3780,7 +3780,7 @@ The source port identifier in the UDP header.
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP
 source port field.
 Additional information on defined UDP port numbers can be found at
-<xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+<xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -3806,7 +3806,7 @@ The destination port identifier in the UDP header.
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP
 destination port field.
 Additional information on defined UDP port numbers can be found at
-<xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+<xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -3829,10 +3829,10 @@ The source port identifier in the TCP header.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 source port field.
 Additional information on defined TCP port numbers can be found at
-<xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+<xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -3855,10 +3855,10 @@ The destination port identifier in the TCP header.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 destination port field.
 Additional information on defined TCP port numbers can be found at
-<xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+<xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -3880,7 +3880,7 @@ The sequence number in the TCP header.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 sequence number.
 </paragraph>
 </references>
@@ -3903,7 +3903,7 @@ The acknowledgement number in the TCP header.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 acknowledgement number.
 </paragraph>
 </references>
@@ -3929,7 +3929,7 @@ to fully interpret the value of this information.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 window field.
 See <xref type="rfc" data="rfc1323"/> for the definition of the TCP
 window scale.
@@ -3954,7 +3954,7 @@ The urgent pointer in the TCP header.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 urgent pointer.
 </paragraph>
 </references>
@@ -3983,7 +3983,7 @@ header in units of octets.
 <units>octets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 header.
 </paragraph>
 </references>
@@ -4124,7 +4124,7 @@ Protocol Numbers registry.
 <paragraph>
 See <xref type="rfc" data="rfc8200"/> for the definition of the IPv6
 Next Header field.
-See the list of protocol numbers assigned by IANA at <xref type="uri" data="http://www.iana.org/assignments/protocol-numbers"/>.
+See the list of protocol numbers assigned by IANA at <xref type="uri" data="https://www.iana.org/assignments/protocol-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -4682,7 +4682,7 @@ The mapping is illustrated by the figure below.
 <paragraph>
 See <xref type="rfc" data="rfc791"/> for the definition of IPv4
 options.
-See the list of IPv4 option numbers assigned by IANA at <xref type="uri" data="http://www.iana.org/assignments/ip-parameters"/>.
+See the list of IPv4 option numbers assigned by IANA at <xref type="uri" data="https://www.iana.org/assignments/ip-parameters"/>.
 The diagram provided in <xref type="rfc" data="rfc5102"/> is incorrect.  
 The diagram in this registry is taken from Errata 1737. See <xref type="rfc-errata" data="1737"/> .  
 </paragraph>
@@ -4742,9 +4742,9 @@ TCP option numbers are maintained by IANA.
 </description>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of TCP
 options.
-See the list of TCP option numbers assigned by IANA at <xref type="uri" data="http://www.iana.org/assignments/tcp-parameters"/>.
+See the list of TCP option numbers assigned by IANA at <xref type="uri" data="https://www.iana.org/assignments/tcp-parameters"/>.
 The diagram provided in <xref type="rfc" data="rfc5102"/> is incorrect.  
 The diagram in this registry is taken from Errata 1739. See <xref type="rfc-errata" data="1739"/>.
 </paragraph>
@@ -4905,7 +4905,7 @@ See <xref type="rfc" data="rfc791"/> for the specification of the IPv4
 protocol field.
 See <xref type="rfc" data="rfc8200"/> for the specification of the
 IPv6 protocol field.
-See the list of protocol numbers assigned by IANA at <xref type="uri" data="http://www.iana.org/assignments/protocol-numbers"/>.
+See the list of protocol numbers assigned by IANA at <xref type="uri" data="https://www.iana.org/assignments/protocol-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -4934,13 +4934,13 @@ that have 16-bit source port identifiers.
 <paragraph>
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP
 destination port field.
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 destination port field.
-See <xref type="rfc" data="rfc4960"/> for the definition of SCTP.
+See <xref type="rfc" data="rfc9260"/> for the definition of SCTP.
 </paragraph>
 <paragraph>
 Additional information on defined UDP and TCP port numbers can be
-found at <xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+found at <xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -4971,13 +4971,13 @@ that use the same IP address.
 <paragraph>
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP
 source port field.
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP
 source port field.
-See <xref type="rfc" data="rfc4960"/> for the definition of SCTP.
+See <xref type="rfc" data="rfc9260"/> for the definition of SCTP.
 </paragraph>
 <paragraph>
 Additional information on defined UDP and TCP port numbers can be
-found at <xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.
+found at <xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.
 </paragraph>
 </references>
 <xref type="rfc" data="rfc5102"/>
@@ -5002,7 +5002,7 @@ TCP "Synchronize sequence numbers" (SYN) flag set.
 <units>packets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP SYN
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP SYN
 flag.
 </paragraph>
 </references>
@@ -5028,7 +5028,7 @@ TCP "No more data from sender" (FIN) flag set.
 <units>packets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP FIN
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP FIN
 flag.
 </paragraph>
 </references>
@@ -5054,7 +5054,7 @@ TCP "Reset the connection" (RST) flag set.
 <units>packets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP RST
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP RST
 flag.
 </paragraph>
 </references>
@@ -5080,7 +5080,7 @@ TCP "Push Function" (PSH) flag set.
 <units>packets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP PSH
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP PSH
 flag.
 </paragraph>
 </references>
@@ -5106,7 +5106,7 @@ TCP "Acknowledgment field significant" (ACK) flag set.
 <units>packets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP ACK
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP ACK
 flag.
 </paragraph>
 </references>
@@ -5132,7 +5132,7 @@ TCP "Urgent Pointer field significant" (URG) flag set.
 <units>packets</units>
 <references>
 <paragraph>
-See <xref type="rfc" data="rfc793"/> for the definition of the TCP URG
+See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP URG
 flag.
 </paragraph>
 </references>
@@ -5240,8 +5240,8 @@ passed the Observation Point.
 <references>
 <paragraph>
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP source port 
-field.  See <xref type="rfc" data="rfc793"/> for the definition of the TCP 
-source port field.  See <xref type="rfc" data="rfc4960"/> for the definition of 
+field.  See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP 
+source port field.  See <xref type="rfc" data="rfc9260"/> for the definition of 
 SCTP.     
 See <xref type="rfc" data="rfc3022"/> for the definition of NAPT.  See <xref type="rfc" data="rfc3234"/> for the definition of middleboxes. 
 Additional information on defined UDP and TCP port numbers can 
@@ -5271,12 +5271,12 @@ packet passed the Observation Point.
 <references>
 <paragraph>         
 See <xref type="rfc" data="rfc768"/> for the definition of the UDP source port 
-field.  See <xref type="rfc" data="rfc793"/> for the definition of the TCP 
-source port field.  See <xref type="rfc" data="rfc4960"/> for the definition of 
+field.  See <xref type="draft" data="RFC-ietf-tcpm-rfc793bis-28"/> for the definition of the TCP 
+source port field.  See <xref type="rfc" data="rfc9260"/> for the definition of 
 SCTP.     
 See <xref type="rfc" data="rfc3022"/> for the definition of NAPT.  See <xref type="rfc" data="rfc3234"/> for the definition of middleboxes. 
 Additional information on defined UDP and TCP port numbers can 
-be found at <xref type="uri" data="http://www.iana.org/assignments/service-names-port-numbers"/>.   
+be found at <xref type="uri" data="https://www.iana.org/assignments/service-names-port-numbers"/>.   
 </paragraph>
 </references>
 <xref type="person" data="ipfix-iana_at_cisco.com"/>
@@ -5300,7 +5300,7 @@ postNAPTDestinationTransportPort are qualified with the address
 realm in perspective. 
 </paragraph>
 <paragraph>
-  Values are listed in the natOriginatingAddressRealm registry. See <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-originating-address-realm"/>.
+  Values are listed in the natOriginatingAddressRealm registry. See <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-originating-address-realm"/>.
 </paragraph>
 </description>
 <range>1-2</range>
@@ -5327,7 +5327,7 @@ the type of a NAT event. Examples of NAT events include, but are not
 limited to, NAT translation create, NAT translation delete, Threshold 
 Reached, or Threshold Exceeded, etc. Values for this Information 
 Element are listed in the "NAT Event Type" registry, see 
-<xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-event-type"/>. 
+<xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-event-type"/>. 
 </paragraph>
 </description>
 <references>
@@ -5401,7 +5401,7 @@ See #299, responderPackets.
 <description>
 <paragraph>
   Indicates a firewall event. Allowed values are listed in 
-  the firewallEvent registry. See <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-firewall-event"/>.
+  the firewallEvent registry. See <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-firewall-event"/>.
 </paragraph>
 </description>
 <xref type="person" data="ipfix-iana_at_cisco.com"/>
@@ -5537,7 +5537,7 @@ to all flows within an Observation Domain or from an Exporting
 Process, the Option SHOULD be sent reliably.  If reliable transport is
 not available (i.e., when using UDP), this Information Element SHOULD
 appear in each Flow Record.  Values are listed in 
-the biflowDirection registry. See <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-biflow-direction"/>.</paragraph>
+the biflowDirection registry. See <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-biflow-direction"/>.</paragraph>
 </description>
 <xref type="rfc" data="rfc5103"/>
 <revision>0</revision>
@@ -5815,7 +5815,7 @@ Pseudo Wire (PW) as defined in <xref type="rfc" data="rfc4446"/>.
 <references>
 <paragraph>         
 See <xref type="rfc" data="rfc4446"/> for the pseudowire type definition, and 
-<xref type="uri" data="http://www.iana.org/assignments/pwe3-parameters"/> for the IANA 
+<xref type="uri" data="https://www.iana.org/assignments/pwe3-parameters"/> for the IANA 
 Pseudowire Types registry.
 </paragraph>
 </references>
@@ -6448,7 +6448,7 @@ within this SCTP stream.
 <description>
 <paragraph>
   Type of observation point. Values are listed in 
-  the observationPointType registry. See <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-observation-point-type"/>.
+  the observationPointType registry. See <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-observation-point-type"/>.
 </paragraph>
 </description>
 <xref type="person" data="ipfix-iana_at_cisco.com"/>
@@ -6708,7 +6708,7 @@ to a referenced Information Element within a referenced Template.
 Each technique may be applicable only to certain Information
 Elements and recommended only for certain Information Elements. 
 Values are listed in the anonymizationTechnique registry. See 
-<xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-anonymization-technique"/>.
+<xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-anonymization-technique"/>.
 </paragraph>
 </description>
 <xref type="rfc" data="rfc6235"/>
@@ -6922,7 +6922,7 @@ See <xref type="rfc" data="rfc1701"/> for the definition of GRE and the GRE Key.
 <description>
 <paragraph>
   Values are listed in the natType registry. See 
-  <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-type"/>.
+  <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-type"/>.
 </paragraph>
 </description>
 <range/>
@@ -7102,7 +7102,7 @@ The following packet selection methods identifiers are defined
 here:
 </paragraph>
 <paragraph>
-<xref type="uri" data="http://www.iana.org/assignments/psamp-parameters"/>
+<xref type="uri" data="https://www.iana.org/assignments/psamp-parameters"/>
 </paragraph>
 <paragraph>
 There is a broad variety of possible parameters that could be used
@@ -9161,7 +9161,7 @@ the purpose of the flow selection techniques described in this
 document is the improvement of measurement functions as defined in
 the Scope (Section 1).  
 The Intermediate Flow Selection Process Techniques
-identifiers are defined at <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-flowselectoralgorithm"/>.
+identifiers are defined at <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-flowselectoralgorithm"/>.
 </paragraph>
 </description>
 <xref type="rfc" data="rfc7014"/>
@@ -10962,7 +10962,7 @@ of this field is limited to 10 characters, UTF-8 encoded.
     This Information Element identifies the type of a NAT Quota Exceeded 
     event. Values for this Information Element are listed in the "NAT 
     Quota Exceeded Event Type" registry, see 
-    <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-quota-exceeded-event"/>. 
+    <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-quota-exceeded-event"/>. 
   </paragraph>
 </description>
 <references>
@@ -10989,7 +10989,7 @@ of this field is limited to 10 characters, UTF-8 encoded.
     This Information Element identifies a type of a NAT Threshold event. 
     Values for this Information Element are listed in the "NAT Threshold 
     Event Type" registry, see 
-    <xref type="uri" data="http://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-threshold-event"/>. 
+    <xref type="uri" data="https://www.iana.org/assignments/ipfix/ipfix.xhtml#ipfix-nat-threshold-event"/>. 
   </paragraph>
 </description>
 <references>
@@ -11620,35 +11620,35 @@ of this field is limited to 10 characters, UTF-8 encoded.
 <record date="2021-10-04">
 <value>6</value>
 <description>Path Computation Element</description>
-<xref type="draft" data="RFC-ietf-opsawg-ipfix-mpls-sr-label-type-11"/>
+<xref type="rfc" data="rfc9160"/>
 <xref type="rfc" data="rfc8664"/>
 </record>
 
 <record date="2021-10-04">
 <value>7</value>
 <description>OSPFv2 Segment Routing</description>
-<xref type="draft" data="RFC-ietf-opsawg-ipfix-mpls-sr-label-type-11"/>
+<xref type="rfc" data="rfc9160"/>
 <xref type="rfc" data="rfc8665"/>
 </record>
 
 <record date="2021-10-04">
 <value>8</value>
 <description>OSPFv3 Segment Routing</description>
-<xref type="draft" data="RFC-ietf-opsawg-ipfix-mpls-sr-label-type-11"/>
+<xref type="rfc" data="rfc9160"/>
 <xref type="rfc" data="rfc8666"/>
 </record>
 
 <record date="2021-10-04">
 <value>9</value>
 <description>IS-IS Segment Routing</description>
-<xref type="draft" data="RFC-ietf-opsawg-ipfix-mpls-sr-label-type-11"/>
+<xref type="rfc" data="rfc9160"/>
 <xref type="rfc" data="rfc8667"/>
 </record>
 
 <record date="2021-10-04">
 <value>10</value>
 <description>BGP Segment Routing Prefix-SID</description>
-<xref type="draft" data="RFC-ietf-opsawg-ipfix-mpls-sr-label-type-11"/>
+<xref type="rfc" data="rfc9160"/>
 <xref type="rfc" data="rfc8669"/>
 </record>
 
@@ -12142,6 +12142,22 @@ enterprise.
 <length>2</length>
 <xref type="person" data="Paul_Aitken"/>
 <xref type="uri" data="https://www.ntop.org/products/deep-packet-inspection/ndpi"/>
+</record>
+
+<record date="2022-02-04">
+<value>23</value>
+<description>R&amp;S ipoque DPI PACE2 engine</description>
+<length>2</length>
+<xref type="person" data="Tim_Kittel"/>
+<xref type="uri" data="https://www.ipoque.com/products/dpi-engine-rs-pace-2-for-application-awareness"/>
+</record>
+
+<record date="2022-02-04">
+<value>24</value>
+<description>R&amp;S ipoque DPI vPACE engine</description>
+<length>2</length>
+<xref type="person" data="Tim_Kittel"/>
+<xref type="uri" data="https://www.ipoque.com/products/dpi-engine-rs-pace-2-for-application-awareness"/>
 </record>
 
 </registry>
@@ -13622,6 +13638,12 @@ data type semantic is the default structured data type semantic.
 <uri>http://www.qosmos.com</uri>
 <updated>2017-02-21</updated>
 </person> 
+
+<person id="Tim_Kittel">
+  <name>Tim Kittel</name>
+  <uri>mailto:tim.kittel&amp;rohde-schwarz.com</uri>
+  <updated>2022-02-04</updated>
+  </person>
 
 <person id="Yaakov_J_Stein">
 <name>Yaakov (J) Stein</name>

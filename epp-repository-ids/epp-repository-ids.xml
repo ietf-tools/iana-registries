@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="epp-repository-ids">
   <title>Extensible Provisioning Protocol (EPP) Repository Identifiers</title>
   <created>2004-10-26</created>
-  <updated>2021-10-26</updated>
+  <updated>2022-06-13</updated>
   <registry id="epp-repository-ids-1">
     <title>EPP Repository Identifiers</title>
     <xref type="rfc" data="rfc5730"/>
@@ -2584,6 +2584,26 @@ No review beyond IANA review is required.
       <change><xref type="person" data="Yocto"/></change>
       <xref type="person" data="Yocto"/>
     </record>
+    <record date="2022-04-18">
+      <id>SIDN, #x0053 #x0049 #x0044 #x004E</id>
+      <change><xref type="person" data="SIDN"/></change>
+      <xref type="person" data="SIDN"/>
+    </record>
+    <record date="2022-04-18">
+      <id>AMSTERDAM, #x0041 #x004D #x0053 #x0054 #x0045 #x0052 #x0044 #x0041 #x004D</id>
+      <change><xref type="person" data="SIDN"/></change>
+      <xref type="person" data="SIDN"/>
+    </record>
+    <record date="2022-04-18">
+      <id>POLITIE, #x0050 #x004F #x004C #x0049 #x0054 #x0049 #x0045</id>
+      <change><xref type="person" data="SIDN"/></change>
+      <xref type="person" data="SIDN"/>
+    </record>
+    <record date="2022-06-13">
+      <id>PIONEER, #x0050 #x0049 #x004F #x004E #x0045 #x0045 #x0052</id>
+      <change><xref type="person" data="NOMINET"/></change>
+      <xref type="person" data="NOMINET"/>
+    </record>
     
   </registry>
   
@@ -2823,7 +2843,7 @@ No review beyond IANA review is required.
     <person id="NOMINET">
       <name>Nominet UK</name>
       <uri>mailto:icann-tech-response&amp;nominet.org.uk</uri>
-      <updated>2021-02-24</updated>
+      <updated>2022-06-13</updated>
     </person>
     <person id="REGISTRIO">
       <name>REGISTRIO</name>
@@ -2838,6 +2858,11 @@ No review beyond IANA review is required.
       <name>Sergey Bulakh</name>
       <uri>mailto:corpor&amp;so.ua</uri>
     </person>
+    <person id="SIDN">
+      <name>SIDN</name>
+      <uri>mailto:iana.tech&amp;sidn.nl</uri>
+      <updated>2022-04-18</updated>
+    </person> 
     <person id="Smallregistry">
       <name>Smallregistry</name>
       <uri>mailto:root&amp;smallregistry.net</uri>

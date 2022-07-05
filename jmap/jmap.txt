@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                         JSON Meta Application Protocol (JMAP)
 
    Created
            2019-03-28
 
    Last Updated
-           2021-03-26
+           2022-04-05
 
    Available Formats
            [IMG]
@@ -39,6 +41,7 @@ JMAP Capabilities
    urn:ietf:params:jmap:error:           placeholder  IETF              [RFC8620, Section 8]                [RFC8620, Section 9.5]
    urn:ietf:params:jmap:mail             common       IETF              [RFC8621, Section 9]                [RFC8621]
    urn:ietf:params:jmap:mdn              common       IETF              [RFC9007, Section 5]                [RFC9007]
+   urn:ietf:params:jmap:smimeverify      common       IETF              [RFC9219, Section 6]                [RFC9219]
    urn:ietf:params:jmap:submission       common       IETF              [RFC8621, Section 9]                [RFC8621]
    urn:ietf:params:jmap:vacationresponse common       IETF              [RFC8621, Section 9]                [RFC8621]
 
@@ -160,3 +163,5 @@ JMAP Error Codes
                                                                   The message has the "$mdnsent" keyword already set. The
    mdnAlreadySent                  common       IETF              client MUST NOT try again to send an MDN for this        [RFC9007, Section 2.1]
                                                                   message.
+
+   Licensing Terms

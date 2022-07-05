@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                               iana-bfd-types YANG Module
 
    Created
            2018-08-09
 
    Last Updated
-           2021-10-25
+           2022-01-28
 
    Registration Procedure(s)
 
@@ -27,3 +29,5 @@
            XML [IMG]
            HTML [IMG]
            Plain text
+
+   Licensing Terms

@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                                     Link Relations
 
    Created
            2005-08-26
 
    Last Updated
-           2020-11-16
+           2022-05-11
 
    Available Formats
            [IMG]
@@ -44,6 +46,11 @@ Link Relation Types
 about                     that is the subject   [RFC6903], section 2
                           of the link's
                           context.
+                          Asserts that the link
+                          target provides an
+acl                       access control        [https://solidproject.org/TR/wac#acl-link-relation]
+                          description for the
+                          link context.
                           Refers to a
 alternate                 substitute for this   [HTML]
                           context
@@ -395,6 +402,14 @@ latest-version            (e.g., current)       [RFC5829]
                           Refers to a license                                                                  For implications of use in HTML, see:
 license                   associated with this  [RFC4946]                                                      http://www.w3.org/TR/html5/links.html#link-type-license
                           context.
+                          The link target of a
+                          link with the
+                          "linkset" relation
+linkset                   type provides a set   [RFC-ietf-httpapi-linkset-10]
+                          of links, including
+                          links in which the
+                          link context of the
+                          link participates.
                           Refers to further
                           information about the
                           link's context,
@@ -769,3 +784,5 @@ working-copy              copy for this         [RFC5829]
 working-copy-of           from which this       [RFC5829]
                           working copy was
                           obtained.
+
+   Licensing Terms

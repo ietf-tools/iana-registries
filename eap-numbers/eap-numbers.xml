@@ -5,7 +5,7 @@
   <title>Extensible Authentication Protocol (EAP) Registry</title>
   <category>Extensible Authentication Protocol (EAP)</category>
   <created>2004-04-09</created>
-  <updated>2021-10-29</updated>
+  <updated>2022-06-02</updated>
 
   <registry id="eap-numbers-1">
     <title>Packet Codes</title>
@@ -473,7 +473,7 @@
     <record date="2021-09-21">
       <value>56</value>
       <description>EAP-NOOB</description>
-      <xref type="draft" data="RFC-ietf-emu-eap-noob-06"/>
+      <xref type="rfc" data="rfc9140"/>
     </record>
     <record>
       <value>57-191</value>
@@ -501,17 +501,17 @@
   
   <registry id="eap-numbers-5">
     <title>EAP-FAST TLV Types (Value 43)</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-fast-parameters"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-fast-parameters"/></note>
   </registry>
   
   <registry id="eap-numbers-6">
     <title>EAP-FAST (value 43) Error-TLV (value 5) Error-Codes</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-fast-parameters"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-fast-parameters"/></note>
   </registry>
   
   <registry id="eap-numbers-7">
     <title>EAP-FAST (value 43) Request-Action TLV (value 19) Action Codes</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-fast-parameters"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-fast-parameters"/></note>
   </registry>
   
   <registry id="eap-numbers-8">
@@ -791,27 +791,67 @@ implemented ("MI").
 
   <registry id="eap-numbers-noob-cryptosuites">
     <title>EAP-NOOB Cryptosuites</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-noob"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-noob"/></note>
   </registry>
   
   <registry id="eap-numbers-noob-message-types">
     <title>EAP-NOOB Message Types</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-noob"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-noob"/></note>
   </registry>
 
   <registry id="eap-numbers-noob-error-codes">
     <title>EAP-NOOB Error Codes</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-noob"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-noob"/></note>
   </registry>
 
   <registry id="eap-numbers-noob-serverinfo-data-fields">
     <title>EAP-NOOB ServerInfo Data Fields</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-noob"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-noob"/></note>
   </registry>
 
   <registry id="eap-numbers-noob-peerinfo-data-fields">
     <title>EAP-NOOB PeerInfo Data Fields</title>
-    <note>See <xref type="uri" data="http://www.iana.org/assignments/eap-noob"/></note>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/eap-noob"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-tlv-types">
+    <title>TEAP TLV Types</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-identity-type-tlv">
+    <title>TEAP Identity-Type TLV (value 2) Registry</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-status-codes">
+    <title>TEAP Status Codes</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-error-tlv-error-codes">
+    <title>TEAP Error TLV (value 5) Error Codes</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-request-action-tlv">
+    <title>TEAP Request-Action TLV (value 8) Registry</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-pac-tlv-attribute-type-codes">
+    <title>TEAP PAC TLV (value 11) PAC Attribute Type Codes</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-pac-tlv-pac-type-type-codes">
+    <title>TEAP PAC TLV (value 11) PAC-Type Type Codes</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
+  </registry>
+
+  <registry id="eap-numbers-teap-trusted-root-server-tlv-credential-format-codes">
+    <title>TEAP Trusted-Server-Root TLV (value 17) Credential-Format Codes</title>
+    <note>See <xref type="uri" data="https://www.iana.org/assignments/teap-parameters"/></note>
   </registry>
   
   <people>

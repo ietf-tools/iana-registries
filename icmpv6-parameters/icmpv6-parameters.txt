@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                            Internet Control Message Protocol version 6 (ICMPv6) Parameters
 
    Last Updated
-           2021-10-01
+           2022-04-27
 
    Available Formats
            [IMG]
@@ -127,6 +129,16 @@ ICMPv6 "Code" Fields
 
    Reference
            [RFC4443]
+
+   Note
+
+ Code field subregistries that are not explicitly documented by the
+ specification defining the associated Type value are not individually
+ listed here.  Nevertheless, the meaning of Code field values depend
+ upon the Type value [RFC 4443, Section 2.1].  Any specification
+ wishing to define a previously unspecified Code subregistry for a
+ given Type should note the procedures in [RFC 4443, Section 6.1].
+
 
   Type 0 - Reserved
 
@@ -656,7 +668,7 @@ IPv6 Neighbor Discovery Option Formats
            [IMG]
            CSV
 
-    Type                   Description                                Reference
+    Type                   Description                      Reference
       1    Source Link-layer Address                    [RFC4861]
       2    Target Link-layer Address                    [RFC4861]
       3    Prefix Information                           [RFC4861]
@@ -697,7 +709,7 @@ IPv6 Neighbor Discovery Option Formats
      38    PREF64 option                                [RFC8781]
      39    Crypto-ID Parameters Option (CIPO)           [RFC8928]
      40    NDP Signature Option (NDPSO)                 [RFC8928]
-     41    Resource Directory Address Option            [RFC-ietf-core-resource-directory-28]
+     41    Resource Directory Address Option            [RFC9176]
    42-137  Unassigned
      138   CARD Request option                          [RFC4065]
      139   CARD Reply option                            [RFC4065]
@@ -988,3 +1000,5 @@ Crypto-Types
    [1] It is only appropriate to use these values in explicitly configured experiments; they
        MUST NOT be shipped as defaults in implementations. See [RFC3692] for details.
 
+
+   Licensing Terms

@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                 Stream Control Transmission Protocol (SCTP) Parameters
 
    Created
            2000-10
 
    Last Updated
-           2021-08-13
+           2022-07-01
 
    Available Formats
            [IMG]
@@ -54,13 +56,13 @@ Chunk Types
  IETF Review
 
    Reference
-           [RFC4960][RFC6096]
+           [RFC9260]
 
    Note
 
  A Chunk Flags sub-registry will be created for each new Chunk Type.
  The registration procedure for those sub-registries is RFC Required [RFC8126].
- For more information, see Section 3.2 of [RFC6096].
+ For more information, see Section 15.2 of [RFC9260].
 
 
    Available Formats
@@ -68,39 +70,39 @@ Chunk Types
            CSV
 
    ID Value                        Chunk Type                         Reference
-   0        Payload Data (DATA)                                       [RFC4960]
-   1        Initiation (INIT)                                         [RFC4960]
-   2        Initiation Acknowledgement (INIT ACK)                     [RFC4960]
-   3        Selective Acknowledgement (SACK)                          [RFC4960]
-   4        Heartbeat Request (HEARTBEAT)                             [RFC4960]
-   5        Heartbeat Acknowledgement (HEARTBEAT ACK)                 [RFC4960]
-   6        Abort (ABORT)                                             [RFC4960]
-   7        Shutdown (SHUTDOWN)                                       [RFC4960]
-   8        Shutdown Acknowledgement (SHUTDOWN ACK)                   [RFC4960]
-   9        Operation Error (ERROR)                                   [RFC4960]
-   10       State Cookie (COOKIE ECHO)                                [RFC4960]
-   11       Cookie Acknowledgement (COOKIE ACK)                       [RFC4960]
-   12       Reserved for Explicit Congestion Notification Echo (ECNE) [RFC4960]
-   13       Reserved for Congestion Window Reduced (CWR)              [RFC4960]
-   14       Shutdown Complete (SHUTDOWN COMPLETE)                     [RFC4960]
+   0        Payload Data (DATA)                                       [RFC9260]
+   1        Initiation (INIT)                                         [RFC9260]
+   2        Initiation Acknowledgement (INIT ACK)                     [RFC9260]
+   3        Selective Acknowledgement (SACK)                          [RFC9260]
+   4        Heartbeat Request (HEARTBEAT)                             [RFC9260]
+   5        Heartbeat Acknowledgement (HEARTBEAT ACK)                 [RFC9260]
+   6        Abort (ABORT)                                             [RFC9260]
+   7        Shutdown (SHUTDOWN)                                       [RFC9260]
+   8        Shutdown Acknowledgement (SHUTDOWN ACK)                   [RFC9260]
+   9        Operation Error (ERROR)                                   [RFC9260]
+   10       State Cookie (COOKIE ECHO)                                [RFC9260]
+   11       Cookie Acknowledgement (COOKIE ACK)                       [RFC9260]
+   12       Reserved for Explicit Congestion Notification Echo (ECNE) [RFC9260]
+   13       Reserved for Congestion Window Reduced (CWR)              [RFC9260]
+   14       Shutdown Complete (SHUTDOWN COMPLETE)                     [RFC9260]
    15       Authentication Chunk (AUTH)                               [RFC4895]
    16-62    Unassigned
-   63       Reserved for IETF-defined Chunk Extensions
+   63       Reserved for IETF-defined Chunk Extensions                [RFC9260]
    64       Payload Data supporting Interleaving (I-DATA)             [RFC8260]
    65-126   Unassigned
-   127      Reserved for IETF-defined Chunk Extensions
+   127      Reserved for IETF-defined Chunk Extensions                [RFC9260]
    128      Address Configuration Acknowledgment (ASCONF-ACK)         [RFC5061]
    129      Unassigned
    130      Re-configuration Chunk (RE-CONFIG)                        [RFC6525]
    131      Unassigned
    132      Padding Chunk (PAD)                                       [RFC4820]
    133-190  Unassigned
-   191      Reserved for IETF-defined Chunk Extensions
+   191      Reserved for IETF-defined Chunk Extensions                [RFC9260]
    192      Forward TSN                                               [RFC3758]
    193      Address Configuration Change Chunk (ASCONF)               [RFC5061]
    194      I-FORWARD-TSN                                             [RFC8260]
    195-254  Unassigned
-   255      Reserved for IETF-defined Chunk Extensions                [RFC4960]
+   255      Reserved for IETF-defined Chunk Extensions                [RFC9260]
 
 Chunk Parameter Types
 
@@ -109,23 +111,23 @@ Chunk Parameter Types
  IETF Review
 
    Reference
-           [RFC4960]
+           [RFC9260]
 
    Available Formats
            [IMG]
            CSV
 
     ID Value              Chunk Parameter Type             Reference
-   1           Heartbeat Info                              [RFC4960]
+   1           Heartbeat Info                              [RFC9260]
    2-4         Unassigned
-   5           IPv4 Address                                [RFC4960]
-   6           IPv6 Address                                [RFC4960]
-   7           State Cookie                                [RFC4960]
-   8           Unrecognized Parameters                     [RFC4960]
-   9           Cookie Preservative                         [RFC4960]
+   5           IPv4 Address                                [RFC9260]
+   6           IPv6 Address                                [RFC9260]
+   7           State Cookie                                [RFC9260]
+   8           Unrecognized Parameter                      [RFC9260]
+   9           Cookie Preservative                         [RFC9260]
    10          Unassigned
-   11          Host Name Address                           [RFC4960]
-   12          Supported Address Types                     [RFC4960]
+   11          Host Name Address                           [RFC9260]
+   12          Supported Address Types                     [RFC9260]
    13          Outgoing SSN Reset Request Parameter        [RFC6525]
    14          Incoming SSN Reset Request Parameter        [RFC6525]
    15          SSN/TSN Reset Request Parameter             [RFC6525]
@@ -133,7 +135,7 @@ Chunk Parameter Types
    17          Add Outgoing Streams Request Parameter      [RFC6525]
    18          Add Incoming Streams Request Parameter      [RFC6525]
    19-32767    Unassigned
-   32768       Reserved for ECN Capable (0x8000)
+   32768       Reserved for ECN Capable (0x8000)           [RFC9260]
    32770       Random (0x8002)                             [RFC4805]
    32771       Chunk List (0x8003)                         [RFC4895]
    32772       Requested HMAC Algorithm Parameter (0x8004) [RFC4895]
@@ -147,6 +149,8 @@ Chunk Parameter Types
    49156       Set Primary Address (0xC004)                [RFC5061]
    49157       Success Indication (0xC005)                 [RFC5061]
    49158       Adaptation Layer Indication (0xC006)        [RFC5061]
+   49159-65534 Unassigned
+   65535       Reserved for IETF-defined Chunk Extensions  [RFC9260]
 
 Chunk Flags
 
@@ -155,7 +159,7 @@ Chunk Flags
  RFC Required
 
    Reference
-           [RFC6096]
+           [RFC9260]
 
   DATA Chunk Flags
 
@@ -164,10 +168,10 @@ Chunk Flags
            CSV
 
    Chunk Flag Value Chunk Flag Name Reference
-   0x01             E bit           [RFC4960]
-   0x02             B bit           [RFC4960]
-   0x04             U bit           [RFC4960]
-   0x08             I bit           [RFC7053]
+   0x01             E bit           [RFC9260]
+   0x02             B bit           [RFC9260]
+   0x04             U bit           [RFC9260]
+   0x08             I bit           [RFC9260]
    0x10             Unassigned
    0x20             Unassigned
    0x40             Unassigned
@@ -260,7 +264,7 @@ Chunk Flags
            CSV
 
    Chunk Flag Value Chunk Flag Name Reference
-   0x01             T bit           [RFC4960]
+   0x01             T bit           [RFC9260]
    0x02             Unassigned
    0x04             Unassigned
    0x08             Unassigned
@@ -388,7 +392,7 @@ Chunk Flags
            CSV
 
    Chunk Flag Value Chunk Flag Name Reference
-   0x01             T bit           [RFC4960]
+   0x01             T bit           [RFC9260]
    0x02             Unassigned
    0x04             Unassigned
    0x08             Unassigned
@@ -533,29 +537,29 @@ Error Cause Codes
 
    Expert(s)
 
- Unassigned
+ Michael Tuexen, Randall Stewart
 
    Reference
-           [RFC4960]
+           [RFC9260]
 
    Available Formats
            [IMG]
            CSV
 
      Value                    Cause Code                   Reference
-   1         Invalid Stream Identifier                     [RFC4960]
-   2         Missing Mandatory Parameter                   [RFC4960]
-   3         Stale Cookie Error                            [RFC4960]
-   4         Out of Resource                               [RFC4960]
-   5         Unresolvable Address                          [RFC4960]
-   6         Unrecognized Chunk Type                       [RFC4960]
-   7         Invalid Mandatory Parameter                   [RFC4960]
-   8         Unrecognized Parameters                       [RFC4960]
-   9         No User Data                                  [RFC4960]
-   10        Cookie Received While Shutting Down           [RFC4960]
-   11        Restart of an Association with New Addresses  [RFC4960]
-   12        User Initiated Abort                          [RFC4460]
-   13        Protocol Violation                            [RFC4460]
+   1         Invalid Stream Identifier                     [RFC9260]
+   2         Missing Mandatory Parameter                   [RFC9260]
+   3         Stale Cookie                                  [RFC9260]
+   4         Out of Resource                               [RFC9260]
+   5         Unresolvable Address                          [RFC9260]
+   6         Unrecognized Chunk Type                       [RFC9260]
+   7         Invalid Mandatory Parameter                   [RFC9260]
+   8         Unrecognized Parameters                       [RFC9260]
+   9         No User Data                                  [RFC9260]
+   10        Cookie Received While Shutting Down           [RFC9260]
+   11        Restart of an Association with New Addresses  [RFC9260]
+   12        User-Initiated Abort                          [RFC9260]
+   13        Protocol Violation                            [RFC9260]
    14-159    Unassigned
    160       Request to Delete Last Remaining IP Address   [RFC5061]
    161       Operation Refused Due to Resource Shortage    [RFC5061]
@@ -573,14 +577,14 @@ SCTP Payload Protocol Identifiers
  First Come First Served
 
    Reference
-           [RFC4960]
+           [RFC9260]
 
    Available Formats
            [IMG]
            CSV
 
     Value        SCTP Payload Protocol Identifier                                                                Reference                                                                Date
-0             Reserved by SCTP                        [RFC4960]
+0             Reserved by SCTP                        [RFC9260]
 1             IUA                                     [RFC4233]
 2             M2UA                                    [RFC3331]
 3             M3UA                                    [RFC4666]
@@ -722,3 +726,5 @@ Adaptation Code Points
    [Sebastian_Kiesel]          Sebastian Kiesel           mailto:kiesel&ikr.uni-stuttgart.de 2006-03-22
    [Thomas_Dreibholz]          Thomas Dreibholz           mailto:dreibh&iem.uni-due.de       2011-01-31
    [Yang_Xudong]               Yang Xudong                mailto:yangxudong&huawei.com       2019-05-24
+
+   Licensing Terms

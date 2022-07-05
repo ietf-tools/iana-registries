@@ -1,7 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                                iana-if-type YANG Module
 
    Created
            2014-01-27
+
+   Last Updated
+           2022-03-07
 
    Registration Procedure(s)
 
@@ -13,7 +18,7 @@
  module. They must instead be added to the "Interface Types (ifType)"
  registry at [IANA registry smi-numbers].
 
-   Module: [iana-if-type@2021-06-21.yang]
+   Module: [iana-if-type@2022-03-07.yang]
 
 
    Reference
@@ -24,3 +29,5 @@
            XML [IMG]
            HTML [IMG]
            Plain text
+
+   Licensing Terms

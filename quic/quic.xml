@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="quic">
   <title>QUIC</title>
   <created>2021-02-11</created>
-  <updated>2021-10-25</updated>
+  <updated>2022-06-02</updated>
   
     <registry id="quic-versions">
     <title>QUIC Versions</title>
@@ -272,15 +272,25 @@
         <contact><xref type="person" data="QUIC_WG"/></contact>
         <notes/>
       </record>
-      <record date="2021-10-20">
+      <record date="2021-10-20" updated="2022-02-07">
         <value>0x20</value>
         <name>max_datagram_frame_size</name>
-        <status>provisional</status>
-        <xref type="draft" data="draft-ietf-quic-datagram-06"/>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9221"/>
         <date>2021-10-20</date>
         <controller>IETF</controller>
         <contact><xref type="person" data="QUIC_WG"/></contact>
-        <notes>Registration will become permanent if/when draft is published as RFC</notes>
+        <notes/>
+      </record>
+      <record date="2022-06-02">
+        <value>0x173e</value>
+        <name>discard</name>
+        <status>provisional</status>
+        <xref type="uri" data="https://github.com/quicwg/base-drafts/wiki/Quantum-Readiness-test"/>
+        <date>2022-06-02</date>
+        <controller><xref type="person" data="David_Schinazi"/></controller>
+        <contact><xref type="person" data="David_Schinazi"/></contact>
+        <notes>Receiver silently discards.</notes>
       </record>
       <record date="2021-10-20">
         <value>0x3127</value>
@@ -426,7 +436,7 @@
       <notes/>
     </record>
     <record date="2021-02-11">
-      <value>0x08-0x0F</value>
+      <value>0x08-0x0f</value>
       <name>STREAM</name>
       <status>permanent</status>
       <xref type="rfc" data="rfc9000">RFC9000, Section 19.8</xref>
@@ -555,15 +565,15 @@
       <contact><xref type="person" data="QUIC_WG"/></contact>
       <notes/>
     </record>
-    <record date="2021-10-20">
+    <record date="2021-10-20" updated="2022-02-07">
       <value>0x30-0x31</value>
       <name>DATAGRAM</name>
-      <status>provisional</status>
-      <xref type="draft" data="draft-ietf-quic-datagram-06"/>
+      <status>permanent</status>
+      <xref type="rfc" data="rfc9221"/>
       <date>2021-10-20</date>
       <controller>IETF</controller>
       <contact><xref type="person" data="QUIC_WG"/></contact>
-      <notes>Registration will become permanent if/when draft is published as RFC</notes>
+      <notes/>
     </record>
   </registry>
 
@@ -803,15 +813,20 @@
   </registry>
     
   <people>
-    <person id="QUIC_WG">
-      <name>QUIC working group</name>
-      <uri>mailto:quic&amp;ietf.org</uri>
-      <updated>2021-02-11</updated>
+    <person id="David_Schinazi">
+      <name>David Schinazi</name>
+      <uri>mailto:dschinazi.ietf&amp;gmail.com</uri>
+      <updated>2022-06-02</updated>
     </person>
     <person id="Google">
       <name>Google</name>
       <uri>mailto:quic-iana&amp;google.com</uri>
       <updated>2021-10-15</updated>
+    </person>
+    <person id="QUIC_WG">
+      <name>QUIC working group</name>
+      <uri>mailto:quic&amp;ietf.org</uri>
+      <updated>2021-02-11</updated>
     </person>
   </people>
 </registry>

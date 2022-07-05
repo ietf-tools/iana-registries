@@ -3,7 +3,7 @@
 <?xml-model href="ipv6-multicast-addresses.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="ipv6-multicast-addresses">
   <title>IPv6 Multicast Address Space Registry</title>
-  <updated>2021-05-24</updated>
+  <updated>2022-05-06</updated>
   <expert>Stig Venaas</expert>
   <note>IPv6 multicast addresses are defined in "IP Version 6 Addressing
 Architecture" <xref type="rfc" data="rfc4291"/>. This defines fixed scope and variable scope
@@ -128,11 +128,7 @@ scope value.
       <description>variable scope allocation</description>
     </record>
     <record>
-      <addr>FF01:0:0:0:0:0:0:100-FF01:0:0:0:0:0:0:171</addr>
-      <description>variable scope allocation</description>
-    </record>
-    <record>
-      <addr>FF01:0:0:0:0:0:0:175</addr>
+      <addr>FF01:0:0:0:0:0:0:100-FF01:0:0:0:0:0:0:175</addr>
       <description>variable scope allocation</description>
     </record>
     <record>
@@ -343,11 +339,7 @@ scope value.
       <description>variable scope allocation</description>
     </record>
     <record>
-      <addr>FF02:0:0:0:0:0:0:100-FF02:0:0:0:0:0:0:171</addr>
-      <description>variable scope allocation</description>
-    </record>
-    <record>
-      <addr>FF02:0:0:0:0:0:0:175</addr>
+      <addr>FF02:0:0:0:0:0:0:100-FF02:0:0:0:0:0:0:175</addr>
       <description>variable scope allocation</description>
     </record>
     <record>
@@ -471,11 +463,7 @@ scope value.
       <description>variable scope allocation</description>
     </record>
     <record>
-      <addr>FF05:0:0:0:0:0:0:100-FF05:0:0:0:0:0:0:171</addr>
-      <description>variable scope allocation</description>
-    </record>
-    <record>
-      <addr>FF05:0:0:0:0:0:0:175</addr>
+      <addr>FF05:0:0:0:0:0:0:100-FF05:0:0:0:0:0:0:175</addr>
       <description>variable scope allocation</description>
     </record>
     <record>
@@ -580,8 +568,8 @@ in scope represent different groups.  Nodes must join each group individually.
     </record>    
     <record date="2021-03-16">
       <addr>FF0X:0:0:0:0:0:0:FE</addr>
-      <description>all CoRE Resource Directories</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+      <description>All CoRE Resource Directories</description>
+      <xref type="rfc" data="rfc9176"/>
     </record>    
     <record>
       <addr>FF0X:0:0:0:0:0:0:FF</addr>
@@ -856,15 +844,19 @@ in scope represent different groups.  Nodes must join each group individually.
       <description>unserding</description>
       <xref type="person" data="Sebastian_Freundt"/>
     </record>
-    <record date="2010-02-26">
+    <record date="2010-02-26" updated="2022-02-10">
       <addr>FF0X:0:0:0:0:0:0:135</addr>
       <description>PHILIPS-HEALTH</description>
-      <xref type="person" data="Anthony_Kandaya"/>
+      <xref type="person" data="Mike_King"/>
+      <xref type="person" data="William_Holden"/>
+      <controller><xref type="person" data="Philips_Healthcare"/></controller>
     </record>
-    <record date="2010-02-26">
+    <record date="2010-02-26" updated="2022-02-10">
       <addr>FF0X:0:0:0:0:0:0:136</addr>
       <description>PHILIPS-HEALTH</description>
-      <xref type="person" data="Anthony_Kandaya"/>
+      <xref type="person" data="Mike_King"/>
+      <xref type="person" data="William_Holden"/>
+      <controller><xref type="person" data="Philips_Healthcare"/></controller>
     </record>
     <record date="2010-09-13">
       <addr>FF0X:0:0:0:0:0:0:137</addr>
@@ -1017,9 +1009,26 @@ in scope represent different groups.  Nodes must join each group individually.
       <description>GNodes</description>
       <xref type="person" data="Giuseppe_Gori"/>
     </record>
-    <record>
-      <addr>FF0X:0:0:0:0:0:0:172-FF0X:0:0:0:0:0:0:174</addr>
-      <description>Unassigned</description>
+    <record date="2022-01-26">
+      <addr>FF0X:0:0:0:0:0:0:172</addr>
+      <description>SentryPeer</description>
+      <xref type="person" data="Gavin_Henry"/>
+    </record>
+    <record date="2022-02-17">
+      <addr>FF0X:0:0:0:0:0:0:173</addr>
+      <description>EggShell</description>
+      <xref type="person" data="Momar_Mbergan"/>
+      <controller>
+        <xref type="person" data="Momar_Mbergan"/>
+      </controller>
+    </record>
+    <record date="2022-05-06">
+      <addr>FF0X:0:0:0:0:0:0:174</addr>
+      <description>IoT42</description>
+      <xref type="person" data="Stephen_Williams"/>
+      <controller>
+        <xref type="person" data="Stephen_Williams"/>
+      </controller>
     </record>
     <record date="2015-07-21">
       <addr>FF0X:0:0:0:0:0:0:175</addr>
@@ -1195,7 +1204,7 @@ in scope represent different groups.  Nodes must join each group individually.
 address use, but are currently invalid.
 FF3X:0:0:0:0:0:0:0-FF3X:0:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF (FF3X:0::/32)
 
-FF3X:0:0:0:0:0:4000:0-FF3X:0:0:0:0:0:7FFF:FFFF - Expert Review; see registry at <xref type="uri" data="http://www.iana.org/assignments/perm-mcast-groupids"/>
+FF3X:0:0:0:0:0:4000:0-FF3X:0:0:0:0:0:7FFF:FFFF - Expert Review; see registry at <xref type="uri" data="https://www.iana.org/assignments/perm-mcast-groupids"/>
 FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts when needed <xref type="rfc" data="rfc4607"/>.
     </registration_rule>
     <record>
@@ -1347,6 +1356,11 @@ FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts 
       <uri>mailto:tech&amp;lonmark.org</uri>
       <updated>2018-11-15</updated>
     </person>
+    <person id="Gavin_Henry">
+      <name>Gavin Henry</name>
+      <uri>mailto:ghenry&amp;sentrypeer.org</uri>
+      <updated>2022-01-26</updated>
+    </person>
     <person id="Giuseppe_Gori">
       <name>Giuseppe Gori</name>
       <uri>mailto:ggori&amp;gorbyte.com</uri>
@@ -1474,10 +1488,20 @@ FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts 
       <uri>mailto:mcr&amp;sandelman.ca</uri>
       <updated>2010-11-30</updated>
     </person>
+    <person id="Mike_King">
+      <name>Mike King</name>
+      <uri>mailto:mike.king&amp;philips.com</uri>
+      <updated>2022-02-10</updated>
+    </person>
     <person id="Mike_Pontillo">
       <name>Mike Pontillo</name>
       <uri>mailto:mike.pontillo&amp;canonical.com</uri>
       <updated>2017-05-19</updated>
+    </person>
+    <person id="Momar_Mbergan">
+      <name>Momar Mbergan</name>
+      <uri>mailto:Myamomar&amp;gmail.com</uri>
+      <updated>2022-02-17</updated>
     </person>
     <person id="Moritz_Vieth">
       <name>Moritz Vieth</name>
@@ -1508,6 +1532,11 @@ FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts 
       <name>Peter Grahame Firmstone</name>
       <uri>mailto:peter.firmstone&amp;zeus.net.au</uri>
       <updated>2015-08-27</updated>
+    </person>
+    <person id="Philips_Healthcare">
+      <org>Philips Healthcare</org>
+      <uri>mailto:bill.holden&amp;philips.com</uri>
+      <updated>2022-02-10</updated>
     </person>
     <person id="Rick_van_Rein">
       <name>Rick van Rein</name>
@@ -1555,6 +1584,11 @@ FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts 
       <uri>mailto:stlejeun&amp;cisco.com</uri>
       <updated>2016-07-07</updated>
     </person>
+    <person id="Stephen_Williams">
+      <name>Stephen Williams</name>
+      <uri>mailto:steve&amp;iot42.org</uri>
+      <updated>2022-05-06</updated>
+    </person>
     <person id="Steve_Casner">
       <name>Steve Casner</name>
       <uri>mailto:casner&amp;isi.edu</uri>
@@ -1592,6 +1626,11 @@ FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts 
       <name>UPnP Forum</name>
       <uri>mailto:upnpadmin&amp;forum.upnp.org</uri>
       <updated>2006-09-21</updated>
+    </person>
+    <person id="William_Holden">
+      <name>William Holden</name>
+      <uri>mailto:bill.holden&amp;philips.com</uri>
+      <updated>2022-02-10</updated>
     </person>
     <person id="Xiaoyu_Zhou">
       <name>Xiaoyu Zhou</name>

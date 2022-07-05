@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                             Internet Message Access Protocol (IMAP) Capabilities Registry
 
    Last Updated
-           2021-08-26
+           2022-05-10
 
    Available Formats
            [IMG]
@@ -9,29 +11,34 @@
            HTML [IMG]
            Plain text
 
-   Registry included below
+   Registries included below
 
      * IMAP Capabilities
+     * IMAP Quota Resource Types
 
 IMAP Capabilities
 
    Registration Procedure(s)
 
- Standards track or IESG-approved experimental RFC
+ IETF Review
 
    Reference
-           [RFC3501]
+           [RFC3501][RFC9051]
 
    Note
 
- Capability names MUST either begin with "X" or be standard or
- standards-track IMAP4rev1 extensions, revisions, or amendments
- registered with IANA.  A server MUST NOT offer unregistered or
- non-standard capability names, unless such names are prefixed
- with an "X".
+ Client implementations compliant with [RFC3501] SHOULD NOT require any
+ capability name other than "IMAP4rev1". Client implementations
+ compliant with [RFC9051] SHOULD NOT require any capability name other
+ than "IMAP4rev2", and possibly "STARTTLS" and "LOGINDISABLED" (on a
+ cleartext port). All client implementations MUST ignore any unknown
+ capability names.
 
- Client implementations SHOULD NOT require any capability name other
- than "IMAP4rev1", and MUST ignore any unknown capability names.
+ The prefix "QUOTA=RES-" is reserved per [RFC9208, Section 9.1].
+ See Section 9.2 of that document for values that follow this prefix.
+
+ All other capabilities starting with the "QUOTA=" prefix are reserved
+ for future IETF Stream extensions to [RFC9208].
 
    Available Formats
            [IMG]
@@ -59,6 +66,8 @@ IMAP Capabilities
    I18NLEVEL=2            [RFC5255]
    ID                     [RFC2971]
    IDLE                   [RFC2177]
+   IMAP4REV1              [RFC3501]
+   IMAP4REV2              [RFC9051]
    IMAPSIEVE=             [RFC6785]
    LANGUAGE               [RFC5255]
    LIST-EXTENDED          [RFC5258]
@@ -79,7 +88,9 @@ IMAP Capabilities
    OBJECTID               [RFC8474]
    PREVIEW                [RFC8970]
    QRESYNC                [RFC7162]
-   QUOTA                  [RFC2087]
+   QUOTA                  [RFC9208]
+   QUOTA=                 [RFC9208]
+   QUOTASET               [RFC9208]
    REPLACE                [RFC8508]
    RIGHTS=                [RFC4314]
    SASL-IR                [RFC4959]
@@ -104,3 +115,43 @@ IMAP Capabilities
    UTF8=ONLY              [RFC6855]
    UTF8=USER (OBSOLETE)   [RFC5738][RFC6855]
    WITHIN                 [RFC5032]
+
+IMAP Quota Resource Types
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Alexey Melnikov, Ken Murchison
+
+   Reference
+           [RFC9208]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Name of the Quota                Description                 Extra required IMAP   Extra optional IMAP      Author         Change    Reference
+     Resource Type                                               commands/responses   commands/responses                    Controller
+                      The physical space estimate, in units of DELETED-STORAGE STATUS                                                  [RFC9208,
+   STORAGE            1024 octets, of the mailboxes governed   request data item and  N/A                 [Alexey_Melnikov] [IESG]     Section 5.1]
+                      by the quota root.                       response data item
+                      The number of messages stored within the DELETED STATUS request                                                  [RFC9208,
+   MESSAGE            mailboxes governed by the quota root.    data item and response N/A                 [Alexey_Melnikov] [IESG]     Section 5.2]
+                                                               data item
+   MAILBOX            The number of mailboxes governed by the  N/A                    N/A                 [Alexey_Melnikov] [IESG]     [RFC9208,
+                      quota root.                                                                                                      Section 5.3]
+                      The maximum size of all annotations
+   ANNOTATION-STORAGE [RFC5257], in units of 1024 octets,      N/A                    N/A                 [Alexey_Melnikov] [IESG]     [RFC9208,
+                      associated with all messages in the                                                                              Section 5.4]
+                      mailboxes governed by the quota root.
+
+                                                                 Contact Information
+
+          ID              Name                 Contact URI            Last Updated
+   [Alexey_Melnikov] Alexey Melnikov mailto:alexey.melnikov&isode.com 2021-12-09
+   [IESG]            IESG            mailto:iesg&ietf.org             2021-12-09
+
+   Licensing Terms

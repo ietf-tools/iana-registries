@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="dhcpv6-parameters">
   <title>Dynamic Host Configuration Protocol for IPv6 (DHCPv6)</title>
   <created>2003-11-03</created>
-  <updated>2021-10-27</updated>
+  <updated>2022-06-24</updated>
   <note>For the Civic Address Types Registry <xref type="rfc" data="rfc4776"/>, please see:
 http://www.iana.org/assignments/civic-address-types-registry</note>
 
@@ -1694,8 +1694,14 @@ Option Request option).
       <xref type="uri" data="https://loongson.github.io/LoongArch-Documentation/README-EN.html"/>
       <xref type="uri" data="https://github.com/loongson/LoongArch-Documentation"/>
     </record>
+    <record date="2021-12-23" updated="2022-02-22">
+      <value>0x00 0x29</value>
+      <description>arm rpiboot</description>
+      <xref type="person" data="Peter_Harper"/>
+      <xref type="uri" data="https://www.raspberrypi.com/documentation/computers/remote-access.html#network-booting-using-ipv6"/>
+    </record>
     <record>
-      <value>0x00 0x29-0xff 0xff</value>
+      <value>0x00 0x2a-0xff 0xff</value>
       <description>Unassigned</description>
     </record>
   </registry>
@@ -1716,7 +1722,7 @@ Option Request option).
     <title>VSS Type Options</title>
     <xref type="rfc" data="rfc6607"/>
     <registration_rule>IETF Review</registration_rule>
-    <note>See the VSS Type Options registry at <xref type="uri" data="http://www.iana.org/assignments/bootp-dhcp-parameters"/></note>
+    <note>See the VSS Type Options registry at <xref type="uri" data="https://www.iana.org/assignments/bootp-dhcp-parameters"/></note>
   </registry> 
  
   <registry id="ntp-time-source">
@@ -1816,8 +1822,8 @@ Option Request option).
   <people>
     <person id="Dong_Wei">
       <name>Dong Wei</name>
-      <uri>mailto:dong.wei&amp;hpe.com</uri>
-      <updated>2016-01-12</updated>
+      <uri>mailto:dong.wei&amp;arm.com</uri>
+      <updated>2022-06-24</updated>
     </person>
     <person id="Jeremy_Kerr">
       <name>Jeremy Kerr</name>
@@ -1838,6 +1844,11 @@ Option Request option).
       <name>LI Chao</name>
       <uri>mailto:lichao&amp;loongson.cn</uri>
       <updated>2021-10-26</updated>
+    </person>
+    <person id="Peter_Harper">
+      <name>Peter Harper</name>
+      <uri>mailto:peter.harper&amp;raspberrypi.com</uri>
+      <updated>2021-12-23</updated>
     </person>
     <person id="Samer_El-Haj-Mahmoud">
       <name>Samer El-Haj-Mahmoud</name>

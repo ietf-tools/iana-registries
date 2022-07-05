@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="rfb">
   <title>Remote Framebuffer (RFB)</title>
   <created>2010-12-08</created>
-  <updated>2021-03-31</updated>
+  <updated>2022-06-07</updated>
 
   
   <registry id="rfb-1">
@@ -82,13 +82,13 @@
       <name>Unassigned</name>
       <refs/>
     </record>
-    <record>
-      <type>30-35</type>
+    <record updated="2022-06-07">
+      <type>30-36</type>
       <name>Apple Inc.</name>
       <refs><xref type="person" data="Michael_Stein"/></refs>
     </record>
     <record>
-      <type>36-127</type>
+      <type>37-127</type>
       <name>Unassigned</name>
       <refs/>
     </record>
@@ -115,6 +115,7 @@
     <record>
       <type>135-191</type>
       <name>Unassigned</name>
+      <refs/>
     </record>
     <record>
       <type>192</type>
@@ -124,6 +125,7 @@
     <record>
       <type>193-255</type>
       <name>Unassigned</name>
+      <refs/>
     </record>
   </registry>
   
@@ -508,8 +510,7 @@
     <record date="2021-02-10" updated="2021-03-17">
       <type>50</type>
       <name>Open H.264 Encoding</name>
-      <refs><xref type="uri" data="https://github.com/rfbproto/rfbproto/blob/master/rfbproto.rst"/></refs>
-      <refs><xref type="person" data="Maxim_Devaev"/></refs>
+      <refs><xref type="uri" data="https://github.com/rfbproto/rfbproto/blob/master/rfbproto.rst"/><xref type="person" data="Maxim_Devaev"/></refs>
     </record>
     <record>
       <type>1000-1002</type>
@@ -527,8 +528,8 @@
       <refs>historic assignment 
         <xref type="person" data="Tristan_Richardson"/></refs>
     </record>
-    <record>
-      <type>1100-1105</type>
+    <record updated="2022-06-07">
+      <type>1100-1109</type>
       <name>Apple Inc.</name>
       <refs><xref type="person" data="Michael_Stein"/></refs>
     </record>
@@ -672,11 +673,6 @@
       <uri>mailto:david.verbeiren&amp;intel.com</uri>
       <updated>2013-02-08</updated>
     </person>
-    <person id="David_Warden">
-      <name>David Warden</name>
-      <uri>mailto:David_Warden&amp;dell.com</uri>
-      <updated>2014-10-27</updated>
-    </person>
     <person id="Jörg_Brakensiek">
       <name>Jörg Brakensiek</name>
       <uri>mailto:jorg.brakensiek&amp;nokia.com</uri>
@@ -695,7 +691,7 @@
     <person id="Michael_Stein">
       <name>Michael Stein</name>
       <uri>mailto:mvs&amp;apple.com</uri>
-      <updated>2011-11-02</updated>
+      <updated>2022-06-07</updated>
     </person>
     <person id="Rajeshkumar_Patel">
       <name>Rajeshkumar Patel</name>

@@ -4,11 +4,11 @@
 <registry xmlns="http://www.iana.org/assignments" id="ospfv3-parameters">
   <title>Open Shortest Path First v3 (OSPFv3) Parameters</title>
   <created>2007-04-25</created>
-  <updated>2021-10-21</updated>
+  <updated>2022-06-21</updated>
   <note>Please also see: 
-    <xref type="uri" data="http://www.iana.org/assignments/ospf-dd-packet-flags/ospf-dd-packet-flags.xml"/>
-    <xref type="uri" data="http://www.iana.org/assignments/ospf-lls-tlvs"/>
-    <xref type="uri" data="http://www.iana.org/assignments/ospf-traffic-eng-tlvs"/>
+    <xref type="uri" data="https://www.iana.org/assignments/ospf-dd-packet-flags"/>
+    <xref type="uri" data="https://www.iana.org/assignments/ospf-lls-tlvs"/>
+    <xref type="uri" data="https://www.iana.org/assignments/ospf-traffic-eng-tlvs"/>
   </note>
 
   
@@ -183,8 +183,8 @@
     </record>
     <record date="2019-07-31">
       <value>16</value>
-      <description>OSPFv3 Dynamic Flooding LSA (TEMPORARY - registered 2019-07-31, extension registered 2021-06-18, expires 2022-07-31)</description>
-      <xref type="draft" data="draft-ietf-lsr-dynamic-flooding"/>
+      <description>OSPFv3 Dynamic Flooding LSA (TEMPORARY - registered 2019-07-31, extension registered 2022-06-21, expires 2023-07-31)</description>
+      <xref type="draft" data="draft-ietf-lsr-dynamic-flooding-11"/>
     </record>
     <record>
       <value>17-32</value>
@@ -625,8 +625,8 @@ address families.
     </record>
     <record date="2019-07-31">
       <value>10</value>
-      <description>OSPFv3 Link Attributes Bits Sub-TLV (TEMPORARY - registered 2019-07-31, extension registered 2021-06-18, expires 2022-07-31)</description>
-      <xref type="draft" data="draft-ietf-lsr-dynamic-flooding"/>
+      <description>OSPFv3 Link Attributes Bits Sub-TLV (TEMPORARY - registered 2019-07-31, extension registered 2022-06-21, expires 2023-07-31)</description>
+      <xref type="draft" data="draft-ietf-lsr-dynamic-flooding-11"/>
     </record>
     <record date="2019-08-21">
       <value>11</value>
@@ -719,9 +719,9 @@ address families.
       <description>Prefix Source Router Address</description>
       <xref type="rfc" data="rfc9084"/>
     </record>
-    <record date="2021-04-19">
+    <record date="2021-04-19" updated="2022-04-13">
       <value>29</value>
-      <description>L2 Bundle Member Attributes (TEMPORARY - registered 2021-04-19, expires 2022-04-19)</description>
+      <description>L2 Bundle Member Attributes (TEMPORARY - registered 2021-04-19, extension registered 2022-04-13, expires 2023-04-19)</description>
       <xref type="draft" data="draft-ietf-lsr-ospf-l2bundles-00"/>
     </record>
     <record>

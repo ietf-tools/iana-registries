@@ -1,10 +1,12 @@
-                                                       MIME Media Type Sub-Parameter Registries
+   Internet Assigned Numbers Authority
+
+                                                         Media Type Sub-Parameter Registries
 
    Created
            2003-10-31
 
    Last Updated
-           2020-12-17
+           2022-05-16
 
    Available Formats
            [IMG]
@@ -41,6 +43,7 @@
      * CMS Encapsulating Content Types
      * CMS Inner Content Types
      * Report Types
+     * Sub-Parameter Registry for application/aif+cbor and application/aif+json
 
 Sub-Parameter Registry video/mpeg4-generic, audio/mpeg4-generic and application/mpeg4-generic
 
@@ -423,10 +426,10 @@ CMS Encapsulating Content Types
    contentWithAttrs  1.2.840.113549.1.9.16.1.20 [RFC4073]
    authEnvelopedData 1.2.840.113549.1.9.16.1.23 [RFC5083]
    encryptedKeyPkg   2.16.840.1.101.2.1.2.78.2  [RFC6032]
-   digestData        1.2.840.113549.1.9.16.1.5  [RFC5652]
-   encryptedData     1.2.840.113549.1.9.16.1.6  [RFC5652]
-   envelopedData     1.2.840.113549.1.9.16.1.3  [RFC5652]
-   signedData        1.2.840.113549.1.9.16.1.2  [RFC5652]
+   digestData        1.2.840.113549.1.7.5       [RFC5652]
+   encryptedData     1.2.840.113549.1.7.6       [RFC5652]
+   envelopedData     1.2.840.113549.1.7.3       [RFC5652]
+   signedData        1.2.840.113549.1.7.2       [RFC5652]
 
 CMS Inner Content Types
 
@@ -493,3 +496,30 @@ Report Types
    disposition-notification message/global-disposition-notification          [RFC6533, Section 6]
    delivery-status          message/delivery-status                          [RFC3464, Section 2.1]
    delivery-status          message/global-delivery-status                   [RFC6533, Section 6]
+
+Sub-Parameter Registry for application/aif+cbor and application/aif+json
+
+   Registration Procedure(s)
+
+ Specification Required
+
+   Expert(s)
+
+ Unassigned
+
+   Reference
+           [RFC-ietf-ace-aif-07]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Parameter       Name                                    Description/Specification                                         Reference
+   Toid      URI-local-part    local-part of URI                                                                 [RFC-ietf-ace-aif-07]
+   Tperm     REST-method-set   set of REST methods represented                                                   [RFC-ietf-ace-aif-07]
+   Toid      mqtt-topic-filter Topic Filter as defined in [RFC-ietf-ace-mqtt-tls-profile-17, Section 2.3].       [RFC-ietf-ace-mqtt-tls-profile-17]
+                               Permissions for MQTT client as defined in [RFC-ietf-ace-mqtt-tls-profile-17,
+   Tperm     mqtt-permissions  Section 2.3]. Tperm is an array of one or more text strings that each have a      [RFC-ietf-ace-mqtt-tls-profile-17]
+                               value of either "pub" or "sub".
+
+   Licensing Terms

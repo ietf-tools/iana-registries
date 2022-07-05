@@ -3,7 +3,7 @@
 <?xml-model href="smi-numbers.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="smi-numbers">
   <title>Structure of Management Information (SMI) Numbers (MIB Module Registrations)</title>
-  <updated>2021-11-08</updated>
+  <updated>2022-07-01</updated>
   
  
   
@@ -6277,7 +6277,7 @@ Access Beyond web</description>
       <record>
         <value>60</value>
         <description>id-mod-rpkiManifest</description>
-        <xref type="rfc" data="rfc6486"/>
+        <xref type="rfc" data="rfc9286"/>
       </record>
       <record>
         <value>61</value>
@@ -6479,7 +6479,7 @@ Access Beyond web</description>
       <record>
         <value>26</value>
         <description>id-ct-rpkiManifest</description>
-        <xref type="rfc" data="rfc6486"/>
+        <xref type="rfc" data="rfc9286"/>
       </record>
       <record>
         <value>27</value>
@@ -8177,12 +8177,12 @@ Access Beyond web</description>
       <record date="2021-05-20">
         <value>99</value>
         <description>id-mod-cmp2021-88</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>
       <record date="2021-05-20">
         <value>100</value>
         <description>id-mod-cmp2021-02</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>
       <record date="2021-07-15">
         <value>101</value>
@@ -8192,7 +8192,12 @@ Access Beyond web</description>
       <record date="2021-08-04">
         <value>102</value>
         <description>id-mod-public-notary-v2</description>
-        <xref type="draft" data="RFC-ietf-trans-rfc6962-bis-41"/>
+        <xref type="rfc" data="rfc9162"/>
+      </record>
+      <record date="2021-11-24">
+        <value>103</value>
+        <description>id-mod-dtn-tcpclv4-2021</description>
+        <xref type="rfc" data="rfc9174"/>
       </record>
     </registry>
 
@@ -8566,7 +8571,7 @@ Access Beyond web</description>
       <record date="2020-07-24">
         <value>32</value>
         <description>id-kp-cmKGA</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>
       <record date="2020-11-09">
         <value>33</value>
@@ -8581,7 +8586,7 @@ Access Beyond web</description>
       <record date="2021-02-22">
         <value>35</value>
         <description>id-kp-bundleSecurity</description>
-        <xref type="draft" data="RFC-ietf-dtn-tcpclv4-26"/>
+        <xref type="rfc" data="rfc9174"/>
       </record>
     </registry>
 
@@ -8674,28 +8679,38 @@ Access Beyond web</description>
       <record date="2020-07-24" updated="2021-05-20">
         <value>17</value>
         <description>id-it-caCerts</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>     
       <record date="2020-07-24" updated="2021-05-20">
         <value>18</value>
         <description>id-it-rootCaKeyUpdate </description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>  
       <record date="2020-07-24" updated="2021-05-20">
         <value>19</value>
         <description>id-it-certReqTemplate</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>  
       <record date="2021-05-20">
         <value>20</value>
         <description>id-it-rootCaCert</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record> 
       <record date="2021-05-20">
         <value>21</value>
         <description>id-it-certProfile</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record> 
+      <record date="2022-05-17">
+        <value>22</value>
+        <description>id-it-crlStatusList</description>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
+      </record>
+      <record date="2022-05-17">
+        <value>23</value>
+        <description>id-it-crls</description>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
+      </record>
     </registry>
 
 <registry id="smi-numbers-1.3.6.1.5.5.7.5">
@@ -8780,20 +8795,20 @@ Access Beyond web</description>
       <record date="2021-05-20">
         <value>11</value>
         <description>id-regCtrl-algId</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>
       <record date="2021-05-20">
         <value>12</value>
         <description>id-regCtrl-rsaKeyLen</description>
-        <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
+        <xref type="draft" data="draft-ietf-lamps-cmp-updates-18"/>
       </record>
     </registry>
 
     <registry id="smi-numbers-1.3.6.1.5.5.7.5.1.7">
       <title>SMI Security for PKIX CRMF Registration Controls for Alternate Certificate Formats</title>
-      <xref type="draft" data="RFC-ietf-lamps-rfc7299-update-02"/>
+      <xref type="rfc" data="rfc9158"/>
       <registration_rule>Specification Required</registration_rule>
-       <expert>Unassigned</expert>
+       <expert>Russ Housley</expert>
        <description>PKIX (1.3.6.1.5.5.7.5.1.7)</description>
       <record date="2021-10-11">
         <value>1</value>
@@ -9196,6 +9211,11 @@ and id-dhPop-static-hmac-sha1.
          <description>id-on-AcpNodeName</description>
          <xref type="rfc" data="rfc8994"/>
        </record>
+       <record date="2021-11-24">
+        <value>11</value>
+        <description>id-on-bundleEID</description>
+        <xref type="rfc" data="rfc9174"/>
+      </record>
      </registry>
 
      <registry id="smi-numbers-1.3.6.1.5.5.7.9">
@@ -10120,7 +10140,7 @@ TESTING.
       <record date="2021-11-02">
         <value>1.3.6.1.5.5.11.0.1.2</value>
         <description>id-mod-ers-v2</description>
-        <xref type="draft" data="RFC-housley-ers-asn1-modules-03"/>
+        <xref type="rfc" data="rfc9169"/>
       </record>      
       <record date="2013-08-22">
         <value>1.3.6.1.5.5.11.0.2</value>
@@ -10175,7 +10195,7 @@ TESTING.
       <record date="2021-11-02">
         <value>1.3.6.1.5.5.11.0.5.2</value>
         <description>id-mod-ers-scvp-v2</description>
-        <xref type="draft" data="RFC-housley-ers-asn1-modules-03"/>
+        <xref type="rfc" data="rfc9169"/>
       </record>
       <record date="2013-08-22">
         <value>1.3.6.1.5.5.11.0.6</value>
@@ -11376,7 +11396,7 @@ of a specific mechanism.
     <xref type="rfc" data="rfc1157"/>
     <xref type="rfc" data="rfc1213"/>
     <description>iso.org.dod.internet.private.enterprise (1.3.6.1.4.1)</description>
-    <note>Registry List: <xref type="uri" data="http://www.iana.org/assignments/enterprise-numbers"/></note>
+    <note>Registry List: <xref type="uri" data="https://www.iana.org/assignments/enterprise-numbers"/></note>
     <registration_rule>First Come First Served</registration_rule>
   </registry>
   <registry id="smi-numbers-1.3.101">
@@ -12171,11 +12191,6 @@ of a specific mechanism.
       <name>Ross Harvey</name>
       <uri>mailto:ross&amp;teraflop.com</uri>
       <updated>1998-02</updated>
-    </person>
-    <person id="Russ_Housley">
-      <name>Russ Housley</name>
-      <uri>mailto:housley&amp;vigilsec.com</uri>
-      <updated>1997-01</updated>
     </person>
     <person id="Sandeep_Raghavendra">
       <name>Sandeep Raghavendra Rao</name>

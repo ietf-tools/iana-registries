@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                Subsequent Address Family Identifiers (SAFI) Parameters
 
    Created
            2000-07
 
    Last Updated
-           2021-09-08
+           2022-06-30
 
    Available Formats
            [IMG]
@@ -63,14 +65,18 @@ SAFI Values
      71    BGP-LS                                            [RFC7752]
      72    BGP-LS-VPN                                        [RFC7752]
      73    SR TE Policy SAFI                                 [draft-previdi-idr-segment-routing-te-policy]
-     74    SD-WAN Capabilities                               [draft-dunbar-idr-sdwan-port-safi]
+     74    SD-WAN Capabilities                               [draft-ietf-idr-sdwan-edge-discovery-03]
      75    Routing Policy SAFI                               [draft-ietf-idr-rpd-02]
      76    Classful-Transport SAFI                           [draft-kaliraj-idr-bgp-classful-transport-planes-00]
      77    Tunneled Traffic Flowspec                         [draft-ietf-idr-flowspec-nvo3-10]
      78    MCAST-TREE                                        [draft-ietf-bess-bgp-multicast-03]
      79    BGP-DPS (Dynamic Path Selection)                  [https://eos.arista.com/eos-4-26-2f/dps-vpn-scaling-using-bgp][Venkit_Kasiviswanathan]
-   80-127  Unassigned
-     128   MPLS-labeled VPN address                          [RFC4364][RFC8277]
+     80    BGP-LS-SPF                                        [draft-ietf-lsvr-bgp-spf-15][Victor_Kuarsingh]
+    81-82  Unassigned
+     83    BGP CAR                                           [draft-dskc-bess-bgp-car-03]
+     84    BGP VPN CAR                                       [draft-dskc-bess-bgp-car-03]
+   85-127  Unassigned
+     128   MPLS-labeled VPN address                          [RFC4364][RFC8277][RFC-ietf-bess-srv6-services-15]
      129   Multicast for BGP/MPLS IP Virtual Private         [RFC6513][RFC6514]
            Networks (VPNs)
    130-131 Reserved                                          [RFC4760]
@@ -88,4 +94,7 @@ SAFI Values
               ID                     Name                   Contact URI           Last Updated
    [Gargi_Nalawade]         Gargi Nalawade         mailto:gargi&cisco.com         2004-01
    [Venkit_Kasiviswanathan] Venkit Kasiviswanathan mailto:venkit&arista.com       2021-09-08
+   [Victor_Kuarsingh]       Victor Kuarsingh       mailto:victor&jvknet.com       2022-02-11
    [Yong_Cui]               Yong Cui               mailto:cuiyong&tsinghua.edu.cn 2006-09-20
+
+   Licensing Terms

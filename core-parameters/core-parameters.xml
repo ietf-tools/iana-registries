@@ -4,12 +4,12 @@
 <registry xmlns="http://www.iana.org/assignments" id="core-parameters">
   <title>Constrained RESTful Environments (CoRE) Parameters</title>
   <created>2012-06-08</created>
-  <updated>2021-11-11</updated>
+  <updated>2022-05-16</updated>
   
   <registry id="rt-link-target-att-value">
     <title>Resource Type (rt=) Link Target Attribute Values</title>
     <xref type="rfc" data="rfc6690"/>
-    <expert>Carsten Bormann, Jaime Jimenez</expert>
+    <expert>Carsten Bormann, Jaime Jimenez, Christian Amsüss</expert>
     <note>See <xref type="rfc" data="rfc6690"/>, Section 7.4 for mailing list information.
     </note>
     <range>
@@ -36,25 +36,25 @@
     <record date="2021-03-16">
       <value>core.rd</value>
       <description>Directory resource of an RD</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28">RFC-ietf-core-resource-directory-28, Section 4.3</xref>
+      <xref type="rfc" data="rfc9176">RFC9176, Section 4.3</xref>
       <notes/>
     </record>
     <record date="2021-03-16">
       <value>core.rd-ep</value>
       <description>Endpoint resource of an RD</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28">RFC-ietf-core-resource-directory-28, Section 6</xref>
+      <xref type="rfc" data="rfc9176">RFC9176, Section 6</xref>
       <notes/>
     </record>
     <record date="2021-03-16">
       <value>core.rd-lookup-ep</value>
       <description>Endpoint lookup of an RD</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28">RFC-ietf-core-resource-directory-28, Section 4.3</xref>
+      <xref type="rfc" data="rfc9176">RFC9176, Section 4.3</xref>
       <notes/>
     </record>
     <record date="2021-03-16">
       <value>core.rd-lookup-res</value>
       <description>Resource lookup of an RD</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28">RFC-ietf-core-resource-directory-28, Section 4.3</xref>
+      <xref type="rfc" data="rfc9176">RFC9176, Section 4.3</xref>
       <notes/>
     </record>
     <record date="2016-10-31">
@@ -1916,39 +1916,39 @@
     <record date="2020-01-21">
       <value>ace.est.crts</value>
       <description>This resource depicts the support of EST GET cacerts.</description>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18">RFC-ietf-ace-coap-est-18</xref>
+      <xref type="rfc" data="rfc9148">RFC9148</xref>
       <notes/>
     </record>
     <record date="2020-01-21">
       <value>ace.est.sen</value>
       <description>This resource depicts the support of EST simple enroll.</description>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18">RFC-ietf-ace-coap-est-18</xref>
+      <xref type="rfc" data="rfc9148">RFC9148</xref>
       <notes/>
     </record>
     <record date="2020-01-21">
       <value>ace.est.sren</value>
       <description>This resource depicts the support of EST simple reenroll.</description>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18">RFC-ietf-ace-coap-est-18</xref>
+      <xref type="rfc" data="rfc9148">RFC9148</xref>
       <notes/>
     </record>
     <record date="2020-01-21">
       <value>ace.est.att</value>
       <description>This resource depicts the support of EST GET CSR attributes.</description>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18">RFC-ietf-ace-coap-est-18</xref>
+      <xref type="rfc" data="rfc9148">RFC9148</xref>
       <notes/>
     </record>
     <record date="2020-01-21">
       <value>ace.est.skg</value>
       <description>This resource depicts the support of EST server-side key 
-generation with the returned certificate in a PKCS#7 container.</description>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18">RFC-ietf-ace-coap-est-18</xref>
+generation with the returned certificate in a PKCS #7 container.</description>
+      <xref type="rfc" data="rfc9148">RFC9148</xref>
       <notes/>
     </record>
     <record date="2020-01-21">
       <value>ace.est.skc</value>
       <description>This resource depicts the support of EST
 server-side key generation with the returned certificate in application/pkix-cert format.</description>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18">RFC-ietf-ace-coap-est-18</xref>
+      <xref type="rfc" data="rfc9148">RFC9148</xref> 
       <notes/>
     </record>
     <record date="2020-05-07">
@@ -2158,7 +2158,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record date="2021-07-27">
       <value>ace.ai</value>
       <description>ACE-OAuth authz-info endpoint resource.</description>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45"/>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46"/>
       <notes/>
     </record>
     <record date="2021-11-10">
@@ -2232,7 +2232,7 @@ server-side key generation with the returned certificate in application/pkix-cer
   <registry id="if-link-target-att-value">
     <title>Interface Description (if=) Link Target Attribute Values</title>
     <xref type="rfc" data="rfc6690"/>
-    <expert>Carsten Bormann, Jaime Jimenez</expert>
+    <expert>Carsten Bormann, Jaime Jimenez, Christian Amsüss</expert>
     <note>See <xref type="rfc" data="rfc6690"/>, Section 7.4 for mailing list information.
     </note>
     <range>
@@ -2333,7 +2333,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record>
       <value>0.01-0.31</value>
       <description>Indicates a request.  Values in this range are assigned by the 
-      <xref type="uri" data="http://www.iana.org/assignments/core-parameters/core-parameters.xhtml#method-codes">CoAP Method Codes</xref> sub-registry.</description>
+      <xref type="uri" data="https://www.iana.org/assignments/core-parameters/core-parameters.xhtml#method-codes">CoAP Method Codes</xref> sub-registry.</description>
       <xref type="rfc" data="rfc7252">RFC7252, section 12.1.1</xref>
     </record>    
     <record>
@@ -2344,7 +2344,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record>
       <value>2.00-5.31</value>
       <description>Indicates a response.  Values in this range are assigned by the 
-      <xref type="uri" data="http://www.iana.org/assignments/core-parameters/core-parameters.xhtml#response-codes">CoAP Response Codes</xref> sub-registry.</description>
+      <xref type="uri" data="https://www.iana.org/assignments/core-parameters/core-parameters.xhtml#response-codes">CoAP Response Codes</xref> sub-registry.</description>
       <xref type="rfc" data="rfc7252">RFC7252, section 12.1.2</xref>
     </record>
     <record>
@@ -2715,7 +2715,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record date="2021-06-01">
       <value>19</value>
       <description>Q-Block1</description>
-      <xref type="draft" data="RFC-ietf-core-new-block-14"/>
+      <xref type="rfc" data="rfc9177"/>
     </record>    
     <record>
       <value>20</value>
@@ -2763,7 +2763,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record date="2021-06-01">
       <value>31</value>
       <description>Q-Block2</description>
-      <xref type="draft" data="RFC-ietf-core-new-block-14"/>
+      <xref type="rfc" data="rfc9177"/>
     </record>  
     <record>
       <value>32-34</value>
@@ -2838,7 +2838,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record date="2021-10-13">
       <value>252</value>
       <description>Echo</description>
-      <xref type="draft" data="RFC-ietf-core-echo-request-tag-14"/>
+      <xref type="rfc" data="rfc9175"/>
     </record> 
     <record>
       <value>253-257</value>
@@ -2857,7 +2857,7 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record date="2021-10-13">
       <value>292</value>
       <description>Request-Tag</description>
-      <xref type="draft" data="RFC-ietf-core-echo-request-tag-14"/>
+      <xref type="rfc" data="rfc9175"/>
     </record>
     <record>
       <value>293-2048</value>
@@ -2941,7 +2941,7 @@ server-side key generation with the returned certificate in application/pkix-cer
       <mediatype>application/ace+cbor</mediatype>
       <encoding/>
       <id>19</id>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45"/>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46"/>
     </record>
     <record>
       <mediatype>Unassigned</mediatype>
@@ -2954,11 +2954,11 @@ server-side key generation with the returned certificate in application/pkix-cer
       <id>21</id>
       <xref type="uri" data="https://www.w3.org/Graphics/GIF/spec-gif89a.txt"/>
     </record>
-    <record date="2021-10-11">
+    <record date="2021-10-11" updated="2021-12-01">
       <mediatype>image/jpeg</mediatype>
       <encoding/>
       <id>22</id>
-      <xref type="text">ISO/IEC 10918</xref>
+      <xref type="uri" data="https://www.itu.int/rec/T-REC-T.871-201105-I/en">ISO/IEC 10918-5</xref>
     </record>
     <record date="2021-10-11">
       <mediatype>image/png</mediatype>
@@ -3136,7 +3136,18 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record>
       <mediatype>Unassigned</mediatype>
       <encoding/>
-      <id>116-255</id>
+      <id>116-139</id>
+    </record>
+    <record date="2022-04-13">
+      <mediatype>application/yang-data+cbor; id=sid</mediatype>
+      <encoding/>
+      <id>140</id>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
+    </record>
+    <record>
+      <mediatype>Unassigned</mediatype>
+      <encoding/>
+      <id>141-255</id>
     </record>
     <record date="2016-06-24" updated="2017-07-12">
       <mediatype>application/coap-group+json</mediatype>
@@ -3159,7 +3170,7 @@ server-side key generation with the returned certificate in application/pkix-cer
       <mediatype>application/missing-blocks+cbor-seq</mediatype>
       <encoding/>
       <id>272</id>
-      <xref type="draft" data="RFC-ietf-core-new-block-14"/>
+      <xref type="rfc" data="rfc9177"/>
     </record>
     <record>
       <mediatype>Unassigned</mediatype>
@@ -3172,14 +3183,14 @@ server-side key generation with the returned certificate in application/pkix-cer
       <id>280</id>
 	  <xref type="rfc" data="rfc7030"/>
       <xref type="rfc" data="rfc8551"/>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+      <xref type="rfc" data="rfc9148"/>
     </record>
     <record>
       <mediatype>application/pkcs7-mime; smime-type=certs-only</mediatype>
       <encoding/>
       <id>281</id>
       <xref type="rfc" data="rfc8551"/>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+      <xref type="rfc" data="rfc9148"/>
     </record>
     <record>
       <mediatype>Unassigned</mediatype>
@@ -3192,14 +3203,14 @@ server-side key generation with the returned certificate in application/pkix-cer
       <id>284</id>
 	  <xref type="rfc" data="rfc5958"/>
       <xref type="rfc" data="rfc8551"/>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+      <xref type="rfc" data="rfc9148"/>
     </record>
     <record>
       <mediatype>application/csrattrs</mediatype>
       <encoding/>
       <id>285</id>
       <xref type="rfc" data="rfc7030"/>
-	  <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+      <xref type="rfc" data="rfc9148"/>
     </record>
     <record>
       <mediatype>application/pkcs10</mediatype>
@@ -3207,19 +3218,36 @@ server-side key generation with the returned certificate in application/pkix-cer
       <id>286</id>
       <xref type="rfc" data="rfc5967"/>
       <xref type="rfc" data="rfc8551"/>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+      <xref type="rfc" data="rfc9148"/>
     </record>
     <record date="2020-01-21">
       <mediatype>application/pkix-cert</mediatype>
       <encoding/>
       <id>287</id>
       <xref type="rfc" data="rfc2585"/>
-      <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+      <xref type="rfc" data="rfc9148"/>
     </record>
     <record>
       <mediatype>Unassigned</mediatype>
       <encoding/>
-      <id>288-309</id>
+      <id>288-289</id>
+    </record>
+    <record date="2022-03-23">
+      <mediatype>application/aif+cbor</mediatype>
+      <encoding/>
+      <id>290</id>
+      <xref type="draft" data="RFC-ietf-ace-aif-07"/>
+    </record>
+    <record date="2022-03-23">
+      <mediatype>application/aif+json</mediatype>
+      <encoding/>
+      <id>291</id>
+      <xref type="draft" data="RFC-ietf-ace-aif-07"/>
+    </record>
+    <record>
+      <mediatype>Unassigned</mediatype>
+      <encoding/>
+      <id>292-309</id>
     </record>
     <record date="2018-06-01">
       <mediatype>application/senml+xml</mediatype>
@@ -3258,7 +3286,24 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record>
       <mediatype>Unassigned</mediatype>
       <encoding/>
-      <id>323-431</id>
+      <id>323-339</id>
+    </record>
+    <record date="2022-04-13">
+      <mediatype>application/yang-data+cbor</mediatype>
+      <encoding/>
+      <id>340</id>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
+    </record>
+    <record date="2022-04-13">
+      <mediatype>application/yang-data+cbor; id=name</mediatype>
+      <encoding/>
+      <id>341</id>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
+    </record>
+    <record>
+      <mediatype>Unassigned</mediatype>
+      <encoding/>
+      <id>342-431</id>
     </record>
     <record date="2020-02-20">
       <mediatype>application/td+json</mediatype>
@@ -3269,7 +3314,18 @@ server-side key generation with the returned certificate in application/pkix-cer
     <record>
       <mediatype>Unassigned</mediatype>
       <encoding/>
-      <id>433-1541</id>
+      <id>433-835</id>
+    </record>
+    <record date="2022-04-12">
+      <mediatype>application/voucher-cose+cbor (TEMPORARY - registered 2022-04-12, expires 2023-04-12)</mediatype>
+      <encoding/>
+      <id>836</id>
+      <xref type="draft" data="draft-ietf-anima-constrained-voucher-17"/>
+    </record>
+    <record>
+      <mediatype>Unassigned</mediatype>
+      <encoding/>
+      <id>837-1541</id>
     </record>
     <record date="2016-12-07">
       <mediatype>Reserved, do not use</mediatype>
@@ -3496,7 +3552,7 @@ server-side key generation with the returned certificate in application/pkix-cer
   <registry id="oscore-flag-bits">
     <title>OSCORE Flag Bits</title>
     <registration_rule>Expert Review</registration_rule>
-    <expert>Francesca Palombini, Goran Selander, Christian Amsuess</expert>
+    <expert>Francesca Palombini, Goran Selander, Christian Amsüss</expert>
     <xref type="rfc" data="rfc8613"/>
     <record date="2019-03-26">
       <value>0</value>
@@ -3544,15 +3600,15 @@ server-side key generation with the returned certificate in application/pkix-cer
   <registry id="rd-parameters">
     <title>RD Parameters</title>
     <registration_rule>Expert Review</registration_rule>
-    <expert>Unassigned</expert>
-    <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+    <expert>Carsten Bormann, Jaime Jiménez, Christian Amsüss</expert>
+    <xref type="rfc" data="rfc9176"/>
     <record date="2021-03-16">
       <name>Endpoint Name</name>
       <short>ep</short>
 	  <validity>Unicode*</validity>
       <use>RLA</use>
 	  <description>Name of the endpoint</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+    <xref type="rfc" data="rfc9176"/>
     </record>
     <record date="2021-03-16">
       <name>Lifetime</name>
@@ -3560,7 +3616,7 @@ server-side key generation with the returned certificate in application/pkix-cer
 	  <validity>1-4294967295</validity>
       <use>R</use>
 	  <description>Lifetime of the registration in seconds</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+    <xref type="rfc" data="rfc9176"/>
     </record>
     <record date="2021-03-16">
       <name>Sector</name>
@@ -3568,15 +3624,15 @@ server-side key generation with the returned certificate in application/pkix-cer
 	  <validity>Unicode*</validity>
       <use>RLA</use>
 	  <description>Sector to which this endpoint belongs</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+    <xref type="rfc" data="rfc9176"/>
     </record>
-    <record date="2021-03-16">
+    <record date="2021-03-16" updated="2022-04-14">
       <name>Registration Base URI</name>
       <short>base</short>
 	  <validity>URI</validity>
       <use>RLA</use>
-	  <description>The scheme, address and port and path at which this server is available</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+	  <description>The scheme, address, port, and path at which this server is available</description>
+    <xref type="rfc" data="rfc9176"/>
     </record>
     <record date="2021-03-16">
       <name>Page</name>
@@ -3584,7 +3640,7 @@ server-side key generation with the returned certificate in application/pkix-cer
 	  <validity>Integer</validity>
       <use>L</use>
 	  <description>Used for pagination</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+    <xref type="rfc" data="rfc9176"/>
     </record>
     <record date="2021-03-16">
       <name>Count</name>
@@ -3592,22 +3648,22 @@ server-side key generation with the returned certificate in application/pkix-cer
 	  <validity>Integer</validity>
       <use>L</use>
 	  <description>Used for pagination</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+    <xref type="rfc" data="rfc9176"/>
     </record>
     <record date="2021-03-16">
       <name>Endpoint Type</name>
       <short>et</short>
-	  <validity><xref type="draft" data="RFC-ietf-core-resource-directory-28">RFC-ietf-core-resource-directory-28, Section 9.3.1</xref></validity>
+	  <validity><xref type="rfc" data="rfc9176">RFC9176, Section 9.3.1</xref></validity>
       <use>RLA</use>
-	  <description>Semantic type of the endpoint (see <xref type="draft" data="RFC-ietf-core-resource-directory-28">RFC-ietf-core-resource-directory-28, Section 9.4</xref>)</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+	  <description>Semantic type of the endpoint (see<xref type="rfc" data="rfc9176">RFC9176, Section 9.4</xref>)</description>
+      <xref type="rfc" data="rfc9176"/>
     </record>
   </registry>
   
   <registry id="et-rd-parameter-value">
     <title>Endpoint Type (et=) RD Parameter Values</title>
-    <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
-    <expert>Unassigned</expert>
+    <xref type="rfc" data="rfc9176"/>
+    <expert>Carsten Bormann, Jaime Jiménez, Christian Amsüss</expert>
     <range>
       <value>value starts with "core"</value>
       <registration_rule>IETF Review</registration_rule>
@@ -3616,10 +3672,10 @@ server-side key generation with the returned certificate in application/pkix-cer
       <value>all other values</value>
       <registration_rule>Specification Required</registration_rule>
     </range>
-    <record date="2021-03-16">
+    <record date="2021-03-16" updated="2022-04-14">
       <value>core.rd-group</value>
-      <description>An application group as described in <xref type="draft" data="RFC-ietf-core-resource-directory-28"/> Appendix A.</description>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+      <description>An application group, as described in <xref type="rfc" data="rfc9176"/> Appendix A.</description>
+      <xref type="rfc" data="rfc9176"/>
       <notes/>
     </record>
   </registry>

@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                               Extensions for the Extensible Provisioning Protocol (EPP)
 
    Created
            2015-01-05
 
    Last Updated
-           2021-10-12
+           2022-01-04
 
    Available Formats
            [IMG]
@@ -286,14 +288,14 @@ Registration
 Extensible
 Provisioning
 Protocol      Standards
-(EPP) Secure  Track         [RFC-ietf-regext-secure-authinfo-transfer-07]                                              [IESG]                               Any   None                                     Active None
+(EPP) Secure  Track         [RFC9154]                                                                                  [IESG]                               Any   None                                     Active None
 Authorization
 Information
 for Transfer
 Registry
 Maintenance
 Notification
-for the       Standards     [RFC-ietf-regext-epp-registry-maintenance-19]                                              [IESG]                               Any   None                                     Active None
+for the       Standards     [RFC9167]                                                                                  [IESG]                               Any   None                                     Active None
 Extensible    Track
 Provisioning
 Protocol
@@ -306,3 +308,5 @@ Protocol
    [DK_Hostmaster_AS]                   DK Hostmaster A/S                  mailto:tech&dk-hostmaster.dk     2016-12-28
    [Internet_Infrastructure_Foundation] Internet Infrastructure Foundation mailto:hostmaster&iis.se         2015-06-23
    [VeriSign_Inc.]                      VeriSign Inc.                      mailto:epp-registry&verisign.com 2015-04-07
+
+   Licensing Terms

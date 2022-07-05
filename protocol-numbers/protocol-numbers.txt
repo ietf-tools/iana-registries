@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                                    Protocol Numbers
 
    Last Updated
-           2021-02-26
+           2021-04-07
 
    Available Formats
            [IMG]
@@ -48,7 +50,7 @@ Assigned Internet Protocol Numbers
       3    GGP                Gateway-to-Gateway                          [RFC823]
       4    IPv4               IPv4 encapsulation                          [RFC2003]
       5    ST                 Stream                                      [RFC1190][RFC1819]
-      6    TCP                Transmission Control                        [RFC793]
+      6    TCP                Transmission Control                        [RFC-ietf-tcpm-rfc793bis-28]
       7    CBT                CBT                                         [Tony_Ballardie]
       8    EGP                Exterior Gateway Protocol                   [RFC888][David_Mills]
                               any private interior gateway
@@ -326,3 +328,5 @@ Assigned Internet Protocol Numbers
    [Wesley_Craig]                        Wesley Craig                        mailto:Wesley.Craig&terminator.cc.umich.edu
    [William_Melohn]                      William Melohn                      mailto:Melohn&sun.com
    [Zaw_Sing_Su]                         Zaw-Sing Su                         mailto:ZSu&tsca.istc.sri.
+
+   Licensing Terms

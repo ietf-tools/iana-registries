@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                        Border Gateway Protocol (BGP) Parameters
 
    Last Updated
-           2021-10-19
+           2022-07-01
 
    Available Formats
            [IMG]
@@ -44,6 +46,9 @@
      * SFC SPI/SI Representation Flags
      * BFD Mode
      * BFD Discriminator Optional TLV Type
+     * SRv6 Service Sub-TLV Types
+     * SRv6 Service Data Sub-Sub-TLV Types
+     * BGP SRv6 Service SID Flags
 
 BGP Message Types
 
@@ -145,25 +150,18 @@ BGP Path Attributes
            2018-08-10,
            expires
            2019-07-28)
-           Only to Customer
-           (OTC) (TEMPORARY
-           - registered
-           2018-03-29,
-     35    extension         [draft-ietf-idr-bgp-open-policy]
-           registered
-           2021-02-19,
-           expires
-           2022-03-29)
+     35    Only to Customer  [RFC9234]
+           (OTC)
            BGP Domain Path
            (D-PATH)
            (TEMPORARY -
            registered
-     36    2019-07-08,       [draft-ietf-bess-evpn-ipvpn-interworking]
+     36    2019-07-08,       [draft-ietf-bess-evpn-ipvpn-interworking-06]
            extension
            registered
-           2021-06-18,
+           2022-05-13,
            expires
-           2022-07-08)
+           2023-07-08)
      37    SFP attribute     [RFC9015]
      38    BFD Discriminator [RFC9026]
      39    Unassigned
@@ -245,17 +243,20 @@ BGP Error Subcodes
            [IMG]
            CSV
 
-   Value                                                  Name                                                             Reference
-     0   Unspecific                                                                                             [RFC Errata 4493]
-     1   Unsupported Version Number                                                                             [RFC4271]
-     2   Bad Peer AS                                                                                            [RFC4271]
-     3   Bad BGP Identifier                                                                                     [RFC4271]
-     4   Unsupported Optional Parameter                                                                         [RFC4271]
-     5   [Deprecated]                                                                                           [RFC4271]
-     6   Unacceptable Hold Time                                                                                 [RFC4271]
-     7   Unsupported Capability                                                                                 [RFC5492]
-     8   Role Mismatch (TEMPORARY - registered 2018-03-29, extension registered 2021-02-19, expires 2022-03-29) [draft-ietf-idr-bgp-open-policy]
-   9-255 Unassigned
+   Value               Name                  Reference
+     0    Unspecific                     [RFC Errata 4493]
+     1    Unsupported Version Number     [RFC4271]
+     2    Bad Peer AS                    [RFC4271]
+     3    Bad BGP Identifier             [RFC4271]
+     4    Unsupported Optional Parameter [RFC4271]
+     5    [Deprecated]                   [RFC4271]
+     6    Unacceptable Hold Time         [RFC4271]
+     7    Unsupported Capability         [RFC5492]
+     8    Deprecated                     [RFC9234]
+     9    Deprecated                     [RFC9234]
+     10   Deprecated                     [RFC9234]
+     11   Role Mismatch                  [RFC9234]
+   12-255 Unassigned
 
   UPDATE Message Error subcodes
 
@@ -318,18 +319,19 @@ BGP Error Subcodes
            [IMG]
            CSV
 
-   Value                 Name                    Reference
+   Value                                Name                                          Reference
      0    Reserved
-     1    Maximum Number of Prefixes Reached [RFC4486]
-     2    Administrative Shutdown            [RFC4486][RFC9003]
-     3    Peer De-configured                 [RFC4486]
-     4    Administrative Reset               [RFC4486][RFC9003]
-     5    Connection Rejected                [RFC4486]
-     6    Other Configuration Change         [RFC4486]
-     7    Connection Collision Resolution    [RFC4486]
-     8    Out of Resources                   [RFC4486]
-     9    Hard Reset                         [RFC8538]
-   10-255 Unassigned
+     1    Maximum Number of Prefixes Reached                               [RFC4486]
+     2    Administrative Shutdown                                          [RFC4486][RFC9003]
+     3    Peer De-configured                                               [RFC4486]
+     4    Administrative Reset                                             [RFC4486][RFC9003]
+     5    Connection Rejected                                              [RFC4486]
+     6    Other Configuration Change                                       [RFC4486]
+     7    Connection Collision Resolution                                  [RFC4486]
+     8    Out of Resources                                                 [RFC4486]
+     9    Hard Reset                                                       [RFC8538]
+     10   BFD Down (TEMPORARY - registered 2022-02-23, expires 2023-02-23) [draft-ietf-idr-bfd-subcode-01]
+   11-255 Unassigned
 
   BGP ROUTE-REFRESH Message Error subcodes
 
@@ -398,7 +400,7 @@ BGP Tunnel Encapsulation Attribute Tunnel Types
 
    Note
 
- Moved to [http://www.iana.org/assignments/bgp-tunnel-encapsulation] per [RFC9012].
+ Moved to [https://www.iana.org/assignments/bgp-tunnel-encapsulation] per [RFC9012].
 
 
 BGP Tunnel Encapsulation Attribute Sub-TLVs
@@ -408,13 +410,19 @@ BGP Tunnel Encapsulation Attribute Sub-TLVs
 
    Note
 
- Moved to [http://www.iana.org/assignments/bgp-tunnel-encapsulation] per [RFC9012].
+ Moved to [https://www.iana.org/assignments/bgp-tunnel-encapsulation] per [RFC9012].
 
 
 BGP Layer 2 Encapsulation Types
 
    Reference
            [RFC6624]
+
+   Note
+
+ When this registry is modified, the YANG module [iana-bgp-l2-encaps] must be updated
+ as defined in [RFC-ietf-opsawg-l2nm-19].
+
 
    Available Formats
            [IMG]
@@ -549,8 +557,7 @@ P-Multicast Service Interface Tunnel (PMSI Tunnel) Tunnel Types
      0x07    mLDP MP2MP LSP                                                                                  [RFC6514]
      0x08    Transport Tunnel                                                                                [RFC7524]
      0x09    Unassigned
-     0x0A    Assisted-Replication Tunnel (TEMPORARY - registered 2016-06-30, extension registered            [draft-ietf-bess-evpn-optimized-ir]
-             2021-06-18, expires 2022-06-30)
+     0x0A    Assisted-Replication Tunnel                                                                     [RFC-ietf-bess-evpn-optimized-ir-12]
      0x0B    BIER                                                                                            [RFC8556]
      0x0C    SR-MPLS P2MP Tree (TEMPORARY - registered 2020-12-09, extension registered 2021-10-19, expires  [draft-ietf-bess-mvpn-evpn-sr-p2mp-01]
              2022-12-09)
@@ -574,16 +581,14 @@ P-Multicast Service Interface (PMSI) Tunnel Attribute Flags
            [IMG]
            CSV
 
-   Value                                                  Name                                                               Reference
+   Value                    Name                                  Reference
      0   Unassigned
-     1   Extension                                                                                              [RFC7902]
-     2   Leaf Information Required per-Flow (LIR-pF)                                                            [RFC8534]
-    3-4  Assisted-Replication Type (T) (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18,     [draft-ietf-bess-evpn-optimized-ir]
-         expires 2022-06-30)
-     5   Broadcast and Multicast (BM) (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18,      [draft-ietf-bess-evpn-optimized-ir]
-         expires 2022-06-30)
-     6   Unknown (U) (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18, expires 2022-06-30)   [draft-ietf-bess-evpn-optimized-ir]
-     7   Leaf Information Required (L)                                                                          [RFC6514]
+     1   Extension                                   [RFC7902]
+     2   Leaf Information Required per-Flow (LIR-pF) [RFC8534]
+    3-4  Assisted-Replication Type (T)               [RFC-ietf-bess-evpn-optimized-ir-12]
+     5   Broadcast and Multicast (BM)                [RFC-ietf-bess-evpn-optimized-ir-12]
+     6   Unknown (U)                                 [RFC-ietf-bess-evpn-optimized-ir-12]
+     7   Leaf Information Required (L)               [RFC6514]
 
 BGP MCAST-VPN Route Types
 
@@ -658,16 +663,16 @@ BGP Prefix-SID TLV Types
            [IMG]
            CSV
 
-   Value      Type                   Reference
-     0   Reserved        [RFC8669]
-     1   Label-Index     [RFC8669]
-     2   Deprecated      [RFC8669]
-     3   Originator SRGB [RFC8669]
-     4   Deprecated      [draft-ietf-bess-srv6-services-02]
-     5   SRv6 L3 Service [draft-ietf-bess-srv6-services-02]
-     6   SRv6 L2 Service [draft-ietf-bess-srv6-services-02]
+   Value        Type                    Reference
+     0   Reserved            [RFC8669]
+     1   Label-Index         [RFC8669]
+     2   Deprecated          [RFC8669]
+     3   Originator SRGB     [RFC8669]
+     4   Deprecated          [RFC-ietf-bess-srv6-services-15]
+     5   SRv6 L3 Service TLV [RFC-ietf-bess-srv6-services-15]
+     6   SRv6 L2 Service TLV [RFC-ietf-bess-srv6-services-15]
    7-254 Unassigned
-    255  Reserved        [RFC8669]
+    255  Reserved            [RFC8669]
 
 BGP Prefix-SID Label-Index TLV Flags
 
@@ -850,8 +855,66 @@ BFD Discriminator Optional TLV Type
    250-254 Experimental Use  [RFC9026]
      255   Reserved          [RFC9026]
 
+SRv6 Service Sub-TLV Types
+
+   Reference
+           [RFC-ietf-bess-srv6-services-15]
+
+   Available Formats
+           [IMG]
+           CSV
+
+    Range  Registration Procedures
+   0-127   IETF Review
+   128-254 First Come First Served
+   255     IETF Review
+
+   Value             Type                        Reference
+     0   Reserved                     [RFC-ietf-bess-srv6-services-15]
+     1   SRv6 SID Information Sub-TLV [RFC-ietf-bess-srv6-services-15]
+   2-254 Unassigned
+    255  Reserved                     [RFC-ietf-bess-srv6-services-15]
+
+SRv6 Service Data Sub-Sub-TLV Types
+
+   Reference
+           [RFC-ietf-bess-srv6-services-15]
+
+   Available Formats
+           [IMG]
+           CSV
+
+    Range  Registration Procedures
+   0-127   IETF Review
+   128-254 First Come First Served
+   255     IETF Review
+
+   Value              Type                         Reference
+     0   Reserved                       [RFC-ietf-bess-srv6-services-15]
+     1   SRv6 SID Structure Sub-Sub-TLV [RFC-ietf-bess-srv6-services-15]
+   2-254 Unassigned
+    255  Reserved                       [RFC-ietf-bess-srv6-services-15]
+
+BGP SRv6 Service SID Flags
+
+   Registration Procedure(s)
+
+ IETF Review
+
+   Reference
+           [RFC-ietf-bess-srv6-services-15]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit Position    Name    Reference
+       0-7      Unassigned
+
                                                                  Contact Information
 
           ID             Name            Contact URI       Last Updated
    [Eric_Rosen]     Eric Rosen     mailto:erosen&cisco.com 2010-02-23
    [Gargi_Nalawade] Gargi Nalawade mailto:gargi&cisco.com  2004-02
+
+   Licensing Terms

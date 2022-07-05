@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                       CBOR Object Signing and Encryption (COSE)
 
    Created
            2017-01-11
 
    Last Updated
-           2021-08-12
+           2022-01-25
 
    Available Formats
            [IMG]
@@ -198,7 +200,7 @@ COSE Algorithms
                         -65534
    Unassigned           to
                         -261
-   WalnutDSA            -260   WalnutDSA         [kty]                   [RFC9021]                                                      No
+   WalnutDSA            -260   WalnutDSA         [kty]                   [RFC9021][RFC-ietf-cose-rfc8152bis-algs-12]                    No
                                signature
    RS512                -259   RSASSA-PKCS1-v1_5 [kty]        IESG       [RFC8812][RFC-ietf-cose-rfc8152bis-algs-12]                    No
                                using SHA-512
@@ -434,11 +436,11 @@ COSE Key Type Parameters
    Key Type     Name      Label        CBOR Type                               Description                                   Reference
    1        crv           -1    int / tstr               EC identifier - Taken from the "COSE Elliptic Curves"   [RFC-ietf-cose-rfc8152bis-algs-12]
                                                          registry
-   1        x             -2    bstr                     x-coordinate                                            [RFC-ietf-cose-rfc8152bis-algs-12]
+   1        x             -2    bstr                     Public Key                                              [RFC-ietf-cose-rfc8152bis-algs-12]
    1        d             -4    bstr                     Private key                                             [RFC-ietf-cose-rfc8152bis-algs-12]
    2        crv           -1    int / tstr               EC identifier - Taken from the "COSE Elliptic Curves"   [RFC-ietf-cose-rfc8152bis-algs-12]
                                                          registry
-   2        x             -2    bstr                     Public Key                                              [RFC-ietf-cose-rfc8152bis-algs-12]
+   2        x             -2    bstr                     x-coordinate                                            [RFC-ietf-cose-rfc8152bis-algs-12]
    2        y             -3    bstr / bool              y-coordinate                                            [RFC-ietf-cose-rfc8152bis-algs-12]
    2        d             -4    bstr                     Private key                                             [RFC-ietf-cose-rfc8152bis-algs-12]
    3        n             -1    bstr                     the RSA modulus n                                       [RFC8230]
@@ -487,7 +489,7 @@ COSE Key Types
    RSA       3     RSA Key                                             [kty(3)]                 [RFC8230][RFC-ietf-cose-rfc8152bis-algs-12]
    Symmetric 4     Symmetric Keys                                      [kty(4)]                 [RFC-ietf-cose-rfc8152bis-algs-12]
    HSS-LMS   5     Public key for HSS/LMS hash-based digital signature [kty(5), hash algorithm] [RFC8778][RFC-ietf-cose-rfc8152bis-algs-12]
-   WalnutDSA 6     WalnutDSA public key                                [kty(6)]                 [RFC9021]
+   WalnutDSA 6     WalnutDSA public key                                [kty(6)]                 [RFC9021][RFC-ietf-cose-rfc8152bis-algs-12]
 
 COSE Elliptic Curves
 
@@ -524,3 +526,5 @@ COSE Elliptic Curves
    Ed25519              6                   OKP      Ed25519 for use w/ EdDSA only                   [RFC-ietf-cose-rfc8152bis-algs-12] Yes
    Ed448                7                   OKP      Ed448 for use w/ EdDSA only                     [RFC-ietf-cose-rfc8152bis-algs-12] Yes
    secp256k1            8                   EC2      SECG secp256k1 curve          IESG              [RFC8812]                          No
+
+   Licensing Terms

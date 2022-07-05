@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                    Locator/ID Separation Protocol (LISP) Parameters
 
    Created
            2012-04-25
 
    Last Updated
-           2021-03-25
+           2022-05-10
 
    Available Formats
            [IMG]
@@ -18,7 +20,7 @@
      * LISP Address Type Codes (CLOSED)
      * LISP Algorithm ID Numbers
      * LISP Crypto Cipher Suite
-     * LISP LCAF Type
+     * LISP Canonical Address Format (LCAF) Types
      * LISP Packet Types
      * LISP Shared Extension Message Type Sub-types
      * LISP-GPE Next Protocol
@@ -108,7 +110,7 @@ LISP Crypto Cipher Suite
    6     LISP_256_EC25519_CHACHA20_POLY1305 [RFC8061, Section 6]
    7-255 Unassigned
 
-LISP LCAF Type
+LISP Canonical Address Format (LCAF) Types
 
    Registration Procedure(s)
 
@@ -162,8 +164,8 @@ LISP Packet Types
    3    LISP Map-Register                                                                                          [RFC-draft-ietf-lisp-rfc6833bis]
    4    LISP Map-Notify                                                                                            [RFC-draft-ietf-lisp-rfc6833bis]
    5    LISP Map-Notify-Ack                                                                                        [RFC-draft-ietf-lisp-rfc6833bis]
-   6    LISP DDT Map-Referral (TEMPORARY - registered 2017-04-19, extension registered 2021-03-25, expires         [RFC8111]
-        2022-04-19)
+   6    LISP DDT Map-Referral (TEMPORARY - registered 2017-04-19, extension registered 2022-04-13, expires         [RFC8111]
+        2023-04-19)
    7    Unassigned
    8    LISP Encapsulated Control Message                                                                          [RFC-draft-ietf-lisp-rfc6833bis]
    9-14 Unassigned
@@ -225,7 +227,7 @@ LISP Control Plane Header Bits: Map-Request
 
    Expert(s)
 
- Unassigned
+ Albert Cabellos, Dino Farinacci
 
    Reference
            [RFC-draft-ietf-lisp-rfc6833bis]
@@ -252,7 +254,7 @@ LISP Control Plane Header Bits: Map-Reply
 
    Expert(s)
 
- Unassigned
+ Albert Cabellos, Dino Farinacci
 
    Reference
            [RFC-draft-ietf-lisp-rfc6833bis]
@@ -274,7 +276,7 @@ LISP Control Plane Header Bits: Map-Register
 
    Expert(s)
 
- Unassigned
+ Albert Cabellos, Dino Farinacci
 
    Reference
            [RFC-draft-ietf-lisp-rfc6833bis]
@@ -296,7 +298,7 @@ LISP Control Plane Header Bits: Encapsulated Control Message (ECM)
 
    Expert(s)
 
- Unassigned
+ Albert Cabellos, Dino Farinacci
 
    Reference
            [RFC-draft-ietf-lisp-rfc6833bis]
@@ -319,7 +321,7 @@ LISP Control Plane Header Bits: EID-Record
 
    Expert(s)
 
- Unassigned
+ Albert Cabellos, Dino Farinacci
 
    Reference
            [RFC-draft-ietf-lisp-rfc6833bis]
@@ -339,7 +341,7 @@ LISP Control Plane Header Bits: RLOC-Record
 
    Expert(s)
 
- Unassigned
+ Albert Cabellos, Dino Farinacci
 
    Reference
            [RFC-draft-ietf-lisp-rfc6833bis]
@@ -357,3 +359,5 @@ LISP Control Plane Header Bits: RLOC-Record
 
            ID                Name                    Contact URI             Last Updated
    [Mohamed_Boucadair] Mohamed_Boucadair mailto:mohamed.boucadair&orange.com 2017-05-01
+
+   Licensing Terms

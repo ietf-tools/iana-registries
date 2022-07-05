@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                         IPv6 Multicast Address Space Registry
 
    Last Updated
-           2021-05-24
+           2022-05-06
 
    Expert(s)
 
@@ -101,8 +103,7 @@ Node-Local Scope Multicast Addresses
    FF01:0:0:0:0:0:0:C                          variable scope allocation
    FF01:0:0:0:0:0:0:FB                         mDNSv6                    [RFC6762]                   2005-10-05
    FF01:0:0:0:0:0:0:FC-FF01:0:0:0:0:0:0:FD     variable scope allocation
-   FF01:0:0:0:0:0:0:100-FF01:0:0:0:0:0:0:171   variable scope allocation
-   FF01:0:0:0:0:0:0:175                        variable scope allocation
+   FF01:0:0:0:0:0:0:100-FF01:0:0:0:0:0:0:175   variable scope allocation
    FF01:0:0:0:0:0:0:181-FF01:0:0:0:0:0:0:184   variable scope allocation
    FF01:0:0:0:0:0:0:18C                        variable scope allocation
    FF01:0:0:0:0:0:0:201-FF01:0:0:0:0:0:0:202   variable scope allocation
@@ -166,8 +167,7 @@ Link-Local Scope Multicast Addresses
    FF02:0:0:0:0:0:0:6F                         iADT Discovery                    [Paul_Suhler]                                    2009-05-12
    FF02:0:0:0:0:0:0:FB                         mDNSv6                            [RFC6762]                                        2005-10-05
    FF02:0:0:0:0:0:0:FC-FF02:0:0:0:0:0:0:FD     variable scope allocation
-   FF02:0:0:0:0:0:0:100-FF02:0:0:0:0:0:0:171   variable scope allocation
-   FF02:0:0:0:0:0:0:175                        variable scope allocation
+   FF02:0:0:0:0:0:0:100-FF02:0:0:0:0:0:0:175   variable scope allocation
    FF02:0:0:0:0:0:0:181-FF02:0:0:0:0:0:0:184   variable scope allocation
    FF02:0:0:0:0:0:0:18C                        variable scope allocation
    FF02:0:0:0:0:0:0:201-FF02:0:0:0:0:0:0:202   variable scope allocation
@@ -215,8 +215,7 @@ Site-Local Scope Multicast Addresses
    FF05:0:0:0:0:0:0:C                          variable scope allocation
    FF05:0:0:0:0:0:0:FB                         mDNSv6                    [RFC6762]                   2005-10-05
    FF05:0:0:0:0:0:0:FC-FF05:0:0:0:0:0:0:FD     variable scope allocation
-   FF05:0:0:0:0:0:0:100-FF05:0:0:0:0:0:0:171   variable scope allocation
-   FF05:0:0:0:0:0:0:175                        variable scope allocation
+   FF05:0:0:0:0:0:0:100-FF05:0:0:0:0:0:0:175   variable scope allocation
    FF05:0:0:0:0:0:0:181-FF05:0:0:0:0:0:0:184   variable scope allocation
    FF05:0:0:0:0:0:0:18C                        variable scope allocation
    FF05:0:0:0:0:0:0:201-FF05:0:0:0:0:0:0:202   variable scope allocation
@@ -264,7 +263,7 @@ FF0X:0:0:0:0:0:0:C                          SSDP                 [UPnP_Forum]   
 FF0X:0:0:0:0:0:0:FB                         mDNSv6               [RFC6762]                                                       2005-10-05
 FF0X:0:0:0:0:0:0:FC                         ALL_MPL_FORWARDERS   [RFC7731]                                                       2013-04-10
 FF0X:0:0:0:0:0:0:FD                         All CoAP Nodes       [RFC7252]                                                       2013-07-25
-FF0X:0:0:0:0:0:0:FE                         all CoRE Resource    [RFC-ietf-core-resource-directory-28]                           2021-03-16
+FF0X:0:0:0:0:0:0:FE                         All CoRE Resource    [RFC9176]                                                       2021-03-16
                                             Directories
 FF0X:0:0:0:0:0:0:FF                         Unassigned
 FF0X:0:0:0:0:0:0:100                        VMTP Managers Group  [RFC1045][Dave_Cheriton]
@@ -327,8 +326,8 @@ FF0X:0:0:0:0:0:0:131                        Systech Mcast        [Dan_Jakubiec] 
 FF0X:0:0:0:0:0:0:132                        omasg                [Mark_Lipford]                                                  2006-09-21
 FF0X:0:0:0:0:0:0:133                        ASAP                 [RFC5352]
 FF0X:0:0:0:0:0:0:134                        unserding            [Sebastian_Freundt]                                             2009-11-30
-FF0X:0:0:0:0:0:0:135                        PHILIPS-HEALTH       [Anthony_Kandaya]                                               2010-02-26
-FF0X:0:0:0:0:0:0:136                        PHILIPS-HEALTH       [Anthony_Kandaya]                                               2010-02-26
+FF0X:0:0:0:0:0:0:135                        PHILIPS-HEALTH       [Mike_King][William_Holden]             [Philips_Healthcare]    2010-02-26
+FF0X:0:0:0:0:0:0:136                        PHILIPS-HEALTH       [Mike_King][William_Holden]             [Philips_Healthcare]    2010-02-26
 FF0X:0:0:0:0:0:0:137                        Niagara              [Owen_Michael_James]                                            2010-09-13
 FF0X:0:0:0:0:0:0:138                        LXI-EVENT            [Tom_Fay]                                                       2011-01-31
 FF0X:0:0:0:0:0:0:139                        LANCOM Discover      [Martin_Krebs]                                                  2011-05-09
@@ -364,7 +363,9 @@ FF0X:0:0:0:0:0:0:160-FF0X:0:0:0:0:0:0:16F   NMEA OneNet          [Steve_Spitzer]
 FF0X:0:0:0:0:0:0:170                        Nix Local Binary     [Andreas_Rammhold]                                              2019-10-02
                                             Caches
 FF0X:0:0:0:0:0:0:171                        GNodes               [Giuseppe_Gori]                                                 2021-02-12
-FF0X:0:0:0:0:0:0:172-FF0X:0:0:0:0:0:0:174   Unassigned
+FF0X:0:0:0:0:0:0:172                        SentryPeer           [Gavin_Henry]                                                   2022-01-26
+FF0X:0:0:0:0:0:0:173                        EggShell             [Momar_Mbergan]                         [Momar_Mbergan]         2022-02-17
+FF0X:0:0:0:0:0:0:174                        IoT42                [Stephen_Williams]                      [Stephen_Williams]      2022-05-06
 FF0X:0:0:0:0:0:0:175                        all SIP servers      [Rick_van_Rein]                                                 2015-07-21
 FF0X:0:0:0:0:0:0:176-FF0X:0:0:0:0:0:0:180   Unassigned
 FF0X:0:0:0:0:0:0:181                        PTP-primary          [http://ieee1588.nist.gov/][Kang_Lee]                           2007-02-02
@@ -415,7 +416,7 @@ Unicast-based (Including SSM) Multicast Group IDs
  address use, but are currently invalid.
  FF3X:0:0:0:0:0:0:0-FF3X:0:FFFF:FFFF:FFFF:FFFF:FFFF:FFFF (FF3X:0::/32)
 
- FF3X:0:0:0:0:0:4000:0-FF3X:0:0:0:0:0:7FFF:FFFF - Expert Review; see registry at [http://www.iana.org/assignments/perm-mcast-groupids]
+ FF3X:0:0:0:0:0:4000:0-FF3X:0:0:0:0:0:7FFF:FFFF - Expert Review; see registry at [https://www.iana.org/assignments/perm-mcast-groupids]
  FF3X:0:0:0:0:0:8000:0-FF3X:0:0:0:0:0:FFFF:FFFF - Dynamically allocated by hosts when needed [RFC4607].
 
 
@@ -462,6 +463,7 @@ Unicast-based (Including SSM) Multicast Group IDs
    [Dotty_Yackle]            Dotty Yackle                                                mailto:ditty_yackle&dantz.com               1996-02-01
    [Erik_Guttman]            Erik Guttman                                                mailto:erik.guttman&sun.com                 2001-05-01
    [Ernst_EDER]              Ernst EDER                                                  mailto:tech&lonmark.org                     2018-11-15
+   [Gavin_Henry]             Gavin Henry                                                 mailto:ghenry&sentrypeer.org                2022-01-26
    [Giuseppe_Gori]           Giuseppe Gori                                               mailto:ggori&gorbyte.com                    2021-02-12
    [Hanno_Tersteegen]        Hanno Tersteegen                                            mailto:hanno.tersteegen&fokus.fraunhofer.de 2004-05-01
    [Hiroshi_Okubo]           Hiroshi Okubo                                               mailto:okubo.hiroshi&canon.co.jp            2014-08-01
@@ -488,13 +490,16 @@ Unicast-based (Including SSM) Multicast Group IDs
    [Mellanox]                Mellanox Technologies, Inc.                                 mailto:info&mellanox.com                    2019-07-02
    [Meridian_Labs_LTD]                                              Meridian Labs LTD.   mailto:mark.wood&meridianlabs.org           2020-10-07
    [Michael_Richardson]      Michael Richardson                                          mailto:mcr&sandelman.ca                     2010-11-30
+   [Mike_King]               Mike King                                                   mailto:mike.king&philips.com                2022-02-10
    [Mike_Pontillo]           Mike Pontillo                                               mailto:mike.pontillo&canonical.com          2017-05-19
+   [Momar_Mbergan]           Momar Mbergan                                               mailto:Myamomar&gmail.com                   2022-02-17
    [Moritz_Vieth]            Moritz Vieth                                                mailto:moritz.vieth&fokus.fraunhofer.de     2004-05-01
    [Nathan_Karstens]         Nathan Karstens                                             mailto:nettel&garmin.com                    2015-02-19
    [Owen_Michael_James]      Owen Michael James                                          mailto:mjames&tridium.com                   2010-09-13
    [Patrik_Lahti]            Patrik Lahti                                                mailto:bluecookiemonster&gmail.com          2013-08-13
    [Paul_Suhler]             Paul Suhler                                                 mailto:paul.suhler&quantum.com              2009-05-12
    [Peter_Grahame_Firmstone] Peter Grahame Firmstone                                     mailto:peter.firmstone&zeus.net.au          2015-08-27
+   [Philips_Healthcare]                                             Philips Healthcare   mailto:bill.holden&philips.com              2022-02-10
    [Rick_van_Rein]           Rick van Rein                                               mailto:rick&openfortress.nl                 2015-07-21
    [Rob_Janssen]             Rob Janssen                                                 mailto:rob&pe1chl.ampr.org                  1995-01-01
    [Rolf_Wojtech]            Rolf Wojtech                                                mailto:rolf.wojtech&fos4x.de                2011-12-07
@@ -504,6 +509,7 @@ Unicast-based (Including SSM) Multicast Group IDs
    [Shachar_Dor]             Shachar Dor                                                 mailto:shachard&mellanox.com                2019-07-01
    [Stephan_Gatzka]          Stephan Gatzka                                              mailto:stephan.gatzka&hbm.com               2015-10-26
    [Stephane_Lejeune]        Stephane Lejeune                                            mailto:stlejeun&cisco.com                   2016-07-07
+   [Stephen_Williams]        Stephen Williams                                            mailto:steve&iot42.org                      2022-05-06
    [Steve_Casner]            Steve Casner                                                mailto:casner&isi.edu                       1995-01-01
    [Steve_Deering]           Steve Deering                                               mailto:deering&cisco.com
    [Steve_Spitzer]           Steve Spitzer                                               mailto:sspitzer&nmea.org                    2015-06-29
@@ -512,7 +518,10 @@ Unicast-based (Including SSM) Multicast Group IDs
    [Toine_C._Leerentveld]    Toine C. Leerentveld                                        mailto:tleerentveld&crestron.com            2016-09-27
    [Tom_Fay]                 Tom Fay                                                     mailto:tom_fay&agilent.com                  2011-01-31
    [UPnP_Forum]              UPnP Forum                                                  mailto:upnpadmin&forum.upnp.org             2006-09-21
+   [William_Holden]          William Holden                                              mailto:bill.holden&philips.com              2022-02-10
    [Xiaoyu_Zhou]             Xiaoyu Zhou                                                 mailto:zhouxyi&lenovo.com                   2009-01-20
    [Yea_Uang]                Yea Uang                                                    mailto:uang&force.decnet.lockheed.com       1994-11-01
    [Yusuke_Doi]              Yusuke Doi                                                  mailto:yusuke.doi&toshiba.co.jp             2015-08-21
    [Yuuki_Hara]              Yuuki Hara                                                  mailto:yuuki_hara&sanyodenki.co.jp          2014-03-20
+
+   Licensing Terms

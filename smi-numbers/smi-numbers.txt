@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                      Structure of Management Information (SMI) Numbers (MIB Module Registrations)
 
    Last Updated
-           2021-11-08
+           2022-07-01
 
    Note
 
@@ -1908,7 +1910,7 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
      57    id-mod-cmsAuthEnvData-2009             [RFC6268]
      58    id-mod-cms-2009                        [RFC6268]
      59    id-mod-multipleSign-2009               [RFC6268]
-     60    id-mod-rpkiManifest                    [RFC6486]
+     60    id-mod-rpkiManifest                    [RFC9286]
      61    id-mod-rpkiROA                         [RFC6482]
      62    id-mod-setKeyAttributeV1               [draft-herzog-setkey]
      63    id-mod-keyPkgReceiptAndErrV2           [RFC7191]
@@ -1966,7 +1968,7 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
      23    id-ct-authEnvelopedData    [RFC5083]
      24    id-ct-routeOriginAuthz     [RFC6482]
      25    id-ct-KP-sKeyPackage       [RFC6031]
-     26    id-ct-rpkiManifest         [RFC6486]
+     26    id-ct-rpkiManifest         [RFC9286]
      27    id-ct-asciiTextWithCRLF    [RFC5485]
      28    id-ct-xml                  [RFC5485]
      29    id-ct-pdf                  [RFC5485]
@@ -2604,10 +2606,11 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
      96    id-mod-MASAURLExtn2016           [RFC8995]
      97    id-mod-anima-acpnodename-2020    [RFC8994]
      98    id-mod-est-2019                  [RFC8951]
-     99    id-mod-cmp2021-88                [draft-ietf-lamps-cmp-updates-10]
-     100   id-mod-cmp2021-02                [draft-ietf-lamps-cmp-updates-10]
+     99    id-mod-cmp2021-88                [draft-ietf-lamps-cmp-updates-18]
+     100   id-mod-cmp2021-02                [draft-ietf-lamps-cmp-updates-18]
      101   id-mod-eJWTClaimConstraints-2021 [RFC9118]
-     102   id-mod-public-notary-v2          [RFC-ietf-trans-rfc6962-bis-41]
+     102   id-mod-public-notary-v2          [RFC9162]
+     103   id-mod-dtn-tcpclv4-2021          [RFC9174]
 
   SMI Security for PKIX Certificate Extension
 
@@ -2714,7 +2717,7 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
            [IMG]
            CSV
 
-   Decimal                 Description                            References
+   Decimal                 Description                             References
       1    id-kp-serverAuth                             [RFC2459]
       2    id-kp-clientAuth                             [RFC2459]
       3    id-kp-codeSigning                            [RFC2459]
@@ -2746,10 +2749,10 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
      29    id-kp-cmcArchive                             [RFC6402]
      30    id-kp-bgpsec-router                          [RFC8209]
      31    id-kp-BrandIndicatorforMessageIdentification [draft-chuang-bimi-certificate]
-     32    id-kp-cmKGA                                  [draft-ietf-lamps-cmp-updates]
+     32    id-kp-cmKGA                                  [draft-ietf-lamps-cmp-updates-18]
      33    id-kp-rpcTLSClient                           [RFC-ietf-nfsv4-rpc-tls-10]
      34    id-kp-rpcTLSServer                           [RFC-ietf-nfsv4-rpc-tls-10]
-     35    id-kp-bundleSecurity                         [RFC-ietf-dtn-tcpclv4-26]
+     35    id-kp-bundleSecurity                         [RFC9174]
 
   SMI Security for PKIX CMP Information Types
 
@@ -2789,11 +2792,13 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
      14    id-it-confirmWaitTime      [RFC4210]
      15    id-it-origPKIMessage       [RFC4210]
      16    id-it-suppLangTags         [RFC4210]
-     17    id-it-caCerts              [draft-ietf-lamps-cmp-updates-10]
-     18    id-it-rootCaKeyUpdate      [draft-ietf-lamps-cmp-updates-10]
-     19    id-it-certReqTemplate      [draft-ietf-lamps-cmp-updates-10]
-     20    id-it-rootCaCert           [draft-ietf-lamps-cmp-updates-10]
-     21    id-it-certProfile          [draft-ietf-lamps-cmp-updates-10]
+     17    id-it-caCerts              [draft-ietf-lamps-cmp-updates-18]
+     18    id-it-rootCaKeyUpdate      [draft-ietf-lamps-cmp-updates-18]
+     19    id-it-certReqTemplate      [draft-ietf-lamps-cmp-updates-18]
+     20    id-it-rootCaCert           [draft-ietf-lamps-cmp-updates-18]
+     21    id-it-certProfile          [draft-ietf-lamps-cmp-updates-18]
+     22    id-it-crlStatusList        [draft-ietf-lamps-cmp-updates-18]
+     23    id-it-crls                 [draft-ietf-lamps-cmp-updates-18]
 
   SMI Security for PKIX CRMF Registration
 
@@ -2853,8 +2858,8 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
       8    id-regCtrl-wtlsTemplate       [Reserved and Obsolete]
       9    id-regCtrl-regTokenUTF8       [Reserved and Obsolete]
      10    id-regCtrl-authenticatorUTF8  [Reserved and Obsolete]
-     11    id-regCtrl-algId              [draft-ietf-lamps-cmp-updates-10]
-     12    id-regCtrl-rsaKeyLen          [draft-ietf-lamps-cmp-updates-10]
+     11    id-regCtrl-algId              [draft-ietf-lamps-cmp-updates-18]
+     12    id-regCtrl-rsaKeyLen          [draft-ietf-lamps-cmp-updates-18]
 
   SMI Security for PKIX CRMF Registration Controls for Alternate Certificate Formats
 
@@ -2864,14 +2869,14 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
 
    Expert(s)
 
- Unassigned
+ Russ Housley
 
    Description
 
  PKIX (1.3.6.1.5.5.7.5.1.7)
 
    Reference
-           [RFC-ietf-lamps-rfc7299-update-02]
+           [RFC9158]
 
    Available Formats
            [IMG]
@@ -3079,6 +3084,7 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
       8    id-on-naiRealm            [RFC7585]
       9    id-on-SmtpUTF8Mailbox     [RFC8398]
      10    id-on-AcpNodeName         [RFC8994]
+     11    id-on-bundleEID           [RFC9174]
 
   SMI Security for PKIX Personal Data Attributes
 
@@ -3864,10 +3870,10 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
            [IMG]
            CSV
 
-        OID Value          Description                References
+        OID Value          Description     References
    1.3.6.1.5.5.11.0.1   id-mod-ers         [RFC4998]
    1.3.6.1.5.5.11.0.1.1 id-mod-ers-v1      [RFC4998]
-   1.3.6.1.5.5.11.0.1.2 id-mod-ers-v2      [RFC-housley-ers-asn1-modules-03]
+   1.3.6.1.5.5.11.0.1.2 id-mod-ers-v2      [RFC9169]
    1.3.6.1.5.5.11.0.2   id-mod-ers88       [RFC4998]
    1.3.6.1.5.5.11.0.2.1 id-mod-ers88-v1    [RFC4998]
    1.3.6.1.5.5.11.0.3   id-mod-ltap88      [Reserved]
@@ -3878,7 +3884,7 @@ SMI Security Codes (including S/MIME, PKIX and LTANS)
    1.3.6.1.5.5.11.0.4.1 id-mod-ltap-v1     [Reserved]
    1.3.6.1.5.5.11.0.5   id-mod-ers-scvp    [RFC5276]
    1.3.6.1.5.5.11.0.5.1 id-mod-ers-scvp-v1 [RFC5276]
-   1.3.6.1.5.5.11.0.5.2 id-mod-ers-scvp-v2 [RFC-housley-ers-asn1-modules-03]
+   1.3.6.1.5.5.11.0.5.2 id-mod-ers-scvp-v2 [RFC9169]
    1.3.6.1.5.5.11.0.6   id-mod-dssc88      [RFC5698]
    1.3.6.1.5.5.11.0.6.1 id-mod-dssc88-v1   [RFC5698]
    1.3.6.1.5.5.11.0.7   id-mod-dssc        [RFC5698]
@@ -4769,7 +4775,7 @@ SMI Network Management Private Enterprise Codes (PEN)
 
    Note
 
- Registry List: [http://www.iana.org/assignments/enterprise-numbers]
+ Registry List: [https://www.iana.org/assignments/enterprise-numbers]
 
    Registry is empty.
 
@@ -4966,7 +4972,6 @@ SMI Security for Cryptographic Algorithms
    [Ron_Bergman]          Ron Bergman                         mailto:Ron.Bergman&hitachi-hkis.com               2001-06
    [Ron_Carmona]          Ron Carmona                         mailto:RCarmona&micom.com                         1998-04
    [Ross_Harvey]          Ross Harvey                         mailto:ross&teraflop.com                          1998-02
-   [Russ_Housley]         Russ Housley                        mailto:housley&vigilsec.com                       1997-01
    [Sandeep_Raghavendra]  Sandeep Raghavendra Rao             mailto:rsandeep&cisco.com                         2003-08
    [Satish_Popat]         Satish Popat                        mailto:satish&terminus.ericsson.se                1995-03
    [Sean_Siler]           Sean Siler                          mailto:sean.siler&microsoft.com                   2009-02-09
@@ -4998,3 +5003,5 @@ SMI Security for Cryptographic Algorithms
                                                                        Footnote
 
    [1] obsoleted
+
+   Licensing Terms

@@ -3,7 +3,7 @@
 <?xml-model href="bgp-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="bgp-parameters">
   <title>Border Gateway Protocol (BGP) Parameters</title>
-  <updated>2021-10-19</updated>
+  <updated>2022-07-01</updated>
 
 
   <registry id="bgp-parameters-1">
@@ -237,15 +237,15 @@ Work in progress, March 1996.</xref>
         (TEMPORARY - registered 2017-07-28, extension registered 2018-08-10, expires 2019-07-28)</code>
       <xref type="draft" data="draft-ietf-idr-wide-bgp-communities"/>
     </record>
-    <record date="2018-03-29" updated="2021-02-19">
+    <record date="2018-03-29" updated="2021-03-31">
       <value>35</value>
-      <code>Only to Customer (OTC) (TEMPORARY - registered 2018-03-29, extension registered 2021-02-19, expires 2022-03-29)</code>
-      <xref type="draft" data="draft-ietf-idr-bgp-open-policy"/>
+      <code>Only to Customer (OTC)</code>
+      <xref type="rfc" data="rfc9234"/>
     </record>
     <record date="2019-07-08">
       <value>36</value>
-      <code>BGP Domain Path (D-PATH) (TEMPORARY - registered 2019-07-08, extension registered 2021-06-18, expires 2022-07-08)</code>
-      <xref type="draft" data="draft-ietf-bess-evpn-ipvpn-interworking"/>
+      <code>BGP Domain Path (D-PATH) (TEMPORARY - registered 2019-07-08, extension registered 2022-05-13, expires 2023-07-08)</code>
+      <xref type="draft" data="draft-ietf-bess-evpn-ipvpn-interworking-06"/>
     </record>
     <record date="2020-09-02">
       <value>37</value>
@@ -440,13 +440,28 @@ Work in progress, March 1996.</xref>
         <name>Unsupported Capability</name>
         <xref type="rfc" data="rfc5492"/>
       </record>
-      <record date="2018-03-29">
+      <record date="2018-03-29" updated="2022-03-31">
         <value>8</value>
-        <name>Role Mismatch (TEMPORARY - registered 2018-03-29, extension registered 2021-02-19, expires 2022-03-29)</name>
-        <xref type="draft" data="draft-ietf-idr-bgp-open-policy"/>
+        <name>Deprecated</name>
+        <xref type="rfc" data="rfc9234"/>
+      </record>
+      <record date="2022-03-31">
+        <value>9</value>
+        <name>Deprecated</name>
+        <xref type="rfc" data="rfc9234"/>
+      </record>
+      <record date="2022-03-31">
+        <value>10</value>
+        <name>Deprecated</name>
+        <xref type="rfc" data="rfc9234"/>
+      </record>
+      <record date="2022-03-31">
+        <value>11</value>
+        <name>Role Mismatch</name>
+        <xref type="rfc" data="rfc9234"/>
       </record>
       <record>
-        <value>9-255</value>
+        <value>12-255</value>
         <name>Unassigned</name>
       </record>
     </registry>
@@ -606,8 +621,13 @@ Work in progress, March 1996.</xref>
       <name>Hard Reset</name>
       <xref type="rfc" data="rfc8538"/>
     </record>
+    <record date="2022-02-22">
+      <value>10</value>
+      <name>BFD Down (TEMPORARY - registered 2022-02-23, expires 2023-02-23)</name>
+      <xref type="draft" data="draft-ietf-idr-bfd-subcode-01"/>
+    </record>
     <record>
-      <value>10-255</value>
+      <value>11-255</value>
       <name>Unassigned</name>
     </record>
   </registry>
@@ -725,7 +745,7 @@ Work in progress, March 1996.</xref>
     <title>BGP Tunnel Encapsulation Attribute Tunnel Types</title>
     <hide/>
     <xref type="rfc" data="rfc9012"/>
-    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/bgp-tunnel-encapsulation"/> per <xref type="rfc" data="rfc9012"/>.
+    <note>Moved to <xref type="uri" data="https://www.iana.org/assignments/bgp-tunnel-encapsulation"/> per <xref type="rfc" data="rfc9012"/>.
     </note>
   </registry>  
 
@@ -734,7 +754,7 @@ Work in progress, March 1996.</xref>
     <title>BGP Tunnel Encapsulation Attribute Sub-TLVs</title>
       <hide/>
       <xref type="rfc" data="rfc9012"/>
-      <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/bgp-tunnel-encapsulation"/> per <xref type="rfc" data="rfc9012"/>.
+      <note>Moved to <xref type="uri" data="https://www.iana.org/assignments/bgp-tunnel-encapsulation"/> per <xref type="rfc" data="rfc9012"/>.
       </note>
     </registry>
 
@@ -742,6 +762,9 @@ Work in progress, March 1996.</xref>
     <registry id="bgp-l2-encapsulation-types-registry">
       <title>BGP Layer 2 Encapsulation Types</title>
       <xref type="rfc" data="rfc6624"/>
+      <note>When this registry is modified, the YANG module <xref type="registry" data="iana-bgp-l2-encaps">iana-bgp-l2-encaps</xref> must be updated 
+as defined in <xref type="draft" data="RFC-ietf-opsawg-l2nm-19"/>.
+      </note>
       <range>
         <value>0-127</value>
         <registration_rule>Expert Review</registration_rule>
@@ -1079,10 +1102,10 @@ Work in progress, March 1996.</xref>
       <value>0x09</value>
       <name>Unassigned</name>
    </record>
-   <record date="2016-06-30">
+   <record date="2016-06-30" updated="2022-01-26">
      <value>0x0A</value>
-     <name>Assisted-Replication Tunnel (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18, expires 2022-06-30)</name>
-     <xref type="draft" data="draft-ietf-bess-evpn-optimized-ir"/>
+     <name>Assisted-Replication Tunnel</name>
+     <xref type="draft" data="RFC-ietf-bess-evpn-optimized-ir-12"/>
    </record>
    <record date="2017-06-29">
       <value>0x0B</value>
@@ -1143,23 +1166,20 @@ Work in progress, March 1996.</xref>
       <name>Leaf Information Required per-Flow (LIR-pF)</name>
       <xref type="rfc" data="rfc8534"/>
     </record>
-    <record date="2016-06-30">
+    <record date="2016-06-30" updated="2022-01-26">
       <value>3-4</value>
-      <name>Assisted-Replication Type (T) 
-        (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18, expires 2022-06-30)</name>
-      <xref type="draft" data="draft-ietf-bess-evpn-optimized-ir"/>
+      <name>Assisted-Replication Type (T)</name>
+      <xref type="draft" data="RFC-ietf-bess-evpn-optimized-ir-12"/>
     </record>
-    <record date="2016-06-30">
+    <record date="2016-06-30" updated="2022-01-26">
       <value>5</value>
-      <name>Broadcast and Multicast (BM) 
-        (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18, expires 2022-06-30)</name>
-      <xref type="draft" data="draft-ietf-bess-evpn-optimized-ir"/>
+      <name>Broadcast and Multicast (BM)</name>
+      <xref type="draft" data="RFC-ietf-bess-evpn-optimized-ir-12"/>
     </record>
-    <record date="2016-06-30">
+    <record date="2016-06-30" updated="2022-01-26">
       <value>6</value>
-      <name>Unknown (U) 
-        (TEMPORARY - registered 2016-06-30, extension registered 2021-06-18, expires 2022-06-30)</name>
-      <xref type="draft" data="draft-ietf-bess-evpn-optimized-ir"/>
+      <name>Unknown (U)</name>
+        <xref type="draft" data="RFC-ietf-bess-evpn-optimized-ir-12"/>
     </record>
     <record date="2016-05-12">
       <value>7</value>
@@ -1311,17 +1331,17 @@ anyway, and marked as "Reserved."
     <record date="2020-05-29">
       <value>4</value>
       <name>Deprecated</name>
-      <xref type="draft" data="draft-ietf-bess-srv6-services-02"/>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
     </record>
-    <record date="2020-05-29">
+    <record date="2020-05-29" updated="2022-07-01">
       <value>5</value>
-      <name>SRv6 L3 Service</name>
-      <xref type="draft" data="draft-ietf-bess-srv6-services-02"/>
+      <name>SRv6 L3 Service TLV</name>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
     </record>
-    <record date="2020-05-29">
+    <record date="2020-05-29" updated="2022-07-01">
       <value>6</value>
-      <name>SRv6 L2 Service</name>
-      <xref type="draft" data="draft-ietf-bess-srv6-services-02"/>
+      <name>SRv6 L2 Service TLV</name>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
     </record>
     <record>
       <value>7-254</value>
@@ -1599,7 +1619,89 @@ anyway, and marked as "Reserved."
       <xref type="rfc" data="rfc9026"/>
     </record>
   </registry>
+
+  <registry id="srv6-service-sub-tlv-types">
+    <title>SRv6 Service Sub-TLV Types</title>
+    <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    <range>
+      <value>0-127</value>
+      <registration_rule>IETF Review</registration_rule>
+    </range>
+    <range>
+      <value>128-254</value>
+      <registration_rule>First Come First Served</registration_rule>
+    </range>
+    <range>
+      <value>255</value>
+      <registration_rule>IETF Review</registration_rule>
+    </range>
+    <record date="2022-04-01">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    </record>
+    <record date="2021-02-05">
+      <value>1</value>
+      <description>SRv6 SID Information Sub-TLV</description>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    </record>
+    <record>
+      <value>2-254</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2022-04-01">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    </record>
+  </registry>
+
+  <registry id="srv6-service-data-sub-sub-tlv-types">
+    <title>SRv6 Service Data Sub-Sub-TLV Types</title>
+    <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    <range>
+      <value>0-127</value>
+      <registration_rule>IETF Review</registration_rule>
+    </range>
+    <range>
+      <value>128-254</value>
+      <registration_rule>First Come First Served</registration_rule>
+    </range>
+    <range>
+      <value>255</value>
+      <registration_rule>IETF Review</registration_rule>
+    </range>
+    <record date="2022-04-01">
+      <value>0</value>
+      <description>Reserved</description>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    </record>
+    <record date="2021-04-01">
+      <value>1</value>
+      <description>SRv6 SID Structure Sub-Sub-TLV</description>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    </record>
+    <record>
+      <value>2-254</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2022-04-01">
+      <value>255</value>
+      <description>Reserved</description>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    </record>
+  </registry>
   
+  <registry id="bgp-srv6-service-sid-flags">
+    <title>BGP SRv6 Service SID Flags</title>
+    <registration_rule>IETF Review</registration_rule>
+    <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
+    <record>
+      <value>0-7</value>
+      <name>Unassigned</name>
+    </record>
+  </registry>
+
   <people>
     <person id="Eric_Rosen">
       <name>Eric Rosen</name>

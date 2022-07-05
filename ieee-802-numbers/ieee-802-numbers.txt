@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                                    IEEE 802 Numbers
 
    Last Updated
-           2021-07-30
+           2022-02-22
 
    Note
 
@@ -262,6 +264,8 @@ Ethertypes
    34669     876D            -             -             Secure Data                    [RFC1701]
              8808                                        IEEE Std 802.3 - Ethernet      [EPON][RFC7042]
                                                          Passive Optical Network (EPON)
+   34825     8809                                        Slow Protocols (Link           [IEEE]
+                                                         Aggregation, OAM, etc.)
              880B                                        Point-to-Point Protocol (PPP)  [RFC7042]
              880C                                        General Switch Management      [RFC7042]
                                                          Protocol (GSMP)
@@ -554,18 +558,19 @@ IANA Link Layer Discovery Protocol (LLDP) TLV Subtypes
 
                                                                  Contact Information
 
-           ID                         Name                          Organization                          Contact URI                 Last Updated
-   [Andrew_Cherenson]  Andrew Cherenson                                                    mailto:arc&sgi.com
-   [Ashwani_Singhal]   Ashwani Singhal                                                     mailto:Ashwani.Singhal&netscout.com        2010-04-05
-   [Daniel_Tappan]     Daniel Tappan                                                       mailto:Tappan&bbn.com
-   [David_Plummer]     David Plummer                                                       mailto:DCP&scrc-quabbin.arpa
-   [Hans_Werner_Braun] Hans-Werner Braun                                                   mailto:HWB&mcr.umich.edu
-   [IANA]              Internet Assigned Numbers Authority                                 mailto:iana&iana.org                       1996-10
-   [IEEE]                                                  The IEEE Registration Authority http://standards.ieee.org/develop/regauth/
-   [JBP]               Jon Postel                                                          mailto:postel&isi.edu
-   [Joe_Touch]         Joe Touch                                                           mailto:touch&strayalpha.com                2018-07-26
+           ID                Name                 Organization                          Contact URI                 Last Updated
+   [Andrew_Cherenson]  Andrew Cherenson                                  mailto:arc&sgi.com
+   [Ashwani_Singhal]   Ashwani Singhal                                   mailto:Ashwani.Singhal&netscout.com        2010-04-05
+   [Daniel_Tappan]     Daniel Tappan                                     mailto:Tappan&bbn.com
+   [David_Plummer]     David Plummer                                     mailto:DCP&scrc-quabbin.arpa
+   [Hans_Werner_Braun] Hans-Werner Braun                                 mailto:HWB&mcr.umich.edu
+   [IEEE]                                The IEEE Registration Authority http://standards.ieee.org/develop/regauth/
+   [JBP]               Jon Postel                                        mailto:postel&isi.edu
+   [Joe_Touch]         Joe Touch                                         mailto:touch&strayalpha.com                2018-07-26
    [Joseph_Murdock]    Joseph Murdock
-   [Joyce_K_Reynolds]  Joyce K. Reynolds                                                   mailto:jkrey&isi.edu
+   [Joyce_K_Reynolds]  Joyce K. Reynolds                                 mailto:jkrey&isi.edu
    [JXJ]               mystery contact
-   [Neil_Sembower]     Neil Sembower                       XEROX                           mailto:sembower&eso.mc.xerox.com
-   [Wind_River]                                            Wind River                      mailto:inquiries&windriver.com
+   [Neil_Sembower]     Neil Sembower     XEROX                           mailto:sembower&eso.mc.xerox.com
+   [Wind_River]                          Wind River                      mailto:inquiries&windriver.com
+
+   Licensing Terms

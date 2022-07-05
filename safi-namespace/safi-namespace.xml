@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="safi-namespace">
   <title>Subsequent Address Family Identifiers (SAFI) Parameters</title>
   <created>2000-07</created>
-  <updated>2021-09-08</updated>
+  <updated>2022-06-30</updated>
   <registry id="safi-namespace-2">
     <title>SAFI Values</title>
     <xref type="rfc" data="rfc4760"/>
@@ -139,10 +139,10 @@ for Dynamic Placement of Multi-Segment Pseudowires</description>
       <description>SR TE Policy SAFI</description>
       <xref type="draft" data="draft-previdi-idr-segment-routing-te-policy"/>
     </record>
-    <record date="2018-10-29" updated="2019-03-05">
+    <record date="2018-10-29" updated="2022-06-30">
       <value>74</value>
       <description>SD-WAN Capabilities</description>
-      <xref type="draft" data="draft-dunbar-idr-sdwan-port-safi"/>
+      <xref type="draft" data="draft-ietf-idr-sdwan-edge-discovery-03"/>
     </record>
     <record date="2020-05-12">
       <value>75</value>
@@ -170,16 +170,38 @@ for Dynamic Placement of Multi-Segment Pseudowires</description>
       <xref type="uri" data="https://eos.arista.com/eos-4-26-2f/dps-vpn-scaling-using-bgp"/>
       <xref type="person" data="Venkit_Kasiviswanathan"/>
     </record>
+    <record date="2022-02-11">
+      <value>80</value>
+      <description>BGP-LS-SPF</description>
+      <xref type="draft" data="draft-ietf-lsvr-bgp-spf-15"/>
+      <xref type="person" data="Victor_Kuarsingh"/>
+    </record>
     <record>
-      <value>80-127</value>
+      <value>81-82</value>
       <description>Unassigned</description>
       
     </record>
-    <record updated="2017-08-17">
+    <record date="2022-04-13">
+      <value>83</value>
+      <description>BGP CAR</description>
+      <xref type="draft" data="draft-dskc-bess-bgp-car-03"/>
+    </record>
+    <record date="2022-04-13">
+      <value>84</value>
+      <description>BGP VPN CAR</description>
+      <xref type="draft" data="draft-dskc-bess-bgp-car-03"/>
+    </record>
+    <record>
+      <value>85-127</value>
+      <description>Unassigned</description>
+      
+    </record>
+    <record updated="2022-04-01">
       <value>128</value>
       <description>MPLS-labeled VPN address</description>
       <xref type="rfc" data="rfc4364"/>
       <xref type="rfc" data="rfc8277"/>
+      <xref type="draft" data="RFC-ietf-bess-srv6-services-15"/>
     </record>
     <record>
       <value>129</value>
@@ -244,6 +266,11 @@ Networks (VPNs)</description>
       <name>Venkit Kasiviswanathan</name>
       <uri>mailto:venkit&amp;arista.com</uri>
       <updated>2021-09-08</updated>
+    </person>
+    <person id="Victor_Kuarsingh">
+      <name>Victor Kuarsingh</name>
+      <uri>mailto:victor&amp;jvknet.com</uri>
+      <updated>2022-02-11</updated>
     </person>
     <person id="Yong_Cui">
       <name>Yong Cui</name>

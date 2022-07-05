@@ -4,13 +4,16 @@
 <registry xmlns="http://www.iana.org/assignments" id="pwe3-parameters">
   <title>Pseudowire Name Spaces (PWE3)</title>
   <created>2005-12-12</created>
-  <updated>2018-03-09</updated>
+  <updated>2022-06-15</updated>
   
   
   <registry id="pwe3-parameters-2">
     <title>MPLS Pseudowire Types Registry</title>
     <expert>Stewart Bryant, Danny McPherson</expert>
     <xref type="rfc" data="rfc4446"/>
+    <note>When this registry is modified, the YANG module <xref type="registry" data="iana-pseudowire-types">iana-pseudowire-types</xref>
+must be updated as defined in <xref type="draft" data="RFC-ietf-opsawg-l2nm-19"/>.
+    </note>
     <range>
       <value>31-1024</value>
       <registration_rule>Expert Review</registration_rule>
@@ -33,10 +36,10 @@
       <description>Frame Relay DLCI ( Martini Mode )</description>
       <xref type="rfc" data="rfc4619"/>
     </record>
-    <record>
+    <record updated="2021-11-30">
       <PW_type>0x0002</PW_type>
       <description>ATM AAL5 SDU VCC transport</description>
-      <xref type="text">[ATM]</xref>
+      <xref type="rfc" data="rfc4717"/>
     </record>
     <record>
       <PW_type>0x0003</PW_type>
@@ -187,6 +190,19 @@ Specification", MFA Forum 9.0.0, MFA Forum, February 2006.</xref>
       <PW_type>0x001F</PW_type>
       <description>FC Port Mode</description>
       <xref type="rfc" data="rfc6307"/>
+    </record>
+    <record>
+      <PW_type>0x0020-0x1000</PW_type>
+      <description>Unassigned</description>
+    </record>
+    <record date="2022-03-29">
+      <PW_type>0x1001</PW_type>
+      <description>Proprietary pseudowire implementation carrying CLNP packets</description>
+      <xref type="person" data="Christian_Schmutzer"/>
+    </record>
+    <record>
+      <PW_type>0x1002-0x7FFE</PW_type>
+      <description>Unassigned</description>
     </record>
     <record>
       <PW_type>0x7FFF</PW_type>
@@ -557,7 +573,7 @@ text stage).</xref>
     <xref type="rfc" data="rfc7026"/>
     <xref type="rfc" data="rfc7214"/>
     <note>Renamed "MPLS Generalized Associated Channel (G-ACh) Types (including Pseudowire 
-Associated Channel Types)" and moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+Associated Channel Types)" and moved to <xref type="uri" data="https://www.iana.org/assignments/g-ach-parameters"/>  
 per <xref type="rfc" data="rfc7214"/>.
     </note>
   </registry>
@@ -812,7 +828,7 @@ traversed or of the T-PE</description>
   <registry id="cc-cv-mep-id">
     <title>CC/CV MEP-ID TLV Registry</title>
     <xref type="rfc" data="rfc6428"/><xref type="rfc" data="rfc7214"/>
-    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+    <note>Moved to <xref type="uri" data="https://www.iana.org/assignments/g-ach-parameters"/>  
 per <xref type="rfc" data="rfc7214"/>.
     </note>
   </registry>
@@ -850,7 +866,7 @@ per <xref type="rfc" data="rfc7214"/>.
   <registry id="gach-application">
     <title>G-ACh Advertisement Protocol Application Registry</title>
     <xref type="rfc" data="rfc7212"/><xref type="rfc" data="rfc7214"/>
-    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+    <note>Moved to <xref type="uri" data="https://www.iana.org/assignments/g-ach-parameters"/>  
 per <xref type="rfc" data="rfc7214"/>.
     </note>
   </registry>
@@ -858,7 +874,7 @@ per <xref type="rfc" data="rfc7214"/>.
   <registry id="gach-tlv">
     <title>G-ACh Advertisement Protocol TLV Registry</title>
     <xref type="rfc" data="rfc7212"/><xref type="rfc" data="rfc7214"/>
-    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+    <note>Moved to <xref type="uri" data="https://www.iana.org/assignments/g-ach-parameters"/>  
 per <xref type="rfc" data="rfc7214"/>.
     </note>
   </registry>
@@ -866,7 +882,7 @@ per <xref type="rfc" data="rfc7214"/>.
   <registry id="gach-ethernet">
     <title>G-ACh Advertisement Protocol: Ethernet Interface Parameters</title>
     <xref type="rfc" data="rfc7213"/><xref type="rfc" data="rfc7214"/>
-    <note>Moved to <xref type="uri" data="http://www.iana.org/assignments/g-ach-parameters"/>  
+    <note>Moved to <xref type="uri" data="https://www.iana.org/assignments/g-ach-parameters"/>  
 per <xref type="rfc" data="rfc7214"/>.
     </note>
   </registry>
@@ -1391,6 +1407,11 @@ per <xref type="rfc" data="rfc7214"/>.
   </registry>
   
   <people>
+    <person id="Christian_Schmutzer">
+      <name>Christian Schmutzer</name>
+      <uri>mailto:cschmutz&amp;cisco.com</uri>
+      <updated>2022-03-29</updated>
+    </person>
     <person id="Zhu_Wei">
       <name>Zhu Wei</name>
       <uri>mailto:zhu.wei120&amp;zte.com.cn</uri>

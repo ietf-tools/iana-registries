@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                   Border Gateway Protocol (BGP) Extended Communities
 
    Created
            2005-08-15
 
    Last Updated
-           2021-10-14
+           2022-06-22
 
    Available Formats
            [IMG]
@@ -25,9 +27,9 @@
      * Non-Transitive IPv4-Address-Specific Extended Community Sub-Types
      * Transitive Opaque Extended Community Sub-Types
      * Non-Transitive Opaque Extended Community Sub-Types
-     * Generic Transitive Experimental Use Extended Community Sub-Types
-     * Generic Transitive Experimental Use Extended Community Part 2 Sub-Types
-     * Generic Transitive Experimental Use Extended Community Part 3 Sub-Types
+     * Generic Transitive Extended Community Sub-Types
+     * Generic Transitive Extended Community Part 2 Sub-Types
+     * Generic Transitive Extended Community Part 3 Sub-Types
      * Traffic Action Fields
      * Transitive IPv6-Address-Specific Extended Community Types
      * Non-Transitive IPv6-Address-Specific Extended Community Types
@@ -39,11 +41,12 @@
      * DF Election Capabilities
      * SFC Extended Community Sub-Types
      * ARP/ND Extended Community Flags
+     * Multicast Flags Extended Community
 
 BGP Transitive Extended Community Types
 
    Reference
-           [RFC7153]
+           [RFC7153][RFC9184]
 
    Note
 
@@ -54,9 +57,10 @@ BGP Transitive Extended Community Types
            [IMG]
            CSV
 
-     Range              Registration Procedures
+     Range      Registration Procedures        Note
    0x00-0x3f First Come First Served
-   0x80-0x8f Reserved for Experimental Use (see [RFC3692])
+   0x80-0x82 First Come First Served       see [RFC9184]
+   0x83-0x8f Reserved for Experimental Use see [RFC3692]
    0x90-0xbf Standards Action
 
    Type Value                                   Name                                                       Reference                        Date
@@ -81,16 +85,13 @@ BGP Transitive Extended Community Types
       0x0a    Transport Class                                                          [draft-kaliraj-idr-bgp-classful-transport-planes] 2020-07-01
       0x0b    SFC (Sub-Types are defined in the "SFC Extended Community Sub-Types"     [RFC9015]                                         2020-09-02
               registry)
-   0x0c-0x7f  Unassigned
-              Generic Transitive Experimental Use Extended Community (Sub-Types are
-      0x80    defined in the "Generic Transitive Experimental Use Extended Community   [RFC7153]
-              Sub-Types" registry)
-              Generic Transitive Experimental Use Extended Community Part 2 (Sub-Types
-      0x81    are defined in the "Generic Transitive Experimental Use Extended         [RFC8955]                                         2015-08-28
-              Community Part 2 Sub-Types" Registry)
-              Generic Transitive Experimental Use Extended Community Part 3 (Sub-Types
-      0x82    are defined in the "Generic Transitive Experimental Use Extended         [RFC8955]                                         2015-08-28
-              Community Part 3 Sub-Types" Registry)
+   0x0c-0x3f  Unassigned
+      0x80    Generic Transitive Extended Community (Sub-Types are defined in the      [RFC7153][RFC9184]
+              "Generic Transitive Extended Community Sub-Types" registry)
+      0x81    Generic Transitive Extended Community Part 2 (Sub-Types are defined in   [RFC8955][RFC9184]                                2015-08-28
+              the "Generic Transitive Extended Community Part 2 Sub-Types" registry)
+      0x82    Generic Transitive Extended Community Part 3 (Sub-Types are defined in   [RFC8955][RFC9184]                                2015-08-28
+              the "Generic Transitive Extended Community Part 3 Sub-Types" registry)
    0x83-0x8f  Reserved for Experimental Use                                            [RFC7153]                                         2012-09-28
    0x90-0xbf  Unassigned
 
@@ -109,9 +110,9 @@ BGP Non-Transitive Extended Community Types
            [IMG]
            CSV
 
-     Range              Registration Procedures
+     Range      Registration Procedures        Note
    0x40-0x7f First Come First Served
-   0xc0-0xcf Reserved for Experimental Use (see [RFC3692])
+   0xc0-0xcf Reserved for Experimental Use see [RFC3692]
    0xd0-0xff Standards Action
 
    Type Value                                   Name                                                       Reference                        Date
@@ -165,14 +166,15 @@ EVPN Extended Community Sub-Types
         0x06      DF Election Extended Community             [RFC8584]                                     2016-05-11
         0x07      I-SID Extended Community                   [draft-sajassi-bess-evpn-virtual-eth-segment] 2016-05-11
         0x08      ARP/ND Extended Community                  [RFC9047]                                     2017-01-10
-        0x09      Multicast Flags Extended Community         [draft-ietf-bess-evpn-igmp-mld-proxy]         2017-11-06
-        0x0A      EVI-RT Type 0 Extended Community           [draft-ietf-bess-evpn-igmp-mld-proxy]         2017-11-06
-        0x0B      EVI-RT Type 1 Extended Community           [draft-ietf-bess-evpn-igmp-mld-proxy]         2018-06-06
-        0x0C      EVI-RT Type 2 Extended Community           [draft-ietf-bess-evpn-igmp-mld-proxy]         2018-06-06
-        0x0D      EVI-RT Type 3 Extended Community           [draft-ietf-bess-evpn-igmp-mld-proxy]         2018-06-26
+        0x09      Multicast Flags Extended Community         [RFC9251]                                     2017-11-06
+        0x0A      EVI-RT Type 0                              [RFC9251]                                     2017-11-06
+        0x0B      EVI-RT Type 1                              [RFC9251]                                     2018-06-06
+        0x0C      EVI-RT Type 2                              [RFC9251]                                     2018-06-06
+        0x0D      EVI-RT Type 3                              [RFC9251]                                     2018-06-26
         0x0E      EVPN Attachment Circuit Extended Community [draft-sajassi-bess-evpn-ac-aware-bundling]   2019-01-23
         0x0F      Service Carving Timestamp                  [draft-ietf-bess-evpn-fast-df-recovery-01]    2020-05-29
-     0x10-0x14    Unassigned
+        0x10      EVPN Link Bandwidth Extended Community     [draft-ietf-bess-evpn-unequal-lb-15]          2022-03-11
+     0x11-0x14    Unassigned
         0x15      RT-derived-EC                              [draft-zzhang-idr-rt-derived-community-00]    2021-03-09
      0x16-0xFF    Unassigned
 
@@ -444,10 +446,10 @@ Non-Transitive Opaque Extended Community Sub-Types
         0x15      RT-derived-EC                                  [draft-zzhang-idr-rt-derived-community-00] 2021-03-09
      0x16-0xff    Unassigned
 
-Generic Transitive Experimental Use Extended Community Sub-Types
+Generic Transitive Extended Community Sub-Types
 
    Reference
-           [RFC7153]
+           [RFC7153][RFC9184]
 
    Note
 
@@ -500,10 +502,10 @@ Sub-Type          Name                                                          
   0x85    Origin Sub-Cluster   [Richard_Roberts][https://github.com/robric/wiki-contrail-controller/blob/master/BGP-Extended-Communities.md]            2019-09-03
 0x86-0xff Unassigned
 
-Generic Transitive Experimental Use Extended Community Part 2 Sub-Types
+Generic Transitive Extended Community Part 2 Sub-Types
 
    Reference
-           [RFC8955]
+           [RFC8955][RFC9184]
 
    Note
 
@@ -525,10 +527,10 @@ Generic Transitive Experimental Use Extended Community Part 2 Sub-Types
         0x08      Flow spec rt-redirect IPv4 format [RFC8955] 2015-08-28
      0x09-0xff    Unassigned
 
-Generic Transitive Experimental Use Extended Community Part 3 Sub-Types
+Generic Transitive Extended Community Part 3 Sub-Types
 
    Reference
-           [RFC8955]
+           [RFC8955][RFC9184]
 
    Note
 
@@ -657,8 +659,8 @@ Additional PMSI Tunnel Attribute Flags
 
    Bit Flag                                    Name                                                        Reference                        Date
      0-46   Unassigned
-      47    DCB (TEMPORARY - registered 2019-01-23, extension registered 2020-11-19,    [draft-ietf-bess-mvpn-evpn-aggregation-label-04] 2019-01-23
-            expires 2022-01-23)
+      47    DCB (TEMPORARY - registered 2019-01-23, extension registered 2021-12-16,    [draft-ietf-bess-mvpn-evpn-aggregation-label-07] 2019-01-23
+            expires 2023-01-23)
 
 EVPN Layer 2 Attributes Control Flags
 
@@ -797,6 +799,33 @@ ARP/ND Extended Community Flags
          6       Override Flag (O)                 [RFC9047] 2021-04-09
          7       Router Flag (R)                   [RFC9047] 2021-04-09
 
+Multicast Flags Extended Community
+
+   Registration Procedure(s)
+
+ First Come First Served
+
+   Reference
+           [RFC9251]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit                      Name                                         Reference                    Change Controller
+   0-4 Unassigned
+    5  SEMG (Seamless Interop EVPN Multicast Gateway) [draft-ietf-bess-evpn-mvpn-seamless-interop-03] IETF
+    6  EVPN/MVPN Seamless Interop Supported           [draft-ietf-bess-evpn-mvpn-seamless-interop-03] IETF
+    7  SBD                                            [draft-ietf-bess-evpn-irb-mcast-06]             IETF
+    8  Segmentation Support                           [RFC-ietf-bess-evpn-bum-procedure-updates-14]   IETF
+    9  IPMG                                           [draft-ietf-bess-evpn-irb-mcast-06]             IETF
+   10  MEG                                            [draft-ietf-bess-evpn-irb-mcast-06]             IETF
+   11  PEG                                            [draft-ietf-bess-evpn-irb-mcast-06]             IETF
+   12  OISM-supported                                 [draft-ietf-bess-evpn-irb-mcast-06]             IETF
+   13  Extended AR                                    [draft-ietf-bess-extended-evpn-optimized-ir-01] IETF
+   14  MLD Proxy Support                              [RFC9251]                                       IETF
+   15  IGMP Proxy Support                             [RFC9251]                                       IETF
+
                                                                  Contact Information
 
                ID                        Name                      Contact URI           Last Updated
@@ -809,3 +838,5 @@ ARP/ND Extended Community Flags
    [Rishabh_Parekh]            Rishabh Parekh            mailto:rishabhp&gmail.com       2016-01-19
    [Thomas_Martin_Knoll]       Thomas Martin Knoll       mailto:thomas.m.knoll&gmail.com 2015-01-25
    [Yakov_Rekhter]             Yakov Rekhter             mailto:yakov&juniper.net        2012-07-10
+
+   Licensing Terms

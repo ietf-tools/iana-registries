@@ -3,7 +3,7 @@
 <?xml-model href="bgp-tunnel-encapsulation.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="bgp-tunnel-encapsulation">
   <title>Border Gateway Protocol (BGP) Tunnel Encapsulation</title>
-  <updated>2021-09-23</updated>
+  <updated>2022-04-25</updated>
   
   
   <registry id="tunnel-types">
@@ -127,8 +127,19 @@
       <description>Dynamic Path Selection (DPS) Tunnel Encapsulation</description>
       <xref type="person" data="Venkit_Kasiviswanathan"/>
     </record>
+    <record date="2021-12-09">
+      <value>23</value>
+      <description>Originating PE (OPE)</description>
+      <xref type="draft" data="draft-heitz-bess-evpn-option-b-01"/>
+    </record>
+    <record date="2022-02-01">
+      <value>24</value>
+      <description>Dynamic Path Selection (DPS) Policy</description>
+      <xref type="uri" data="https://eos.arista.com/eos-4-26-2f/dps-vpn-scaling-using-bgp"/>
+      <xref type="person" data="Sarah_Chen"/>
+    </record>
     <record>
-      <value>23-65535</value>
+      <value>25-65535</value>
       <description>Unassigned</description>
     </record>
   </registry>  
@@ -259,7 +270,7 @@ contains two octets.
     </record>
     <record date="2021-05-25">
       <value>20</value>
-      <description>SRv6 Binding SID sub-TLV (TEMPORARY - registered 2021-05-25, expires 2022-05-25)</description>
+      <description>SRv6 Binding SID sub-TLV (TEMPORARY - registered 2021-05-25, extension registered 2022-04-25, expires 2023-05-25)</description>
       <xref type="draft" data="draft-ietf-idr-segment-routing-te-policy-12"/>
     </record>
     <record>
@@ -299,7 +310,7 @@ contains two octets.
     </record>
     <record date="2021-05-25">
       <value>130</value>
-      <description>Policy Name sub-TLV (TEMPORARY - registered 2021-05-25, expires 2022-05-25)</description>
+      <description>Policy Name sub-TLV (TEMPORARY - registered 2021-05-25, extension registered 2022-04-25, expires 2023-05-25)</description>
       <xref type="draft" data="draft-ietf-idr-segment-routing-te-policy-12"/>
     </record>
     <record>
@@ -418,7 +429,7 @@ contains two octets.
    <xref type="rfc" data="rfc9012"/>
    <record date="2021-05-25">
      <value>0-1</value>
-     <description>Color-only bits (TEMPORARY - registered 2021-05-25, expires 2022-05-25)</description>
+     <description>Color-only bits (TEMPORARY - registered 2021-05-25, extension registered 2022-04-25, expires 2023-05-25)</description>
      <xref type="draft" data="draft-ietf-idr-segment-routing-te-policy-12"/>
    </record>
    <record>
@@ -447,6 +458,11 @@ contains two octets.
       <name>Ramesh Babu Yakkala</name>
       <uri>mailto:ryakkala&amp;cisco.com</uri>
       <updated>2020-02-18</updated>
+    </person>
+    <person id="Sarah_Chen">
+      <name>Sarah Chen</name>
+      <uri>mailto:sarahchen&amp;arista.com</uri>
+      <updated>2022-02-01</updated>
     </person>
     <person id="Tetsuya_Murakami">
       <name>Tetsuya Murakami</name>

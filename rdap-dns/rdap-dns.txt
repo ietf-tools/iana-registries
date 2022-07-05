@@ -1,10 +1,15 @@
+   Internet Assigned Numbers Authority
+
                                                    Bootstrap Service Registry for Domain Name Space
 
    Created
            2015-03-23
 
+   Last Updated
+           2022-04-04
+
    Reference
-           [RFC7484]
+           [RFC9224]
 
    Note
 
@@ -23,4 +28,6 @@
 
 Files
 
-     * http://data.iana.org/rdap/dns.json
+     * https://data.iana.org/rdap/dns.json
+
+   Licensing Terms

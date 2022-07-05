@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                             Web Authentication (WebAuthn)
 
    Created
            2020-06-11
 
    Last Updated
-           2020-08-10
+           2022-04-07
 
    Available Formats
            [IMG]
@@ -25,7 +27,7 @@ WebAuthn Attestation Statement Format Identifiers
 
    Expert(s)
 
- Jeff Hodges, Mike Jones, Giridhar Mandyam
+ Mike Jones, Giridhar Mandyam
 
    Reference
            [RFC8809]
@@ -34,31 +36,39 @@ WebAuthn Attestation Statement Format Identifiers
            [IMG]
            CSV
 
-      WebAuthn Attestation                      Description                          Reference                   Change Controller            Notes
-   Statement Format Identifier
-                               The "packed" attestation statement format is
-                               a WebAuthn-optimized format for attestation.  [Web Authentication]
-   packed                      It uses a very compact but still extensible   Section §8.2, Packed      [W3C_Web_Authentication_Working_Group]
-                               encoding method. This format is implementable Attestation Statement
-                               by authenticators with limited resources      Format
-                               (e.g., secure elements).
-                               The TPM attestation statement format returns  [Web Authentication]
-                               an attestation statement in the same format   Section §8.3, TPM
-   tpm                         as the packed attestation statement format,   Attestation Statement     [W3C_Web_Authentication_Working_Group]
-                               although the rawData and signature fields are Format
-                               computed differently.
-                               Platform-provided authenticators based on     [Web Authentication]
-   android-key                 versions "N", and later, may provide this     Section §8.4, Android Key [W3C_Web_Authentication_Working_Group]
-                               proprietary "hardware attestation" statement. Attestation Statement
+   WebAuthn Attestation
+     Statement Format                       Description                              Reference                   Change Controller            Notes
+        Identifier
+                        The "packed" attestation statement format is a       [Web Authentication]
+                        WebAuthn-optimized format for attestation. It uses a Section §8.2, Packed
+   packed               very compact but still extensible encoding method.   Attestation Statement     [W3C_Web_Authentication_Working_Group]
+                        This format is implementable by authenticators with  Format
+                        limited resources (e.g., secure elements).
+                        The TPM attestation statement format returns an      [Web Authentication]
+                        attestation statement in the same format as the      Section §8.3, TPM
+   tpm                  packed attestation statement format, although the    Attestation Statement     [W3C_Web_Authentication_Working_Group]
+                        rawData and signature fields are computed            Format
+                        differently.
+                        Platform authenticators on versions "N", and later,  [Web Authentication]
+   android-key          may provide this proprietary "hardware attestation"  Section §8.4, Android Key [W3C_Web_Authentication_Working_Group]
+                        statement.                                           Attestation Statement
                                                                              Format
-                               Android-based, platform-provided              [Web Authentication]
-   android-safetynet           authenticators MAY produce an attestation     Section §8.5, Android     [W3C_Web_Authentication_Working_Group]
-                               statement based on the Android SafetyNet API. SafetyNet Attestation
+                        Android-based platform authenticators MAY produce an [Web Authentication]
+   android-safetynet    attestation statement based on the Android SafetyNet Section §8.5, Android     [W3C_Web_Authentication_Working_Group]
+                        API.                                                 SafetyNet Attestation
                                                                              Statement Format
                                                                              [Web Authentication]
-   fido-u2f                    Used with FIDO U2F authenticators             Section §8.6, FIDO U2F    [W3C_Web_Authentication_Working_Group]
+   fido-u2f             Used with FIDO U2F authenticators                    Section §8.6, FIDO U2F    [W3C_Web_Authentication_Working_Group]
                                                                              Attestation Statement
                                                                              Format
+                                                                             [Web Authentication]
+   apple                Used with Apple devices' platform authenticators     Section §8.8, Apple       [W3C_Web_Authentication_Working_Group]
+                                                                             Anonymous Attestation
+                                                                             Statement Format
+                        Used to replace any authenticator-provided           [Web Authentication]
+   none                 attestation statement when a WebAuthn Relying Party  Section §8.7, None        [W3C_Web_Authentication_Working_Group]
+                        indicates it does not wish to receive attestation    Attestation Statement
+                        information.                                         Format
 
 WebAuthn Extension Identifiers
 
@@ -68,7 +78,7 @@ WebAuthn Extension Identifiers
 
    Expert(s)
 
- Jeff Hodges, Mike Jones, Giridhar Mandyam
+ Mike Jones, Giridhar Mandyam
 
    Reference
            [RFC8809]
@@ -77,59 +87,94 @@ WebAuthn Extension Identifiers
            [IMG]
            CSV
 
-   WebAuthn Extension                     Description                               Reference                    Change Controller            Notes
+   WebAuthn Extension                      Description                               Reference                   Change Controller            Notes
        Identifier
-                      This authentication extension allows WebAuthn        [Web Authentication]
-   appid              Relying Parties that have previously registered a    Section §10.1, FIDO AppID   [W3C_Web_Authentication_Working_Group]
-                      credential using the legacy FIDO JavaScript APIs to  Extension (appid)
-                      request an assertion.
-                      This registration extension and authentication       [Web Authentication]
-                      extension allows for a simple form of transaction    Section §10.2, Simple
-   txAuthSimple       authorization. A WebAuthn Relying Party can specify  Transaction Authorization   [W3C_Web_Authentication_Working_Group]
-                      a prompt string, intended for display on a trusted   Extension (txAuthSimple)
+                      This authentication extension allows WebAuthn Relying  [Web Authentication]
+   appid              Parties that have previously registered a credential   Section §10.1, FIDO AppID [W3C_Web_Authentication_Working_Group]
+                      using the legacy FIDO JavaScript APIs to request an    Extension (appid)
+                      assertion.
+                      This registration extension and authentication         [Web Authentication]
+                      extension allows for a simple form of transaction      Section §10.2, Simple
+   txAuthSimple       authorization. A WebAuthn Relying Party can specify a  Transaction Authorization [W3C_Web_Authentication_Working_Group]
+                      prompt string, intended for display on a trusted       Extension (txAuthSimple)
                       device on the authenticator
                       This registration extension and authentication
-                      extension allows images to be used as transaction    [Web Authentication]
-                      authorization prompts as well. This allows           Section §10.3, Generic
-   txAuthGeneric      authenticators without a font rendering engine to be Transaction Authorization   [W3C_Web_Authentication_Working_Group]
-                      used and also supports a richer visual appearance    Extension (txAuthGeneric)
-                      than accomplished with the webauthn.txauth.simple
+                      extension allows images to be used as transaction      [Web Authentication]
+                      authorization prompts as well. This allows             Section §10.3, Generic
+   txAuthGeneric      authenticators without a font rendering engine to be   Transaction Authorization [W3C_Web_Authentication_Working_Group]
+                      used and also supports a richer visual appearance than Extension (txAuthGeneric)
+                      accomplished with the webauthn.txauth.simple
                       extension.
-                      This registration extension allows a WebAuthn
-                      Relying Party to guide the selection of the          [Web Authentication]
-   authnSel           authenticator that will be leveraged when creating   Section §10.4,              [W3C_Web_Authentication_Working_Group]
-                      the credential. It is intended primarily for         Authenticator Selection
-                      WebAuthn Relying Parties that wish to tightly        Extension (authnSel)
-                      control the experience around credential creation.
+                      This registration extension allows a WebAuthn Relying
+                      Party to guide the selection of the authenticator that [Web Authentication]
+   authnSel           will be leveraged when creating the credential. It is  Section §10.4,            [W3C_Web_Authentication_Working_Group]
+                      intended primarily for WebAuthn Relying Parties that   Authenticator Selection
+                      wish to tightly control the experience around          Extension (authnSel)
+                      credential creation.
                       This registration extension enables the WebAuthn
-                      Relying Party to determine which extensions the
-                      authenticator supports. The extension data is a list [Web Authentication]
-   exts               (CBOR array) of extension identifiers encoded as     Section §10.5, Supported    [W3C_Web_Authentication_Working_Group]
-                      UTF-8 Strings. This extension is added automatically Extensions Extension (exts)
-                      by the authenticator. This extension can be added to
+                      Relying Party to determine which extensions the        [Web Authentication]
+                      authenticator supports. The extension data is a list   Section §10.5, Supported
+   exts               (CBOR array) of extension identifiers encoded as UTF-8 Extensions Extension      [W3C_Web_Authentication_Working_Group]
+                      Strings. This extension is added automatically by the  (exts)
+                      authenticator. This extension can be added to
                       attestation statements.
                       This registration extension and authentication
                       extension enables use of a user verification index.
-                      The user verification index is a value uniquely      [Web Authentication]
-                      identifying a user verification data record. The UVI Section §10.6, User
-   uvi                data can be used by servers to understand whether an Verification Index          [W3C_Web_Authentication_Working_Group]
-                      authentication was authorized by the exact same      Extension (uvi)
+                      The user verification index is a value uniquely        [Web Authentication]
+                      identifying a user verification data record. The UVI   Section §10.6, User
+   uvi                data can be used by servers to understand whether an   Verification Index        [W3C_Web_Authentication_Working_Group]
+                      authentication was authorized by the exact same        Extension (uvi)
                       biometric data as the initial key generation. This
                       allows the detection and prevention of "friendly
                       fraud".
-                      The location registration extension and
-                      authentication extension provides the client         [Web Authentication]
-   loc                device's current location to the WebAuthn Relying    Section §10.7, Location     [W3C_Web_Authentication_Working_Group]
-                      Party, if supported by the client platform and       Extension (loc)
-                      subject to user consent.
-                      This registration extension and authentication
-                      extension enables use of a user verification method. [Web Authentication]
-   uvm                The user verification method extension returns to    Section §10.8, User         [W3C_Web_Authentication_Working_Group]
-                      the WebAuthn Relying Party which user verification   Verification Method
-                      methods (factors) were used for the WebAuthn         Extension (uvm)
-                      operation.
+                      The location registration extension and authentication [Web Authentication]
+   loc                extension provides the client device's current         Section §10.7, Location   [W3C_Web_Authentication_Working_Group]
+                      location to the WebAuthn Relying Party, if supported   Extension (loc)
+                      by the client platform and subject to user consent.
+                      This registration extension and authentication         [Web Authentication]
+                      extension enables use of a user verification method.   Section §10.3, User
+   uvm                The user verification method extension returns to the  Verification Method       [W3C_Web_Authentication_Working_Group]
+                      WebAuthn Relying Party which user verification methods Extension (uvm)
+                      (factors) were used for the WebAuthn operation.
+                      This registration extension allows relying parties to
+                      specify a credential protection policy when creating a [Client to Authenticator
+   credProtect        credential. Additionally, authenticators may choose to Protocol (CTAP)] Section  [W3C_Web_Authentication_Working_Group]
+                      establish a default credential protection policy       §12.1 Credential
+                      greater than userVerificationOptional (the lowest      Protection (credProtect)
+                      level) and unilaterally enforce such policy.
+                      This registration extension and authentication         [Client to Authenticator
+                      extension enables RPs to provide a small amount of     Protocol (CTAP)] Section
+   credBlob           extra credential configuration information (the        §12.2 Credential Blob     [W3C_Web_Authentication_Working_Group]
+                      credBlob value) to the authenticator when a credential (credBlob)
+                      is made.
+                      This client platform-only extension provides for       [Client to Authenticator
+   largeBlobKey       storage and retrieval of a per-credential key that is  Protocol (CTAP)] Section  [W3C_Web_Authentication_Working_Group]
+                      used by the client platform when writing and reading   §12.3 Large Blob Key
+                      elements in the large-blob array.                      (largeBlobKey)
+                                                                             [Client to Authenticator
+   minPinLength       This registration extension returns the current        Protocol (CTAP)] Section  [W3C_Web_Authentication_Working_Group]
+                      minimum PIN length value to the Relying Party.         §12.4 Minimum PIN Length
+                                                                             Extension (minPinLength)
+                      This registration extension and authentication         [Client to Authenticator
+   hmac-secret        extension enables the platform to retrieve a symmetric Protocol (CTAP)] Section  [W3C_Web_Authentication_Working_Group]
+                      secret scoped to the credential from the               §12.5 HMAC Secret
+                      authenticator.                                         Extension (hmac-secret)
+                      This registration extension allows WebAuthn Relying    [Web Authentication]
+   appidExclude       Parties to exclude authenticators that contain         Section §10.2, FIDO AppID [W3C_Web_Authentication_Working_Group]
+                      specified credentials that were created with the       Exclusion Extension
+                      legacy FIDO U2F JavaScript API [FIDOU2FJavaScriptAPI]. (appidExclude)
+                      This client registration extension enables reporting   [Web Authentication]
+   credProps          of a newly-created credential's properties, as         Section §10.4, Credential [W3C_Web_Authentication_Working_Group]
+                      determined by the client, to the calling WebAuthn      Properties Extension
+                      Relying Party's web application.                       (credProps)
+                      This client registration extension and authentication  [Web Authentication]
+   largeBlob          extension allows a Relying Party to store opaque data  Section §10.5, Large blob [W3C_Web_Authentication_Working_Group]
+                      associated with a credential.                          storage extension
+                                                                             (largeBlob)
 
                                                                  Contact Information
 
                      ID                                   Name                          Contact URI          Last Updated
-   [W3C_Web_Authentication_Working_Group] W3C Web Authentication Working Group mailto:public-webauthn&w3.org 2020-06-11
+   [W3C_Web_Authentication_Working_Group] W3C Web Authentication Working Group mailto:public-webauthn&w3.org 2022-02-28
+
+   Licensing Terms

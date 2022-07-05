@@ -3,7 +3,7 @@
 <?xml-model href="dns-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="dns-parameters">
   <title>Domain Name System (DNS) Parameters</title>
-  <updated>2021-10-22</updated>
+  <updated>2022-06-21</updated>
 
 
   <registry id="dns-parameters-2">
@@ -321,34 +321,24 @@ be allocated for ordinary use.</registration_rule>
       <type>NSAP-PTR</type>
       <value>23</value>
       <description>for domain name pointer, NSAP style</description>
-      <xref type="rfc" data="rfc1348"/>
-      <xref type="rfc" data="rfc1637"/>
       <xref type="rfc" data="rfc1706"/>
     </record>
     <record>
       <type>SIG</type>
       <value>24</value>
       <description>for security signature</description>
-      <xref type="rfc" data="rfc2535"/>
       <xref type="rfc" data="rfc2536"/>
-      <xref type="rfc" data="rfc2537"/>
       <xref type="rfc" data="rfc2931"/>
-      <xref type="rfc" data="rfc3008"/>
       <xref type="rfc" data="rfc3110"/>
-      <xref type="rfc" data="rfc3755"/>
       <xref type="rfc" data="rfc4034"/>
     </record>
     <record>
       <type>KEY</type>
       <value>25</value>
       <description>for security key</description>
-      <xref type="rfc" data="rfc2535"/>
       <xref type="rfc" data="rfc2536"/>
-      <xref type="rfc" data="rfc2537"/>
       <xref type="rfc" data="rfc2539"/>
-      <xref type="rfc" data="rfc3008"/>
       <xref type="rfc" data="rfc3110"/>
-      <xref type="rfc" data="rfc3755"/>
       <xref type="rfc" data="rfc4034"/>    
     </record>
     <record>
@@ -415,8 +405,6 @@ be allocated for ordinary use.</registration_rule>
       <type>NAPTR</type>
       <value>35</value>
       <description>Naming Authority Pointer</description>
-      <xref type="rfc" data="rfc2168"/>
-      <xref type="rfc" data="rfc2915"/>
       <xref type="rfc" data="rfc3403"/>
     </record>
     <record>
@@ -469,7 +457,6 @@ be allocated for ordinary use.</registration_rule>
       <type>DS</type>
       <value>43</value>
       <description>Delegation Signer</description>
-      <xref type="rfc" data="rfc3658"/>
       <xref type="rfc" data="rfc4034"/>
     </record>
     <record>
@@ -488,14 +475,12 @@ be allocated for ordinary use.</registration_rule>
       <type>RRSIG</type>
       <value>46</value>
       <description>RRSIG</description>
-      <xref type="rfc" data="rfc3755"/>
       <xref type="rfc" data="rfc4034"/>
     </record>
     <record>
       <type>NSEC</type>
       <value>47</value>
       <description>NSEC</description>
-      <xref type="rfc" data="rfc3755"/>
       <xref type="rfc" data="rfc4034"/>
       <xref type="rfc" data="rfc9077"/>
     </record>
@@ -503,7 +488,6 @@ be allocated for ordinary use.</registration_rule>
       <type>DNSKEY</type>
       <value>48</value>
       <description>DNSKEY</description>
-      <xref type="rfc" data="rfc3755"/>
       <xref type="rfc" data="rfc4034"/>
     </record>
     <record>
@@ -603,18 +587,18 @@ be allocated for ordinary use.</registration_rule>
       <xref type="rfc" data="rfc8976"/>
       <file type="template">ZONEMD/zonemd-completed-template</file>
     </record>
-    <record date="2020-06-30">
+    <record date="2020-06-30" updated="2022-05-26">
       <type>SVCB</type>
       <value>64</value>
-      <description>Service Binding</description>
-      <xref type="draft" data="draft-ietf-dnsop-svcb-https-00"/>
+      <description>General Purpose Service Binding</description>
+      <xref type="draft" data="RFC-ietf-dnsop-svcb-https-10"/>
       <file type="template">SVCB/svcb-completed-template</file>
     </record>
-    <record date="2020-06-30">
+    <record date="2020-06-30" updated="2022-05-26">
       <type>HTTPS</type>
       <value>65</value>
-      <description>HTTPS Binding</description>
-      <xref type="draft" data="draft-ietf-dnsop-svcb-https-00"/>
+      <description>Service Binding type for use with HTTP</description>
+      <xref type="draft" data="RFC-ietf-dnsop-svcb-https-10"/>
       <file type="template">HTTPS/https-completed-template</file>
     </record>
     <record>
@@ -1504,6 +1488,11 @@ query from bit 5 through bit 11 (<xref type="rfc" data="rfc1035"/> section 4.1.1
       <description>_example</description>
       <xref type="rfc" data="rfc8552">RFC8552, Section 4.1.4</xref>
     </record>
+    <record date="2022-05-27">
+      <value>HTTPS</value>
+      <description>_https</description>
+      <xref type="draft" data="RFC-ietf-dnsop-svcb-https-10"/>
+    </record>
     <record date="2018-11-29">
       <value>NULL</value>
       <description>_ta-* <xref type="note" data="2"/></description>
@@ -2036,8 +2025,24 @@ specification.
       <description>Invalid Data</description>
       <xref type="rfc" data="rfc8914">RFC8914, Section 4.25</xref>
     </record>
+    <record date="2022-02-11">
+      <value>25</value>
+      <description>Signature Expired before Valid</description>
+      <xref type="uri" data="https://github.com/NLnetLabs/unbound/pull/604#discussion_r802678343"/>
+      <xref type="person" data="Willem_Toorop"/>
+    </record>
+    <record date="2022-04-01">
+      <value>26</value>
+      <description>Too Early</description>
+      <xref type="rfc" data="rfc9250"/>
+    </record>
+    <record date="2022-06-06">
+      <value>27</value>
+      <description>Unsupported NSEC3 Iterations Value</description>
+      <xref type="draft" data="RFC-ietf-dnsop-nsec3-guidance-10"/>
+    </record>
     <record>
-      <value>25-49151</value>
+      <value>28-49151</value>
       <description>Unassigned</description>
     </record>
     <record date="2020-05-07">
@@ -2197,6 +2202,91 @@ range of 8 to 32 bytes.
       <xref type="rfc" data="rfc9018"/>
     </record>
     </registry>
+
+    <registry id="dns-quic-error-codes">
+      <title>DNS-over-QUIC Error Codes</title>
+      <xref type="rfc" data="rfc9250"/>
+      <range>
+        <value>provisional (greater than 0x3f)</value>
+        <registration_rule>Expert Review</registration_rule>
+      </range>
+      <range>
+        <value>provisional registration Date field update</value>
+        <registration_rule>First Come First Served</registration_rule>
+      </range>
+      <range>
+        <value>permanent, 0x00-0x3f</value>
+        <registration_rule>Standards Action or IESG Approval</registration_rule>
+      </range>
+      <range>
+        <value>permanent, greater than 0x3f</value>
+        <registration_rule>Specification Required</registration_rule>
+      </range>
+      <expert>Sara Dickinson, Christian Huitema</expert>
+      <record date="2022-04-01">
+        <value>0x0</value>
+        <error>DOQ_NO_ERROR</error>
+        <description>No error</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+      <record date="2022-04-01">
+        <value>0x1</value>
+        <error>DOQ_INTERNAL_ERROR</error>
+        <description>Implementation error</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+      <record date="2022-04-01">
+        <value>0x2</value>
+        <error>DOQ_PROTOCOL_ERROR</error>
+        <description>Generic protocol violation</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+      <record date="2022-04-01">
+        <value>0x3</value>
+        <error>DOQ_REQUEST_CANCELLED</error>
+        <description>Request cancelled by client</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+      <record date="2022-04-01">
+        <value>0x4</value>
+        <error>DOQ_EXCESSIVE_LOAD</error>
+        <description>Closing a connection for excessive load</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+      <record date="2022-04-01">
+        <value>0x5</value>
+        <error>DOQ_UNSPECIFIED_ERROR</error>
+        <description>No error reason specified</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+      <record date="2022-04-01">
+        <value>0xd098ea5e</value>
+        <error>DOQ_ERROR_RESERVED</error>
+        <description>Alternative error code used for tests</description>
+        <status>permanent</status>
+        <xref type="rfc" data="rfc9250">RFC9250, Section 4.3</xref>
+        <date>2022-04-01</date>
+        <contact><xref type="person" data="DPRIVE_WG"/></contact>
+      </record>
+    </registry>
   
   <people>
     <person id="Cisco_CIE_DNS_team">
@@ -2209,10 +2299,10 @@ range of 8 to 32 bytes.
       <uri>mailto:d3e3e3&amp;gmail.com</uri>
       <updated>1997-11</updated>
     </person>
-    <person id="George_Barwood">
-      <name>George Barwood</name>
-      <uri>mailto:george.barwood&amp;blueyonder.co.uk</uri>
-      <updated>2011-06-06</updated>
+    <person id="DPRIVE_WG">
+      <name>DPRIVE working group</name>
+      <uri>mailto:dns-privacy&amp;ietf.org</uri>
+      <updated>2022-04-01</updated>
     </person>
     <person id="Jim_Reid">
       <name>Jim Reid</name>
@@ -2224,20 +2314,15 @@ range of 8 to 32 bytes.
       <uri>mailto:map&amp;bbn.com</uri>
       <updated>1995-06</updated>
     </person>
-    <person id="Patrik_Faltstrom">
-      <name>Patrik Fältström</name>
-      <uri>mailto:paf&amp;frobbit.se</uri>
-      <updated>2015-01-05</updated>
-    </person>
-    <person id="Phillip_Hallam_Baker">
-      <name>Phillip Hallam-Baker</name>
-      <uri>mailto:phill&amp;hallambaker.com</uri>
-      <updated>2011-04-07</updated>
-    </person>
     <person id="Sam_Weiler">
       <name>Sam Weiler</name>
       <uri>mailto:weiler+iana&amp;tislabs.com</uri>
       <updated>2005-12</updated>
+    </person>
+    <person id="Willem_Toorop">
+      <name>Willem Toorop</name>
+      <uri>mailto:willem&amp;nlnetlabs.nl</uri>
+      <updated>2022-02-11</updated>
     </person>
     <person id="Wolfgang_Riedel">
       <name>Wolfgang Riedel</name>

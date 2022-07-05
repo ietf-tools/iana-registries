@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                             Extensible Provisioning Protocol (EPP) Repository Identifiers
 
    Created
            2004-10-26
 
    Last Updated
-           2021-10-26
+           2022-06-13
 
    Available Formats
            [IMG]
@@ -581,6 +583,11 @@ EPP Repository Identifiers
    DATAFLY, #x0044 #x0041 #x0054 #x0041 #x0046 #x004C #x0059            [HostFly]                    [Bohdan_Dub]                 2021-09-07
    GDREG, #x0047 #x0044 #x0052 #x0045 #x0047                            [GoDaddy_Registry]           [GoDaddy_Registry]           2021-10-05
    YOCTO, #x0059 #x004F #x0043 #x0054 #x004F                            [Yocto]                      [Yocto]                      2021-10-20
+   SIDN, #x0053 #x0049 #x0044 #x004E                                    [SIDN]                       [SIDN]                       2022-04-18
+   AMSTERDAM, #x0041 #x004D #x0053 #x0054 #x0045 #x0052 #x0044 #x0041   [SIDN]                       [SIDN]                       2022-04-18
+   #x004D
+   POLITIE, #x0050 #x004F #x004C #x0049 #x0054 #x0049 #x0045            [SIDN]                       [SIDN]                       2022-04-18
+   PIONEER, #x0050 #x0049 #x004F #x004E #x0045 #x0045 #x0052            [NOMINET]                    [NOMINET]                    2022-06-13
 
                                                                  Contact Information
 
@@ -634,10 +641,11 @@ EPP Repository Identifiers
    [NIC_TELECITY]               Nominet UK                                                   mailto:icann-tech-response&nominet.org.uk 2015-10-09
    [NIC_VIRGIN]                 Nominet UK                                                   mailto:icann-tech-response&nominet.org.uk 2020-03-04
    [NIC_WALES]                  Nominet UK                                                   mailto:icann-tech-response&nominet.org.uk 2015-09-30
-   [NOMINET]                    Nominet UK                                                   mailto:icann-tech-response&nominet.org.uk 2021-02-24
+   [NOMINET]                    Nominet UK                                                   mailto:icann-tech-response&nominet.org.uk 2022-06-13
    [REGISTRIO]                  REGISTRIO                                                    mailto:hello&registr.io                   2019-09-16
    [RIGHTSIDE]                  Rightside Registry                                           mailto:registrycs&rightside.co
    [Sergey_Bulakh]              Sergey Bulakh                                                mailto:corpor&so.ua
+   [SIDN]                       SIDN                                                         mailto:iana.tech&sidn.nl                  2022-04-18
    [Smallregistry]              Smallregistry                                                mailto:root&smallregistry.net
    [Smart_Communications_Inc]   Smart Communications, Inc.                                   mailto:dotsmart&smart.com.ph              2017-04-17
    [SWITCH]                     SWITCH - Teleinformatikdienste für Lehre und Forschung       mailto:info&switch.ch
@@ -657,3 +665,5 @@ EPP Repository Identifiers
    [Whois]                      Whois Corp. and Whois Networks Co., Ltd.                     mailto:info&yesnic.com                    2017-05-16
    [Yocto]                      Yocto                                                        mailto:onoma&yocto.nu                     2021-10-20
    [ZDNS]                       ZDNS                                                         mailto:fengshuo&zdns.cn                   2017-11-14
+
+   Licensing Terms

@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                    Protocol Independent Multicast (PIM) Parameters
 
    Last Updated
-           2020-11-27
+           2022-01-31
 
    Available Formats
            [IMG]
@@ -66,7 +68,8 @@ PIM-Hello Options
        36         0     Hierarchical Join/Prune Attribute       [RFC7887]
        37      variable DR Address Option                       [draft-ietf-pim-dr-improvement-10]
        38      variable BDR Address Option                      [draft-ietf-pim-dr-improvement-10]
-    39-65000      -     Unassigned
+       39         4     BFD Discriminator Option                [RFC9186]
+    40-65000      -     Unassigned
    65001-65535    -     Reserved (Private Use)
 
 PIM Join Attribute Types
@@ -257,8 +260,9 @@ PIM Designated Router Load-Balancing Hash Algorithms
 
                                                                  Contact Information
 
-           ID                Name                 Contact URI           Last Updated
-   [Alex_Zinin]        Alex Zinin        mailto:zinin&psg.com           2006-05-01
-   [Bill_Fenner]       Bill Fenner       mailto:fenner&research.att.com 2000-08
-   [Dino_Farinacci]    Dino Farinacci    mailto:dino&procket.com        2000-08
-   [Siddanagouda_Khot] Siddanagouda Khot mailto:sikhot&cisco.com        2013-06-06
+           ID                Name              Contact URI       Last Updated
+   [Alex_Zinin]        Alex Zinin        mailto:zinin&psg.com    2006-05-01
+   [Dino_Farinacci]    Dino Farinacci    mailto:dino&procket.com 2000-08
+   [Siddanagouda_Khot] Siddanagouda Khot mailto:sikhot&cisco.com 2013-06-06
+
+   Licensing Terms

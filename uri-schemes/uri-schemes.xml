@@ -3,7 +3,7 @@
 <?xml-model href="uri-schemes.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="uri-schemes">
   <title>Uniform Resource Identifier (URI) Schemes</title>
-  <updated>2021-10-29</updated>
+  <updated>2022-06-08</updated>
   
   <registry id="uri-schemes-1">
     <title>Uniform Resource Identifier (URI) Schemes</title>
@@ -435,6 +435,15 @@ publication, even when the specification requests permanent registration.
       <xref type="rfc" data="rfc4078"/>
       <notes/>
     </record>
+    <record date="2022-05-13">
+      <file type="template">prov/cstr</file>
+      <value>cstr</value>
+      <description>cstr</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="Wang_Shu"/>
+      <notes/>
+    </record>
     <record>
       <file type="template">prov/cvs</file>
       <value>cvs</value>
@@ -502,7 +511,7 @@ publication, even when the specification requests permanent registration.
       <description>did</description>
       <status>Provisional</status>
       <well-known>-</well-known>
-      <xref type="person" data="W3C_Decentralized_Identifier_Working_Group "/>
+      <xref type="person" data="W3C_Decentralized_Identifier_Working_Group"/>
       <xref type="person" data="Manu_Sporny"/>
       <xref type="person" data="Ivan_Herman"/>
       <notes/>
@@ -603,7 +612,7 @@ publication, even when the specification requests permanent registration.
       <description>DTNRG research and development</description>
       <status>Permanent</status>
       <well-known>-</well-known>
-      <xref type="draft" data="RFC-ietf-dtn-bpbis-31"/>
+      <xref type="rfc" data="rfc9171"/>
       <notes/>
     </record>
     <record>
@@ -831,6 +840,15 @@ publication, even when the specification requests permanent registration.
       <xref type="person" data="Dave_Thaler"/>
       <notes/>
     </record>
+    <record date="2022-05-23">
+      <file type="template">prov/gitoid</file>
+      <value>gitoid</value>
+      <description>gitoid</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="Ed_Warnicke"/>
+      <notes/>
+    </record>
     <record>
       <file type="template">prov/gizmoproject</file>
       <value>gizmoproject</value>
@@ -913,7 +931,7 @@ publication, even when the specification requests permanent registration.
       <description>Hypertext Transfer Protocol</description>
       <status>Permanent</status>
       <well-known><xref type="rfc" data="rfc8615"/></well-known>
-      <xref type="draft" data="RFC-ietf-httpbis-semantics-19">RFC-ietf-httpbis-semantics-19, Section 4.2.1</xref>
+      <xref type="rfc" data="rfc9110">RFC9110, Section 4.2.1</xref>
       <notes/>
     </record>
     <record updated="2021-10-01">
@@ -921,7 +939,7 @@ publication, even when the specification requests permanent registration.
       <description>Hypertext Transfer Protocol Secure</description>
       <status>Permanent</status>
       <well-known><xref type="rfc" data="rfc8615"/></well-known>
-      <xref type="draft" data="RFC-ietf-httpbis-semantics-19">RFC-ietf-httpbis-semantics-19, Section 4.2.2</xref>
+      <xref type="rfc" data="rfc9110">RFC9110, Section 4.2.2</xref>
       <notes/>
     </record>
     <record date="2017-05-09">
@@ -1020,7 +1038,7 @@ publication, even when the specification requests permanent registration.
       <status>Provisional</status>
       <well-known>-</well-known>
       <xref type="person" data="Peter_Waher"/>
-      <xref type="uri" data="http://www.iana.org/assignments/uri-schemes/prov/iotdisco.pdf"/>
+      <xref type="uri" data="https://www.iana.org/assignments/uri-schemes/prov/iotdisco.pdf"/>
       <notes/>
     </record>
     <record date="2020-05-14">
@@ -1038,7 +1056,7 @@ publication, even when the specification requests permanent registration.
       <description>ipn</description>
       <status>Permanent</status>
       <well-known>-</well-known>
-      <xref type="draft" data="RFC-ietf-dtn-bpbis-31"/>
+      <xref type="rfc" data="rfc9171"/>
       <notes/>
     </record>
     <record date="2020-05-14">
@@ -1391,6 +1409,15 @@ publication, even when the specification requests permanent registration.
       <xref type="person" data="urischemeowners_at_microsoft.com"/>
       <notes/>
     </record>
+    <record date="2022-03-24">
+      <file type="template">prov/ms-appinstaller</file>
+      <value>ms-appinstaller</value>
+      <description>ms-appinstaller</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="urischemeowners_at_microsoft.com"/>
+      <notes/>
+    </record>
     <record date="2016-05-09">
       <file type="template">prov/ms-browser-extension</file>
       <value>ms-browser-extension</value>
@@ -1539,6 +1566,15 @@ publication, even when the specification requests permanent registration.
       <file type="template">prov/ms-mobileplans</file>
       <value>ms-mobileplans</value>
       <description>ms-mobileplans</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="urischemeowners_at_microsoft.com"/>
+      <notes/>
+    </record>
+    <record date="2022-05-06">
+      <file type="template">prov/ms-newsandinterests</file>
+      <value>ms-newsandinterests</value>
+      <description>ms-newsandinterests</description>
       <status>Provisional</status>
       <well-known>-</well-known>
       <xref type="person" data="urischemeowners_at_microsoft.com"/>
@@ -1841,6 +1877,15 @@ publication, even when the specification requests permanent registration.
       <xref type="person" data="urischemeowners_at_microsoft.com"/>
       <notes/>
     </record>
+    <record date="2022-01-10">
+      <file type="template">prov/ms-stickers</file>
+      <value>ms-stickers</value>
+      <description>ms-stickers</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="urischemeowners_at_microsoft.com"/>
+      <notes/>
+    </record>
     <record date="2016-12-16">
       <file type="template">prov/ms-sttoverlay</file>
       <value>ms-sttoverlay</value>
@@ -2040,13 +2085,13 @@ publication, even when the specification requests permanent registration.
       <xref type="rfc" data="rfc5538"/>
       <notes/>
     </record>
-    <record>
+    <record updated="2022-03-22">
       <file type="template">prov/notes</file>
       <value>notes</value>
       <description>notes</description>
       <status>Provisional</status>
       <well-known>-</well-known>
-      <xref type="person" data="Dave_Thaler"/>
+      <xref type="draft" data="draft-dconmy-notes-uri-scheme-02"/>
       <notes/>
     </record>
     <record date="2020-09-07" updated="2020-11-16">
@@ -2451,12 +2496,13 @@ publication, even when the specification requests permanent registration.
 	  <xref type="person" data="Josh_Mandel"/>
       <notes/>
     </record>
-    <record>
-      <value>shttp</value>
+    <record updated="2021-12-23">
+      <value>shttp (OBSOLETE)</value>
       <description>Secure Hypertext Transfer Protocol</description>
       <status>Permanent</status>
       <well-known>-</well-known>
       <xref type="rfc" data="rfc2660"/>
+      <xref type="uri" data="https://datatracker.ietf.org/doc/status-change-http-experiments-to-historic">status-change-http-experiments-to-historic</xref>
       <notes/>
     </record>
     <record>
@@ -2474,6 +2520,15 @@ publication, even when the specification requests permanent registration.
       <status>Provisional</status>
       <well-known>-</well-known>
       <xref type="person" data="James_Cramer"/>
+      <notes/>
+    </record>
+    <record date="2021-11-30">
+      <file type="template">prov/simplex</file>
+      <value>simplex</value>
+      <description>simplex</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="Evgeny_Poberezkin"/>
       <notes/>
     </record>
     <record>
@@ -2508,6 +2563,15 @@ publication, even when the specification requests permanent registration.
       <status>Provisional</status>
       <well-known>-</well-known>
       <xref type="person" data="Dave_Thaler"/>
+      <notes/>
+    </record>
+    <record date="2021-11-29">
+      <file type="template">prov/smp</file>
+      <value>smp</value>
+      <description>smp</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="Evgeny_Poberezkin"/>
       <notes/>
     </record>
     <record>
@@ -2863,6 +2927,15 @@ publication, even when the specification requests permanent registration.
       <status>Provisional</status>
       <well-known>-</well-known>
       <xref type="person" data="Dave_Thaler"/>
+      <notes/>
+    </record>
+    <record date="2021-12-21">
+      <file type="template">prov/ves</file>
+      <value>ves</value>
+      <description>ves</description>
+      <status>Provisional</status>
+      <well-known>-</well-known>
+      <xref type="person" data="Jim_Zubov"/>
       <notes/>
     </record>
     <record>
@@ -3225,15 +3298,15 @@ resource should be avoided <xref type="uri" data="http://www.w3.org/TR/webarch/#
       <uri>mailto:d3e3e3&amp;gmail.com</uri>
       <updated>2021-07-01</updated>
     </person>
+    <person id="Ed_Warnicke">
+      <name>Ed Warnicke</name>
+      <uri>mailto:eaw&amp;cisco.com</uri>
+      <updated>2022-05-23</updated>
+    </person>
     <person id="Eld_Zierau">
       <name>Eld Zierau</name>
       <uri>mailto:elzi&amp;kb.dk</uri>
       <updated>2016-12-01</updated>
-    </person>
-    <person id="Frédéric_Wang">
-      <name>Frédéric Wang</name>
-      <uri>mailto:fwang&amp;igalia.com</uri>
-      <updated>2020-05-14</updated>
     </person>
     <person id="Elliott_Brown">
       <name>Elliott Brown</name>
@@ -3244,6 +3317,16 @@ resource should be avoided <xref type="uri" data="http://www.w3.org/TR/webarch/#
       <name>Evan Gilman</name>
       <uri>mailto:evan&amp;scytale.io</uri>
       <updated>2018-02-23</updated>
+    </person>
+    <person id="Evgeny_Poberezkin">
+      <name>Evgeny Poberezkin</name>
+      <uri>mailto:ep&amp;simplex.chat</uri>
+      <updated>2021-11-30</updated>
+    </person>
+    <person id="Frédéric_Wang">
+      <name>Frédéric Wang</name>
+      <uri>mailto:fwang&amp;igalia.com</uri>
+      <updated>2020-05-14</updated>
     </person>
     <person id="Gaurav_Jain">
       <name>Gaurav Jain</name>
@@ -3289,6 +3372,11 @@ resource should be avoided <xref type="uri" data="http://www.w3.org/TR/webarch/#
       <name>Jason Dzubak</name>
       <uri>mailto:dzubak&amp;byu.edu</uri>
       <updated>2020-12-10</updated>
+    </person>
+    <person id="Jim_Zubov">
+      <name>Jim Zubov</name>
+      <uri>mailto:jz&amp;vesvault.com</uri>
+      <updated>2021-12-21</updated>
     </person>
     <person id="Joe_Hildebrand">
       <name>Joe Hildebrand</name>
@@ -3369,11 +3457,6 @@ resource should be avoided <xref type="uri" data="http://www.w3.org/TR/webarch/#
       <name>OASIS Open</name>
       <uri>https://www.oasis-open.org</uri>
       <updated>2021-03-19</updated>
-    </person>
-    <person id="OCF_CoreTech_WG">
-      <name>Open Connectivity Foundation (OCF) CoreTech WG</name>
-      <uri>mailto:coretech_wg&amp;openconnectivity.org</uri>
-      <updated>2017-06-07</updated>
     </person>
     <person id="OMA-DMSE">
       <name>OMA-DMSE – Device Management Working Group at the Open Mobile Alliance</name>
@@ -3468,7 +3551,12 @@ resource should be avoided <xref type="uri" data="http://www.w3.org/TR/webarch/#
     <person id="urischemeowners_at_microsoft.com">
       <name>urischemeowners at microsoft.com</name>
       <uri>mailto:urischemeowners&amp;microsoft.com</uri>
-      <updated>2021-09-09</updated>
+      <updated>2022-05-06</updated>
+    </person>
+    <person id="Wang_Shu">
+      <name>Wang Shu</name>
+      <uri>mailto:wangshu&amp;cnic.cn</uri>
+      <updated>2022-05-13</updated>
     </person>
     <person id="W3C_WebApps_Working_Group">
       <name>W3C WebApps Working Group</name>

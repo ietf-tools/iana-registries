@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="oauth-parameters">
   <title>OAuth Parameters</title>
   <created>2012-07-27</created>
-  <updated>2021-09-16</updated>
+  <updated>2022-06-16</updated>
   
   <registry id="token-types">
     <title>OAuth Access Token Types</title>
@@ -31,11 +31,11 @@ described in <xref type="rfc" data="rfc8414"/>.
     </record>
     <record date="2021-07-27">
       <name>PoP</name>
-      <additional>"cnf", "rs_cnf" see section 3.1 of <xref type="rfc" data="rfc8747"/> 
-        and section 3.1 of <xref type="draft" data="RFC-ietf-ace-oauth-params-16"/>.</additional>
+      <additional>cnf, rs_cnf (see section 3.1 of <xref type="rfc" data="rfc8747"/> 
+        and section 3.2 of <xref type="draft" data="RFC-ietf-ace-oauth-params-16"/>).</additional>
       <http>N/A</http>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45"/>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46"/>
     </record>
   </registry>
   
@@ -247,16 +247,16 @@ described in <xref type="rfc" data="rfc6749"/>.
     <record date="2021-07-27">
       <name>unsupported_pop_key</name>
       <usage>token error response</usage>
-      <protocol><xref type="draft" data="RFC-ietf-ace-oauth-authz-45"/></protocol>
+      <protocol><xref type="draft" data="RFC-ietf-ace-oauth-authz-46"/></protocol>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45">RFC-ietf-ace-oauth-authz-45, Section 5.8.3</xref>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Section 5.8.3</xref>
     </record>
     <record date="2021-07-27">
       <name>incompatible_ace_profiles</name>
       <usage>token error response</usage>
-      <protocol><xref type="draft" data="RFC-ietf-ace-oauth-authz-45"/></protocol>
+      <protocol><xref type="draft" data="RFC-ietf-ace-oauth-authz-46"/></protocol>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45">RFC-ietf-ace-oauth-authz-45, Section 5.8.3</xref>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Section 5.8.3</xref>
     </record>
   </registry>
   
@@ -605,12 +605,13 @@ described in <xref type="rfc" data="rfc6749"/>.
       <controller><xref type="person" data="ETSI"/></controller>
       <xref type="uri" data="https://www.etsi.org/deliver/etsi_gs/NFV-SEC/001_099/022/02.07.01_60/gs_NFV-SEC022v020701p.pdf">ETSI GS NFV-SEC 022 V2.7.1</xref>
     </record>
-    <record date="2020-09-08">
+    <record date="2020-09-08" updated="2022-01-26">
       <name>iss</name>
-      <usage>authorization request</usage>
+      <usage>authorization request, authorization response</usage>
       <controller>IETF</controller>
-      <xref type="rfc" data="rfc7519">RFC7519, Section 4.1.1</xref>
+      <xref type="rfc" data="rfc9207">RFC9207, Section 2</xref>
       <xref type="rfc" data="rfc9101"/>
+      <xref type="rfc" data="rfc7519">RFC7519, Section 4.1.1</xref>
     </record>
     <record date="2020-09-08">
       <name>sub</name>
@@ -658,7 +659,7 @@ described in <xref type="rfc" data="rfc6749"/>.
       <name>ace_profile</name>
       <usage>token response</usage>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45">RFC-ietf-ace-oauth-authz-45, Sections 5.8.2, 5.8.4.3</xref>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Sections 5.8.2, 5.8.4.3</xref>
     </record>
     <record date="2021-08-12">
       <name>nonce1</name>
@@ -688,19 +689,19 @@ described in <xref type="rfc" data="rfc6749"/>.
       <name>req_cnf</name>
       <usage>token request</usage>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-params-16"/>
+      <xref type="draft" data="RFC-ietf-ace-oauth-params-16">RFC-ietf-ace-oauth-params-16, Section 5</xref>
     </record>
     <record date="2021-09-07">
       <name>rs_cnf</name>
       <usage>token response</usage>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-params-16"/>
+      <xref type="draft" data="RFC-ietf-ace-oauth-params-16">RFC-ietf-ace-oauth-params-16, Section 5</xref>
     </record>
     <record date="2021-09-07">
       <name>cnf</name>
       <usage>token response</usage>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-params-16"/>
+      <xref type="draft" data="RFC-ietf-ace-oauth-params-16">RFC-ietf-ace-oauth-params-16, Section 5</xref>
     </record>
   </registry>
   
@@ -813,6 +814,12 @@ described in <xref type="rfc" data="rfc7009"/>.
       <name>A URN Sub-Namespace for OAuth Request URIs.</name>
       <controller>IESG</controller>
       <xref type="rfc" data="rfc9126">RFC9126, Section 2.2</xref>
+    </record>
+    <record date="2022-06-16">
+      <urn>urn:ietf:params:oauth:jwk-thumbprint</urn>
+      <name>JWK Thumbprint URI</name>
+      <controller>IESG</controller>
+      <xref type="draft" data="RFC-ietf-oauth-jwk-thumbprint-uri-03"/>
     </record>
   </registry>
 
@@ -1368,9 +1375,9 @@ described in <xref type="rfc" data="rfc7662"/>.
     </record>
     <record date="2021-07-27">
       <value>ace_profile</value>
-      <description>The ACE profile used between client and RS.</description>
+      <description>The ACE profile used between the client and RS.</description>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45">RFC-ietf-ace-oauth-authz-45, Section 5.9.2</xref>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Section 5.9.2</xref>
     </record>
     <record date="2021-07-27">
       <value>cnonce</value>
@@ -1378,16 +1385,23 @@ described in <xref type="rfc" data="rfc7662"/>.
         AS by the RS via the client.  Used to verify token freshness when
         the RS cannot synchronize its clock with the AS.</description>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45">RFC-ietf-ace-oauth-authz-45, Section 5.9.2</xref>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Section 5.9.2</xref>
+    </record>
+    <record date="2021-11-26">
+      <value>cti</value>
+      <description>"CWT ID".  The identifier of a CWT as defined in
+        <xref type="rfc" data="rfc8392"/>.</description>
+      <controller>IETF</controller>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Section 5.9.2</xref>
     </record>
     <record date="2021-07-27">
       <value>exi</value>
-      <description>"Expires in".  Lifetime of the token in seconds from
-        the time the RS first sees it.  Used to implement a weaker from of
-        token expiration for devices that cannot synchronize their
+      <description>"Expires in". Lifetime of the token in seconds from 
+        the time the RS first sees it. Used to implement a weaker form 
+        of token expiration for devices that cannot synchronize their 
         internal clocks.</description>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-ace-oauth-authz-45">RFC-ietf-ace-oauth-authz-45, Section 5.9.2</xref>
+      <xref type="draft" data="RFC-ietf-ace-oauth-authz-46">RFC-ietf-ace-oauth-authz-46, Section 5.9.2</xref>
     </record>
   </registry>
 
@@ -1753,6 +1767,15 @@ described in <xref type="rfc" data="rfc8414"/>.
       <controller>IETF</controller>
       <xref type="draft" data="RFC-ietf-oauth-jwt-introspection-response-12">RFC-ietf-oauth-jwt-introspection-response-12, Section 7</xref>
     </record>
+    <record date="2022-01-06" updated="2022-03-17">
+      <name>authorization_response_iss_parameter_supported</name>
+      <description>Boolean value indicating whether the 
+        authorization server provides the iss parameter in the 
+        authorization response.
+      </description>
+      <controller>IETF</controller>
+      <xref type="rfc" data="rfc9207">RFC9207, Section 3</xref>
+    </record>
   </registry>
   
   <people>
@@ -1760,7 +1783,15 @@ described in <xref type="rfc" data="rfc8414"/>.
       <name>ETSI</name>
       <uri>mailto:pnns&amp;etsi.org</uri>
       <updated>2019-07-22</updated>
-    </person>  
+    </person>
+    <person id="IESG">
+      <name>Internet Engineering Steering Group</name>
+      <uri>mailto:iesg&amp;ietf.org</uri>
+    </person>
+    <person id="IETF">
+      <name>Internet Engineering Task Force</name>
+      <uri>mailto:ietf&amp;ietf.org</uri>
+    </person>
     <person id="Kantara_UMA_WG">
       <name>Kantara Initiative User-Managed Access Work Group</name>
       <uri>mailto:staff&amp;kantarainitiative.org</uri>

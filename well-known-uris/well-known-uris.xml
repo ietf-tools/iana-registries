@@ -5,7 +5,7 @@
   <title>Well-Known URIs</title>
   <category>Uniform Resource Identifier (URI) Schemes</category>
   <created>2010-01-20</created>
-  <updated>2021-10-06</updated>
+  <updated>2022-06-23</updated>
   <registry id="well-known-uris-1">
     <title>Well-Known URIs</title>
     <xref type="rfc" data="rfc8615"/>
@@ -49,12 +49,13 @@ using the <xref type="uri" data="https://github.com/protocol-registries/well-kno
       <status>permanent</status>
       <related><xref type="uri" data="https://github.com/google/digitalassetlinks/blob/master/well-known/details.md"/></related>
     </record>
-    <record date="2020-10-09">
+    <record date="2020-10-09" updated="2022-04-04">
       <value>brski</value>
       <controller>IETF</controller>
       <xref type="rfc" data="rfc8995"/>
       <status>permanent</status>
-      <related/>
+      <related>BRSKI has a sub-registry at <xref type="uri" data="https://www.iana.org/assignments/brski-parameters/brski-parameters.xhtml#brski-well-known-uris"/>
+        </related>
     </record>
     <record>
       <value>caldav</value>
@@ -70,8 +71,8 @@ using the <xref type="uri" data="https://github.com/protocol-registries/well-kno
       <status>permanent</status>
       <related>see also <xref type="rfc" data="rfc6352"/></related>
     </record>
-    <record date="2021-05-20">
-      <value>cmp (TEMPORARY - registered 2021-05-20, expires 2022-05-20)</value>
+    <record date="2021-05-20" updated="2022-04-18">
+      <value>cmp (TEMPORARY - registered 2021-05-20, extension registered 2022-04-18, expires 2023-05-20)</value>
       <controller>IETF</controller>
       <xref type="draft" data="draft-ietf-lamps-cmp-updates-10"/>
       <status>provisional</status>
@@ -127,6 +128,13 @@ using the <xref type="uri" data="https://github.com/protocol-registries/well-kno
       <status>provisional</status>
       <related/>
     </record>
+    <record date="2022-02-07">
+      <value>enterprise-network-security</value>
+      <controller><xref type="person" data="ETSI_TC_CYBER"/></controller>
+      <xref type="uri" data="https://www.etsi.org/deliver/etsi_ts/103500_103599/10352305/01.01.01_60/ts_10352305v010101p.pdf">ETSI TS 103 523-5 clause 4.3.4.3.4.2</xref>
+      <status>permanent</status>
+      <related/>
+    </record>
     <record date="2019-05-14">
       <value>enterprise-transport-security</value>
       <controller><xref type="person" data="ETSI_TC_CYBER"/></controller>
@@ -138,7 +146,7 @@ using the <xref type="uri" data="https://github.com/protocol-registries/well-kno
       <value>est</value>
       <controller>IETF</controller>
       <xref type="rfc" data="rfc7030"/>
-	    <xref type="draft" data="RFC-ietf-ace-coap-est-18"/>
+	    <xref type="rfc" data="rfc9148"/>
       <status>permanent</status>
       <related/>
 	    <reviewed>2020-04-29</reviewed>     
@@ -148,6 +156,13 @@ using the <xref type="uri" data="https://github.com/protocol-registries/well-kno
       <controller>W3C</controller>
       <xref type="uri" data="http://www.w3.org/TR/rdf11-concepts/">RDF 1.1 Concepts and Abstract Syntax</xref>
       <status>permanent</status>
+      <related/>
+    </record>
+    <record date="2022-01-28">
+      <value>gpc.json</value>
+      <controller><xref type="person" data="Global_Privacy_Control_project"/></controller>
+      <xref type="uri" data="https://globalprivacycontrol.github.io/gpc-spec/"/>
+      <status>provisional</status>
       <related/>
     </record>
     <record date="2020-05-18">
@@ -191,8 +206,10 @@ HTTPS protocols (using default ports) MUST be identical.</related>
       <value>http-opportunistic</value>
       <controller>IETF</controller>
       <xref type="rfc" data="rfc8164">RFC8164, Section 2.3</xref>
-      <status>permanent</status>
+      <xref type="uri" data="https://datatracker.ietf.org/doc/status-change-http-experiments-to-historic">status-change-http-experiments-to-historic</xref>
+      <status>obsoleted</status>
       <related/>
+      <reviewed>2021-12-28</reviewed> 
     </record>
     <record date="2019-07-25">
       <value>idp-proxy</value>
@@ -224,6 +241,14 @@ HTTPS protocols (using default ports) MUST be identical.</related>
       <status>permanent</status>
       <related/>
     </record>
+    <record date="2022-06-23">
+      <value>masque</value>
+      <controller>IETF</controller>
+      <xref type="draft" data="RFC-ietf-masque-connect-udp-15"/>
+      <status>permanent</status>
+      <related>Includes all resources identified with the path
+prefix "/.well-known/masque/udp/"</related>
+    </record>
     <record date="2019-04-16">
       <value>matrix</value>
       <controller><xref type="person" data="The_Matrix.org_Foundation_C.I.C."/></controller>
@@ -239,12 +264,14 @@ HTTPS protocols (using default ports) MUST be identical.</related>
       <status>permanent</status>
       <related/>
     </record>
-    <record date="2016-11-23" updated="2018-06-28">
-      <value>mud (deprecated)</value>
+    <record date="2016-11-23">
+      <value>mud</value>
       <controller/>
-      <status>permanent</status>
+      <status>obsoleted</status>
       <related/>
+      <reviewed>2021-12-28</reviewed> 
     </record>
+    
     <record date="2019-06-26" updated="2020-01-22">
       <value>nfv-oauth-server-configuration</value>
       <controller><xref type="person" data="ETSI"/></controller>
@@ -317,7 +344,7 @@ HTTPS protocols (using default ports) MUST be identical.</related>
     <record date="2021-05-04">
       <value>rd</value>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-core-resource-directory-28"/>
+      <xref type="rfc" data="rfc9176"/>
       <status>permanent</status>
       <related/>
     </record>
@@ -345,7 +372,7 @@ HTTPS protocols (using default ports) MUST be identical.</related>
     <record date="2021-07-13">
       <value>security.txt</value>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-foudil-securitytxt-12"/>
+      <xref type="rfc" data="rfc9116"/>
       <status>permanent</status>
       <related/>
     </record>
@@ -388,6 +415,20 @@ HTTPS protocols (using default ports) MUST be identical.</related>
       <value>tor-relay</value>
       <controller><xref type="person" data="Tor_Project_Development_Mailing_List"/></controller>
       <xref type="uri" data="https://gitlab.torproject.org/tpo/core/torspec/-/blob/main/proposals/326-tor-relay-well-known-uri-rfc8615.md">The "tor-relay" Well-Known Resource Identifier</xref>
+      <status>provisional</status>
+      <related/>
+    </record>
+    <record date="2022-03-29">
+      <value>traffic-advice</value>
+      <controller><xref type="person" data="Jeremy_Roman"/></controller>
+      <xref type="uri" data="https://buettner.github.io/private-prefetch-proxy/traffic-advice.html"/>
+      <status>provisional</status>
+      <related/>
+    </record>
+    <record date="2022-02-04">
+      <value>trust.txt</value>
+      <controller>JournalList.net</controller>
+      <xref type="uri" data="https://journallist.net/reference-document-for-trust-txt-specifications"/>
       <status>provisional</status>
       <related/>
     </record>
@@ -457,7 +498,12 @@ Resource Descriptor (JRD) as described in Section 4.4 of <xref type="rfc" data="
     <person id="ETSI_TC_CYBER">
       <name>ETSI (TC CYBER)</name>
       <uri>mailto:cybersupport&amp;etsi.org</uri>
-      <updated>2019-05-14</updated>
+      <updated>2022-02-07</updated>
+    </person>
+    <person id="Global_Privacy_Control_project">
+      <name>Global Privacy Control project</name>
+      <uri>https://globalprivacycontrol.org</uri>
+      <updated>2022-01-28</updated>
     </person>
     <person id="Google_Inc.">
       <name>Google Inc.</name>
@@ -468,6 +514,11 @@ Resource Descriptor (JRD) as described in Section 4.4 of <xref type="rfc" data="
       <name>GS1</name>
       <uri>mailto:phil.archer&amp;gs1.org</uri>
       <updated>2020-05-18</updated>
+    </person>
+    <person id="Jeremy_Roman">
+      <name>Jeremy Roman</name>
+      <uri>mailto:jbroman&amp;chromium.org</uri>
+      <updated>2022-03-29</updated>
     </person>
     <person id="Kantara_UMA_WG">
       <name>Kantara Initiative User-Managed Access Work Group</name>

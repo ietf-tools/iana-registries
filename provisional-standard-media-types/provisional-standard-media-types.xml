@@ -5,7 +5,7 @@
   <title>Provisional Standard Media Type Registry</title>
   <category>Multipurpose Internet Mail Extensions (MIME) and Media Types</category>
   <created>2012-07-20</created>
-  <updated>2021-11-09</updated>
+  <updated>2022-05-09</updated>
 
   <registry id="provisional-standard-types">
     <title>Provisional Standard Media Type Registry</title>
@@ -19,7 +19,18 @@ use for development and test purposes only.
 
 Media Types: <xref type="registry" data="media-types"/>
     </note>
-    
+
+    <record date="2022-02-18">
+      <name>application/automationml-aml+xml</name>
+      <org>AutomationML e.V.</org>
+      <xref type="person" data="AutomationML_e.V."/>
+    </record>
+    <record date="2022-02-18">
+      <name>application/automationml-amlx+zip</name>
+      <org>AutomationML e.V.</org>
+      <xref type="person" data="AutomationML_e.V."/>
+    </record>
+
     <record date="2018-11-19">
       <name>application/odm+json</name>
       <org>CDISC</org>
@@ -57,6 +68,11 @@ Media Types: <xref type="registry" data="media-types"/>
       <org>IETF</org>
       <xref type="draft" data="draft-yasskin-http-origin-signed-responses"/>
     </record>
+    <record date="2022-04-08">
+      <name>application/voucher-cose+cbor</name>
+      <org>IETF</org>
+      <xref type="draft" data="draft-ietf-anima-constrained-voucher-17"/>
+    </record>
     <record date="2019-09-30">
       <name>application/webbundle</name>
       <org>IETF</org>
@@ -80,6 +96,12 @@ Media Types: <xref type="registry" data="media-types"/>
       <org>OASIS</org>
       <xref type="person" data="Chet_Ensign"/>
     </record>
+
+    <record date="2021-12-15">
+      <name>application/city+json</name>
+      <org>Open Geospatial Consortium (OGC)</org>
+      <xref type="person" data="Hugo_Ledoux"/>
+    </record>
     
     <record date="2015-10-21">
       <name>text/nfo</name>
@@ -91,6 +113,12 @@ Media Types: <xref type="registry" data="media-types"/>
       <name>image/dpx</name>
       <org>Society of Motion Picture and Television Engineers (SMPTE)</org>
       <xref type="person" data="Director_of_Standards"/>
+    </record>
+
+    <record date="2021-12-16">
+      <name>application/netcdf</name>
+      <org>Unidata</org>
+      <xref type="person" data="Ethan_Davis"/>
     </record>
     
     <record date="2018-06-26">
@@ -116,6 +144,11 @@ Media Types: <xref type="registry" data="media-types"/>
   </registry>
   
   <people>
+    <person id="AutomationML_e.V.">
+      <name>AutomationML e.V.</name>
+      <uri>mailto:office&amp;automationml.org</uri>
+      <updated>2022-02-18</updated>
+    </person>
     <person id="Chet_Ensign">
       <name>Chet Ensign</name>
       <uri>mailto:chet.ensign&amp;oasis-open.org</uri>
@@ -131,6 +164,21 @@ Media Types: <xref type="registry" data="media-types"/>
       <uri>mailto:dcreager&amp;google.com</uri>
       <updated>2018-06-26</updated>
     </person>
+    <person id="Ethan_Davis">
+      <name>Ethan Davis</name>
+      <uri>mailto:edavis&amp;ucar.edu</uri>
+      <updated>2021-12-16</updated>
+    </person>
+    <person id="Glen_Kleidon">
+      <name>Glen Kleidon</name>
+      <uri>mailto:glenk&amp;galkam.com.au</uri>
+      <updated>2020-07-22</updated>
+    </person>
+    <person id="Hugo_Ledoux">
+      <name>Hugo Ledoux</name>
+      <uri>mailto:h.ledoux&amp;tudelft.nl</uri>
+      <updated>2021-12-15</updated>
+    </person>
     <person id="ISO-IEC_JTC_1-SC_29-WG_1_Convenor">
       <name>ISO/IEC JTC 1/SC 29/WG 1 Convenor</name>
       <uri>mailto:sc29-sec&amp;itscj.ipsj.or.jp</uri>
@@ -140,11 +188,6 @@ Media Types: <xref type="registry" data="media-types"/>
       <name>Jonathan Hohle</name>
       <uri>mailto:jonhohle&amp;gmail.com</uri>
       <updated>2017-06-28</updated>
-    </person>
-    <person id="Glen_Kleidon">
-      <name>Glen Kleidon</name>
-      <uri>mailto:glenk&amp;galkam.com.au</uri>
-      <updated>2020-07-22</updated>
     </person>
     <person id="Roy_T._Fielding">
       <name>Roy T. Fielding</name>

@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                                       Resource Public Key Infrastructure (RPKI)
 
    Created
            2011-09-08
 
    Last Updated
-           2021-11-08
+           2022-07-01
 
    Available Formats
            [IMG]
@@ -18,6 +20,7 @@
      * RPKI Repository Name Schemes
      * rpki-rtr-pdu
      * rpki-rtr-error
+     * rpki-rtr-afi
      * BGPsec Capability
      * BGPsec_Path Flags
      * BGPsec Algorithm Suites
@@ -37,7 +40,7 @@ RPKI Signed Objects
 
                                          Name                                                  OID                          Reference
    ROA                                                                              1.2.840.113549.1.9.16.1.24 [RFC6482]
-   Manifest                                                                         1.2.840.113549.1.9.16.1.26 [RFC6486]
+   Manifest                                                                         1.2.840.113549.1.9.16.1.26 [RFC9286]
    Ghostbusters                                                                     1.2.840.113549.1.9.16.1.35 [RFC6493]
    Autonomous System Provider Authorization (TEMPORARY - registered 2021-11-08,     1.2.840.113549.1.9.16.1.49 [draft-ietf-sidrops-aspa-profile-06]
    expires 2022-11-08)
@@ -63,7 +66,8 @@ RPKI Repository Name Schemes
    .gbr               Ghostbusters Record                                                                      [RFC6493]
    .mft               Manifest                                                                                 [RFC6481]
    .roa               Route Origination Authorization                                                          [RFC6481]
-   .sig               Signed Checklist (TEMPORARY - registered 2021-04-01, expires 2022-04-01)                 [draft-ietf-sidrops-rpki-rsc-02]
+   .sig               Signed Checklist (TEMPORARY - registered 2021-04-01, extension registered 2022-02-24,    [draft-ietf-sidrops-rpki-rsc-06]
+                      expires 2023-04-01)
 
 rpki-rtr-pdu
 
@@ -78,21 +82,23 @@ rpki-rtr-pdu
            [IMG]
            CSV
 
-   Protocol Version PDU Type  Description       Reference
-   0-1              0        Serial Notify  [RFC6810][RFC8210]
-   0-1              1        Serial Query   [RFC6810][RFC8210]
-   0-1              2        Reset Query    [RFC6810][RFC8210]
-   0-1              3        Cache Response [RFC6810][RFC8210]
-   0-1              4        IPv4 Prefix    [RFC6810][RFC8210]
-   0-1              5        Unassigned
-   0-1              6        IPv6 Prefix    [RFC6810][RFC8210]
-   0-1              7        End of Data    [RFC6810][RFC8210]
-   0-1              8        Cache Reset    [RFC6810][RFC8210]
+   Protocol Version PDU Type  Description                      Reference
+   0-2              0        Serial Notify  [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              1        Serial Query   [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              2        Reset Query    [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              3        Cache Response [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              4        IPv4 Prefix    [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              5        Unassigned
+   0-2              6        IPv6 Prefix    [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              7        End of Data    [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              8        Cache Reset    [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
    0                9        Reserved       [RFC8210]
-   1                9        Router Key     [RFC8210]
-   0-1              10       Error Report   [RFC6810][RFC8210]
-   0-1              11-254   Unassigned
-   0-1              255      Reserved       [RFC6810][RFC8210]
+   1-2              9        Router Key     [RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-2              10       Error Report   [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
+   0-1              11       Reserved       [RFC8210][RFC-ietf-sidrops-8210bis-10]
+   2                11       ASPA           [RFC-ietf-sidrops-8210bis-10]
+   0-2              12-254   Unassigned
+   0-2              255      Reserved       [RFC6810][RFC8210][RFC-ietf-sidrops-8210bis-10]
 
 rpki-rtr-error
 
@@ -123,6 +129,27 @@ rpki-rtr-error
    8          Unexpected Protocol Version     [RFC8210]
    9-254      Unassigned
    255        Reserved                        [RFC6810]
+
+rpki-rtr-afi
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Reference
+           [RFC-ietf-sidrops-8210bis-10]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Bit          Bit Name                    Reference
+   0   AFI (IPv4 == 0, IPv6 == 1) [RFC-ietf-sidrops-8210bis-10]
+   1-7 Reserved, MUST be zero     [RFC-ietf-sidrops-8210bis-10]
 
 BGPsec Capability
 
@@ -189,3 +216,5 @@ BGPsec Algorithm Suites
    0xF7-0xFA                  Experimentation  Experimentation     [RFC8608]
    0xFB-0xFE                  Documentation    Documentation       [RFC8608]
    0xFF                       Reserved         Reserved            [RFC8608]
+
+   Licensing Terms

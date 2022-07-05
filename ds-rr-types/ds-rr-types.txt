@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                       DNSSEC Delegation Signer (DS) Resource Record (RR) Type Digest Algorithms
 
    Created
            2003-10-31
 
    Last Updated
-           2021-10-12
+           2021-12-03
 
    Available Formats
            [IMG]
@@ -23,7 +25,7 @@ Digest Algorithms
  RFC Required
 
    Reference
-           [RFC3658][RFC4034][RFC4035][RFC-ietf-dnsop-dnssec-iana-cons-05]
+           [RFC3658][RFC4034][RFC4035][RFC9157]
 
    Available Formats
            [IMG]
@@ -36,3 +38,5 @@ Digest Algorithms
      3   GOST R 34.11-94 OPTIONAL  [RFC5933]
      4   SHA-384         OPTIONAL  [RFC6605]
    5-255 Unassigned          -
+
+   Licensing Terms

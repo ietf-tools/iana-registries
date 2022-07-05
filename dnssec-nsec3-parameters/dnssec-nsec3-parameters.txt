@@ -1,10 +1,12 @@
+   Internet Assigned Numbers Authority
+
                                          Domain Name System Security (DNSSEC) NextSECure3 (NSEC3) Parameters
 
    Created
            2007-12-17
 
    Last Updated
-           2021-10-12
+           2021-12-03
 
    Available Formats
            [IMG]
@@ -25,7 +27,7 @@ DNSSEC NSEC3 Flags
  RFC Required
 
    Reference
-           [RFC5155][RFC-ietf-dnsop-dnssec-iana-cons-05]
+           [RFC5155][RFC9157]
 
    Available Formats
            [IMG]
@@ -42,7 +44,7 @@ DNSSEC NSEC3PARAM Flags
  RFC Required
 
    Reference
-           [RFC5155][RFC-ietf-dnsop-dnssec-iana-cons-05]
+           [RFC5155][RFC9157]
 
    Available Formats
            [IMG]
@@ -59,7 +61,7 @@ DNSSEC NSEC3 Hash Algorithms
  RFC Required
 
    Reference
-           [RFC5155][RFC-ietf-dnsop-dnssec-iana-cons-05]
+           [RFC5155][RFC9157]
 
    Available Formats
            [IMG]
@@ -69,3 +71,5 @@ DNSSEC NSEC3 Hash Algorithms
      0   Reserved    [RFC5155]
      1   SHA-1       [RFC5155]
    2-255 Unassigned
+
+   Licensing Terms

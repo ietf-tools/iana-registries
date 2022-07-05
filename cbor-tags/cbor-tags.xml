@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="cbor-tags">
   <title>Concise Binary Object Representation (CBOR) Tags</title>
   <created>2013-09-19</created>
-  <updated>2021-11-09</updated>
+  <updated>2022-06-27</updated>
   <category>Concise Binary Object Representation (CBOR)</category>
   
   <registry id="tags">
@@ -105,7 +105,7 @@
     <record updated="2020-10-10">
       <value>23</value>
       <description>(any)</description>
-      <semantics>Expected conversion to base16 encoding; see Section Section 3.4.5.2</semantics>
+      <semantics>Expected conversion to base16 encoding; see Section 3.4.5.2</semantics>
       <xref type="rfc" data="rfc8949"/>
     </record>    
     <record updated="2020-10-10">
@@ -196,7 +196,7 @@
     <record date="2014-05-09">
       <value>37</value>
       <description>byte string</description>
-      <semantics>Binary UUID (<xref type="rfc" data="rfc4122"/> section 4.1.2)</semantics>
+      <semantics>Binary UUID (<xref type="rfc" data="rfc4122">RFC4122, Section 4.1.2</xref>)</semantics>
       <xref type="uri" data="https://github.com/lucas-clemente/cbor-specs/blob/master/uuid.md"/>
       <xref type="person" data="Lucas_Clemente"/>
     </record>
@@ -233,35 +233,35 @@
       <xref type="uri" data="https://github.com/ipld/cid-cbor/"/>
       <xref type="person" data="Volker_Mische"/>
     </record>
-    <record date="2019-04-11">
+    <record date="2019-04-11" updated="2022-04-13">
       <value>43</value>
-      <description>byte string</description>
-      <semantics>YANG bits datatype; see Section 6.7.</semantics>
-      <xref type="draft" data="draft-ietf-core-yang-cbor"/>
+      <description>text string</description>
+      <semantics>YANG bits datatype; see <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>, Section 6.7.</semantics>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
     </record>
-    <record date="2019-04-11">
+    <record date="2019-04-11" updated="2022-04-13">
       <value>44</value>
-      <description>unsigned integer</description>
-      <semantics>YANG enumeration datatype; see Section 6.6.</semantics>
-      <xref type="draft" data="draft-ietf-core-yang-cbor"/>
+      <description>text string</description>
+      <semantics>YANG enumeration datatype; see <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>, Section 6.6.</semantics>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
     </record>
-    <record date="2019-04-11">
+    <record date="2019-04-11" updated="2022-04-13">
       <value>45</value>
       <description>unsigned integer or text string</description>
-      <semantics>YANG identityref datatype; see Section 6.10.</semantics>
-      <xref type="draft" data="draft-ietf-core-yang-cbor"/>
+      <semantics>YANG identityref datatype; see <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>, Section 6.10.</semantics>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
     </record>
-    <record date="2019-04-11">
+    <record date="2019-04-11" updated="2022-04-13">
       <value>46</value>
       <description>unsigned integer or text string or array</description>
-      <semantics>YANG instance-identifier datatype; see Section 6.13.</semantics>
-      <xref type="draft" data="draft-ietf-core-yang-cbor"/>
+      <semantics>YANG instance-identifier datatype; see <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>, Section 6.13.</semantics>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
     </record>
-    <record date="2019-08-19">
+    <record date="2019-08-19" updated="2022-04-13">
       <value>47</value>
       <description>unsigned integer</description>
-      <semantics>YANG Schema Item iDentifier (sid); see Section 3.2.</semantics>
-      <xref type="draft" data="draft-ietf-core-yang-cbor"/>
+      <semantics>YANG Schema Item iDentifier (sid); see <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>, Section 3.2.</semantics>
+      <xref type="draft" data="RFC-ietf-core-yang-cbor-20"/>
     </record>
     <record>
       <value>48-51</value>
@@ -272,7 +272,7 @@
       <value>52</value>
       <description>byte string or array</description>
       <semantics>IPv4, [prefixlen,IPv4], [IPv4,prefixpart]</semantics>
-      <xref type="draft" data="RFC-ietf-cbor-network-addresses-13"/>
+      <xref type="rfc" data="rfc9164"/>
     </record>
     <record>
       <value>53</value>
@@ -283,7 +283,7 @@
       <value>54</value>
       <description>byte string or array</description>
       <semantics>IPv6, [prefixlen,IPv6], [IPv6,prefixpart]</semantics>
-      <xref type="draft" data="RFC-ietf-cbor-network-addresses-13"/>
+      <xref type="rfc" data="rfc9164"/>
     </record>
     <record>
       <value>55-60</value>
@@ -580,7 +580,7 @@
         for IP addresses)</semantics>
       <xref type="uri" data="http://www.employees.org/~ravir/cbor-network.txt"/>
       <xref type="person" data="Ravi_Raju"/>
-      <xref type="draft" data="RFC-ietf-cbor-network-addresses-13"/>
+      <xref type="rfc" data="rfc9164"/>
     </record>
     <record date="2018-03-28" updated="2021-10-22">
       <value>261</value>
@@ -589,7 +589,7 @@
         for IP addresses)</semantics>
       <xref type="uri" data="https://github.com/toravir/CBOR-Tag-Specs/blob/master/networkPrefix.md"/>
       <xref type="person" data="Ravi_Raju"/>
-      <xref type="draft" data="RFC-ietf-cbor-network-addresses-13"/>
+      <xref type="rfc" data="rfc9164"/>
     </record>
     <record date="2018-03-28">
       <value>262</value>
@@ -698,14 +698,14 @@
     <record date="2021-02-01">
       <value>277</value>
       <description>byte string</description>
-      <semantics>Universal Geographical Area Description (GAD) shape; see section 5</semantics>
+      <semantics>Universal Geographical Area Description (GAD) shape; see Section 5</semantics>
       <xref type="uri" data="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=742">TS 23.032</xref>
       <xref type="person" data="Mathew_Meins"/>
     </record>
     <record date="2021-02-01">
       <value>278</value>
       <description>byte string</description>
-      <semantics>Universal Geographical Area Description (GAD) description of velocity; see section 8</semantics>
+      <semantics>Universal Geographical Area Description (GAD) description of velocity; see Section 8</semantics>
       <xref type="uri" data="https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=742">TS 23.032</xref>
       <xref type="person" data="Mathew_Meins"/>
     </record>
@@ -774,7 +774,34 @@
       <xref type="person" data="Geoffrey_Broadwell"/>
     </record>
     <record>
-      <value>25442-49999</value>
+      <value>25442-42599</value>
+      <description>Unassigned</description>
+      <semantics/>
+    </record>
+    <record date="2022-05-24">
+      <value>42600</value>
+      <description>map</description>
+      <semantics>A confidentiality clearance. The key value pairs of the map are defined in ADatP-4774.4</semantics>
+      <xref type="person" data="Aidan_Murdock"/>
+      <file type="template">template/42600</file>
+    </record>
+    <record date="2022-05-24">
+      <value>42601</value>
+      <description>array</description>
+      <semantics>A metadata binding. The elements of the array are defined in AdatP-4778.5. 
+        The tag is also used as part of the magic number in on-disk detached and encapsulating bindings.</semantics>
+      <xref type="person" data="Aidan_Murdock"/>
+      <file type="template">template/42601</file>
+    </record>
+    <record date="2022-05-24">
+      <value>42602</value>
+      <description>map</description>
+      <semantics>A collection of NCMS metadata elements. The key value pairs of the map are defined in AdatP-5636.4</semantics>
+      <xref type="person" data="Aidan_Murdock"/>
+      <file type="template">template/42602</file>
+    </record>
+    <record>
+      <value>42603-49999</value>
       <description>Unassigned</description>
       <semantics/>
     </record>
@@ -873,15 +900,51 @@
       <semantics>Self-described CBOR; see Section 3.4.6</semantics>
       <xref type="rfc" data="rfc8949"/>
     </record>
-    <record date="2021-03-08">
+    <record date="2021-03-08" updated="2022-05-23">
       <value>55800</value>
-      <description>byte-string</description>
-      <semantics>indicates that the file contains one or more CBOR Sequences</semantics>
-      <xref type="draft" data="draft-ietf-cbor-file-magic-00"/>
-      <xref type="person" data="Michael_Richardson_2"/>
+      <description>tagged byte string</description>
+      <semantics>indicates that the file contains CBOR Sequences</semantics>
+      <xref type="draft" data="RFC-ietf-cbor-file-magic-12"/>
+    </record>
+    <record date="2022-05-23">
+      <value>55801</value>
+      <description>tagged byte string</description>
+      <semantics>indicates that the file starts with a CBOR-Labeled Non-CBOR Data label.</semantics>
+      <xref type="draft" data="RFC-ietf-cbor-file-magic-12"/>
     </record>
     <record>
-      <value>55801-65534</value>
+      <value>55802-57341</value>
+      <description>Unassigned</description>
+      <semantics/>
+    </record>
+    <record date="2022-05-23">
+      <value>57342</value>
+      <description>array</description>
+      <semantics>Identify and define a set of record structures (each a sequence of 
+        property names) that can be referenced as tags in the included value (and 
+        the scope for the record tag definitions)</semantics>
+      <xref type="uri" data="https://github.com/kriszyp/cbor-records"/>
+      <xref type="person" data="Kris_Zyp"/>
+    </record>
+    <record date="2022-05-23">
+      <value>57343</value>
+      <description>array</description>
+      <semantics>Identify and define a record structure (a sequence of property 
+        names), and use that record structure definition to interpret the included 
+        values.</semantics>
+      <xref type="uri" data="https://github.com/kriszyp/cbor-records"/>
+      <xref type="person" data="Kris_Zyp"/>
+    </record>
+    <record date="2022-05-23">
+      <value>57344-57599</value>
+      <description>array</description>
+      <semantics>References a defined record structure, using that referenced 
+        record definition to interpret the included values.</semantics>
+      <xref type="uri" data="https://github.com/kriszyp/cbor-records"/>
+      <xref type="person" data="Kris_Zyp"/>
+    </record>
+    <record>
+      <value>57600-65534</value>
       <description>Unassigned</description>
       <semantics/>
     </record>
@@ -893,7 +956,19 @@
         Section 10.1</xref>
     </record>
     <record>
-      <value>65536-1330664269</value>
+      <value>65536-15309735</value>
+      <description>Unassigned</description>
+      <semantics/>
+    </record>
+    <record>
+      <value>15309736</value>
+      <description>map (major type 5)</description>
+      <semantics>RAINS Message</semantics>
+      <xref type="uri" data="https://britram.github.io/rains-prototype"/>
+      <xref type="person" data="Brian_Trammell"/>
+    </record>
+    <record>
+      <value>15309737-1330664269</value>
       <description>Unassigned</description>
       <semantics/>
     </record>
@@ -907,19 +982,18 @@ unit test cases.</semantics>
       <file type="template">template/1330664270</file>
       </record>
     <record>
-      <value>1330664271-15309735</value>
+      <value>1330664271-1668546816</value>
       <description>Unassigned</description>
       <semantics/>
     </record>
-    <record>
-      <value>15309736</value>
-      <description>map (major type 5)</description>
-      <semantics>RAINS Message</semantics>
-      <xref type="uri" data="https://britram.github.io/rains-prototype"/>
-      <xref type="person" data="Brian_Trammell"/>
+    <record date="2022-05-23">
+      <value>1668546817-1668612095</value>
+      <description>byte string or any CBOR data item (see Appendix B of <xref type="draft" data="RFC-ietf-cbor-file-magic-12"/>)</description>
+      <semantics>the representation of content-format ct &lt; 65025 is indicated by tag number TN(ct) = 0x63470101 + (ct / 255) * 256 + ct % 255</semantics>
+      <xref type="draft" data="RFC-ietf-cbor-file-magic-12"/>
     </record>
     <record>
-      <value>15309737-4294967294</value>
+      <value>1668612096-4294967294</value>
       <description>Unassigned</description>
       <semantics/>
     </record>
@@ -931,7 +1005,14 @@ unit test cases.</semantics>
         Section 10.1</xref>
     </record>
     <record>
-      <value>4294967296-18446744073709551614</value>
+      <value>4294967296</value>
+      <description>map</description>
+      <semantics>Intel FPGA SPDM Manifest</semantics>
+      <xref type="person" data="Andrew_Draper"/>
+      <file type="template">template/4294967296</file>
+    </record>
+    <record>
+      <value>4294967297-18446744073709551614</value>
       <description>Unassigned</description>
       <semantics/>
     </record>
@@ -948,10 +1029,20 @@ unit test cases.</semantics>
   </registry>
   
   <people>
+    <person id="Aidan_Murdock">
+      <name>Aidan Murdock</name>
+      <uri>mailto:aidan.murdock&amp;ncia.nato.int</uri>
+      <updated>2022-05-24</updated>
+    </person>
     <person id="Alfredo_Di_Napoli">
       <name>Alfredo Di Napoli</name>
       <uri>mailto:alfredo.dinapoli&amp;iohk.io</uri>
       <updated>2017-08-25</updated>
+    </person>
+    <person id="Andrew_Draper">
+      <name>Andrew Draper</name>
+      <uri>mailto:andrew.draper&amp;intel.com</uri>
+      <updated>2021-12-10</updated>
     </person>
     <person id="Brian_Trammell">
       <name>Brian Trammell</name>
@@ -972,6 +1063,11 @@ unit test cases.</semantics>
       <name>Geoffrey Broadwell</name>
       <uri>mailto:gjb&amp;sonic.net</uri>
       <updated>2021-11-09</updated>
+    </person>
+    <person id="Kris_Zyp">
+      <name>Kris Zyp</name>
+      <uri>mailto:kriszyp&amp;gmail.com</uri>
+      <updated>2022-05-23</updated>
     </person>
     <person id="Lucas_Clemente">
       <name>Lucas Clemente</name>
@@ -997,11 +1093,6 @@ unit test cases.</semantics>
       <name>Michael Richardson</name>
       <uri>mailto:mcr&amp;xelerance.com</uri>
       <updated>2021-01-25</updated>
-    </person>
-    <person id="Michael_Richardson_2">
-      <name>Michael Richardson</name>
-      <uri>mailto:mcr+ietf&amp;sandelman.ca</uri>
-      <updated>2021-03-08</updated>
     </person>
     <person id="Peter_Occil">
       <name>Peter Occil</name>

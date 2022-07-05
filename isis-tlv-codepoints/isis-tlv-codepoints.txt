@@ -1,16 +1,18 @@
+   Internet Assigned Numbers Authority
+
                                                                  IS-IS TLV Codepoints
 
    Created
            2003-05-06
 
    Last Updated
-           2021-10-28
+           2022-06-21
 
    Note
 
- For IS-IS registries and value ranges maintained via the "Expert Review" [RFC8126]
- registration procedure, guidance for IESG-designated experts can be found in
- [RFC7370].
+ For IS-IS registries and value ranges maintained via the "Expert
+ Review" [RFC8126] registration procedure, guidance for IESG-designated
+ experts can be found in [RFC7370].
 
 
    Available Formats
@@ -21,25 +23,30 @@
 
    Registries included below
 
-     * TLV Codepoints Registry
-     * IS-IS Authentication Type Codes for TLV 10 (Authentication TLV)
-     * Sub-TLVs for TLV 16 (Reverse Metric TLV)
-     * Sub-TLVs for TLVs 22, 23, 25, 141, 222, and 223 (Extended IS reachability, IS Neighbor Attribute, L2 Bundle Member Attributes, inter-AS
-       reachability information, MT-ISN, and MT IS Neighbor Attribute TLVs)
-     * link-attribute bit values for sub-TLV 19 of TLV 22 (Extended IS reachability TLV)
-     * Sub-TLVs for TLVs 135, 235, 236, and 237 (Extended IP reachability, MT IP. Reach, IPv6 IP. Reach, and MT IPv6 IP. Reach TLVs)
-     * Bit Values for Prefix Attribute Flags Sub-TLV
-     * IS-IS Group Address Type Codes for TLV 142 (GADDR-TLV)
-     * Sub-TLVs for TLV 143 (MT-Port-Cap-TLV)
-     * Sub-TLVs for TLV 144 (MT-Capability TLV)
-     * Sub-TLVs for TLV 242 (IS-IS Router CAPABILITY TLV)
-     * Application Identifiers for TLV 251 (Generic Information TLV)
-     * sub-sub-TLVs for BIER Info sub-TLV
-     * Sub-TLVs for TLVs 149 and 150
-     * Sub-sub-TLV Codepoints for Application-Specific Link Attributes
-     * Sub-TLVs for TLV 238
+     * IS-IS Top-Level TLV Codepoints
+     * IS-IS Authentication Type Codes
+     * IS-IS Sub-TLVs for Reverse Metric TLV
+     * IS-IS Sub-TLVs for TLVs Advertising Neighbor Information
+     * IS-IS Neighbor Link-Attribute Bit Values
+     * IS-IS Sub-TLVs for TLVs Advertising Prefix Reachability
+     * IS-IS Bit Values for Prefix Attribute Flags Sub-TLV
+     * IS-IS Group Address Type Codes for GADDR-TLV
+     * IS-IS Sub-TLVs for MT-Port-Cap-TLV
+     * IS-IS Sub-TLVs for MT-Capability TLV
+     * IS-IS Sub-TLVs for IS-IS Router CAPABILITY TLV
+     * IS-IS Sub-Sub-TLVs for SRv6 Capability Sub-TLV
+     * IS-IS SRv6 Capabilities Sub-TLV Flags
+     * IS-IS Application Identifiers for Generic Information TLV
+     * IS-IS Sub-Sub-TLVs for BIER Info Sub-TLV
+     * IS-IS Sub-TLVs for Segment Identifier/Label Binding TLVs
+     * IS-IS Sub-Sub-TLV Codepoints for Application-Specific Link Attributes
+     * IS-IS Sub-TLVs for Application-Specific SRLG TLV
+     * IS-IS Sub-Sub-TLVs for SRv6 SID Sub-TLVs
+     * IS-IS SRv6 Locator TLV Flags
+     * IS-IS SRv6 End SID Sub-TLV Flags
+     * IS-IS SRv6 Adjacency SID Sub-TLVs Flags
 
-TLV Codepoints Registry
+IS-IS Top-Level TLV Codepoints
 
    Registration Procedure(s)
 
@@ -48,6 +55,10 @@ TLV Codepoints Registry
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ Top-level TLVs for the IS-IS protocol
 
    Reference
            [RFC3563][RFC6233][RFC7356][RFC8918]
@@ -110,7 +121,7 @@ TLV Codepoints Registry
                                                                          International Standard 10589: 2002, Second Edition, 2002.][RFC6233]
    11        ESN TLV                                   y   n   y   n     [RFC7602]
    12        Opt. Checksum                             y   n   y   n     [RFC3358]
-   13        Purge Originator Identification           n   n   n   y     [RFC8918]
+   13        Purge Originator Identification           n   n   n   y     [RFC6232] [RFC8918]
                                                                          [ISO 10589, "Intermediate System to Intermediate System Intra- Domain
    14        LSPBufferSize                             n   y   n   n     Routeing Exchange Protocol for use in Conjunction with the Protocol for
                                                                          Providing the Connectionless-mode Network Service (ISO 8473)",
@@ -119,28 +130,28 @@ TLV Codepoints Registry
    16        Reverse Metric                            y   n   n   n     [RFC8500]
              IS-IS Area Node IDs TLV (TEMPORARY -
    17        registered 2019-08-08, extension          n   y   n   n     [draft-ietf-lsr-dynamic-flooding]
-             registered 2021-06-18, expires
-             2022-08-08)
+             registered 2022-06-21, expires
+             2023-08-08)
              IS-IS Flooding Path TLV (TEMPORARY -
    18        registered 2019-08-08, extension          n   y   n   n     [draft-ietf-lsr-dynamic-flooding]
-             registered 2021-06-18, expires
-             2022-08-08)
+             registered 2022-06-21, expires
+             2023-08-08)
              IS-IS Flooding Request TLV (TEMPORARY -
    19        registered 2019-08-08, extension          y   n   n   n     [draft-ietf-lsr-dynamic-flooding]
-             registered 2021-06-18, expires
-             2022-08-08)
+             registered 2022-06-21, expires
+             2023-08-08)
              Area Proxy (TEMPORARY - registered
    20        2020-08-31, extension registered          n   y   n   n     [draft-ietf-lsr-isis-area-proxy-06]
              2021-07-27, expires 2022-08-31)
-   21        Unassigned
+             Flooding Parameters TLV (TEMPORARY -
+   21        registered 2022-03-15, expires            y   n   y   n     [draft-ietf-lsr-isis-fast-flooding-00]
+             2023-03-15)
    22        Extended IS reachability                  n   y   n   n     [RFC5305]
    23        IS Neighbor Attribute                     n   y   n   n     [RFC5311]
    24        IS Alias ID                               n   y   n   n     [RFC5311]
    25        L2 Bundle Member Attributes               n   y   n   n     [RFC8668]
    26        Unassigned
-             SRv6 Locator (TEMPORARY - registered
-   27        2020-06-17, extension registered          n   y   n   n     [draft-ietf-lsr-isis-srv6-extensions-15]
-             2021-06-01, expires 2022-06-17)
+   27        SRv6 Locator                              n   y   n   n     [RFC-ietf-lsr-isis-srv6-extensions-18]
              Zone ID (TEMPORARY - registered
    28        2020-11-20, extension registered          n   y   n   n     [draft-ietf-lsr-isis-ttz-01]
              2021-10-28, expires 2022-11-20)
@@ -151,10 +162,12 @@ TLV Codepoints Registry
    67-125    Unassigned
              IPv4 Algorithm Prefix Reachability TLV
    126       (TEMPORARY - registered 2021-04-27,       n   y   n   n     [draft-ietf-lsr-ip-flexalgo-01]
-             expires 2022-04-27)
+             extension registered 2022-03-25, expires
+             2023-04-27)
              IPv6 Algorithm Prefix Reachability TLV
    127       (TEMPORARY - registered 2021-04-27,       n   y   n   n     [draft-ietf-lsr-ip-flexalgo-01]
-             expires 2022-04-27)
+             extension registered 2022-03-25, expires
+             2023-04-27)
    128       IP Int. Reach                             n   y   n   n     [RFC1195][RFC5302]
    129       Prot. Supported                           y   y   n   n     [RFC1195]
    130       IP Ext. Address                           n   y   n   n     [RFC1195][RFC5302]
@@ -182,7 +195,8 @@ TLV Codepoints Registry
    151-160   Unassigned
              Flood Reflection (TEMPORARY - registered
    161       2020-08-05, extension registered          y   n   n   n     [draft-ietf-lsr-isis-flood-reflection-01]
-             2021-06-18, expires 2022-08-05)
+             2021-06-18, document sent to IESG
+             Evaluation 2022-01-20)
    162-175   Unassigned
    176       Nortel Proprietary                        n   y   n   n
    177       Nortel Proprietary                        n   y   n   n
@@ -210,7 +224,7 @@ TLV Codepoints Registry
    251       Generic Information                       n   y   n   n     [RFC6823]
    252-65535 Unassigned
 
-IS-IS Authentication Type Codes for TLV 10 (Authentication TLV)
+IS-IS Authentication Type Codes
 
    Registration Procedure(s)
 
@@ -219,6 +233,10 @@ IS-IS Authentication Type Codes for TLV 10 (Authentication TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ Type Codes for Authentication TLV (10)
 
    Reference
            [RFC5304]
@@ -245,7 +263,7 @@ IS-IS Authentication Type Codes for TLV 10 (Authentication TLV)
    255    Routing Domain private authentication method Protocol for use in Conjunction with the Protocol for Providing the Connectionless-mode
                                                        Network Service (ISO 8473)", International Standard 10589: 2002, Second Edition, 2002.]
 
-Sub-TLVs for TLV 16 (Reverse Metric TLV)
+IS-IS Sub-TLVs for Reverse Metric TLV
 
    Registration Procedure(s)
 
@@ -254,6 +272,10 @@ Sub-TLVs for TLV 16 (Reverse Metric TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ Sub-TLVs for Reverse Metric TLV (16)
 
    Reference
            [RFC8500]
@@ -268,8 +290,7 @@ Sub-TLVs for TLV 16 (Reverse Metric TLV)
    18     Traffic Engineering Metric [RFC8500, Section 2]
    19-255 Unassigned
 
-Sub-TLVs for TLVs 22, 23, 25, 141, 222, and 223 (Extended IS reachability, IS Neighbor Attribute, L2 Bundle Member Attributes, inter-AS reachability
-information, MT-ISN, and MT IS Neighbor Attribute TLVs)
+IS-IS Sub-TLVs for TLVs Advertising Neighbor Information
 
    Registration Procedure(s)
 
@@ -279,24 +300,34 @@ information, MT-ISN, and MT IS Neighbor Attribute TLVs)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
 
+   Description
+
+ This registry defines sub-TLVs for TLVs advertising neighbor information.
+ The list of TLVs includes:
+
+ Extended IS reachability (22)
+ IS Neighbor Attribute (23)
+ L2 Bundle Member Attributes (25)
+ inter-AS reachability information (141)
+ MT-ISN (222)
+ MT IS Neighbor Attribute (223)
+
    Reference
            [RFC5305][RFC5316][RFC7370][RFC8668]
 
    Note
 
  Allocations within this registry require documentation of the use of
- the allocated value and approval by the Designated Expert assigned
- by the IESG.
+ the allocated value and approval by the Designated Expert assigned by
+ the IESG.
 
 
    Note
 
  The column for TLV 25 may be marked as follows:
 
- y - sub-TLV may appear in TLV 25 but MUST NOT be shared by multiple
-     L2 Bundle Members
- y(s) - sub-TLV may appear in TLV 25 and MAY be shared by multiple
-     L2 Bundle Members
+ y - sub-TLV may appear in TLV 25 but MUST NOT be shared by multiple L2 Bundle Members
+ y(s) - sub-TLV may appear in TLV 25 and MAY be shared by multiple L2 Bundle Members
  n - sub-TLV MUST NOT appear in TLV 25
 
 
@@ -304,64 +335,70 @@ information, MT-ISN, and MT IS Neighbor Attribute TLVs)
            [IMG]
            CSV
 
-    Type                                 Description                               22 23  25  141 222 223                 Reference
+    Type                            Description                          22 23  25  141 222 223                      Reference
    0-2     Unassigned
-   3       Administrative group (color)                                            y  y  y(s) y   y   y   [RFC5305]
-   4       Link Local/Remote Identifiers                                           y  y  y(s) y   y   y   [RFC5307]
+   3       Administrative group (color)                                  y  y  y(s) y   y   y   [RFC5305]
+   4       Link Local/Remote Identifiers                                 y  y  y(s) y   y   y   [RFC5307]
    5       Unassigned
-   6       IPv4 interface address                                                  y  y  y(s) y   y   y   [RFC5305]
+   6       IPv4 interface address                                        y  y  y(s) y   y   y   [RFC5305]
    7       Unassigned
-   8       IPv4 neighbor address                                                   y  y  y(s) y   y   y   [RFC5305]
-   9       Maximum link bandwidth                                                  y  y  y(s) y   y   y   [RFC5305]
-   10      Maximum reservable link bandwidth                                       y  y  y(s) y   y   y   [RFC5305]
-   11      Unreserved bandwidth                                                    y  y  y(s) y   y   y   [RFC5305]
-   12      IPv6 Interface Address                                                  y  y  y(s) y   y   y   [RFC6119]
-   13      IPv6 Neighbor Address                                                   y  y  y(s) y   y   y   [RFC6119]
-   14      Extended Administrative Group                                           y  y  y(s) y   y   y   [RFC7308]
-   15      Link MSD                                                                y  y  y    y   y   y   [RFC8491]
-   16      Application-Specific Link Attributes                                    y  y  y(s) y   y   y   [RFC8919]
+   8       IPv4 neighbor address                                         y  y  y(s) y   y   y   [RFC5305]
+   9       Maximum link bandwidth                                        y  y  y(s) y   y   y   [RFC5305]
+   10      Maximum reservable link bandwidth                             y  y  y(s) y   y   y   [RFC5305]
+   11      Unreserved bandwidth                                          y  y  y(s) y   y   y   [RFC5305]
+   12      IPv6 Interface Address                                        y  y  y(s) y   y   y   [RFC6119]
+   13      IPv6 Neighbor Address                                         y  y  y(s) y   y   y   [RFC6119]
+   14      Extended Administrative Group                                 y  y  y(s) y   y   y   [RFC7308]
+   15      Link MSD                                                      y  y  y    y   y   y   [RFC8491]
+   16      Application-Specific Link Attributes                          y  y  y(s) y   y   y   [RFC8919]
    17      Unassigned
-   18      TE Default metric                                                       y  y  y(s) y   y   y   [RFC5305]
-   19      Link-attributes                                                         y  y  y(s) y   y   y   [RFC5029]
-   20      Link Protection Type                                                    y  y  y(s) y   y   y   [RFC5307]
-   21      Interface Switching Capability Descriptor                               y  y  y(s) y   y   y   [RFC5307]
-   22      Bandwidth Constraints                                                   y  y  y(s) y   y   y   [RFC4124]
-   23      Unconstrained TE LSP Count (sub-)TLV                                    y  y  y(s) y   y   y   [RFC5330]
-   24      remote AS number                                                        n  n  n    y   n   n   [RFC5316]
-   25      IPv4 remote ASBR Identifier                                             n  n  n    y   n   n   [RFC5316]
-   26      IPv6 remote ASBR Identifier                                             n  n  n    y   n   n   [RFC5316]
-   27      Interface Adjustment Capability Descriptor (IACD)                       y  y  y(s) y   y   y   [RFC6001]
-   28      MTU                                                                     y  y  n    n   y   y   [RFC7176]
-   29      SPB-Metric                                                              y  y  y(s) n   y   y   [RFC6329]
-   30      SPB-A-OALG                                                              y  y  y(s) n   y   y   [RFC6329]
-   31      Adjacency Segment Identifier                                            y  y  n    y   y   y   [RFC8667]
-   32      LAN Adjacency Segment Identifier                                        y  y  n    y   y   y   [RFC8667]
-   33      Unidirectional Link Delay                                               y  y  y    y   y   y   [RFC8570]
-   34      Min/Max Unidirectional Link Delay                                       y  y  y    y   y   y   [RFC8570]
-   35      Unidirectional Delay Variation                                          y  y  y    y   y   y   [RFC8570]
-   36      Unidirectional Link Loss                                                y  y  y    y   y   y   [RFC8570]
-   37      Unidirectional Residual Bandwidth                                       y  y  y    y   y   y   [RFC8570]
-   38      Unidirectional Available Bandwidth                                      y  y  y    y   y   y   [RFC8570]
-   39      Unidirectional Utilized Bandwidth                                       y  y  y    y   y   y   [RFC8570]
-   40      RTM Capability                                                          y  y  n    n   y   y   [RFC8169]
-   41      L2 Bundle Member Adj-SID                                                n  n  y    n   n   n   [RFC8668]
-   42      L2 Bundle Member LAN Adj-SID                                            n  n  y    n   n   n   [RFC8668]
-   43      SRv6 End.X SID (TEMPORARY - registered 2020-06-17, extension registered y  y  y    y   y   y   [draft-ietf-lsr-isis-srv6-extensions-15]
-           2021-06-01, expires 2022-06-17)
-   44      SRv6 LAN End.X SID (TEMPORARY - registered 2020-06-17, extension        y  y  y    y   y   y   [draft-ietf-lsr-isis-srv6-extensions-15]
-           registered 2021-06-01, expires 2022-06-17)
+   18      TE Default metric                                             y  y  y(s) y   y   y   [RFC5305]
+   19      Link-attributes                                               y  y  y(s) y   y   y   [RFC5029]
+   20      Link Protection Type                                          y  y  y(s) y   y   y   [RFC5307]
+   21      Interface Switching Capability Descriptor                     y  y  y(s) y   y   y   [RFC5307]
+   22      Bandwidth Constraints                                         y  y  y(s) y   y   y   [RFC4124]
+   23      Unconstrained TE LSP Count (sub-)TLV                          y  y  y(s) y   y   y   [RFC5330]
+   24      remote AS number                                              n  n  n    y   n   n   [RFC5316]
+   25      IPv4 remote ASBR Identifier                                   n  n  n    y   n   n   [RFC5316]
+   26      IPv6 remote ASBR Identifier                                   n  n  n    y   n   n   [RFC5316]
+   27      Interface Adjustment Capability Descriptor (IACD)             y  y  y(s) y   y   y   [RFC6001]
+   28      MTU                                                           y  y  n    n   y   y   [RFC7176]
+   29      SPB-Metric                                                    y  y  y(s) n   y   y   [RFC6329]
+   30      SPB-A-OALG                                                    y  y  y(s) n   y   y   [RFC6329]
+   31      Adjacency Segment Identifier                                  y  y  n    y   y   y   [RFC8667]
+   32      LAN Adjacency Segment Identifier                              y  y  n    y   y   y   [RFC8667]
+   33      Unidirectional Link Delay                                     y  y  y    y   y   y   [RFC8570]
+   34      Min/Max Unidirectional Link Delay                             y  y  y    y   y   y   [RFC8570]
+   35      Unidirectional Delay Variation                                y  y  y    y   y   y   [RFC8570]
+   36      Unidirectional Link Loss                                      y  y  y    y   y   y   [RFC8570]
+   37      Unidirectional Residual Bandwidth                             y  y  y    y   y   y   [RFC8570]
+   38      Unidirectional Available Bandwidth                            y  y  y    y   y   y   [RFC8570]
+   39      Unidirectional Utilized Bandwidth                             y  y  y    y   y   y   [RFC8570]
+   40      RTM Capability                                                y  y  n    n   y   y   [RFC8169]
+   41      L2 Bundle Member Adj-SID                                      n  n  y    n   n   n   [RFC8668]
+   42      L2 Bundle Member LAN Adj-SID                                  n  n  y    n   n   n   [RFC8668]
+   43      SRv6 End.X SID                                                y  y  y    y   y   y   [RFC-ietf-lsr-isis-srv6-extensions-18, Section 8.1]
+   44      SRv6 LAN End.X SID                                            y  y  y    y   y   y   [RFC-ietf-lsr-isis-srv6-extensions-18, Section 8.2]
    45-160  Unassigned
-   161     Flood Reflector Adjacency (TEMPORARY - registered 2020-08-05, extension y  y  n    y   y   y   [draft-ietf-lsr-isis-flood-reflection-01]
-           registered 2021-06-18, expires 2022-08-05)
+           Flood Reflector Adjacency (TEMPORARY - registered 2020-08-05,
+   161     extension registered 2021-06-18, document sent to IESG        y  y  n    y   y   y   [draft-ietf-lsr-isis-flood-reflection-01]
+           Evaluation 2022-01-20)
    162-249 Unassigned
    250-254 Reserved for Cisco-specific extensions
    255     Reserved for future expansion
 
-link-attribute bit values for sub-TLV 19 of TLV 22 (Extended IS reachability TLV)
+IS-IS Neighbor Link-Attribute Bit Values
 
    Registration Procedure(s)
 
  Standards Action
+
+   Description
+
+ This registry defines bit values for the Link-attributes sub-TLV (19)
+ advertised in TLVs advertising neighbor information. These TLVs are
+ listed in the description of the “IS-IS Sub-TLVs for TLVs Advertising
+ Neighbor Information” registry.
 
    Reference
            [RFC5029]
@@ -374,9 +411,9 @@ link-attribute bit values for sub-TLV 19 of TLV 22 (Extended IS reachability TLV
    0x1   Local Protection Available                                                                               [RFC5029]
    0x2   Link Excluded from Local Protection                                                                      [RFC5029]
    0x4   Local Edge Enabled for Flooding (LEEF) (TEMPORARY - registered 2019-08-08, extension registered          [draft-ietf-lsr-dynamic-flooding]
-         2021-06-18, expires 2022-08-08)
+         2022-06-21, expires 2023-08-08)
 
-Sub-TLVs for TLVs 135, 235, 236, and 237 (Extended IP reachability, MT IP. Reach, IPv6 IP. Reach, and MT IPv6 IP. Reach TLVs)
+IS-IS Sub-TLVs for TLVs Advertising Prefix Reachability
 
    Registration Procedure(s)
 
@@ -386,38 +423,48 @@ Sub-TLVs for TLVs 135, 235, 236, and 237 (Extended IP reachability, MT IP. Reach
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
 
+   Description
+
+ This registry defines sub-TLVs for TLVs advertising prefix reachability.
+ The list of TLVs includes:
+
+ SRv6 Locator (27)
+ Extended IP reachability (135)
+ MT IP Reach (235)
+ IPv6 IP Reach (236)
+ MT IPv6 IP Reach (237)
+
    Reference
-           [RFC5305][RFC7370]
+           [RFC5305][RFC7370][RFC-ietf-lsr-isis-srv6-extensions-18]
 
    Note
 
  Allocations within this registry require documentation of the use of
- the allocated value and approval by the Designated Expert assigned
- by the IESG.
+ the allocated value and approval by the Designated Expert assigned by
+ the IESG.
 
 
    Available Formats
            [IMG]
            CSV
 
-    Type                                    Description                                    135 235 236 237                Reference
+    Type                             Description                             27 135 235 236 237                      Reference
    0      Unassigned
-   1      32-bit Administrative Tag Sub-TLV                                                y   y   y   y   [RFC5130]
-   2      64-bit Administrative Tag Sub-TLV                                                y   y   y   y   [RFC5130]
-   3      Prefix Segment Identifier                                                        y   y   y   y   [RFC8667]
-   4      Prefix Attribute Flags                                                           y   y   y   y   [RFC7794]
-   5      SRv6 End SID (TEMPORARY - registered 2020-06-17, extension registered            n   n   n   n   [draft-ietf-lsr-isis-srv6-extensions-15]
-          2021-06-01, expires 2022-06-17)
-   6      Flex-Algorithm Prefix Metric (TEMPORARY - registered 2019-10-02, extension       y   y   y   y   [draft-ietf-lsr-flex-algo]
-          registered 2021-08-16, expires 2022-10-02)
+   1      32-bit Administrative Tag Sub-TLV                                  y  y   y   y   y   [RFC5130]
+   2      64-bit Administrative Tag Sub-TLV                                  y  y   y   y   y   [RFC5130]
+   3      Prefix Segment Identifier                                          n  y   y   y   y   [RFC8667]
+   4      Prefix Attribute Flags                                             y  y   y   y   y   [RFC7794]
+   5      SRv6 End SID                                                       y  n   n   n   n   [RFC-ietf-lsr-isis-srv6-extensions-18, Section 7.2]
+   6      Flex-Algorithm Prefix Metric (TEMPORARY - registered 2019-10-02,   n  y   y   y   y   [draft-ietf-lsr-flex-algo]
+          extension registered 2021-08-16, expires 2022-10-02)
    7-10   Unassigned
-   11     IPv4 Source Router ID                                                            y   y   y   y   [RFC7794]
-   12     IPv6 Source Router ID                                                            y   y   y   y   [RFC7794]
+   11     IPv4 Source Router ID                                              y  y   y   y   y   [RFC7794]
+   12     IPv6 Source Router ID                                              y  y   y   y   y   [RFC7794]
    13-31  Unassigned
-   32     BIER Info                                                                        y   y   y   y   [RFC8401]
+   32     BIER Info                                                          n  y   y   y   y   [RFC8401]
    33-255 Unassigned
 
-Bit Values for Prefix Attribute Flags Sub-TLV
+IS-IS Bit Values for Prefix Attribute Flags Sub-TLV
 
    Registration Procedure(s)
 
@@ -426,6 +473,13 @@ Bit Values for Prefix Attribute Flags Sub-TLV
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines bit values for the Prefix Attribute Flags (4)
+ sub-TLV advertised in Prefix Reachability TLVs. These TLVs are listed
+ in the description of the "IS-IS Sub-TLVs for TLVs Advertising Prefix
+ Reachability” registry.
 
    Reference
            [RFC7794]
@@ -434,14 +488,14 @@ Bit Values for Prefix Attribute Flags Sub-TLV
            [IMG]
            CSV
 
-   Bit #                                              Name                                                             Reference
-   0     External Prefix Flag (X-flag)                                                                  [RFC7794]
-   1     Re-advertisement Flag (R-flag)                                                                 [RFC7794]
-   2     Node Flag (N-flag)                                                                             [RFC7794]
-   3     ELC Flag (E-flag)                                                                              [RFC9088]
-   4     A bit (TEMPORARY - registered 2020-06-17, extension registered 2021-06-01, expires 2022-06-17) [draft-ietf-lsr-isis-srv6-extensions-15]
+   Bit #              Name                                  Reference
+   0     External Prefix Flag (X-flag)  [RFC7794]
+   1     Re-advertisement Flag (R-flag) [RFC7794]
+   2     Node Flag (N-flag)             [RFC7794]
+   3     ELC Flag (E-flag)              [RFC9088]
+   4     Anycast Flag (A-flag)          [RFC-ietf-lsr-isis-srv6-extensions-18, Section 6]
 
-IS-IS Group Address Type Codes for TLV 142 (GADDR-TLV)
+IS-IS Group Address Type Codes for GADDR-TLV
 
    Registration Procedure(s)
 
@@ -450,6 +504,10 @@ IS-IS Group Address Type Codes for TLV 142 (GADDR-TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines Group Address Type Codes for the GADDR-TLV (142).
 
    Reference
            [RFC7176]
@@ -469,7 +527,7 @@ IS-IS Group Address Type Codes for TLV 142 (GADDR-TLV)
    7-254 Unassigned
    255   Reserved    [RFC7176]
 
-Sub-TLVs for TLV 143 (MT-Port-Cap-TLV)
+IS-IS Sub-TLVs for MT-Port-Cap-TLV
 
    Registration Procedure(s)
 
@@ -478,6 +536,10 @@ Sub-TLVs for TLV 143 (MT-Port-Cap-TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines sub-TLVs for the MT-Port-Cap-TLV (143).
 
    Reference
            [RFC7176]
@@ -499,7 +561,7 @@ Sub-TLVs for TLV 143 (MT-Port-Cap-TLV)
    9-254 Unassigned
    255   Reserved                [RFC7176]
 
-Sub-TLVs for TLV 144 (MT-Capability TLV)
+IS-IS Sub-TLVs for MT-Capability TLV
 
    Registration Procedure(s)
 
@@ -508,6 +570,10 @@ Sub-TLVs for TLV 144 (MT-Capability TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines sub-TLVs for the MT-Capability TLV (144).
 
    Reference
            [RFC6329]
@@ -544,7 +610,7 @@ Sub-TLVs for TLV 144 (MT-Capability TLV)
    26-254 Unassigned
    255    Reserved                     [RFC6329]
 
-Sub-TLVs for TLV 242 (IS-IS Router CAPABILITY TLV)
+IS-IS Sub-TLVs for IS-IS Router CAPABILITY TLV
 
    Registration Procedure(s)
 
@@ -553,6 +619,10 @@ Sub-TLVs for TLV 242 (IS-IS Router CAPABILITY TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines sub-TLVs for the IS-IS Router CAPABILITY TLV (242).
 
    Reference
            [RFC7981]
@@ -560,55 +630,109 @@ Sub-TLVs for TLV 242 (IS-IS Router CAPABILITY TLV)
    Note
 
  Allocations within this registry require documentation of the use of
- the allocated value and approval by the Designated Expert assigned
- by the IESG.
+ the allocated value and approval by the Designated Expert assigned by
+ the IESG.
 
 
    Available Formats
            [IMG]
            CSV
 
-    Value                                           Description                                                           Reference
+    Value                                       Description                                                           Reference
    0       Reserved
-   1       TE Node Capability Descriptor                                                                  [RFC5073]
-   2       Segment Routing Capability                                                                     [RFC8667]
-   3       TE-MESH-GROUP TLV (IPv4)                                                                       [RFC4972]
-   4       TE-MESH-GROUP TLV (IPv6)                                                                       [RFC4972]
-   5       PCED sub-TLV                                                                                   [RFC5089]
-   6       NICKNAME                                                                                       [RFC7176]
-   7       TREES                                                                                          [RFC7176]
-   8       TREE-RT-IDs                                                                                    [RFC7176]
-   9       TREE-USE-IDs                                                                                   [RFC7176]
-   10      INT-VLAN                                                                                       [RFC7176]
-   11      IPv4 TE Router ID                                                                              [RFC5316]
-   12      IPv6 TE Router ID                                                                              [RFC5316]
-   13      TRILL-VER                                                                                      [RFC7176]
-   14      VLAN-GROUP                                                                                     [RFC7176]
-   15      INT-LABEL                                                                                      [RFC7176]
-   16      RBCHANNELS                                                                                     [RFC7176]
-   17      AFFINITY                                                                                       [RFC7176]
-   18      LABEL-GROUP                                                                                    [RFC7176]
-   19      Segment Routing Algorithm                                                                      [RFC8667]
-   20      S-BFD Discriminators                                                                           [RFC7883]
-   21      Node-Admin-Tag                                                                                 [RFC7917]
-   22      Segment Routing Local Block (SRLB)                                                             [RFC8667]
-   23      Node MSD                                                                                       [RFC8491]
-   24      Segment Routing Mapping Server Preference (SRMS Preference)                                    [RFC8667]
-   25      SRv6 Capabilities (TEMPORARY - registered 2020-06-17, extension registered 2021-06-01, expires [draft-ietf-lsr-isis-srv6-extensions-15]
-           2022-06-17)
-   26      Flexible Algorithm Definition (TEMPORARY - registered 2018-06-04, extension registered         [draft-ietf-lsr-flex-algo-16]
-           2021-06-01, expires 2022-06-04)
-   27      IS-IS Area Leader Sub-TLV (TEMPORARY - registered 2019-08-08, extension registered 2021-06-18, [draft-ietf-lsr-dynamic-flooding]
-           expires 2022-08-08)
-   28      IS-IS Dynamic Flooding Sub-TLV (TEMPORARY - registered 2019-08-08, extension registered        [draft-ietf-lsr-dynamic-flooding]
-           2021-06-18, expires 2022-08-08)
-   29      IP Algorithm Sub-TLV (TEMPORARY - registered 2021-04-27, expires 2022-04-27)                   [draft-ietf-lsr-ip-flexalgo-01]
+   1       TE Node Capability Descriptor                                                          [RFC5073]
+   2       Segment Routing Capability                                                             [RFC8667]
+   3       TE-MESH-GROUP TLV (IPv4)                                                               [RFC4972]
+   4       TE-MESH-GROUP TLV (IPv6)                                                               [RFC4972]
+   5       PCED sub-TLV                                                                           [RFC5089]
+   6       NICKNAME                                                                               [RFC7176]
+   7       TREES                                                                                  [RFC7176]
+   8       TREE-RT-IDs                                                                            [RFC7176]
+   9       TREE-USE-IDs                                                                           [RFC7176]
+   10      INT-VLAN                                                                               [RFC7176]
+   11      IPv4 TE Router ID                                                                      [RFC5316]
+   12      IPv6 TE Router ID                                                                      [RFC5316]
+   13      TRILL-VER                                                                              [RFC7176]
+   14      VLAN-GROUP                                                                             [RFC7176]
+   15      INT-LABEL                                                                              [RFC7176]
+   16      RBCHANNELS                                                                             [RFC7176]
+   17      AFFINITY                                                                               [RFC7176]
+   18      LABEL-GROUP                                                                            [RFC7176]
+   19      Segment Routing Algorithm                                                              [RFC8667]
+   20      S-BFD Discriminators                                                                   [RFC7883]
+   21      Node-Admin-Tag                                                                         [RFC7917]
+   22      Segment Routing Local Block (SRLB)                                                     [RFC8667]
+   23      Node MSD                                                                               [RFC8491]
+   24      Segment Routing Mapping Server Preference (SRMS Preference)                            [RFC8667]
+   25      SRv6 Capabilities                                                                      [RFC-ietf-lsr-isis-srv6-extensions-18, Section 2]
+   26      Flexible Algorithm Definition (TEMPORARY - registered 2018-06-04, extension registered [draft-ietf-lsr-flex-algo-16]
+           2022-04-18, expires 2023-06-04)
+   27      IS-IS Area Leader Sub-TLV (TEMPORARY - registered 2019-08-08, extension registered     [draft-ietf-lsr-dynamic-flooding]
+           2022-06-21, expires 2023-08-08)
+   28      IS-IS Dynamic Flooding Sub-TLV (TEMPORARY - registered 2019-08-08, extension           [draft-ietf-lsr-dynamic-flooding]
+           registered 2022-06-21, expires 2023-08-08)
+   29      IP Algorithm Sub-TLV (TEMPORARY - registered 2021-04-27, extension registered          [draft-ietf-lsr-ip-flexalgo-01]
+           2022-03-25, expires 2023-04-27)
    30-160  Unassigned
-   161     Flood Reflection Discovery (TEMPORARY - registered 2020-08-05, extension registered            [draft-ietf-lsr-isis-flood-reflection-01]
-           2021-06-18, expires 2022-08-05)
+   161     Flood Reflection Discovery (TEMPORARY - registered 2020-08-05, extension registered    [draft-ietf-lsr-isis-flood-reflection-01]
+           2021-06-18, document sent to IESG Evaluation 2022-01-20)
    162-255 Unassigned
 
-Application Identifiers for TLV 251 (Generic Information TLV)
+IS-IS Sub-Sub-TLVs for SRv6 Capability Sub-TLV
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Description
+
+ This registry defines sub-sub-TLVs for the SRv6 Capability Sub-TLV (25)
+ advertised in the IS-IS Router Capabilities TLV (242).
+
+   Reference
+           [RFC-ietf-lsr-isis-srv6-extensions-18]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Value Description               Reference
+   0     Reserved    [RFC-ietf-lsr-isis-srv6-extensions-18]
+   1-255 Unassigned
+
+IS-IS SRv6 Capabilities Sub-TLV Flags
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Description
+
+ This registry defines bit values advertised in the flags field of the
+ SRv6 Capabilities sub-TLV (25). This sub-TLV is advertised in the
+ IS-IS Router CAPABILITY TLV (242).
+
+   Reference
+           [RFC-ietf-lsr-isis-srv6-extensions-18]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Type Description                     Reference
+   0    Unassigned
+   1    O-flag      [RFC-ietf-lsr-isis-srv6-extensions-18, Section 2]
+   2-15 Unassigned
+
+IS-IS Application Identifiers for Generic Information TLV
 
    Registration Procedure(s)
 
@@ -617,6 +741,11 @@ Application Identifiers for TLV 251 (Generic Information TLV)
    Expert(s)
 
  Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines Application Identifiers for the Generic Information
+ TLV (251).
 
    Reference
            [RFC6823]
@@ -630,7 +759,7 @@ Application Identifiers for TLV 251 (Generic Information TLV)
    1        TRILL       n                              [RFC7357]
    2-65535  Unassigned
 
-sub-sub-TLVs for BIER Info sub-TLV
+IS-IS Sub-Sub-TLVs for BIER Info Sub-TLV
 
    Registration Procedure(s)
 
@@ -639,6 +768,13 @@ sub-sub-TLVs for BIER Info sub-TLV
    Expert(s)
 
  Chris Hopps, Les Ginsberg
+
+   Description
+
+ This registry defines sub-sub-TLV codes which may be advertised in the
+ BIER Info sub-TLV, which is advertised in Prefix Reachability TLVs.
+ These TLVs are listed in the description of the "IS-IS Sub-TLVs for
+ TLVs Advertising Prefix Reachability” registry.
 
    Reference
            [RFC8401]
@@ -652,7 +788,7 @@ sub-sub-TLVs for BIER Info sub-TLV
    1     BIER MPLS Encapsulation [RFC8401]
    2-255 Unassigned
 
-Sub-TLVs for TLVs 149 and 150
+IS-IS Sub-TLVs for Segment Identifier/Label Binding TLVs
 
    Registration Procedure(s)
 
@@ -660,7 +796,15 @@ Sub-TLVs for TLVs 149 and 150
 
    Expert(s)
 
- Unassigned
+ Chris Hopps, Hannes Gredler, Les Ginsberg
+
+   Description
+
+ This registry defines sub-TLVs for Segment Identifier/Label Binding
+ TLVs. The list of TLVs includes:
+
+ Segment Identifier/Label Binding (149)
+ Multi-Topology Segment Identifier/Label Binding (150)
 
    Reference
            [RFC8667]
@@ -676,7 +820,7 @@ Sub-TLVs for TLVs 149 and 150
    3     Prefix Segment Identifier [RFC8667]
    4-255 Unassigned
 
-Sub-sub-TLV Codepoints for Application-Specific Link Attributes
+IS-IS Sub-Sub-TLV Codepoints for Application-Specific Link Attributes
 
    Registration Procedure(s)
 
@@ -686,24 +830,31 @@ Sub-sub-TLV Codepoints for Application-Specific Link Attributes
 
  Les Ginsberg, Chris Hopps
 
+   Description
+
+ This registry defines sub-sub-TLV codepoints for the Application-Specific
+ Link Attributes sub-TLV, which is advertised in TLVs advertising
+ neighbor information. These TLVs are listed in the description of the
+ “IS-IS Sub-TLVs for TLVs Advertising Neighbor Information” registry.
+
    Reference
            [RFC8919]
 
    Note
 
  For future codepoints, in cases where the document that defines
- the encoding is different from the document that assigns
- the codepoint, the encoding reference MUST be to the document
- that defines the encoding.
+ the encoding is different from the document that assigns the
+ codepoint, the encoding reference MUST be to the document that
+ defines the encoding.
 
 
    Note
 
  If a link attribute can be advertised both as a sub-TLV of TLVs
- 22, 23, 25, 141, 222, and 223 and as a sub-sub-TLV of the
- Application-Specific Link Attributes sub-TLV defined in
- [RFC8919], then the same numerical code
- should be assigned to the link attribute whenever possible.
+ advertising neighbor information and as a sub-sub-TLV of the
+ Application-Specific Link Attributes sub-TLV defined in [RFC8919],
+ then the same numerical code should be assigned to the link attribute
+ whenever possible.
 
 
    Available Formats
@@ -731,7 +882,7 @@ Sub-sub-TLV Codepoints for Application-Specific Link Attributes
    39     Unidirectional Utilized Bandwidth  [RFC8570]
    40-255 Unassigned
 
-Sub-TLVs for TLV 238
+IS-IS Sub-TLVs for Application-Specific SRLG TLV
 
    Registration Procedure(s)
 
@@ -741,15 +892,19 @@ Sub-TLVs for TLV 238
 
  Les Ginsberg, Chris Hopps
 
+   Description
+
+ This registry defines sub-TLVs for Application Specific SRLG TLV (238).
+
    Reference
            [RFC8919]
 
    Note
 
- For future codepoints, in cases where the document that defines
- the encoding is different from the document that assigns the
- codepoint, the encoding reference MUST be to the document that
- defines the encoding.
+ For future codepoints, in cases where the document that defines the
+ encoding is different from the document that assigns the codepoint,
+ the encoding reference MUST be to the document that defines the
+ encoding.
 
 
    Available Formats
@@ -767,3 +922,121 @@ Sub-TLVs for TLV 238
    12     IPv6 Interface Address        [RFC6119]
    13     IPv6 Neighbor Address         [RFC6119]
    14-255 Unassigned
+
+IS-IS Sub-Sub-TLVs for SRv6 SID Sub-TLVs
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Description
+
+ This registry defines Sub-Sub-TLVs for SRv6 SID Sub-TLVs. This includes
+ the following sub-TLVs:
+
+ SRv6 End SID (5) (Advertised in SRv6 Locator TLV (27))
+ SRv6 End.X SID (43) (Advertised in TLVs advertising neighbor information)
+ SRv6 LAN End.X SID (44) (Advertised in TLVs advertising neighbor information)
+
+   Reference
+           [RFC-ietf-lsr-isis-srv6-extensions-18]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Type     Description     5 43 44               Reference
+   0     Reserved                   [RFC-ietf-lsr-isis-srv6-extensions-18]
+   1     SRv6 SID Structure y y  y  [RFC-ietf-lsr-isis-srv6-extensions-18]
+   2-255 Unassigned
+
+IS-IS SRv6 Locator TLV Flags
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Description
+
+ This registry defines bit values advertised in the flags field of the
+ SRv6 Locator TLV (27).
+
+   Reference
+           [RFC-ietf-lsr-isis-srv6-extensions-18]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Value Description                      Reference
+   0     D-flag      [RFC-ietf-lsr-isis-srv6-extensions-18, Section 7.1]
+   1-7   Unassigned
+
+IS-IS SRv6 End SID Sub-TLV Flags
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Description
+
+ This registry defines bit values advertised in the flags field of the
+ SRv6 End SID sub-TLV (5), which is advertised in the SRv6 Locator TLV
+ (27).
+
+   Reference
+           [RFC-ietf-lsr-isis-srv6-extensions-18]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Value Description Reference
+   0-7   Unassigned
+
+IS-IS SRv6 Adjacency SID Sub-TLVs Flags
+
+   Registration Procedure(s)
+
+ Expert Review
+
+   Expert(s)
+
+ Unassigned
+
+   Description
+
+ This registry defines bit values advertised in the flags field of
+ SRv6 SID sub-TLVs associated with adjacencies. These sub-TLVs are
+ advertised in TLVs advertising neighbor information. The list of
+ sub-TLVs includes:
+
+ SRv6 End.X SID (43)
+ SRv6 LAN End.X SID (44)
+
+   Reference
+           [RFC-ietf-lsr-isis-srv6-extensions-18]
+
+   Available Formats
+           [IMG]
+           CSV
+
+   Value Description                      Reference
+   0     B-flag      [RFC-ietf-lsr-isis-srv6-extensions-18, Section 8.1]
+   1     S-flag      [RFC-ietf-lsr-isis-srv6-extensions-18, Section 8.1]
+   2     P-flag      [RFC-ietf-lsr-isis-srv6-extensions-18, Section 8.1]
+   3-7   Unassigned
+
+   Licensing Terms

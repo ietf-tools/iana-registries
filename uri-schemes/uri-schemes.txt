@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                       Uniform Resource Identifier (URI) Schemes
 
    Last Updated
-           2021-10-29
+           2022-06-08
 
    Available Formats
            [IMG]
@@ -96,6 +98,7 @@ content                              prov/content                              c
 content-type                         prov/content-type                         content-type                         Provisional -          [Donald_Eastlake]
 crid                                                                           TV-Anytime Content Reference         Permanent   -          [RFC4078]
                                                                                Identifier
+cstr                                 prov/cstr                                 cstr                                 Provisional -          [Wang_Shu]
 cvs                                  prov/cvs                                  cvs                                  Provisional -          [Dave_Thaler]
 dab                                  prov/dab                                  dab                                  Provisional -          [RadioDNS_Project]
 dat                                  prov/dat                                  dat                                  Provisional -          [Frédéric_Wang][Paul_Frazee]
@@ -103,7 +106,7 @@ data                                                                           d
 dav                                                                            dav                                  Permanent   -          [RFC4918]
 diaspora                             prov/diaspora                             diaspora                             Provisional -          [Dennis_Schubert]
 dict                                                                           dictionary service protocol          Permanent   -          [RFC2229]
-did                                  prov/did                                  did                                  Provisional -          [W3C_Decentralized_Identifier_Working_Group ][Manu_Sporny][Ivan_Herman]
+did                                  prov/did                                  did                                  Provisional -          [W3C_Decentralized_Identifier_Working_Group][Manu_Sporny][Ivan_Herman]
 dis                                  prov/dis                                  dis                                  Provisional -          [Christophe_Meessen]
 dlna-playcontainer                   prov/dlna-playcontainer                   dlna-playcontainer                   Provisional -          [DLNA]
 dlna-playsingle                      prov/dlna-playsingle                      dlna-playsingle                      Provisional -          [DLNA]
@@ -114,7 +117,7 @@ dpp                                  prov/dpp                                  d
 drm                                  prov/drm                                  drm                                  Provisional -          [RadioDNS_Project]
 drop                                 prov/drop                                 drop                                 Provisional -          [Tim_McSweeney]
 dtmi                                 prov/dtmi                                 dtmi                                 Provisional -          [urischemeowners_at_microsoft.com]
-dtn                                                                            DTNRG research and development       Permanent   -          [RFC-ietf-dtn-bpbis-31]
+dtn                                                                            DTNRG research and development       Permanent   -          [RFC9171]
 dvb                                                                            dvb                                  Provisional -          [draft-mcroberts-uri-dvb]
 dvx                                  prov/dvx                                  dvx                                  Provisional -          [Clemens_Bastian]
 dweb                                 prov/dweb                                 dweb                                 Provisional -          [Frédéric_Wang][Protocol_Labs]
@@ -140,6 +143,7 @@ fuchsia-pkg                          prov/fuchsia-pkg                          f
 geo                                                                            Geographic Locations                 Permanent   -          [RFC5870]
 gg                                   prov/gg                                   gg                                   Provisional -          [Dave_Thaler]
 git                                  prov/git                                  git                                  Provisional -          [Dave_Thaler]
+gitoid                               prov/gitoid                               gitoid                               Provisional -          [Ed_Warnicke]
 gizmoproject                         prov/gizmoproject                         gizmoproject                         Provisional -          [Dave_Thaler]
 go                                                                             go                                   Permanent   -          [RFC3368]
 gopher                                                                         The Gopher Protocol                  Permanent   -          [RFC4266]
@@ -149,8 +153,8 @@ h323                                                                           H
 ham                                                                            ham                                  Provisional -          [RFC7046]
 hcap                                 prov/hcap                                 hcap                                 Provisional -          [urischemeowners_at_microsoft.com]
 hcp                                  prov/hcp                                  hcp                                  Provisional -          [Alexey_Melnikov]
-http                                                                           Hypertext Transfer Protocol          Permanent   [RFC8615]  [RFC-ietf-httpbis-semantics-19, Section 4.2.1]
-https                                                                          Hypertext Transfer Protocol Secure   Permanent   [RFC8615]  [RFC-ietf-httpbis-semantics-19, Section 4.2.2]
+http                                                                           Hypertext Transfer Protocol          Permanent   [RFC8615]  [RFC9110, Section 4.2.1]
+https                                                                          Hypertext Transfer Protocol Secure   Permanent   [RFC8615]  [RFC9110, Section 4.2.2]
 hxxp                                 prov/hxxp                                 hxxp                                 Provisional -          [draft-salgado-hxxp]
 hxxps                                prov/hxxps                                hxxps                                Provisional -          [draft-salgado-hxxp]
 hydrazone                            prov/hydrazone                            hydrazone                            Provisional -          [Matthias_Merkel][https://tech.hydrazone.pro/uri/specification/hydrazone.txt]
@@ -167,9 +171,9 @@ info                                                                           r
                                                                                is maintained by NISO and can be
                                                                                accessed from
                                                                                [http://info-uri.info/].
-iotdisco                             prov/iotdisco                             iotdisco                             Provisional -          [Peter_Waher][http://www.iana.org/assignments/uri-schemes/prov/iotdisco.pdf]
+iotdisco                             prov/iotdisco                             iotdisco                             Provisional -          [Peter_Waher][https://www.iana.org/assignments/uri-schemes/prov/iotdisco.pdf]
 ipfs                                 prov/ipfs                                 ipfs                                 Provisional -          [Frédéric_Wang][Protocol_Labs]
-ipn                                                                            ipn                                  Permanent   -          [RFC-ietf-dtn-bpbis-31]
+ipn                                                                            ipn                                  Permanent   -          [RFC9171]
 ipns                                 prov/ipns                                 ipns                                 Provisional -          [Frédéric_Wang][Protocol_Labs]
 ipp                                                                            Internet Printing Protocol           Permanent   -          [RFC3510]
 ipps                                                                           Internet Printing Protocol over      Permanent   -          [RFC7472]
@@ -214,6 +218,7 @@ modem                                                                          m
 mongodb                              prov/mongodb                              mongodb                              Provisional -          [Ignacio_Losiggio][Mongo_DB_Inc]
 moz                                  prov/moz                                  moz                                  Provisional -          [Joe_Hildebrand]
 ms-access                            prov/ms-access                            ms-access                            Provisional -          [urischemeowners_at_microsoft.com]
+ms-appinstaller                      prov/ms-appinstaller                      ms-appinstaller                      Provisional -          [urischemeowners_at_microsoft.com]
 ms-browser-extension                 prov/ms-browser-extension                 ms-browser-extension                 Provisional -          [urischemeowners_at_microsoft.com]
 ms-calculator                        prov/ms-calculator                        ms-calculator                        Provisional -          [urischemeowners_at_microsoft.com]
 ms-drive-to                          prov/ms-drive-to                          ms-drive-to                          Provisional -          [urischemeowners_at_microsoft.com]
@@ -231,6 +236,7 @@ ms-media-stream-id                   prov/ms-media-stream-id                   m
 ms-meetnow                           prov/ms-meetnow                           ms-meetnow                           Provisional -          [urischemeowners_at_microsoft.com]
 ms-mixedrealitycapture               prov/ms-mixedrealitycapture               ms-mixedrealitycapture               Provisional -          [urischemeowners_at_microsoft.com]
 ms-mobileplans                       prov/ms-mobileplans                       ms-mobileplans                       Provisional -          [urischemeowners_at_microsoft.com]
+ms-newsandinterests                  prov/ms-newsandinterests                  ms-newsandinterests                  Provisional -          [urischemeowners_at_microsoft.com]
 ms-officeapp                         prov/ms-officeapp                         ms-officeapp                         Provisional -          [urischemeowners_at_microsoft.com]
 ms-people                            prov/ms-people                            ms-people                            Provisional -          [urischemeowners_at_microsoft.com]
 ms-project                           prov/ms-project                           ms-project                           Provisional -          [urischemeowners_at_microsoft.com]
@@ -264,6 +270,7 @@ ms-settings-screenrotation           prov/ms-settings-screenrotation           m
 ms-settings-wifi                     prov/ms-settings-wifi                     ms-settings-wifi                     Provisional -          [urischemeowners_at_microsoft.com]
 ms-settings-workplace                prov/ms-settings-workplace                ms-settings-workplace                Provisional -          [urischemeowners_at_microsoft.com]
 ms-spd                               prov/ms-spd                               ms-spd                               Provisional -          [urischemeowners_at_microsoft.com]
+ms-stickers                          prov/ms-stickers                          ms-stickers                          Provisional -          [urischemeowners_at_microsoft.com]
 ms-sttoverlay                        prov/ms-sttoverlay                        ms-sttoverlay                        Provisional -          [urischemeowners_at_microsoft.com]
 ms-transit-to                        prov/ms-transit-to                        ms-transit-to                        Provisional -          [urischemeowners_at_microsoft.com]
 ms-useractivityset                   prov/ms-useractivityset                   ms-useractivityset                   Provisional -          [urischemeowners_at_microsoft.com]
@@ -288,7 +295,7 @@ nfs                                                                            n
 ni                                                                             ni                                   Permanent   -          [RFC6920]
 nih                                                                            nih                                  Permanent   -          [RFC6920]
 nntp                                                                           USENET news using NNTP access        Permanent   -          [RFC5538]
-notes                                prov/notes                                notes                                Provisional -          [Dave_Thaler]
+notes                                prov/notes                                notes                                Provisional -          [draft-dconmy-notes-uri-scheme-02]
 num                                  prov/num                                  Namespace Utility Modules            Provisional -          [Elliott_Brown][https://www.numprotocol.com/specification]
 ocf                                  prov/ocf                                  ocf                                  Provisional -          [Dave_Thaler]
 oid                                  prov/oid                                  oid                                  Provisional -          [draft-larmouth-oid-iri]
@@ -336,13 +343,15 @@ session                                                                        s
 sftp                                 prov/sftp                                 query                                Provisional -          [Dave_Thaler]
 sgn                                  prov/sgn                                  sgn                                  Provisional -          [Dave_Thaler]
 shc                                  prov/shc                                  shc                                  Provisional -          [Josh_Mandel]
-shttp                                                                          Secure Hypertext Transfer Protocol   Permanent   -          [RFC2660]
+shttp (OBSOLETE)                                                               Secure Hypertext Transfer Protocol   Permanent   -          [RFC2660][status-change-http-experiments-to-historic]
 sieve                                                                          ManageSieve Protocol                 Permanent   -          [RFC5804]
 simpleledger                         prov/simpleledger                         simpleledger                         Provisional -          [James_Cramer]
+simplex                              prov/simplex                              simplex                              Provisional -          [Evgeny_Poberezkin]
 sip                                                                            session initiation protocol          Permanent   -          [RFC3261]
 sips                                                                           secure session initiation protocol   Permanent   -          [RFC3261]
 skype                                prov/skype                                skype                                Provisional -          [Alexey_Melnikov]
 smb                                  prov/smb                                  smb                                  Provisional -          [Dave_Thaler]
+smp                                  prov/smp                                  smp                                  Provisional -          [Evgeny_Poberezkin]
 sms                                                                            Short Message Service                Permanent   -          [RFC5724]
 smtp                                 prov/smtp                                 smtp                                 Provisional -          [draft-melnikov-smime-msa-to-mda]
 snews                                                                          NNTP over SSL/TLS                    Historical  -          [RFC5538]
@@ -385,6 +394,7 @@ uuid-in-package                      prov/uuid-in-package                      u
 v-event                              prov/v-event                              v-event                              Provisional -          [draft-menderico-v-event-uri]
 vemmi                                                                          versatile multimedia interface       Permanent   -          [RFC2122]
 ventrilo                             prov/ventrilo                             ventrilo                             Provisional -          [Dave_Thaler]
+ves                                  prov/ves                                  ves                                  Provisional -          [Jim_Zubov]
 videotex                             historic/videotex                         videotex                             Historical  -          [draft-mavrakis-videotex-url-spec][RFC2122][RFC3986]
 vnc                                                                            Remote Framebuffer Protocol          Permanent   -          [RFC7869]
 view-source                          prov/view-source                          view-source                          Provisional -          [Mykyta_Yevstifeyev]
@@ -443,10 +453,12 @@ z39.50s                                                                        Z
    [DLNA]                                       DLNA                                       mailto:admin&dlna.org                       2012-01-04
    [Hans-Dieter_A._Hiep]                        Hans-Dieter A. Hiep                        mailto:info&aexiz.com                       2015-08-05
    [Donald_Eastlake]                            Donald Eastlake                            mailto:d3e3e3&gmail.com                     2021-07-01
+   [Ed_Warnicke]                                Ed Warnicke                                mailto:eaw&cisco.com                        2022-05-23
    [Eld_Zierau]                                 Eld Zierau                                 mailto:elzi&kb.dk                           2016-12-01
-   [Frédéric_Wang]                              Frédéric Wang                              mailto:fwang&igalia.com                     2020-05-14
    [Elliott_Brown]                              Elliott Brown                              mailto:elliott.brown&num.uk                 2020-09-07
    [Evan_Gilman]                                Evan Gilman                                mailto:evan&scytale.io                      2018-02-23
+   [Evgeny_Poberezkin]                          Evgeny Poberezkin                          mailto:ep&simplex.chat                      2021-11-30
+   [Frédéric_Wang]                              Frédéric Wang                              mailto:fwang&igalia.com                     2020-05-14
    [Gaurav_Jain]                                Gaurav Jain                                mailto:gjain&wi-fi.org                      2019-01-23
    [Hubert_Chathi]                              Hubert Chathi                              mailto:hubertc&matrix.org                   2020-07-24
    [Ignacio_Losiggio]                           Ignacio Losiggio                           mailto:iglosiggio&gmail.com                 2017-05-09
@@ -456,6 +468,7 @@ z39.50s                                                                        Z
    [Jan_Pokorny]                                Jan Pokorny                                mailto:jpokorny&redhat.com                  2016-09-20
    [Jarmo_Miettinen]                            Jarmo_Miettinen                            mailto:jarmo.miettinen&methics.fi           2019-02-12
    [Jason_Dzubak]                               Jason Dzubak                               mailto:dzubak&byu.edu                       2020-12-10
+   [Jim_Zubov]                                  Jim Zubov                                  mailto:jz&vesvault.com                      2021-12-21
    [Joe_Hildebrand]                             Joe Hildebrand                             mailto:jhildebrand&mozilla.com              2017-01-20
    [Josh_Mandel]                                Josh Mandel                                mailto:Joshua.Mandel&childrens.harvard.edu  2021-05-11
    [Jun_Tian]                                   Jun Tian                                   mailto:jtian&wi-fi.org                      2020-08-26
@@ -472,8 +485,6 @@ z39.50s                                                                        Z
    [Mongo_DB_Inc]                                                            Mongo DB, Inc https://www.mongodb.com/es/contact          2017-05-09
    [Mykyta_Yevstifeyev]                         Mykyta Yevstifeyev                         mailto:evnikita2&gmail.com                  2011-05-25
    [OASIS_Open]                                 OASIS Open                                 https://www.oasis-open.org                  2021-03-19
-   [OCF_CoreTech_WG]                            Open Connectivity Foundation               mailto:coretech_wg&openconnectivity.org     2017-06-07
-                                                (OCF) CoreTech WG
                                                 OMA-DMSE – Device Management
    [OMA-DMSE]                                   Working Group at the Open                  mailto:OMA-DM&mail.openmobilealliance.org   2019-04-16
                                                 Mobile Alliance
@@ -497,8 +508,9 @@ z39.50s                                                                        Z
    [Tim_McSweeney]                              Tim McSweeney                              mailto:tim&dropnumber.com                   2020-07-28
    [Tony_Deng]                                  Tony Deng                                  mailto:tdeng&cisco.com                      2019-06-24
    [Tuan_Hoang]                                 Tuan Hoang                                 mailto:tuhoang&cisco.com                    2019-06-24
-   [urischemeowners_at_microsoft.com]           urischemeowners at                         mailto:urischemeowners&microsoft.com        2021-09-09
+   [urischemeowners_at_microsoft.com]           urischemeowners at                         mailto:urischemeowners&microsoft.com        2022-05-06
                                                 microsoft.com
+   [Wang_Shu]                                   Wang Shu                                   mailto:wangshu&cnic.cn                      2022-05-13
    [W3C_WebApps_Working_Group]                  W3C WebApps Working Group                  mailto:public-webapps&w3.org                2015-07-17
    [W3C_Decentralized_Identifier_Working_Group] W3C Decentralized Identifier               mailto:public-did-wg&w3.org                 2020-02-14
                                                 Working Group
@@ -512,3 +524,5 @@ z39.50s                                                                        Z
        URI identifies a resource and that multiple URIs for identifying the same
        resource should be avoided [http://www.w3.org/TR/webarch/#avoid-uri-aliases].
 
+
+   Licensing Terms

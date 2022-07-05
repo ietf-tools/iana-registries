@@ -1,10 +1,12 @@
-                                                                  HTTP Cache-Status
+   Internet Assigned Numbers Authority
+
+                                                   Hypertext Transfer Protocol (HTTP) Cache-Status
 
    Created
            2021-08-19
 
    Last Updated
-           2021-08-19
+           2022-06-21
 
    Available Formats
            [IMG]
@@ -24,30 +26,30 @@ HTTP Cache-Status
 
    Expert(s)
 
- Unassigned
+ Mark Nottingham
 
    Reference
-           [RFC-ietf-httpbis-cache-header-10]
+           [RFC9211]
 
    Available Formats
            [IMG]
            CSV
 
-      Name                                               Description                                                         Reference
-   hit        The request was satisfied by the cache; i.e., it was not forwarded, and the response was obtained  [RFC-ietf-httpbis-cache-header-10]
-              from the cache.
-   fwd        The request went forward towards the origin, and why.                                              [RFC-ietf-httpbis-cache-header-10]
-   fwd-status The status code (see [draft-ietf-httpbis-semantics-17], Section 15) the next hop server returned   [RFC-ietf-httpbis-cache-header-10]
-              in response to the forwarded request.
-              The response's remaining freshness lifetime (see [draft-ietf-httpbis-cache-17], Section 4.2.1) as
-   ttl        calculated by the cache, as an integer number of seconds, measured as closely as possible to when  [RFC-ietf-httpbis-cache-header-10]
-              the response header section is sent by the cache.
-   stored     The cache stored the response (see [draft-ietf-httpbis-cache-17], Section 3); a true value         [RFC-ietf-httpbis-cache-header-10]
-              indicates that it did.
-              This request was collapsed together with one or more other forward requests (see
-   collapsed  [draft-ietf-httpbis-cache-17], Section 4); if true, the response was successfully reused; if not,  [RFC-ietf-httpbis-cache-header-10]
-              a new request had to be made.
-   key        Conveys a representation of the cache key (see [draft-ietf-httpbis-cache-17], Section 2) used for  [RFC-ietf-httpbis-cache-header-10]
-              the response.
-   detail     Allows implementations to convey additional information not captured in other parameters; for      [RFC-ietf-httpbis-cache-header-10]
-              example, implementation-specific states, or other caching-related metrics.
+      Name         Type                                                       Description                                                 Reference
+   hit        Boolean         When true, indicates that the request was satisfied by the cache; that is, it was not forwarded, and the    [RFC9211]
+                              response was obtained from the cache.
+   fwd        Token           When present, indicates that the request went forward towards the origin; its value indicates why.          [RFC9211]
+   fwd-status Integer         Indicates which status code (see [RFC9110], Section 15) the next-hop server returned in response to the     [RFC9211]
+                              forwarded request.
+                              Indicates the response’s remaining freshness lifetime (see [RFC9111], Section 4.2.1) as calculated by the
+   ttl        Integer         cache, as an integer number of seconds, measured as closely as possible to when the response header section [RFC9211]
+                              is sent by the cache.
+   stored     Boolean         Indicates whether the cache stored the response (see [RFC9111], Section 3); a true value indicates that it  [RFC9211]
+                              did.
+   collapsed  Boolean         Indicates whether this request was collapsed together with one or more other forward requests (see          [RFC9211]
+                              [RFC9111], Section 4); If true, the response was successfully reused; if not, a new request had to be made.
+   key        String          Conveys a representation of the cache key (see [RFC9111], Section 2) used for the response.                 [RFC9211]
+   detail     String or Token Allows implementations to convey additional information not captured in other parameters, such as           [RFC9211]
+                              implementation-specific states or other caching-related metrics.
+
+   Licensing Terms

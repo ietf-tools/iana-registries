@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="pcep">
   <title>Path Computation Element Protocol (PCEP) Numbers</title>
   <created>2008-12-19</created>
-  <updated>2021-07-19</updated>
+  <updated>2022-05-09</updated>
   
   <registry id="pcep-messages">
     <title>PCEP Messages</title>
@@ -1071,14 +1071,14 @@
       <class-description>FLOWSPEC</class-description>
       <type-value>0</type-value>
       <type-description>Reserved</type-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <class-value>43</class-value>
       <class-description>FLOWSPEC</class-description>
       <type-value>1</type-value>
       <type-description>Flow Specification</type-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record>
       <class-value>43</class-value>
@@ -1106,15 +1106,41 @@
       <type-value>2-15</type-value>
       <type-description>Unassigned</type-description>
     </record>
+    <record date="2022-05-09">
+      <class-value>45</class-value>
+      <class-description>PATH-ATTRIB 
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)
+      </class-description>
+      <type-value>0</type-value>
+      <type-description>Reserved</type-description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
+    <record date="2022-05-09">
+      <class-value>45</class-value>
+      <class-description>PATH-ATTRIB 
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)
+      </class-description>
+      <type-value>1</type-value>
+      <type-description>PATH-ATTRIB</type-description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
+    <record date="2022-05-09">
+      <class-value>45</class-value>
+      <class-description>PATH-ATTRIB 
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)
+      </class-description>
+      <type-value>2-15</type-value>
+      <type-description>Unassigned</type-description>
+    </record>
     <record>
-      <class-value>45-247</class-value>
+      <class-value>46-247</class-value>
       <class-description>Unassigned</class-description>
       <type-value>0</type-value>
       <type-description>Reserved</type-description>
       <xref type="rfc-errata" data="4956"/>
     </record>
     <record>
-      <class-value>45-247</class-value>
+      <class-value>46-247</class-value>
       <class-description>Unassigned</class-description>
       <type-value>1-15</type-value>
       <type-description>Unassigned</type-description>
@@ -1419,8 +1445,8 @@
     </record>
     <record date="2021-01-28">
       <value>6</value>
-      <description>Protection Enforcement (TEMPORARY - registered 2021-01-28, expires 2022-01-28)</description>
-      <xref type="draft" data="draft-ietf-pce-local-protection-enforcement-01"/>
+      <description>Protection Enforcement (TEMPORARY - registered 2021-01-28, extension registered 2021-12-16, expires 2023-01-28)</description>
+      <xref type="draft" data="draft-ietf-pce-local-protection-enforcement-03"/>
     </record>
     <record>
       <value>7</value>
@@ -2312,10 +2338,55 @@
       <value-description>Missing PCECC Capability sub-TLV</value-description>
       <xref type="rfc" data="rfc9050"/>
     </record>
+    <record date="2022-01-12">
+      <type-value>10</type-value>
+      <type-description>Reception of an invalid object</type-description>
+      <value-value>34</value-value>
+      <value-description>Missing PCE-SRv6-CAPABILITY sub-TLV 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
+    <record date="2022-01-12">
+      <type-value>10</type-value>
+      <type-description>Reception of an invalid object</type-description>
+      <value-value>35</value-value>
+      <value-description>Both SID and NAI are absent in SRv6-RRO subobject 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
+    <record date="2022-01-12">
+      <type-value>10</type-value>
+      <type-description>Reception of an invalid object</type-description>
+      <value-value>36</value-value>
+      <value-description>RRO mixes SRv6-RRO subobjects with other subobject types 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
+    <record date="2022-01-12">
+      <type-value>10</type-value>
+      <type-description>Reception of an invalid object</type-description>
+      <value-value>37</value-value>
+      <value-description>Invalid SRv6 SID Structure 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
+    <record date="2022-05-09">
+      <type-value>10</type-value>
+      <type-description>Reception of an invalid object</type-description>
+      <value-value>38</value-value>
+      <value-description>Conflicting Path ID
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
     <record>
       <type-value>10</type-value>
       <type-description>Reception of an invalid object</type-description>
-      <value-value>34-255</value-value>
+      <value-value>39-255</value-value>
       <value-description>Unassigned</value-description>
     </record>
     <record>
@@ -2663,10 +2734,37 @@
       <value-description>Unknown Label</value-description>
       <xref type="rfc" data="rfc9050"/>
     </record>
+    <record date="2022-01-12">
+      <type-value>19</type-value>
+      <type-description>Invalid Operation</type-description>
+      <value-value>19</value-value>
+      <value-description>Attempted SRv6 when the capability was not advertised 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
+    <record date="2022-05-09">
+      <type-value>19</type-value>
+      <type-description>Invalid Operation</type-description>
+      <value-value>20</value-value>
+      <value-description>Not supported path backup
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
+    <record date="2022-05-09">
+      <type-value>19</type-value>
+      <type-description>Invalid Operation</type-description>
+      <value-value>21</value-value>
+      <value-description>Non-empty path
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)
+      </value-description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
     <record date="2016-07-27" updated="2017-06-26">
       <type-value>19</type-value>
       <type-description>Invalid Operation</type-description>
-      <value-value>19-255</value-value>
+      <value-value>22-255</value-value>
       <value-description>Unassigned</value-description>
     </record>
     <record date="2016-07-27">
@@ -3145,42 +3243,42 @@
       <type-description>FlowSpec error</type-description>
       <value-value>0</value-value>
       <value-description>Unassigned</value-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <type-value>30</type-value>
       <type-description>FlowSpec error</type-description>
       <value-value>1</value-value>
       <value-description>Unsupported FlowSpec</value-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2019-12-17">
       <type-value>30</type-value>
       <type-description>FlowSpec error</type-description>
       <value-value>2</value-value>
       <value-description>Malformed FlowSpec</value-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2019-12-17">
       <type-value>30</type-value>
       <type-description>FlowSpec error</type-description>
       <value-value>3</value-value>
       <value-description>Unresolvable Conflict</value-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2019-12-17">
       <type-value>30</type-value>
       <type-description>FlowSpec error</type-description>
       <value-value>4</value-value>
       <value-description>Unknown FlowSpec</value-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-08-28">
       <type-value>30</type-value>
       <type-description>FlowSpec error</type-description>
       <value-value>5</value-value>
       <value-description>Unsupported LPM Route</value-description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2019-12-17">
       <type-value>30</type-value>
@@ -3193,6 +3291,7 @@
       <type-description>PCECC failure</type-description>
       <value-value>0</value-value>
       <value-description>Unassigned</value-description>
+      <xref type="rfc" data="rfc9050"/>
     </record>
     <record date="2021-03-12">
       <type-value>31</type-value>
@@ -3235,8 +3334,56 @@
       <value-value>6-255</value-value>
       <value-description>Unassigned</value-description>
     </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>0</value-value>
+      <value-description>Unassigned</value-description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>1</value-value>
+      <value-description>Invalid SID</value-description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>2</value-value>
+      <value-description>Unable to allocate the specified binding value</value-description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>3</value-value>
+      <value-description>Unable to allocate a new binding label/SID</value-description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>4</value-value>
+      <value-description>Unable to remove the binding value</value-description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>5</value-value>
+      <value-description>Inconsistent binding types</value-description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <type-value>32</type-value>
+      <type-description>Binding label/SID failure</type-description>
+      <value-value>6-255</value-value>
+      <value-description>Unassigned</value-description>
+    </record>
     <record>
-      <type-value>32-255</type-value>
+      <type-value>33-255</type-value>
       <type-description>Unassigned</type-description>
       <value-value>0-255</value-value>
       <value-description>Unassigned</value-description>
@@ -3832,50 +3979,77 @@
     <record date="2020-11-09">
       <value>51</value>
       <description>PCE-FLOWSPEC-CAPABILITY TLV</description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <value>52</value>
       <description>FLOW FILTER TLV</description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
-    <record date="2020-11-09">
+    <record>
       <value>53</value>
-      <description>L2 FLOW FILTER TLV</description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <description>Unassigned</description>
     </record>
     <record date="2021-03-10">
       <value>54</value>
       <description>Bidirectional LSP Association Group TLV</description>
       <xref type="rfc" data="rfc9059"/>
     </record>
-    <record date="2021-03-29">
+    <record date="2021-03-29" updated="2022-03-30">
       <value>55</value>
-      <description>TE-PATH-BINDING (TEMPORARY - registered 2021-03-29, expires 2022-03-29)</description>
-      <xref type="draft" data="draft-ietf-pce-binding-label-sid-07"/>
+      <description>TE-PATH-BINDING</description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
     </record>
     <record date="2021-03-30">
       <value>56</value>
-      <description>SRPOLICY-POL-NAME (TEMPORARY - registered 2021-03-30, expires 2022-03-30)</description>
-      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-04"/>
+      <description>SRPOLICY-POL-NAME 
+        (TEMPORARY - registered 2021-03-30, extension registered 2022-02-14, expires 2023-03-30)</description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-06"/>
     </record>
     <record date="2021-03-30">
       <value>57</value>
-      <description>SRPOLICY-CPATH-ID (TEMPORARY - registered 2021-03-30, expires 2022-03-30)</description>
-      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-04"/>
+      <description>SRPOLICY-CPATH-ID 
+        (TEMPORARY - registered 2021-03-30, extension registered 2022-02-14, expires 2023-03-30)</description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-06"/>
     </record>
     <record date="2021-03-30">
       <value>58</value>
-      <description>SRPOLICY-CPATH-NAME (TEMPORARY - registered 2021-03-30, expires 2022-03-30)</description>
-      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-04"/>
+      <description>SRPOLICY-CPATH-NAME 
+        (TEMPORARY - registered 2021-03-30, extension registered 2022-02-14, expires 2023-03-30)</description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-06"/>
     </record>
     <record date="2021-03-30">
       <value>59</value>
-      <description>SRPOLICY-CPATH-PREFERENCE (TEMPORARY - registered 2021-03-30, expires 2022-03-30)</description>
-      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-04"/>
+      <description>SRPOLICY-CPATH-PREFERENCE 
+        (TEMPORARY - registered 2021-03-30, extension registered 2022-02-14, expires 2023-03-30)</description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-06"/>
+    </record>
+    <record date="2022-05-09">
+      <value>60</value>
+      <description>MULTIPATH-CAP 
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)</description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
+    <record date="2022-05-09">
+      <value>61</value>
+      <description>MULTIPATH-WEIGHT 
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)</description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
+    <record date="2022-05-09">
+      <value>62</value>
+      <description>MULTIPATH-BACKUP 
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)</description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
+    </record>
+    <record date="2022-05-09">
+      <value>63</value>
+      <description>MULTIPATH-OPPDIR-PATH
+        (TEMPORARY - registered 2022-05-09, expires 2023-05-09)</description>
+      <xref type="draft" data="draft-ietf-pce-multipath-05"/>
     </record>
     <record>
-      <value>60-65503</value>
+      <value>64-65503</value>
       <description>Unassigned</description>
     </record>
     <record>
@@ -4129,10 +4303,10 @@
     <xref type="rfc" data="rfc8231"/>
     <registration_rule>Standards Action</registration_rule>
     <note>Bits are numbered from bit 0 as the most significant bit.</note>
-    <record date="2021-03-29">
+    <record date="2021-03-29" updated="2022-03-30">
       <value>0</value>
-      <description>PCE-allocated binding label/SID (TEMPORARY - registered 2021-03-29, expires 2022-03-29)</description>
-	  <xref type="draft" data="draft-ietf-pce-binding-label-sid-07"/>
+      <description>PCE-allocation</description>
+	  <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
     </record>
     <record date="2019-05-10">
       <value>1</value>
@@ -4342,8 +4516,15 @@
       <description>Traffic engineering path is set up using PCECC mode</description>
       <xref type="rfc" data="rfc9050"/>
     </record>
+    <record date="2022-01-12">
+      <value>3</value>
+      <description>Traffic engineering path is set up using SRv6. 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
     <record>
-      <value>3-255</value>
+      <value>4-255</value>
       <description>Unassigned</description>
     </record>
   </registry>
@@ -4446,8 +4627,15 @@
       <description>SR-PCE-CAPABILITY</description>
       <xref type="rfc" data="rfc8664"/>
     </record>
+    <record date="2022-01-12">
+      <value>27</value>
+      <description>SRv6-PCE-CAPABILITY 
+        (TEMPORARY - registered 2022-01-12, expires 2023-01-12)
+      </description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-ipv6-13"/>
+    </record>
     <record>
-      <value>27-65535</value>
+      <value>28-65535</value>
       <description>Unassigned</description>
     </record>
   </registry>
@@ -4659,8 +4847,9 @@
     </record>
     <record date="2021-03-30">
       <value>6</value>
-      <description>SR Policy Association (TEMPORARY - registered 2021-03-30, expires 2022-03-30)</description>
-      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-04"/>
+      <description>SR Policy Association 
+        (TEMPORARY - registered 2021-03-30, extension registered 2022-02-14, expires 2023-03-30)</description>
+      <xref type="draft" data="draft-ietf-pce-segment-routing-policy-cp-06"/>
     </record>
     <record>
       <value>7-65535</value>
@@ -4954,7 +5143,7 @@
   
   <registry id="flowspec-object-flag-field">
     <title>FLOWSPEC Object Flag Field</title>
-    <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+    <xref type="rfc" data="rfc9168"/>
     <registration_rule>Standards Action</registration_rule>
     <record>
       <value>0-5</value>
@@ -4963,18 +5152,18 @@
     <record date="2020-11-09">
       <value>6</value>
       <description>LPM (L bit)</description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <value>7</value>
       <description>Remove (R bit)</description>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
   </registry>
   
   <registry id="flow-specification-tlv-type-indicators">
     <title>PCEP Flow Specification TLV Type Indicators</title>
-    <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+    <xref type="rfc" data="rfc9168"/>
     <range>
       <value>0-255</value>
       <registration_rule>Reserved</registration_rule>
@@ -4995,22 +5184,22 @@
     <record>
       <value>0-255</value>
       <meaning>Reserved. Must not be allocated. Usage mirrors the BGP FlowSpec registry <xref type="draft" data="draft-ietf-idr-rfc5575bis-27"/> and <xref type="draft" data="draft-ietf-idr-flow-spec-v6-19"/></meaning>
-	  <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <value>256</value>
       <meaning>Route Distinguisher</meaning>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <value>257</value>
       <meaning>IPv4 Multicast</meaning>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record date="2020-11-09">
       <value>258</value>
       <meaning>IPv6 Multicast</meaning>
-      <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
     <record>
       <value>259-65531</value>
@@ -5019,43 +5208,7 @@
     <record>
       <value>65532-65535</value>
       <meaning>Experimental Use</meaning>
-	  <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
-    </record>
-  </registry>
-  
-  <registry id="l2-flow-specification-tlv-type-indicators">
-    <title>PCEP L2 Flow Specification TLV Type Indicators</title>
-    <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
-    <range>
-      <value>0-255</value>
-      <registration_rule>Reserved</registration_rule>
-	  <note>Must not be allocated. Usage mirrors the BGP L2 FlowSpec registry.</note>
-    </range>
-    <range>
-      <value>256-64506</value>
-      <registration_rule>Specification Required</registration_rule>
-    </range>
-    <range>
-      <value>64507-65531</value>
-      <registration_rule>First Come First Served</registration_rule>
-    </range>
-    <range>
-      <value>65532-65535</value>
-      <registration_rule>Experimental Use</registration_rule>
-    </range>
-    <record>
-      <value>0-255</value>
-      <description>Reserved. Must not be allocated. Usage mirrors the BGP L2 Flowspec registry <xref type="draft" data="draft-ietf-idr-flowspec-l2vpn-15"/></description>
-	  <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
-    </record>
-    <record>
-      <value>256-65531</value>
-      <description>Unassigned</description>
-    </record>
-    <record>
-      <value>65532-65535</value>
-      <description>Experimental Use</description>
-	  <xref type="draft" data="RFC-ietf-pce-pcep-flowspec-12"/>
+      <xref type="rfc" data="rfc9168"/>
     </record>
   </registry>
   
@@ -5111,6 +5264,51 @@
       <value>15</value>
       <description>O Bit - Specifies label is out-label</description>
       <xref type="rfc" data="rfc9050"/>
+    </record>
+  </registry>
+
+  <registry id="te-path-binding-tlv-bt">
+    <title>TE-PATH-BINDING TLV BT Field</title>
+    <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record date="2022-03-30">
+      <value>0</value>
+      <description>MPLS Label</description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <value>1</value>
+      <description>MPLS Label Stack Entry</description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <value>2</value>
+      <description>SRv6 SID</description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record date="2022-03-30">
+      <value>3</value>
+      <description>SRv6 SID with Behavior and Structure</description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record>
+      <value>4-255</value>
+      <description>Unassigned</description>
+    </record>
+  </registry>
+
+  <registry id="te-path-binding-tlv-flags">
+    <title>TE-PATH-BINDING TLV Flag Field</title>
+    <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    <registration_rule>Standards Action</registration_rule>
+    <record date="2022-03-30">
+      <value>0</value>
+      <description>R (Removal)</description>
+      <xref type="draft" data="RFC-ietf-pce-binding-label-sid-15"/>
+    </record>
+    <record>
+      <value>1-7</value>
+      <description>Unassigned</description>
     </record>
   </registry>
   

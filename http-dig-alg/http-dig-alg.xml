@@ -4,15 +4,15 @@
 <registry xmlns="http://www.iana.org/assignments" id="http-dig-alg">
   <title>Hypertext Transfer Protocol (HTTP) Digest Algorithm Values</title>
   <created>2002-01-03</created>
-  <updated>2015-10-02</updated>
+  <updated>2022-06-07</updated>
   
   <registry id="http-dig-alg-1">
     <title>HTTP Digest Algorithm Values</title>
     <xref type="rfc" data="rfc3230"/>
     <registration_rule>RFC Required or Specification Required</registration_rule>
     <expert>James Manger</expert>
-    <note>This registry lists the algorithms that can be used when creating 
-digests of an HTTP message body, as specified in <xref type="rfc" data="rfc3230"/>.
+    <note>This registry lists the algorithms that can be used when creating digests 
+based on HTTP messages as specified in <xref type="rfc" data="rfc3230"/>.
     </note>
     <record date="2012-11-06">
       <name>ADLER32</name>
@@ -34,7 +34,7 @@ digests of an HTTP message body, as specified in <xref type="rfc" data="rfc3230"
         8 ASCII characters from 0-9, A-F, and a-f; leading 0's are allowed). For 
         example, CRC32c=0a72a4df and crc32c=A72A4DF are both valid checksums for 
         the 3-byte message "dog".</description>
-      <xref type="rfc" data="rfc4960">RFC4960 appendix B</xref>
+        <xref type="rfc" data="rfc9260">RFC9260, Appendix A</xref>
     </record>
     <record>
       <name>MD5</name>

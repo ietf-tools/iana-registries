@@ -3,24 +3,24 @@
 <?xml-model href="http-upgrade-tokens.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="http-upgrade-tokens">
   <title>Hypertext Transfer Protocol (HTTP) Upgrade Token Registry</title>
-  <updated>2021-10-01</updated>
+  <updated>2022-06-23</updated>
   
   <registry id="http-upgrade-tokens-1">
     <title>HTTP Upgrade Tokens</title>
-    <xref type="draft" data="RFC-ietf-httpbis-semantics">RFC-ietf-httpbis-semantics, Section 16.7</xref>
+    <xref type="rfc" data="rfc9110">RFC9110, Section 16.7</xref>
     <registration_rule>First Come First Served</registration_rule>
-    <note>Please see <xref type="rfc" data="rfc7230"/>, Section 8.6.1 for details regarding token registrations.
+    <note>Please see <xref type="rfc" data="rfc9110"/>, Section 16.7 for details regarding token registrations.
     </note>
     <record updated="2021-10-01"> 
       <value>HTTP</value>
       <description>Hypertext Transfer Protocol</description>
-      <expected>any DIGIT.DIGIT (e.g, "2.0")</expected>
-      <xref type="draft" data="RFC-ietf-httpbis-semantics">RFC-ietf-httpbis-semantics, Section 2.5</xref>
+      <expected>any DIGIT.DIGIT (e.g., "2.0")</expected>
+      <xref type="rfc" data="rfc9110">RFC9110, Section 2.5</xref>
     </record>
     <record updated="2014-11-19">
       <value>TLS</value>
       <description>Transport Layer Security</description>
-      <expected>ANY DIGIT.DIGIT (e.g.. "1.2")</expected>
+      <expected>ANY DIGIT.DIGIT (e.g., "1.2")</expected>
       <xref type="rfc" data="rfc2817"/>
     </record>
     <record date="2009-08-12">
@@ -34,10 +34,15 @@
       <xref type="rfc" data="rfc6455"/>
       <xref type="rfc" data="rfc8441"/>
     </record>
-    <record date="2015-05-07">
+    <record date="2015-05-07" updated="2022-02-03">
       <value>h2c</value>
-      <description>Hypertext Transfer Protocol version 2 (HTTP/2)</description>
-      <xref type="rfc" data="rfc7540">RFC7540, Section 3.2</xref>
+      <description>Hypertext Transfer Protocol version 2 (HTTP/2) (OBSOLETE)</description>
+      <xref type="rfc" data="rfc9113">RFC9113, Section 3.1</xref>
+    </record>
+    <record date="2022-06-23">
+      <value>connect-udp</value>
+      <description>Proxying of UDP Payloads</description>
+      <xref type="draft" data="RFC-ietf-masque-connect-udp-15"/>
     </record>
   </registry>
   

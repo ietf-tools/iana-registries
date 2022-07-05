@@ -1,7 +1,9 @@
+   Internet Assigned Numbers Authority
+
                                                        Uniform Resource Names (URN) Namespaces
 
    Last Updated
-           2021-07-01
+           2022-03-28
 
    Note
 
@@ -45,6 +47,7 @@ Formal URN Namespaces
    broadband-forum-org                  [RFC8057]
    cablelabs                            [RFC6289]
    ccsds                                [RFC7738]
+   cdx                 [cdx-template]   [The OWASP Foundation Inc.]
    cgi                                  [RFC5138]
    clei                                 [RFC4152]
    ddi                                  [draft-urn-ddi-00]
@@ -53,6 +56,7 @@ Formal URN Namespaces
    dslforum-org                         [RFC8057]
    dvb                                  [RFC5328][RFC7354]
    ebu                                  [RFC5174]
+   eic                 [eic-template]   [European Network of Transmission System Operators for Electricity (ENTSO-E)]
    eidr                                 [RFC7972]
    epc                                  [RFC5134]
    epcglobal                            [RFC5134]
@@ -61,6 +65,7 @@ Formal URN Namespaces
    example                              [RFC6963]
    fdc                                  [RFC4198]
    fipa                                 [RFC3616]
+   gdst                [gdst-template]  [Institute of Food Technologists]
    geant                                [RFC4926]
    globus                               [RFC7853]
    gsma                                 [RFC7254]
@@ -74,6 +79,7 @@ Formal URN Namespaces
    issn                [issn-template]  [ISSN International Centre]
    itu                 [itu-template]   [International Telecommunications Union (ITU)]
    ivis                                 [RFC4617]
+   lei                 [lei-template]   [Global Legal Entity Identifier Foundation (GLEIF)]
    liberty                              [RFC3622]
    mace                                 [RFC3613]
    mef                                  [RFC7818]
@@ -143,3 +149,5 @@ Informal URN Namespaces
    [Kevin_P._Yancey]  Kevin P. Yancey  mailto:kpyancey&yahoo.com             2002-02-11
    [Michael_Mealling] Michael Mealling mailto:michael&bailey.dscga.com       2001-02-23
    [Robert_M._Akscyn] Robert M. Akscyn mailto:rma&ks.com                     2001-02-23
+
+   Licensing Terms

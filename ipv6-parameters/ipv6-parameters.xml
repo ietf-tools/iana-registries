@@ -3,7 +3,7 @@
 <?xml-model href="ipv6-parameters.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="ipv6-parameters">
   <title>Internet Protocol Version 6 (IPv6) Parameters</title>
-  <updated>2021-08-12</updated>
+  <updated>2022-06-24</updated>
   
   <registry id="ipv6-parameters-1">
     <title>Next Header Types</title>
@@ -106,7 +106,7 @@ full.
       <chg>0</chg>
       <rest>00000</rest>
       <description>Pad1</description>
-      <xref type="text">[IPV6]</xref>
+      <xref type="rfc" data="rfc2460"/>
     </record>
     <record>
       <value>0x01</value>
@@ -114,7 +114,7 @@ full.
       <chg>0</chg>
       <rest>00001</rest>
       <description>PadN</description>
-      <xref type="text">[IPV6]</xref>
+      <xref type="rfc" data="rfc2460"/>
     </record>
     <record>
       <value>0xC2</value>
@@ -251,26 +251,25 @@ full.
       <act>00</act>
       <chg>1</chg>
       <rest>10000</rest>
-      <description>Path MTU Record Option 
-        (TEMPORARY - registered 2019-09-03, extension registered 2021-08-12, expires 2022-09-03)</description>
-      <xref type="draft" data="draft-ietf-6man-mtu-option-06"/>
+      <description>Path MTU Record Option</description>
+      <xref type="draft" data="RFC-ietf-6man-mtu-option-15"/>
     </record>
-    <record date="2020-04-16" updated="2021-03-15">
+    <record date="2020-04-16" updated="2022-04-12">
       <value>0x11</value>
       <act>00</act>
       <chg>0</chg>
       <rest>10001</rest>
       <description>IOAM 
-      (TEMPORARY - registered 2020-04-16, extension registered 2021-03-15, expires 2022-04-16)</description>
+      (TEMPORARY - registered 2020-04-16, extension registered 2022-04-12, expires 2023-04-16)</description>
       <xref type="draft" data="draft-ietf-ippm-ioam-ipv6-options-05"/>
     </record>
-    <record date="2020-04-16" updated="2021-03-15">
+    <record date="2020-04-16" updated="2022-04-12">
       <value>0x31</value>
       <act>00</act>
       <chg>1</chg>
       <rest>10001</rest>
       <description>IOAM 
-      (TEMPORARY - registered 2020-04-16, extension registered 2021-03-15, expires 2022-04-16)</description>
+      (TEMPORARY - registered 2020-04-16, extension registered 2022-04-12, expires 2023-04-16)</description>
       <xref type="draft" data="draft-ietf-ippm-ioam-ipv6-options-05"/>
     </record>
     <record>
@@ -354,20 +353,17 @@ they MUST NOT be shipped as defaults in implementations.  See <xref type="rfc" d
     <xref type="rfc" data="rfc8200"/>
     <xref type="rfc" data="rfc5871"/>
     <registration_rule>IETF Review or IESG Approval</registration_rule>
-    <note>For Traffic Class related information, please see <xref type="rfc" data="rfc2474"/><xref type="rfc" data="rfc3168"/>,
-and the following registries:
-
-<xref type="uri" data="http://www.iana.org/assignments/dscp-registry"/>
-<xref type="uri" data="http://www.iana.org/assignments/ipv4-tos-byte"/>
+    <note>For Traffic Class related information, please see <xref type="rfc" data="rfc2474"/>,<xref type="rfc" data="rfc3168"/>,
+and <xref type="uri" data="https://www.iana.org/assignments/dscp-registry"/>.
 
 For IPv6 Router Alert Option Values, please see:
       
-<xref type="uri" data="http://www.iana.org/assignments/ipv6-routeralert-values"/>
+<xref type="uri" data="https://www.iana.org/assignments/ipv6-routeralert-values"/>
     </note>
     <record>
       <value>0</value>
       <description>Source Route (DEPRECATED)</description>
-      <xref type="text">[IPV6]</xref>
+      <xref type="rfc" data="rfc2460"/>
       <xref type="rfc" data="rfc5095"/>
     </record>
     <record>
@@ -391,12 +387,12 @@ For IPv6 Router Alert Option Values, please see:
     </record>
     <record date="2021-06-07">
       <value>5</value>
-      <description>CRH-16 (TEMPORARY - registered 2021-06-07, expires 2022-06-07)</description>
+      <description>CRH-16 (TEMPORARY - registered 2021-06-07, extension registered 2022-04-25, expires 2023-06-07)</description>
       <xref type="draft" data="draft-bonica-6man-comp-rtg-hdr-26"/>
     </record>
     <record date="2021-06-07">
       <value>6</value>
-      <description>CRH-32 (TEMPORARY - registered 2021-06-07, expires 2022-06-07)</description>
+      <description>CRH-32 (TEMPORARY - registered 2021-06-07, extension registered 2022-04-25, expires 2023-06-07)</description>
       <xref type="draft" data="draft-bonica-6man-comp-rtg-hdr-26"/>
     </record>
     <record>
@@ -476,7 +472,16 @@ See <xref type="rfc" data="rfc3692"/> for details.</footnote>
     <xref type="rfc" data="rfc8754"/>
     <registration_rule>IETF Review</registration_rule>
     <record>
-      <value>0-7</value>
+      <value>0-1</value>
+      <description>Unassigned</description>
+    </record>
+    <record date="2022-03-31">
+      <value>2</value>
+      <description>O-flag</description>
+      <xref type="rfc" data="rfc9259"/>
+    </record>
+    <record>
+      <value>3-7</value>
       <description>Unassigned</description>
     </record>
   </registry>

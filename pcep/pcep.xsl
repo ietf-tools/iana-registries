@@ -184,7 +184,8 @@
         or @id = 'h-pce-capability-tlv-flag-field'
         or @id = 'h-pce-flag-tlv-flag-field'
         or @id = 'association-flag-field'
-        or @id = 'auto-bandwidth-capability-tlv-flag-field'">
+        or @id = 'auto-bandwidth-capability-tlv-flag-field'
+        or @id = 'te-path-binding-tlv-flags'">
         <tr>
           <th>Bit</th>
           <th>Description</th>
@@ -338,13 +339,6 @@
         <tr>
           <td><xsl:value-of select="iana:value"/></td>
           <td><xsl:apply-templates select="iana:meaning"/></td>
-          <td><xsl:apply-templates select="iana:xref"/></td>
-        </tr>
-      </xsl:when>
-      <xsl:when test="../@id = 'l2-flow-specification-tlv-type-indicators'">
-        <tr>
-          <td><xsl:value-of select="iana:value"/></td>
-          <td><xsl:apply-templates select="iana:description"/></td>
           <td><xsl:apply-templates select="iana:xref"/></td>
         </tr>
       </xsl:when>

@@ -1,3 +1,5 @@
+   Internet Assigned Numbers Authority
+
                                                             iana-routing-types YANG Module
 
    Created
@@ -16,7 +18,7 @@
  and [Subsequent Address Family Identifiers (SAFI) Parameters]
  registries.
 
-   Module: [iana-routing-types@2021-10-19.yang]
+   Module: [iana-routing-types@2022-04-13.yang]
 
 
    Reference
@@ -27,3 +29,5 @@
            XML [IMG]
            HTML [IMG]
            Plain text
+
+   Licensing Terms
