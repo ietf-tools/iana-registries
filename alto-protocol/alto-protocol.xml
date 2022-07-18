@@ -213,19 +213,19 @@ Section 8.5.2 of <xref type="rfc" data="rfc7285"/></description>
     </record>
     <record date="2022-03-09">
       <value>asn</value>
-      <entity>See <xref type="draft" data="RFC-ietf-alto-cdni-request-routing-alto-22"/>, Section 6.1.1.2</entity>
+      <entity>See <xref type="rfc" data="rfc9241"/>, Section 6.1.1.2</entity>
       <hier-inher>None</hier-inher>
       <mediatype>None</mediatype>
       <mapping>false</mapping>
-      <xref type="draft" data="RFC-ietf-alto-cdni-request-routing-alto-22"/>
+      <xref type="rfc" data="rfc9241"/>
     </record>
     <record date="2022-03-09">
       <value>countrycode</value>
-      <entity>See <xref type="draft" data="RFC-ietf-alto-cdni-request-routing-alto-22"/>, Section 6.1.2.2</entity>
+      <entity>See <xref type="rfc" data="rfc9241"/>, Section 6.1.2.2</entity>
       <hier-inher>None</hier-inher>
       <mediatype>None</mediatype>
       <mapping>false</mapping>
-      <xref type="draft" data="RFC-ietf-alto-cdni-request-routing-alto-22"/>
+      <xref type="rfc" data="rfc9241"/>
     </record>
     <record date="2022-03-29">
       <value>ane</value>
@@ -249,9 +249,9 @@ Section 8.5.2 of <xref type="rfc" data="rfc7285"/></description>
     </record>
     <record date="2022-03-09">
       <value>cdni-capabilities</value>
-      <semantics>See <xref type="draft" data="RFC-ietf-alto-cdni-request-routing-alto-22"/>, Section 6.2</semantics>
+      <semantics>See <xref type="rfc" data="rfc9241"/>, Section 6.2</semantics>
       <mediatype>application/alto-cdni+json</mediatype>
-      <xref type="draft" data="RFC-ietf-alto-cdni-request-routing-alto-22"/>
+      <xref type="rfc" data="rfc9241"/>
     </record>
     <record date="2022-03-29">
       <value>max-reservable-bandwidth</value>
