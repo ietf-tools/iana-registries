@@ -3,7 +3,7 @@
                                                                      Media Types
 
    Last Updated
-           2022-07-14
+           2022-07-18
 
    Registration Procedure(s)
 
@@ -100,8 +100,8 @@ alto-endpointcostparams+json                                             applica
 alto-error+json                                                          application/alto-error+json                                                          [RFC7285]
 alto-networkmapfilter+json                                               application/alto-networkmapfilter+json                                               [RFC7285]
 alto-networkmap+json                                                     application/alto-networkmap+json                                                     [RFC7285]
-alto-propmap+json                                                        application/alto-propmap+json                                                        [RFC-ietf-alto-unified-props-new-24]
-alto-propmapparams+json                                                  application/alto-propmapparams+json                                                  [RFC-ietf-alto-unified-props-new-24]
+alto-propmap+json                                                        application/alto-propmap+json                                                        [RFC9240]
+alto-propmapparams+json                                                  application/alto-propmapparams+json                                                  [RFC9240]
 alto-updatestreamcontrol+json                                            application/alto-updatestreamcontrol+json                                            [RFC8895]
 alto-updatestreamparams+json                                             application/alto-updatestreamparams+json                                             [RFC8895]
 AML                                                                      application/AML                                                                      [ASAM][Thomas_Thomsen]
