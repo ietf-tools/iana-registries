@@ -3,7 +3,7 @@
 <?xml-model href="registrar-ids.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="registrar-ids">
     <title>Registrar IDs</title>
-    <updated>2022-08-04</updated>
+    <updated>2022-08-11</updated>
     <registry id="registrar-ids-1">
         <title>Registrar IDs</title>
         <xref type="text">Not defined by an RFC</xref>
@@ -7978,12 +7978,12 @@
             <name>Badger Inc.</name>
             <status>Terminated</status>
         </record>
-        <record updated="2021-07-08">
+        <record updated="2022-08-11">
             <value>1563</value>
             <name>Foshan YiDong Network Co., LTD</name>
             <status>Accredited</status>
             <rdapurl>
-                <server>https://www.72e.net/rdap/</server>
+                <server>https://rdap.72e.net/rdap/</server>
             </rdapurl>
         </record>
         <record updated="2019-10-23">
@@ -25605,6 +25605,31 @@
         <record date="2022-08-04">
             <value>4030</value>
             <name>UK Intis Telecom Ltd</name>
+            <status>Accredited</status>
+        </record>
+        <record date="2022-08-11">
+            <value>4031</value>
+            <name>Dynadot1700 LLC</name>
+            <status>Accredited</status>
+        </record>
+        <record date="2022-08-11">
+            <value>4032</value>
+            <name>Dynadot3184 LLC</name>
+            <status>Accredited</status>
+        </record>
+        <record date="2022-08-11">
+            <value>4033</value>
+            <name>Dynadot3804 LLC</name>
+            <status>Accredited</status>
+        </record>
+        <record date="2022-08-11">
+            <value>4034</value>
+            <name>Dynadot5706 LLC</name>
+            <status>Accredited</status>
+        </record>
+        <record date="2022-08-11">
+            <value>4035</value>
+            <name>Dynadot9266 LLC</name>
             <status>Accredited</status>
         </record>
         <record date="2022-06-30">
