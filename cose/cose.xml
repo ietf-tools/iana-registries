@@ -335,7 +335,7 @@
   <registry id="algorithms">
     <title>COSE Algorithms</title>
     <xref type="rfc" data="rfc9053"/>
-	<xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+	<xref type="rfc" data="rfc9054"/>
     <range>
       <value>Integer values from -65536 to -257</value>
       <registration_rule>Specification Required</registration_rule>
@@ -474,7 +474,7 @@
       <description>SHAKE-256 512-bit Hash Value</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Yes</recommended>
     </record>
@@ -484,7 +484,7 @@
       <description>SHA-2 512-bit Hash</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Yes</recommended>
     </record>
@@ -494,7 +494,7 @@
       <description>SHA-2 384-bit Hash</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Yes</recommended>
     </record>
@@ -680,7 +680,7 @@
       <description>SHAKE-128 256-bit Hash Value</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Yes</recommended>
     </record>
@@ -690,7 +690,7 @@
       <description>SHA-2 512-bit Hash truncated to 256-bits</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Yes</recommended>
     </record>
@@ -700,7 +700,7 @@
       <description>SHA-2 256-bit Hash</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Yes</recommended>
     </record>
@@ -710,7 +710,7 @@
       <description>SHA-2 256-bit Hash truncated to 64-bits</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Filter Only</recommended>
     </record>
@@ -720,7 +720,7 @@
       <description>SHA-1 Hash</description>
       <capabilities>[kty]</capabilities>
       <controller/>
-      <xref type="draft" data="RFC-ietf-cose-hash-algs-09"/>
+      <xref type="rfc" data="rfc9054"/>
       <xref type="rfc" data="rfc9053"/>
       <recommended>Filter Only</recommended>
     </record>
