@@ -249,7 +249,7 @@
         a Datagram Transport Layer Security (DTLS) channel between 
         resource-constrained nodes.</description>
       <value>1</value>
-      <xref type="draft" data="RFC-ietf-ace-dtls-authorize-18"/>
+      <xref type="rfc" data="rfc9202"/>
     </record>
     <record date="2021-09-14">
       <name>coap_oscore</name>
