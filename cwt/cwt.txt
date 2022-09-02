@@ -6,7 +6,7 @@
            2018-03-22
 
    Last Updated
-           2022-07-27
+           2022-09-02
 
    Available Formats
            [IMG]
@@ -102,19 +102,19 @@ Nonce                              registered     nonce          10     byte str
 Unassigned                                                       11 to
                                                                  37
                                    The ACE
-                                   profile a                                                                      [RFC-ietf-ace-oauth-authz-46,
-ace_profile                        token is       ace_profile    38     integer        [IETF]                     Section 5.10]
+                                   profile a
+ace_profile                        token is       ace_profile    38     integer        [IETF]                     [RFC9200, Section 5.10]
                                    supposed to be
                                    used with.
                                    The
-                                   client-nonce                                                                   [RFC-ietf-ace-oauth-authz-46,
-cnonce                             sent to the AS cnonce         39     byte string    [IETF]                     Section 5.10]
+                                   client-nonce
+cnonce                             sent to the AS cnonce         39     byte string    [IETF]                     [RFC9200, Section 5.10]
                                    by the RS via
                                    the client.
                                    The expiration
                                    time of a
-                                   token measured                       unsigned                                  [RFC-ietf-ace-oauth-authz-46,
-exi                                from when it   exi            40     integer        [IETF]                     Section 5.10.3]
+                                   token measured                       unsigned
+exi                                from when it   exi            40     integer        [IETF]                     [RFC9200, Section 5.10.3]
                                    was received
                                    at the RS in
                                    seconds.
@@ -242,24 +242,21 @@ CWT Confirmation Methods
            [IMG]
            CSV
 
-   Confirmation Method                                            JWT      Confirmation  Confirmation     Change
-          Name            Confirmation Method Description     Confirmation     Key        Value Type    Controller            Reference
-                                                              Method Name
-   COSE_Key            COSE_Key Representing Public Key       jwk          1            COSE_Key        [IESG]     [RFC8747, Section 3.2]
-                                                                                        structure
-                                                                                        COSE_Encrypt or
-                                                                                        COSE_Encrypt0
-                                                                                        structure (with
-   Encrypted_COSE_Key  Encrypted COSE_Key                     jwe          2            an optional     [IESG]     [RFC8747, Section 3.3]
-                                                                                        corresponding
-                                                                                        COSE_Encrypt or
-                                                                                        COSE_Encrypt0
-                                                                                        tag)
-   kid                 Key Identifier                         kid          3            binary string   [IESG]     [RFC8747, Section 3.4]
-                       OSCORE_Input_Material carrying the
-   osc                 parameters for using OSCORE            osc          4            map             [IETF]     [RFC-ietf-ace-oscore-profile-19,
-                       per-message security with implicit key                                                      Section 3.2.1]
-                       confirmation
+   Confirmation Method      Confirmation Method Description       JWT Confirmation Confirmation Key Confirmation Value Type   Change    Reference
+          Name                                                      Method Name                                             Controller
+   COSE_Key            COSE_Key Representing Public Key           jwk              1                COSE_Key structure      [IESG]     [RFC8747,
+                                                                                                                                       Section 3.2]
+                                                                                                    COSE_Encrypt or
+                                                                                                    COSE_Encrypt0 structure
+   Encrypted_COSE_Key  Encrypted COSE_Key                         jwe              2                (with an optional       [IESG]     [RFC8747,
+                                                                                                    corresponding                      Section 3.3]
+                                                                                                    COSE_Encrypt or
+                                                                                                    COSE_Encrypt0 tag)
+   kid                 Key Identifier                             kid              3                binary string           [IESG]     [RFC8747,
+                                                                                                                                       Section 3.4]
+                       OSCORE_Input_Material carrying the                                                                              [RFC9203,
+   osc                 parameters for using OSCORE per-message    osc              4                map                     [IETF]     Section
+                       security with implicit key confirmation                                                                         3.2.1]
 
                                                                  Contact Information
 
