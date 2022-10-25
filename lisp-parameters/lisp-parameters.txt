@@ -370,15 +370,15 @@ LISP ECM Authentication Data Types
  Unassigned
 
    Reference
-           [RFC-ietf-lisp-sec-29]
+           [RFC9303]
 
    Available Formats
            [IMG]
            CSV
 
-   Number       Name             Reference
-   0      Reserved         [RFC-ietf-lisp-sec-29]
-   1      LISP-SEC-ECM-EXT [RFC-ietf-lisp-sec-29]
+   Number       Name       Reference
+   0      Reserved         [RFC9303]
+   1      LISP-SEC-ECM-EXT [RFC9303]
    2-255  Unassigned
 
 LISP Map-Reply Authentication Data Types
@@ -392,15 +392,15 @@ LISP Map-Reply Authentication Data Types
  Unassigned
 
    Reference
-           [RFC-ietf-lisp-sec-29]
+           [RFC9303]
 
    Available Formats
            [IMG]
            CSV
 
-   Number      Name             Reference
-   0      Reserved        [RFC-ietf-lisp-sec-29]
-   1      LISP-SEC-MR-EXT [RFC-ietf-lisp-sec-29]
+   Number      Name       Reference
+   0      Reserved        [RFC9303]
+   1      LISP-SEC-MR-EXT [RFC9303]
    2-255  Unassigned
 
 LISP-SEC Preferred Authentication Data HMAC IDs
@@ -414,14 +414,14 @@ LISP-SEC Preferred Authentication Data HMAC IDs
  Unassigned
 
    Reference
-           [RFC-ietf-lisp-sec-29]
+           [RFC9303]
 
    Available Formats
            [IMG]
            CSV
 
-   Number          Name                Reference
-   0       NOPREF                [RFC-ietf-lisp-sec-29]
+   Number          Name          Reference
+   0       NOPREF                [RFC9303]
    1       AUTH-HMAC-SHA-1-96    [RFC2104]
    2       AUTH-HMAC-SHA-256-128 [RFC6234]
    3-65535 Unassigned
@@ -437,16 +437,16 @@ LISP-SEC Authentication Data Key Wrap IDs
  Unassigned
 
    Reference
-           [RFC-ietf-lisp-sec-29]
+           [RFC9303]
 
    Available Formats
            [IMG]
            CSV
 
-   Number              Name                    KEY WRAP           KDF          Reference
-   0       Reserved                     None                   None      [RFC-ietf-lisp-sec-29]
-   1       NULL-KEY-WRAP-128            [RFC-ietf-lisp-sec-29] None      [RFC-ietf-lisp-sec-29]
-   2       AES-KEY-WRAP-128+HKDF-SHA256 [RFC3394]              [RFC4868] [RFC-ietf-lisp-sec-29]
+   Number              Name             KEY WRAP     KDF    Reference
+   0       Reserved                     None      None      [RFC9303]
+   1       NULL-KEY-WRAP-128            [RFC9303] None      [RFC9303]
+   2       AES-KEY-WRAP-128+HKDF-SHA256 [RFC3394] [RFC4868] [RFC9303]
    3-65535 Unassigned
 
 LISP-SEC Authentication Data Key Derivation Function IDs
@@ -460,14 +460,14 @@ LISP-SEC Authentication Data Key Derivation Function IDs
  Unassigned
 
    Reference
-           [RFC-ietf-lisp-sec-29]
+           [RFC9303]
 
    Available Formats
            [IMG]
            CSV
 
-   Number      Name            Reference
-   0       NOPREF        [RFC-ietf-lisp-sec-29]
+   Number      Name      Reference
+   0       NOPREF        [RFC9303]
    1       HKDF-SHA1-128 [RFC5869]
    2       HKDF-SHA256   [RFC5869]
    3-65535 Unassigned
