@@ -83,6 +83,7 @@ Formal URN Namespaces
    liberty                               [RFC3622]
    mace                                  [RFC3613]
    mef                                   [RFC7818]
+   meta                [meta-template]   [Juha_Hakala]
    mpeg                                  [RFC3614]
    mrn                 [mrn-template]    [International Association of Marine Aids to Navigation and Lighthouse Authorities (IALA)]
    nato                                  [RFC7467]
@@ -147,6 +148,7 @@ Informal URN Namespaces
    [Andrea_Goethals]  Andrea Goethals  mailto:nrs-ns-adm&hulmail.harvard.edu 2010-01-28
    [B._Fallenstein]   B. Fallenstein   mailto:b.fallenstein&gmx.de           2002-08-16
    [Evan_Prodromou]   Evan Prodromou   mailto:evan&wikitravel.org            2006-04-25
+   [Juha_Hakala]      Juha Hakala      mailto:juha.hakala&helsinki.fi        2022-11-17
    [Kevin_P._Yancey]  Kevin P. Yancey  mailto:kpyancey&yahoo.com             2002-02-11
    [Michael_Mealling] Michael Mealling mailto:michael&bailey.dscga.com       2001-02-23
    [Robert_M._Akscyn] Robert M. Akscyn mailto:rma&ks.com                     2001-02-23

@@ -199,6 +199,11 @@ Fast-track procedure for standards organizations described in Section 6.3.</regi
     <record date="2016-02-08">
       <name>mef</name>
       <xref type="rfc" data="rfc7818"/>
+    </record>
+    <record date="2022-11-17">
+      <name>meta</name>
+      <template><xref type="uri" data="https://www.iana.org/assignments/urn-formal/meta">meta-template</xref></template>
+      <xref type="person" data="Juha_Hakala"/>
     </record>   
     <record>
       <name>mpeg</name>
@@ -388,6 +393,11 @@ Fast-track procedure for standards organizations described in Section 6.3.</regi
       <name>Evan Prodromou</name>
       <uri>mailto:evan&amp;wikitravel.org</uri>
       <updated>2006-04-25</updated>
+    </person>
+    <person id="Juha_Hakala">
+      <name>Juha Hakala</name>
+      <uri>mailto:juha.hakala&amp;helsinki.fi</uri>
+      <updated>2022-11-17</updated>
     </person>
     <person id="Kevin_P._Yancey">
       <name>Kevin P. Yancey</name>
