@@ -3628,7 +3628,7 @@
       <expert>Unassigned</expert>
       <note>Only numeric values that are 2^x (power of two, where 0 &lt;= x &lt; 32) 
 are allowed, as defined in <xref type="draft" data="RFC-ietf-dime-group-signaling-14"/>.
-</note>
+      </note>
       <record date="2022-11-21">
         <value>0x00000001</value>
         <name>SESSION_GROUP_ALLOCATION_ACTION</name>

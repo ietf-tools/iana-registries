@@ -1424,6 +1424,7 @@ AVP Specific Values
  Only numeric values that are 2^x (power of two, where 0 <= x < 32)
  are allowed, as defined in [RFC-ietf-dime-group-signaling-14].
 
+
    Available Formats
            [IMG]
            CSV
