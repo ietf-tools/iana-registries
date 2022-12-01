@@ -1848,25 +1848,25 @@ described in <xref type="rfc" data="rfc8414"/>.
       <name>backchannel_token_delivery_modes_supported</name>
       <description>Supported CIBA authentication result delivery modes</description>
       <controller><xref type="person" data="OpenID_Foundation_MODRNA_Working_Group"/></controller>
-      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#rfc.section.16.1">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
+      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#registration">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
     </record>
     <record date="2022-12-01">
       <name>backchannel_authentication_endpoint</name>
       <description>CIBA Backchannel Authentication Endpoint</description>
       <controller><xref type="person" data="OpenID_Foundation_MODRNA_Working_Group"/></controller>
-      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#rfc.section.16.1">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
+      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#registration">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
     </record>
     <record date="2022-12-01">
       <name>backchannel_authentication_request_signing_alg_values_supported</name>
       <description>JSON array containing a list of the JWS signing algorithms supported for validation of signed CIBA authentication requests</description>
       <controller><xref type="person" data="OpenID_Foundation_MODRNA_Working_Group"/></controller>
-      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#rfc.section.16.1">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
+      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#registration">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
     </record>
     <record date="2022-12-01">
       <name>backchannel_user_code_parameter_supported</name>
       <description>Indicates whether the OP supports the use of the CIBA user_code parameter.</description>
       <controller><xref type="person" data="OpenID_Foundation_MODRNA_Working_Group"/></controller>
-      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#rfc.section.16.1">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
+      <xref type="uri" data="https://openid.net/specs/openid-client-initiated-backchannel-authentication-core-1_0.html#registration">OpenID Connect Client-Initiated Backchannel Authentication Flow - Core 1.0, Section 4</xref>
     </record>
   </registry>
   
