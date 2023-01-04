@@ -3,7 +3,7 @@
                                                          "Magic Numbers" for ISAKMP Protocol
 
    Last Updated
-           2023-01-03
+           2023-01-04
 
    Note
 
@@ -181,9 +181,9 @@ IPSEC AH Transform Identifiers
    2       AH_MD5                   [RFC2407]
    3       AH_SHA                   [RFC2407]
    4       AH_DES                   [RFC2407]
-   5       AH_SHA2-256              [Marcus_Leech][RFC4868]
-   6       AH_SHA2-384              [Marcus_Leech][RFC4868]
-   7       AH_SHA2-512              [Marcus_Leech][RFC4868]
+   5       AH_SHA2-256              [RFC4868]
+   6       AH_SHA2-384              [RFC4868]
+   7       AH_SHA2-512              [RFC4868]
    8       AH_RIPEMD                [RFC2857]
    9       AH_AES-XCBC-MAC          [RFC3566]
    10      AH_RSA                   [RFC4359]
