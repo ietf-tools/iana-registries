@@ -27,6 +27,7 @@ Magic number(s): The first 4 bytes are 0x52, 0x49, 0x46, 0x46 ('RIFF'), followed
 File extension(s): webp
 
 Apple Uniform Type Identifier: org.webmproject.webp conforms to public.image
+
 Object Identifiers: N/A
 
 Person & email address to contact for further information:
@@ -47,7 +48,9 @@ Change controller:
 
 Name: James Zern
 Email: jzern&google.com
+
 Name: Pascal Massimino
 Email: pascal.massimino&gmail.com
+
 Name: WebM Project
 Email: webmaster&webmproject.org
