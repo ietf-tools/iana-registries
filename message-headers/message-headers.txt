@@ -3,7 +3,7 @@
                                                                    Message Headers
 
    Last Updated
-   2023-06-12
+   2023-09-21
 
    Available Formats
    [IMG]
@@ -91,7 +91,7 @@ Permanent Message Header Field Names
    DL-Expansion-History                                           mail                   [RFC4021]
    Date                                                           mail     standard      [RFC5322]
    Date                                                           netnews  standard      [RFC5536][RFC5322]
-   Date-Received                                                  netnews  obsoleted     [RFC0850][RFC5536]
+   Date-Received                                                  netnews  obsoleted     [RFC850][RFC5536]
    Deferred-Delivery                                              mail                   [RFC4021]
    Delivery-Date                                                  mail                   [RFC4021]
    Discarded-X400-IPMS-Extensions                                 mail                   [RFC4021]
