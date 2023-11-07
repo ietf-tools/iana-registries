@@ -5,7 +5,7 @@
   <title>DNS Service Bindings (SVCB)</title>
   <category>Domain Name System (DNS) Parameters</category>
   <created>2022-05-26</created>
-  <updated>2023-10-25</updated>
+  <updated>2023-11-07</updated>
 
   <registry id="dns-svcparamkeys">
     <title>Service Parameter Keys (SvcParamKeys)</title>  
@@ -73,7 +73,7 @@
       <name>dohpath</name>
       <description>DNS over HTTPS path template</description>
       <controller>IETF</controller>
-      <xref type="draft" data="RFC-ietf-add-svcb-dns-08"/>
+      <xref type="rfc" data="rfc9461"/>
     </record>
     <record date="2023-06-13" updated="2023-10-25">
       <value>8</value>
