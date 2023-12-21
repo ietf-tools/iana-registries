@@ -479,12 +479,14 @@ IS-IS Bit Values for Prefix Attribute Flags Sub-TLV
    [IMG]
    CSV
 
-   Bit #              Name                   Reference
-   0     External Prefix Flag (X-flag)  [RFC7794]
-   1     Re-advertisement Flag (R-flag) [RFC7794]
-   2     Node Flag (N-flag)             [RFC7794]
-   3     ELC Flag (E-flag)              [RFC9088]
-   4     Anycast Flag (A-flag)          [RFC9352, Section 6]
+   Bit #                              Name                                                        Reference
+   0     External Prefix Flag (X-flag)                                   [RFC7794]
+   1     Re-advertisement Flag (R-flag)                                  [RFC7794]
+   2     Node Flag (N-flag)                                              [RFC7794]
+   3     ELC Flag (E-flag)                                               [RFC9088]
+   4     Anycast Flag (A-flag)                                           [RFC9352, Section 6]
+   5     U-Flag (TEMPORARY - registered 2023-12-21, expires 2024-12-21)  [draft-ietf-lsr-igp-ureach-prefix-announce-01, Section 5.1]
+   6     UP-Flag (TEMPORARY - registered 2023-12-21, expires 2024-12-21) [draft-ietf-lsr-igp-ureach-prefix-announce-01, Section 5.1]
 
 IS-IS Group Address Type Codes for GADDR-TLV
 
