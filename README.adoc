@@ -26,4 +26,4 @@ The protected paths (i.e. where your changes will persist) are:
 
 == Licence
 
-Openly licensed.
+Please see the https://www.iana.org/help/licensing-terms[IANA Licensing Terms]
