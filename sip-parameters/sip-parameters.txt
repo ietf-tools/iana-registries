@@ -2465,8 +2465,8 @@ Global Feature-Capability Indicator Registration Tree
                                                the entity can be reached.
                                                This feature-capability indicator indicates the support of data
    g.3gpp.datachannel                          channel capability in the network, and can be included in a        [3GPP TS 24.186]
-                                               Feature-Caps header field as specified in IETF [RFC6809] in a 200
-                                               (OK) response to the REGISTER request.
+                                               Feature-Caps header field as specified in [RFC6809] in a 200 (OK)
+                                               response to the REGISTER request.
 
 SIP Feature-Capability Indicator Registration Tree
 

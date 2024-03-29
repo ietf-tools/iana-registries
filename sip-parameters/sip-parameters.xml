@@ -6327,7 +6327,7 @@ do support the PS to CS SRVCC for originating calls in pre-alerting phase.</desc
     <record date="2024-03-28">
       <value>g.3gpp.datachannel</value>
       <description>This feature-capability indicator indicates the support of data channel capability 
-        in the network, and can be included in a Feature-Caps header field as specified in IETF <xref type="rfc" data="rfc6809"/>
+        in the network, and can be included in a Feature-Caps header field as specified in <xref type="rfc" data="rfc6809"/>
         in a 200 (OK) response to the REGISTER request.</description>
       <xref type="uri" data=" http://www.3gpp.org/ftp/Specs/archive/24_series/24.186/">3GPP TS 24.186</xref>
     </record>
