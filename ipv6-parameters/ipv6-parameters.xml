@@ -392,15 +392,15 @@ For IPv6 Router Alert Option Values, please see:
       <description>Segment Routing Header (SRH)</description>
       <xref type="rfc" data="rfc8754"/>
     </record>
-    <record date="2021-06-07" updated="2024-04-23">
+    <record date="2021-06-07" updated="2024-06-13">
       <value>5</value>
-      <description>CRH-16 (TEMPORARY - registered 2021-06-07, extension registered 2024-04-23, expires 2025-06-07)</description>
-      <xref type="draft" data="draft-ietf-6man-comp-rtg-hdr-05"/>
+      <description>CRH-16</description>
+      <xref type="draft" data="RFC-ietf-6man-comp-rtg-hdr-10"/>
     </record>
-    <record date="2021-06-07" updated="2024-04-23">
+    <record date="2021-06-07" updated="2024-06-13">
       <value>6</value>
-      <description>CRH-32 (TEMPORARY - registered 2021-06-07, extension registered 2024-04-23, expires 2025-06-07)</description>
-      <xref type="draft" data="draft-ietf-6man-comp-rtg-hdr-05"/>
+      <description>CRH-32</description>
+      <xref type="draft" data="RFC-ietf-6man-comp-rtg-hdr-10"/>
     </record>
     <record>
       <value>7-252</value>
