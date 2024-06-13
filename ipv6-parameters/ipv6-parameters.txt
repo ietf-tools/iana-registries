@@ -3,7 +3,7 @@
                                                     Internet Protocol Version 6 (IPv6) Parameters
 
    Last Updated
-   2024-04-23
+   2024-06-13
 
    Available Formats
    [IMG]
@@ -73,7 +73,7 @@ Destination Options and Hop-by-Hop Options
  IESG Approval, IETF Review or Standards Action
 
    Reference
-   [RFC8200][RFC2780]
+   [RFC8200][RFC2780][RFC-ietf-6man-hbh-processing-20]
 
    Note
 
