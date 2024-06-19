@@ -452,17 +452,17 @@
       <controller>IETF</controller>
       <ref><xref type="draft" data="RFC-ietf-cellar-matroska-21">RFC-ietf-cellar-matroska-21, Section 5.1.3.5.5</xref></ref>
     </record>
-    <record date="2024-06-07">
-      <value>0xFF</value>
-      <description>Reserved</description>
-      <controller>IETF</controller>
-      <ref><xref type="draft" data="RFC-ietf-cellar-matroska-21"/></ref>
-    </record>
     <record date="2023-10-27">
       <value>0xFD</value>
       <description>ReferenceVirtual</description>
       <controller>IETF</controller>
       <ref>Reclaimed (<xref type="draft" data="RFC-ietf-cellar-matroska-21">RFC-ietf-cellar-matroska-21, Section 28.4)</xref>)</ref>
+    </record>
+    <record date="2024-06-07">
+      <value>0xFF</value>
+      <description>Reserved</description>
+      <controller>IETF</controller>
+      <ref><xref type="draft" data="RFC-ietf-cellar-matroska-21"/></ref>
     </record>
     <record date="2024-06-18">
       <value>0x0100-0x407E</value>
