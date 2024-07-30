@@ -5088,7 +5088,7 @@
   </registry>
   
   <registry id="wavelength-restriction-constraint-tlv-action-values">
-    <title>Wavelength Restriction Constraint TLV Action Values</title>
+    <title>Wavelength Restriction TLV Action Values</title>
     <xref type="rfc" data="rfc8780"/>
     <registration_rule>Standards Action</registration_rule>
     <record date="2019-03-25">

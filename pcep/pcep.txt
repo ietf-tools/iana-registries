@@ -56,7 +56,7 @@
      • PATH-SETUP-TYPE-CAPABILITY Sub-TLV Type Indicators
      • SR Capability Flag Field
      • WA Object Flag Field
-     • Wavelength Restriction Constraint TLV Action Values
+     • Wavelength Restriction TLV Action Values
      • Wavelength Allocation TLV Flag Field
      • S2LS Object Flag Field
      • H-PCE-CAPABILITY TLV Flag Field
@@ -1645,7 +1645,7 @@ WA Object Flag Field
    0-14 Unassigned
     15  Wavelength Allocation Mode [RFC8780]
 
-Wavelength Restriction Constraint TLV Action Values
+Wavelength Restriction TLV Action Values
 
    Registration Procedure(s)
 
