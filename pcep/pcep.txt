@@ -2041,10 +2041,11 @@ PCECC-CAPABILITY sub-TLV
    [IMG]
    CSV
 
-   Bit     Name                    Reference
+   Bit                                                Name                                                               Reference
    0-29 Unassigned
-    30  NATIVE IP  [RFC-ietf-pce-pcep-extension-native-ip-39]
-    31  Label      [RFC9050]
+    30  NATIVE IP (TEMPORARY - registered 2023-08-14, extension registered 2024-07-31, expires           [RFC-ietf-pce-pcep-extension-native-ip-39]
+        2025-08-14)
+    31  Label                                                                                            [RFC9050]
 
 CCI Object Flag Field for MPLS Label
 
