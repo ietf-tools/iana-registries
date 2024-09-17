@@ -1140,9 +1140,7 @@
     </record>
     <record date="2022-05-09">
       <class-value>45</class-value>
-      <class-description>PATH-ATTRIB 
-        (TEMPORARY - registered 2022-05-09, extension registered 2023-04-04, expires 2024-05-09)
-      </class-description>
+      <class-description>PATH-ATTRIB</class-description>
       <type-value>2-15</type-value>
       <type-description>Unassigned</type-description>
     </record>
