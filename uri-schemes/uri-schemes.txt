@@ -480,8 +480,8 @@ z39.50s                                                                        Z
    >=0x100000000         Reserved
 
          Name         Range (dec)    Range (hex)   Range Length (Bits)                  Reference                  Change Controller
-   Default Allocator 0             0x0             0                   [RFC-ietf-dtn-ipn-update-14, Section 3.2.2]
-   Example Range     974848-978943 0xEE000-0xEEFFF 12 bits             [RFC-ietf-dtn-ipn-update-14]
+   Default Allocator 0             0x0             0                   [RFC-ietf-dtn-ipn-update-14, Section 3.2.2] IETF
+   Example Range     974848-978943 0xEE000-0xEEFFF 12 bits             [RFC-ietf-dtn-ipn-update-14]                IETF
 
 'ipn' Scheme URI Default Allocator Node Numbers
 

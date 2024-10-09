@@ -3478,7 +3478,7 @@ publication, even when the specification requests permanent registration.
       <hex>0x0</hex>
       <bits>0</bits>
       <xref type="draft" data="RFC-ietf-dtn-ipn-update-14">RFC-ietf-dtn-ipn-update-14, Section 3.2.2</xref>
-      <controller/>
+      <controller>IETF</controller>
     </record>
     <record date="2024-10-09">
       <name>Example Range</name>
@@ -3486,7 +3486,7 @@ publication, even when the specification requests permanent registration.
       <hex>0xEE000-0xEEFFF</hex>
       <bits>12 bits</bits>
       <xref type="draft" data="RFC-ietf-dtn-ipn-update-14"/>
-      <controller/>
+      <controller>IETF</controller>
     </record>  
   </registry>
 
