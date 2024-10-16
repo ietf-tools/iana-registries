@@ -2437,19 +2437,19 @@ The registration template should cite the specification.
       <value>yang:ietf-tcp-client</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-tcp-client</name>
       <file type="template">ns/yang/ietf-tcp-client.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>
+      <xref type="rfc" data="rfc9643"/>
     </record>
     <record date="2024-03-26">
       <value>yang:ietf-tcp-common</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-tcp-common</name>
       <file type="template">ns/yang/ietf-tcp-common.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>
+      <xref type="rfc" data="rfc9643"/>
     </record>
     <record date="2024-03-26">
       <value>yang:ietf-tcp-server</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-tcp-server</name>
       <file type="template">ns/yang/ietf-tcp-server.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>
+      <xref type="rfc" data="rfc9643"/>
     </record>
     <record updated="2019-12-06">
       <value>yang:ietf-te-packet-types</value>

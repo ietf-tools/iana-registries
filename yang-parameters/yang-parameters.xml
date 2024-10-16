@@ -2112,32 +2112,32 @@ and <xref type="registry" data="safi-namespace">Subsequent Address Family Identi
     <record date="2024-03-26">
       <name>ietf-tcp-client</name>
       <iana>N</iana>
-      <file type="yang"/>
+      <file type="yang">ietf-tcp-client@2024-10-10.yang</file>
       <namespace>urn:ietf:params:xml:ns:yang:ietf-tcp-client</namespace>
       <prefix>tcpc</prefix>
       <module/>
-      <xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>
-      <notes><xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>'s module file will be posted upon the document's publication as an RFC.</notes>
+      <xref type="rfc" data="rfc9643"/>
+      <notes/>
     </record>
     <record date="2024-03-26">
       <name>ietf-tcp-common</name>
       <iana>N</iana>
-      <file type="yang"/>
+      <file type="yang">ietf-tcp-common@2024-10-10.yang</file>
       <namespace>urn:ietf:params:xml:ns:yang:ietf-tcp-common</namespace>
       <prefix>tcpcmn</prefix>
       <module/>
-      <xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>
-      <notes><xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>'s module file will be posted upon the document's publication as an RFC.</notes>
+      <xref type="rfc" data="rfc9643"/>
+      <notes/>
     </record>
     <record date="2024-03-26">
       <name>ietf-tcp-server</name>
       <iana>N</iana>
-      <file type="yang"/>
+      <file type="yang">ietf-tcp-server@2024-10-10.yang</file>
       <namespace>urn:ietf:params:xml:ns:yang:ietf-tcp-server</namespace>
       <prefix>tcps</prefix>
       <module/>
-      <xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>
-      <notes><xref type="draft" data="RFC-ietf-netconf-tcp-client-server-24"/>'s module file will be posted upon the document's publication as an RFC.</notes>
+      <xref type="rfc" data="rfc9643"/>
+      <notes/>
     </record>
     <record date="2019-12-06">
       <name>ietf-te-packet-types</name>
