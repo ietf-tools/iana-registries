@@ -3,7 +3,7 @@
 <?xml-model href="xml-registry.rng" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <registry xmlns="http://www.iana.org/assignments" id="xml-registry">
   <title>IETF XML Registry</title>
-  <updated>2024-10-09</updated>
+  <updated>2024-10-16</updated>
   <note><xref type="rfc" data="rfc3688"/> defines an IANA maintained registry of XML documents used within IETF protocols.
 These documents are divided into classes: XML Namespaces, Document Type Declarations, Schemas, and RDF Schemas.
 Individual documents are then registered within each class. The class and document names are combined to form a name
@@ -1519,7 +1519,7 @@ The registration template should cite the specification.
       <value>yang:ietf-babel</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-babel</name>
       <file type="template">ns/yang/ietf-babel.txt</file>
-      <xref type="draft" data="RFC-ietf-babel-yang-model-13"/>
+      <xref type="rfc" data="rfc9647"/>
     </record>
     <record date="2018-08-09" updated="2022-06-29">
       <value>yang:ietf-bfd</value>
@@ -1597,7 +1597,7 @@ The registration template should cite the specification.
       <value>yang:ietf-crypto-types</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-crypto-types</name>
       <file type="template">ns/yang/ietf-crypto-types.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-crypto-types-34"/>
+      <xref type="rfc" data="rfc9640"/>
     </record>
     <record date="2018-01-18">
       <value>yang:ietf-datastores</value>
@@ -1885,7 +1885,7 @@ The registration template should cite the specification.
       <value>yang:ietf-keystore</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-keystore</name>
       <file type="template">ns/yang/ietf-keystore.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-keystore-35"/>
+      <xref type="rfc" data="rfc9642"/>
     </record>
     <record date="2024-04-19">
       <value>yang:ietf-l1csm</value>
@@ -2419,7 +2419,7 @@ The registration template should cite the specification.
       <value>yang:ietf-sztp-csr</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-sztp-csr</name>
       <file type="template">ns/yang/ietf-sztp-csr.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-sztp-csr-14"/>
+      <xref type="rfc" data="rfc9646"/>
     </record>
     <record updated="2022-05-23">
       <value>yang:ietf-tcg-algs</value>
@@ -2509,7 +2509,7 @@ The registration template should cite the specification.
       <value>yang:ietf-truststore</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-truststore</name>
       <file type="template">ns/yang/ietf-truststore.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-trust-anchors-28"/>
+      <xref type="rfc" data="rfc9641"/>
     </record>
     <record updated="2018-07-11">
       <value>yang:ietf-twamp</value>
@@ -2617,7 +2617,7 @@ The registration template should cite the specification.
       <value>yang:ietf-ztp-types</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-ztp-types</name>
       <file type="template">ns/yang/ietf-ztp-types.txt</file>
-      <xref type="draft" data="RFC-ietf-netconf-sztp-csr-14"/>
+      <xref type="rfc" data="rfc9646"/>
     </record>
     <record>
       <value>yang:smiv2</value>

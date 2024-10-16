@@ -3,7 +3,7 @@
                                                                   IETF XML Registry
 
    Last Updated
-   2024-10-09
+   2024-10-16
 
    Note
 
@@ -333,7 +333,7 @@ yang:ietf-alarms                                    urn:ietf:params:xml:ns:yang:
 yang:ietf-alarms-x733                               urn:ietf:params:xml:ns:yang:ietf-alarms-x733                               ns/yang/ietf-alarms-x733.txt                               [RFC8632]
 yang:ietf-alto                                      urn:ietf:params:xml:ns:yang:ietf-alto                                      ns/yang/ietf-alto.txt                                      [RFC-ietf-alto-oam-yang-17]
 yang:ietf-alto-stats                                urn:ietf:params:xml:ns:yang:ietf-alto-stats                                ns/yang/ietf-alto-stats.txt                                [RFC-ietf-alto-oam-yang-17]
-yang:ietf-babel                                     urn:ietf:params:xml:ns:yang:ietf-babel                                     ns/yang/ietf-babel.txt                                     [RFC-ietf-babel-yang-model-13]
+yang:ietf-babel                                     urn:ietf:params:xml:ns:yang:ietf-babel                                     ns/yang/ietf-babel.txt                                     [RFC9647]
 yang:ietf-bfd                                       urn:ietf:params:xml:ns:yang:ietf-bfd                                       ns/yang/ietf-bfd.txt                                       [RFC9314]
 yang:ietf-bfd-ip-mh                                 urn:ietf:params:xml:ns:yang:ietf-bfd-ip-mh                                 ns/yang/ietf-bfd-ip-mh.txt                                 [RFC9314]
 yang:ietf-bfd-ip-sh                                 urn:ietf:params:xml:ns:yang:ietf-bfd-ip-sh                                 ns/yang/ietf-bfd-ip-sh.txt                                 [RFC9314]
@@ -346,7 +346,7 @@ yang:ietf-complex-types                             urn:ietf:params:xml:ns:yang:
 yang:ietf-connection-oriented-oam                   urn:ietf:params:xml:ns:yang:ietf-connection-oriented-oam                   ns/yang/ietf-connection-oriented-oam.txt                   [RFC8531]
 yang:ietf-connectionless-oam                        urn:ietf:params:xml:ns:yang:ietf-connectionless-oam                        ns/yang/ietf-connectionless-oam.txt                        [RFC8532]
 yang:ietf-connectionless-oam-methods                urn:ietf:params:xml:ns:yang:ietf-connectionless-oam-methods                ns/yang/ietf-connectionless-oam-methods.txt                [RFC8533]
-yang:ietf-crypto-types                              urn:ietf:params:xml:ns:yang:ietf-crypto-types                              ns/yang/ietf-crypto-types.txt                              [RFC-ietf-netconf-crypto-types-34]
+yang:ietf-crypto-types                              urn:ietf:params:xml:ns:yang:ietf-crypto-types                              ns/yang/ietf-crypto-types.txt                              [RFC9640]
 yang:ietf-datastores                                urn:ietf:params:xml:ns:yang:ietf-datastores                                ns/yang/ietf-datastores.txt                                [RFC8342]
 yang:ietf-dc-fabric-topology                        urn:ietf:params:xml:ns:yang:ietf-dc-fabric-topology                        ns/yang/ietf-dc-fabric-topology.txt                        [RFC8542]
 yang:ietf-dc-fabric-topology-state                  urn:ietf:params:xml:ns:yang:ietf-dc-fabric-topology-state                  ns/yang/ietf-dc-fabric-topology-state.txt                  [RFC8542]
@@ -394,7 +394,7 @@ yang:ietf-ipv6-unicast-routing                      urn:ietf:params:xml:ns:yang:
 yang:ietf-isis                                      urn:ietf:params:xml:ns:yang:ietf-isis                                      ns/yang/ietf-isis.txt                                      [RFC9130]
 yang:ietf-isis-reverse-metric                       urn:ietf:params:xml:ns:yang:ietf-isis-reverse-metric                       ns/yang/ietf-isis-reverse-metric.txt                       [RFC9194]
 yang:ietf-key-chain                                 urn:ietf:params:xml:ns:yang:ietf-key-chain                                 ns/yang/ietf-key-chain.txt                                 [RFC8177]
-yang:ietf-keystore                                  urn:ietf:params:xml:ns:yang:ietf-keystore                                  ns/yang/ietf-keystore.txt                                  [RFC-ietf-netconf-keystore-35]
+yang:ietf-keystore                                  urn:ietf:params:xml:ns:yang:ietf-keystore                                  ns/yang/ietf-keystore.txt                                  [RFC9642]
 yang:ietf-l1csm                                     urn:ietf:params:xml:ns:yang:ietf-l1csm                                     ns/yang/ietf-l1csm.txt                                     [RFC-ietf-ccamp-l1csm-yang-26]
 yang:ietf-l2-topology                               urn:ietf:params:xml:ns:yang:ietf-l2-topology                               ns/yang/ietf-l2-topology.txt                               [RFC8944]
 yang:ietf-l2-topology-state                         urn:ietf:params:xml:ns:yang:ietf-l2-topology-state                         ns/yang/ietf-l2-topology-state.txt                         [RFC8944]
@@ -483,7 +483,7 @@ yang:ietf-system-capabilities                       urn:ietf:params:xml:ns:yang:
 yang:ietf-system-tacacs-plus                        urn:ietf:params:xml:ns:yang:ietf-system-tacacs-plus                        ns/yang/ietf-system-tacacs-plus.txt                        [RFC9105]
 yang:ietf-sztp-bootstrap-server                     urn:ietf:params:xml:ns:yang:ietf-sztp-bootstrap-server                     ns/yang/ietf-sztp-bootstrap-server.txt                     [RFC8572]
 yang:ietf-sztp-conveyed-info                        urn:ietf:params:xml:ns:yang:ietf-sztp-conveyed-info                        ns/yang/ietf-sztp-conveyed-info.txt                        [RFC8572]
-yang:ietf-sztp-csr                                  urn:ietf:params:xml:ns:yang:ietf-sztp-csr                                  ns/yang/ietf-sztp-csr.txt                                  [RFC-ietf-netconf-sztp-csr-14]
+yang:ietf-sztp-csr                                  urn:ietf:params:xml:ns:yang:ietf-sztp-csr                                  ns/yang/ietf-sztp-csr.txt                                  [RFC9646]
 yang:ietf-tcg-algs                                  urn:ietf:params:xml:ns:yang:ietf-tcg-algs                                  ns/yang/ietf-tcg-algs.txt                                  [RFC-ietf-rats-yang-tpm-charra-21]
 yang:ietf-tcp                                       urn:ietf:params:xml:ns:yang:ietf-tcp                                       ns/yang/ietf-tcp.txt                                       [RFC-ietf-tcpm-yang-tcp-09]
 yang:ietf-tcp-client                                urn:ietf:params:xml:ns:yang:ietf-tcp-client                                ns/yang/ietf-tcp-client.txt                                [RFC-ietf-netconf-tcp-client-server-24]
@@ -498,7 +498,7 @@ yang:ietf-tls-client                                urn:ietf:params:xml:ns:yang:
 yang:ietf-tls-common                                urn:ietf:params:xml:ns:yang:ietf-tls-common                                ns/yang/ietf-tls-common.txt                                [RFC-ietf-netconf-tls-client-server-41]
 yang:ietf-tls-server                                urn:ietf:params:xml:ns:yang:ietf-tls-server                                ns/yang/ietf-tls-server.txt                                [RFC-ietf-netconf-tls-client-server-41]
 yang:ietf-tpm-remote-attestation                    urn:ietf:params:xml:ns:yang:ietf-tpm-remote-attestation                    ns/yang/ietf-tpm-remote-attestation.txt                    [RFC-ietf-rats-yang-tpm-charra-21]
-yang:ietf-truststore                                urn:ietf:params:xml:ns:yang:ietf-truststore                                ns/yang/ietf-truststore.txt                                [RFC-ietf-netconf-trust-anchors-28]
+yang:ietf-truststore                                urn:ietf:params:xml:ns:yang:ietf-truststore                                ns/yang/ietf-truststore.txt                                [RFC9641]
 yang:ietf-twamp                                     urn:ietf:params:xml:ns:yang:ietf-twamp                                     ns/yang/ietf-twamp.txt                                     [RFC8913]
 yang:ietf-vn                                        urn:ietf:params:xml:ns:yang:ietf-vn                                        ns/yang/ietf-vn.txt                                        [RFC-ietf-teas-actn-vn-yang-29]
 yang:ietf-voucher                                   urn:ietf:params:xml:ns:yang:ietf-voucher                                   ns/yang/ietf-voucher.txt                                   [RFC8366]
@@ -516,7 +516,7 @@ yang:ietf-yang-schema-mount                         urn:ietf:params:xml:ns:yang:
 yang:ietf-yang-smiv2                                urn:ietf:params:xml:ns:yang:ietf-yang-smiv2                                ns/yang/ietf-yang-smiv2.txt                                [RFC6643]
 yang:ietf-yang-structure-ext                        urn:ietf:params:xml:ns:yang:ietf-yang-structure-ext                        ns/yang/ietf-yang-structure-ext.txt                        [RFC8791]
 yang:ietf-yang-types                                urn:ietf:params:xml:ns:yang:ietf-yang-types                                ns/yang/ietf-yang-types.txt                                [RFC6991]
-yang:ietf-ztp-types                                 urn:ietf:params:xml:ns:yang:ietf-ztp-types                                 ns/yang/ietf-ztp-types.txt                                 [RFC-ietf-netconf-sztp-csr-14]
+yang:ietf-ztp-types                                 urn:ietf:params:xml:ns:yang:ietf-ztp-types                                 ns/yang/ietf-ztp-types.txt                                 [RFC9646]
 yang:smiv2                                          urn:ietf:params:xml:ns:yang:smiv2                                          ns/yang/ietf-yang-smiv2.txt                                [RFC6643]
 yang:yin:1                                          urn:ietf:params:xml:ns:yang:yin:1                                          ns/yang/yin/1.txt                                          [RFC6020]
 
