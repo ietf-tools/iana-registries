@@ -3,7 +3,7 @@
                                                        IPv6 Global Unicast Address Assignments
 
    Last Updated
-   2024-09-10
+   2024-11-01
 
    Registration Procedure(s)
 
@@ -84,6 +84,7 @@
                                                                                                       2404::/23 was allocated on 2006-01-19. The
                                                                                                       more recent allocation (2006-10-03)
                                                                                                       incorporates all these previous allocations.
+   2410::/12      APNIC         2024-11-01 whois.apnic.net   https://rdap.apnic.net/        ALLOCATED
                                                                                                       2600::/22, 2604::/22, 2608::/22 and 260c::/22
    2600::/12      ARIN          2006-10-03 whois.arin.net    https://rdap.arin.net/registry ALLOCATED were allocated on 2005-04-19. The more recent
                                                              http://rdap.arin.net/registry            allocation (2006-10-03) incorporates all

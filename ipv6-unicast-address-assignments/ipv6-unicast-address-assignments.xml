@@ -4,7 +4,7 @@
 <registry xmlns="http://www.iana.org/assignments" id="ipv6-unicast-address-assignments">
   <title>IPv6 Global Unicast Address Assignments</title>
   <category>Internet Protocol version 6 (IPv6) Global Unicast Allocations</category>
-  <updated>2024-09-10</updated>
+  <updated>2024-11-01</updated>
   <xref type="rfc" data="rfc7249"/>
   <registration_rule>Allocations to RIRs are made in line with the Global Policy published at 
 <xref type="uri" data="http://www.icann.org/en/resources/policy/global-addressing"/>. 
@@ -293,6 +293,16 @@ allocation.
     <notes>2400::/19 was allocated on 2005-05-20. 2400:2000::/19 was allocated on 2005-07-08. 2400:4000::/21 was 
 allocated on 2005-08-08.  2404::/23 was allocated on 2006-01-19. The more recent allocation (2006-10-03) 
 incorporates all these previous allocations.</notes>
+  </record>
+  <record date="2024-11-01">
+    <prefix>2410::/12</prefix>
+    <description>APNIC</description>
+    <whois>whois.apnic.net</whois>
+    <status>ALLOCATED</status>
+    <rdap>
+      <server>https://rdap.apnic.net/</server>
+    </rdap>
+    <notes/>
   </record>
   <record date="2006-10-03">
     <prefix>2600::/12</prefix>
