@@ -19,7 +19,8 @@ see <xref type="rfc" data="rfc5646"/>, Section 3.5.
     <note>The format of the registry is explained in Section 3 and 
 Section 3.1 of <xref type="rfc" data="rfc5646"/>.
 
-When referring to language tags in specifications, please refer to <xref type="rfc" data="rfc5646"/>.
+When referring to language tags in specifications, please refer to 
+<xref type="rfc" data="rfc5646"/>.
     </note>
     <note title="Registry File">
 

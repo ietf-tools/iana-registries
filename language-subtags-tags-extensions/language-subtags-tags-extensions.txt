@@ -42,7 +42,8 @@ Language Subtag Registry
  The format of the registry is explained in Section 3 and
  Section 3.1 of [RFC5646].
 
- When referring to language tags in specifications, please refer to [RFC5646].
+ When referring to language tags in specifications, please refer to
+ [RFC5646].
 
 
    Registry File
