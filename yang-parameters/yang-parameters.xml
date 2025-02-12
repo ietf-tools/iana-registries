@@ -225,6 +225,16 @@ and <xref type="registry" data="safi-namespace">Subsequent Address Family Identi
       <xref type="draft" data="RFC-ietf-opsawg-ac-lxsm-lxnm-glue-14"/>
       <notes><xref type="draft" data="RFC-ietf-opsawg-ac-lxsm-lxnm-glue-14"/>'s module file will be posted upon the document's publication as an RFC.</notes>
     </record>
+    <record date="2025-02-11">
+      <name>ietf-ac-ntw</name>
+      <iana>N</iana>
+      <file type="yang"/>
+      <namespace>urn:ietf:params:xml:ns:yang:ietf-ac-ntw</namespace>
+      <prefix>ac-ntw</prefix>
+      <module/>
+      <xref type="draft" data="RFC-ietf-opsawg-ntw-attachment-circuit-16"/>
+      <notes><xref type="draft" data="RFC-ietf-opsawg-ntw-attachment-circuit-16"/>'s module file will be posted upon the document's publication as an RFC.</notes>
+    </record>
     <record date="2018-11-08">
       <name>ietf-access-control-list</name>
       <iana>N</iana>

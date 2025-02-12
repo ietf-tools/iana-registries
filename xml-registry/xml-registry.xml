@@ -1485,6 +1485,12 @@ The registration template should cite the specification.
       <file type="template">ns/yang/ietf-ac-glue.txt</file>
       <xref type="draft" data="RFC-ietf-opsawg-ac-lxsm-lxnm-glue-14"/>
     </record>
+    <record date="2025-02-11">
+      <value>yang:ietf-ac-ntw</value>
+      <name>urn:ietf:params:xml:ns:yang:ietf-ac-ntw</name>
+      <file type="template">ns/yang/ietf-ac-ntw.txt</file>
+      <xref type="draft" data="RFC-ietf-opsawg-ntw-attachment-circuit-16"/>
+    </record>
     <record date="2018-11-08">
       <value>yang:ietf-access-control-list</value>
       <name>urn:ietf:params:xml:ns:yang:ietf-access-control-list</name>
