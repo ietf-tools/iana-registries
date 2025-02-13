@@ -6,7 +6,7 @@
    2013-09-19
 
    Last Updated
-   2025-01-23
+   2025-02-13
 
    Available Formats
    [IMG]
@@ -129,7 +129,9 @@ CBOR Tags
 102                             Unassigned
 103                             array                    Geographic Coordinates                                                           [https://github.com/allthingstalk/cbor/blob/master/CBOR-Tag103-Geographic-Coordinates.md][Danilo_Vidovic]
 104                             multiple                 Geographic Coordinate Reference System WKT or EPSG number                        [draft-clarke-cbor-crs-01]
-105-109                         Unassigned
+105-107                         Unassigned
+108                             byte string              Expected conversion to base16 encoding (lowercase)                               [draft-bormann-cbor-notable-tags-12, Section 2.1, Paragraph 2, Item 2]
+109                             Unassigned
 110                             byte string, array, or   relative object identifier (BER encoding); SDNV [RFC6256] sequence               [RFC9090]
                                 map
 111                             byte string, array, or   object identifier (BER encoding)                                                 [RFC9090]
@@ -215,7 +217,9 @@ CBOR Tags
 21065                           text string              I-Regexp                                                                         [draft-bormann-cbor-notable-tags-11, Section 2.1][RFC9485]
 21066                           Array[UTF8string,        ECMAScript RegExp                                                                [https://github.com/hildjj/cbor-specs/blob/main/regexp.md][Joe_Hildebrand]
                                 UTF8string?]             [https://262.ecma-international.org/14.0/#sec-regexp-regular-expression-objects]
-21067-21606                     Unassigned
+21067-21333                     Unassigned
+21334                           uint                     (always invalid in interchange) programming aid for simple values                [draft-bormann-cbor-notable-tags-12, Section 10.2 ]
+21335-21606                     Unassigned
 21607                           unsigned integer         a CBOR Tag identifier                                                            [https://cbor.is4.site/cbor-tag][IS4]
 21608-22097                     Unassigned
 22098                           multiple                 hint that indicates an additional level of indirection                           [http://cbor.schmorp.de/indirection][Marc_A._Lehmann]
@@ -336,7 +340,9 @@ CBOR Tags
 15309736                        map (major type 5)       RAINS Message                                                                    [https://britram.github.io/rains-prototype][Brian_Trammell]
 15309737-1146111422             Unassigned
 1146111423                      map                      TCG DICE Protection Environment profile descriptor                               [TCG DICE Protection Environment][TCG]                                                                             template/1146111423
-1146111424-1298493253           Unassigned
+1146111424-1298360422           Unassigned
+1298360423                      map                      MoaT change-of-status marker                                                     [https://github.com/M-o-a-T/moat/blob/main/doc/common/cbor.rst][Matthias_Urlichs]
+1298360424-1298493253           Unassigned
 1298493254                      map                      MoaT end-of-file marker                                                          [https://github.com/M-o-a-T/moat-util/][Matthias_Urlichs]
 1298493255-1299145043           Unassigned
 1299145044                      array                    MoaT file identifier / details                                                   [https://github.com/M-o-a-T/moat-util/][Matthias_Urlichs]
@@ -450,7 +456,7 @@ Time Tag Map Keys
    [Lucas_Clemente]                  Lucas Clemente                  mailto:lucas&clemente.io                     2014-07-01
    [Marc_A._Lehmann]                 Marc A. Lehmann                 mailto:cbor&schmorp.de                       2013-11-26
    [Mathew_Meins]                    Mathew Meins                    mailto:mm&blackhelicopters.net               2021-02-01
-   [Matthias_Urlichs]                Matthias Urlichs                mailto:matthias&urlichs.de                   2024-11-19
+   [Matthias_Urlichs]                Matthias Urlichs                mailto:matthias&urlichs.de                   2025-02-13
    [Michael_B._Jones]                Michael B. Jones                mailto:mbj&microsoft.com                     2018-05-04
    [Michael_Richardson]              Michael Richardson              mailto:mcr&xelerance.com                     2021-01-25
    [Ole_Saether]                     Ole Saether                     mailto:ole.saether&nordicsemi.no             2024-06-28
