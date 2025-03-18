@@ -5,11 +5,11 @@
   <category>Multipurpose Internet Mail Extensions (MIME) and Media Types</category>
   <title>Top-Level Media Types</title>
   <created>2024-06-25</created>
-  <updated>2024-06-25</updated>
+  <updated>2025-03-18</updated>
 
   <registry id="top-level-media-types">
     <title>Top-Level Media Types</title>
-    <xref type="draft" data="RFC-ietf-mediaman-toplevel-05"/>
+    <xref type="rfc" data="rfc9694"/>
     <registration_rule>Standards Action</registration_rule>
     <record date="2024-06-25">
       <value>application</value>

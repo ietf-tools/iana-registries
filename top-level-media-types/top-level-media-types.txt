@@ -6,7 +6,7 @@
    2024-06-25
 
    Last Updated
-   2024-06-25
+   2025-03-18
 
    Available Formats
    [IMG]
@@ -25,7 +25,7 @@ Top-Level Media Types
  Standards Action
 
    Reference
-   [RFC-ietf-mediaman-toplevel-05]
+   [RFC9694]
 
    Available Formats
    [IMG]
